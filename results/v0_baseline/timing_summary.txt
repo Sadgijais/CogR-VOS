@@ -1,0 +1,9 @@
+videos: 30
+frames: 1999
+model_load_s: 1.3
+total_inference_s: 2125.7
+overall_ms_per_frame: 1031.0
+median_video_ms_per_frame: 1002.2
+max_peak_alloc_mb: 721
+max_peak_reserved_mb: 1088
+note: first video includes CUDA warm-up; stage 1 (grounding) excluded
