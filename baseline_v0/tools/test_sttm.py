@@ -140,6 +140,32 @@ def test_motion_velocity_tracks():
     assert m.velocity[0] > 0.5 and abs(m.velocity[1]) < 0.2
 
 
+def _rotating_embs(n, step):
+    """n embeddings drifting smoothly away from BASE (each step small, total change large)."""
+    d = unit(rng.normal(size=BASE.shape))
+    d = unit(d - (d @ BASE) * BASE)                    # orthogonal to BASE
+    return [unit(np.cos(i * step) * BASE + np.sin(i * step) * d) for i in range(1, n + 1)]
+
+
+def test_gradual_change_deadlocks_anchor_mode_but_not_recent_mode():
+    embs = _rotating_embs(40, 0.15)                     # fast change: > 1 rad within ~8 frames
+    old = fresh(delta=5, sim_mode="anchor_proto")
+    new = fresh(delta=5, sim_mode="proto_or_recent")
+    for t, e in enumerate(embs, start=1):
+        old.update(t, GOOD, e, 5.0, 0.9)
+        new.update(t, GOOD, e, 5.0, 0.9)
+    assert old.stats["blocked"]["low_similarity"] > 15          # the deadlock
+    assert new.stats["blocked"]["low_similarity"] == 0          # continuity keeps it alive
+
+
+def test_sudden_switch_stays_blocked_in_recent_mode():
+    m = fresh(delta=1, sim_mode="proto_or_recent")
+    for t in range(1, 6):
+        m.update(t, GOOD, emb_near(BASE, 0.05), 5.0, 0.9)
+    decs = [m.update(t, GOOD, emb_near(OTHER, 0.05), 5.0, 0.9) for t in range(6, 20)]
+    assert all(d["blocked_by"] == "low_similarity" for d in decs)   # not fooled one frame later
+
+
 if __name__ == "__main__":
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     for t in tests:

@@ -46,6 +46,10 @@ def main():
         g = load_json(gdir / f"{video}.json")
         for exp_id, v in json.load(open(lf)).items():
             preds = sorted((Path(a.pred) / video / exp_id).glob("*.png"))
+            j0 = iou(read_binary_mask(preds[0]), read_palette_mask(annos[0], g[exp_id]["obj_id"]))
+            if j0 < 0.5:      # wrong from frame 0: the anchor itself is wrong, so 'consistent with anchor' says nothing
+                print(f"{video + '/' + exp_id:<26}  skipped: anchor wrong at frame 0 (J0={j0:.2f})")
+                continue
             ok, bad = [], []
             for fr in v["frames"]:
                 if fr["sim"] is None:

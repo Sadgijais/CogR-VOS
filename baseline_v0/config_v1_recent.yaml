@@ -46,10 +46,10 @@ failure_analysis:
 
 paths:
   grounding_out: grounding/
-  predictions_out: predictions_v1/
-  results_out: results_v1/
-  visualizations_out: visualizations_v1/
-  failure_analysis_out: failure_analysis_v1.csv
+  predictions_out: predictions_v1r/
+  results_out: results_v1r/
+  visualizations_out: visualizations_v1r/
+  failure_analysis_out: failure_analysis_v1r.csv
 
 target:
   # Grounded-SAM2 from the AL-Ref-SAM2 (AAAI 2025) ablation table — the
@@ -69,4 +69,4 @@ v1:
     delta: 5
     merge_thr: 0.95
     half_life: 30.0
-    sim_mode: anchor_proto
+    sim_mode: proto_or_recent
