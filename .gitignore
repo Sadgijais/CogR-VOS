@@ -22,3 +22,9 @@ baseline_v0/results_v1_check/
 baseline_v0/visualizations_v1/
 baseline_v0/predictions_v1r/
 baseline_v0/visualizations_v1r/
+baseline_v0/predictions_grid_*/
+baseline_v0/results_grid_*/
+baseline_v0/visualizations_grid_*/
+baseline_v0/predictions_diag_*/
+baseline_v0/results_diag_*/
+baseline_v0/visualizations_diag_*/
