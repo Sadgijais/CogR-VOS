@@ -10,3 +10,9 @@ visualizations/
 venv/
 .venv/
 literature/papers/
+
+# scratch / regenerable
+baseline_v0/predictions_timed/
+baseline_v0/results_timed/
+baseline_v0/config_timed.yaml
+baseline_v0/embeddings/
