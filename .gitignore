@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+predictions/
+visualizations/
+venv/
+.venv/

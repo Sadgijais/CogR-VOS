@@ -1,0 +1,19 @@
+# Stage 3 / 4 / visualize (evaluation, failure analysis, overlays) — CPU only.
+# These are the only dependencies needed to run tools/test_fixture.py.
+numpy>=1.24
+scipy>=1.10
+pillow>=10.0
+pyyaml>=6.0
+
+# Stage 1 (grounding) — needs a GPU.
+# torch: install a CUDA build matching YOUR driver, do NOT just `pip install torch`.
+#   e.g. for CUDA 12.6:  pip install torch --index-url https://download.pytorch.org/whl/cu126
+# transformers: HuggingFace port of Grounding-DINO (pure PyTorch, no custom CUDA op).
+transformers>=4.40
+
+# Stage 2 (propagation) — needs a GPU.
+# sam2 is not on PyPI under a stable name in every environment — install from source:
+#   git clone https://github.com/facebookresearch/sam2.git
+#   cd sam2 && SAM2_BUILD_CUDA=0 pip install -e .
+# SAM2_BUILD_CUDA=0 skips an optional CUDA extension (hole-filling post-process
+# only) that is the most common Windows/WSL install failure — see README.md.
