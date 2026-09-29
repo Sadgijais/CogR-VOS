@@ -195,7 +195,9 @@ class TargetMemory:
         r = float(np.mean([_sigmoid(obj_score), float(np.clip(pred_iou, 0, 1)),
                            float(np.clip(sim, 0, 1))]))
         new = Entry(frame_idx, box, area, cen, appearance, r, frame_idx)
-        return self._write(new, frame_idx)
+        res = self._write(new, frame_idx)
+        res["sim"] = sim
+        return res
 
     def _block(self, reason: str, frame_idx: int, sim: float) -> dict:
         self.stats["blocked"][reason] += 1

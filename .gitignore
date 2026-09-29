@@ -16,3 +16,7 @@ baseline_v0/predictions_timed/
 baseline_v0/results_timed/
 baseline_v0/config_timed.yaml
 baseline_v0/embeddings/
+baseline_v0/predictions_v1/
+baseline_v0/predictions_v1_check/
+baseline_v0/results_v1_check/
+baseline_v0/visualizations_v1/
