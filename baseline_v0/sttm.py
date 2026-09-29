@@ -37,6 +37,7 @@ class STTMParams:
     vel_ema: float = 0.7          # EMA factor for velocity
     border_px: int = 2            # mask within this many px of the frame edge = border-touching
     shrink_ratio: float = 0.8     # truncated = touches border AND area < ratio * last visible area
+    sim_mode: str = "anchor_proto"  # "anchor_proto": cos to identity prototype | "proto_or_recent": max(that, cos to last ACCEPTED frame)
 
 
 @dataclass
@@ -97,6 +98,7 @@ class TargetMemory:
         self.visible_prev = True
         self.last_write_frame = -10**9
         self.absent_since = None
+        self.last_emb = None          # embedding of the last frame that passed the similarity gate
         # ---- counters (reported per video)
         self.stats = {"writes": 0, "merges": 0, "evictions": 0, "frames": 0,
                       "blocked": {"not_visible": 0, "truncated": 0, "low_similarity": 0,
@@ -114,6 +116,7 @@ class TargetMemory:
         self.last_centroid, self.last_box, self.last_area = cen, box, area
         self.border_touch = self._touches_border(box)
         self.predicted_next = cen
+        self.last_emb = appearance
         self.events.append({"frame": frame_idx, "event": "visible"})
 
     # --------------------------------------------------------------- prototype
@@ -178,10 +181,13 @@ class TargetMemory:
         self.last_centroid, self.last_box, self.last_area, self.border_touch = cen, box, area, touches
 
         # ---- context: margin vs distractors
-        sim = _cos(appearance, self.prototype())
+        sim_proto = _cos(appearance, self.prototype())
+        sim = sim_proto
+        if self.p.sim_mode == "proto_or_recent" and self.last_emb is not None:
+            sim = max(sim_proto, _cos(appearance, self.last_emb))
         if self.distractor_embs.size:
             d = float(max(_cos(appearance, e) for e in self.distractor_embs))
-            self.context = {"max_distractor_sim": d, "margin": sim - d}
+            self.context = {"max_distractor_sim": d, "margin": sim_proto - d}
 
         # ---- write gate
         truncated = touches and prev_area is not None and area < self.p.shrink_ratio * prev_area
@@ -189,6 +195,7 @@ class TargetMemory:
             return self._block("truncated", frame_idx, sim)
         if sim < self.p.tau_sim:
             return self._block("low_similarity", frame_idx, sim)
+        self.last_emb = appearance     # accepted as the same identity (even if pacing blocks the write)
         if frame_idx - self.last_write_frame < self.p.delta:
             return self._block("paced", frame_idx, sim)
 
