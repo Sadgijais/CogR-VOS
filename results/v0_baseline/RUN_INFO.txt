@@ -1,0 +1,10 @@
+tag: v0-baseline-50.48
+commit: 02fe38d2a7d00e7d3c4f59265e7e0c99edd2c258
+date: 2026-09-29
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 2050, 4096 MiB, 592.27
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import torch,transformers;print('torch',torch.__version__,'transformers',transformers.__version__)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'torch'
