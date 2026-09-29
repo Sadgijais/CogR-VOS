@@ -91,7 +91,6 @@ CogR-VOS/
 ├── literature/
 │   ├── papers/         61 PDFs in 6 topic folders
 │   └── notes/          corpus notes and comparison tables
-└── docs/               working primer, specs, dataset protocol and audit
 ```
 
 ## Running V0
