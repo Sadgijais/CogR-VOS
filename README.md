@@ -31,7 +31,7 @@ Four contributions sit on top of the backbones:
 3. **Event-driven VLM reasoning:** the VLM fires only on the LOW branch, never on the per-frame path.
 4. **Memory-grounded re-identification:** after loss, retrieve strong memory states, propose candidates with Grounding-DINO, let the VLM compare them, resume propagation. If no valid candidate exists, emit an empty mask (target absent).
 
-**Training-free claim, stated precisely:** all three backbones are frozen; the only free parameters are four coherence weights and two thresholds, tuned on Ref-DAVIS17 only and then frozen. They are never re-tuned on MeViS, Ref-YouTube-VOS or Long-RVOS.
+**Training-free claim, stated precisely:** all three backbones are frozen. The remaining hyperparameters (memory size, write thresholds, coherence weights, band thresholds) are set on Ref-DAVIS17 only and then frozen. They are never re-tuned on MeViS, Ref-YouTube-VOS or Long-RVOS.
 
 ## Hypotheses
 
