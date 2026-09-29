@@ -151,6 +151,3 @@ Reporting rule: every number in a results table comes from the full Ref-DAVIS17 
 
 Development runs on a 4 GB RTX 2050 under WSL2. This shapes the design: no two large models co-resident, SAM 2 tiny only, an API-based VLM, and disk-cached stages. Full Long-RVOS runs and the V5 always-on comparison are planned for Kaggle T4 GPUs.
 
-## Note on the PDFs
-
-The papers in `literature/papers/` are copyrighted third-party works. Keep this repository private, or replace the PDFs with a link index before making it public.
