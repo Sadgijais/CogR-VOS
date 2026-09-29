@@ -3,8 +3,9 @@ commit: 02fe38d2a7d00e7d3c4f59265e7e0c99edd2c258
 date: 2026-09-29
 name, memory.total [MiB], driver_version
 NVIDIA GeForce RTX 2050, 4096 MiB, 592.27
-Traceback (most recent call last):
-  File "<string>", line 1, in <module>
-    import torch,transformers;print('torch',torch.__version__,'transformers',transformers.__version__)
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-ModuleNotFoundError: No module named 'torch'
+
+--- Addendum ---
+Model: sam2.1-hiera-tiny, 480p
+Dataset: Ref-DAVIS17 val, 30 videos, 61 objects
+Result: J 56.01, F 44.94, J&F 50.48
+torch 2.14.0+cu126 transformers 5.17.0
