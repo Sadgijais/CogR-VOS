@@ -1,0 +1,7 @@
+config                             n  mean dJ  worst dJ  worst expression
+compare_g0                        34     0.53      -0.7  judo/0_1
+compare_g1                        34     0.21     -11.4  motocross-jump/0_2
+compare_g2                        34     0.20      -1.8  judo/0_1
+compare_g3                        34     0.40      -1.5  motocross-jump/0_2
+
+VERDICT: choose compare_g0 (mean dJ +0.53).
