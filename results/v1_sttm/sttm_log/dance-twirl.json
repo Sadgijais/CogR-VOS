@@ -1,0 +1,937 @@
+{
+  "0_1": {
+    "expression": "a girl with blonde hair dressed in blue",
+    "summary": {
+      "bank_frames": [
+        0,
+        80,
+        85,
+        75
+      ],
+      "reliabilities": [
+        1.0,
+        0.931,
+        0.925,
+        0.923
+      ],
+      "n_events": 1,
+      "context": {
+        "max_distractor_sim": 0.4406450688838959,
+        "margin": 0.3413320481777191
+      },
+      "velocity": [
+        3.2112484648393425,
+        1.1380071155825677
+      ],
+      "stats": {
+        "writes": 17,
+        "merges": 0,
+        "evictions": 14,
+        "frames": 89,
+        "blocked": {
+          "not_visible": 0,
+          "truncated": 0,
+          "low_similarity": 0,
+          "paced": 72,
+          "not_better": 0
+        }
+      }
+    },
+    "events": [
+      {
+        "frame": 0,
+        "event": "visible"
+      }
+    ],
+    "writes": [
+      {
+        "frame": 5,
+        "action": "added",
+        "bank": [
+          0,
+          5
+        ],
+        "promoted": [
+          5
+        ],
+        "demoted": []
+      },
+      {
+        "frame": 10,
+        "action": "added",
+        "bank": [
+          0,
+          5,
+          10
+        ],
+        "promoted": [
+          10
+        ],
+        "demoted": []
+      },
+      {
+        "frame": 15,
+        "action": "added",
+        "bank": [
+          0,
+          5,
+          10,
+          15
+        ],
+        "promoted": [
+          15
+        ],
+        "demoted": []
+      },
+      {
+        "frame": 20,
+        "action": "evicted",
+        "bank": [
+          0,
+          20,
+          10,
+          15
+        ],
+        "promoted": [
+          20
+        ],
+        "demoted": [
+          5
+        ]
+      },
+      {
+        "frame": 25,
+        "action": "evicted",
+        "bank": [
+          0,
+          20,
+          25,
+          15
+        ],
+        "promoted": [
+          25
+        ],
+        "demoted": [
+          10
+        ]
+      },
+      {
+        "frame": 30,
+        "action": "evicted",
+        "bank": [
+          0,
+          20,
+          25,
+          30
+        ],
+        "promoted": [
+          30
+        ],
+        "demoted": [
+          15
+        ]
+      },
+      {
+        "frame": 35,
+        "action": "evicted",
+        "bank": [
+          0,
+          35,
+          25,
+          30
+        ],
+        "promoted": [
+          35
+        ],
+        "demoted": [
+          20
+        ]
+      },
+      {
+        "frame": 40,
+        "action": "evicted",
+        "bank": [
+          0,
+          35,
+          40,
+          30
+        ],
+        "promoted": [
+          40
+        ],
+        "demoted": [
+          25
+        ]
+      },
+      {
+        "frame": 45,
+        "action": "evicted",
+        "bank": [
+          0,
+          35,
+          40,
+          45
+        ],
+        "promoted": [
+          45
+        ],
+        "demoted": [
+          30
+        ]
+      },
+      {
+        "frame": 50,
+        "action": "evicted",
+        "bank": [
+          0,
+          50,
+          40,
+          45
+        ],
+        "promoted": [
+          50
+        ],
+        "demoted": [
+          35
+        ]
+      },
+      {
+        "frame": 55,
+        "action": "evicted",
+        "bank": [
+          0,
+          50,
+          55,
+          45
+        ],
+        "promoted": [
+          55
+        ],
+        "demoted": [
+          40
+        ]
+      },
+      {
+        "frame": 60,
+        "action": "evicted",
+        "bank": [
+          0,
+          50,
+          55,
+          60
+        ],
+        "promoted": [
+          60
+        ],
+        "demoted": [
+          45
+        ]
+      },
+      {
+        "frame": 65,
+        "action": "evicted",
+        "bank": [
+          0,
+          65,
+          55,
+          60
+        ],
+        "promoted": [
+          65
+        ],
+        "demoted": [
+          50
+        ]
+      },
+      {
+        "frame": 70,
+        "action": "evicted",
+        "bank": [
+          0,
+          65,
+          70,
+          60
+        ],
+        "promoted": [
+          70
+        ],
+        "demoted": [
+          55
+        ]
+      },
+      {
+        "frame": 75,
+        "action": "evicted",
+        "bank": [
+          0,
+          65,
+          70,
+          75
+        ],
+        "promoted": [
+          75
+        ],
+        "demoted": [
+          60
+        ]
+      },
+      {
+        "frame": 80,
+        "action": "evicted",
+        "bank": [
+          0,
+          80,
+          70,
+          75
+        ],
+        "promoted": [
+          80
+        ],
+        "demoted": [
+          65
+        ]
+      },
+      {
+        "frame": 85,
+        "action": "evicted",
+        "bank": [
+          0,
+          80,
+          85,
+          75
+        ],
+        "promoted": [
+          85
+        ],
+        "demoted": [
+          70
+        ]
+      }
+    ],
+    "frames": [
+      {
+        "f": 1,
+        "obj_score": 8.86,
+        "conf": 0.972,
+        "sim": 0.938,
+        "result": "paced"
+      },
+      {
+        "f": 2,
+        "obj_score": 9.48,
+        "conf": 0.972,
+        "sim": 0.914,
+        "result": "paced"
+      },
+      {
+        "f": 3,
+        "obj_score": 9.17,
+        "conf": 0.975,
+        "sim": 0.84,
+        "result": "paced"
+      },
+      {
+        "f": 4,
+        "obj_score": 9.03,
+        "conf": 0.971,
+        "sim": 0.837,
+        "result": "paced"
+      },
+      {
+        "f": 5,
+        "obj_score": 8.96,
+        "conf": 0.978,
+        "sim": 0.855,
+        "result": "added"
+      },
+      {
+        "f": 6,
+        "obj_score": 9.56,
+        "conf": 0.973,
+        "sim": 0.89,
+        "result": "paced"
+      },
+      {
+        "f": 7,
+        "obj_score": 9.21,
+        "conf": 0.977,
+        "sim": 0.869,
+        "result": "paced"
+      },
+      {
+        "f": 8,
+        "obj_score": 9.25,
+        "conf": 0.972,
+        "sim": 0.775,
+        "result": "paced"
+      },
+      {
+        "f": 9,
+        "obj_score": 9.09,
+        "conf": 0.967,
+        "sim": 0.802,
+        "result": "paced"
+      },
+      {
+        "f": 10,
+        "obj_score": 9.29,
+        "conf": 0.969,
+        "sim": 0.807,
+        "result": "added"
+      },
+      {
+        "f": 11,
+        "obj_score": 9.68,
+        "conf": 0.971,
+        "sim": 0.856,
+        "result": "paced"
+      },
+      {
+        "f": 12,
+        "obj_score": 9.45,
+        "conf": 0.973,
+        "sim": 0.8,
+        "result": "paced"
+      },
+      {
+        "f": 13,
+        "obj_score": 9.43,
+        "conf": 0.975,
+        "sim": 0.849,
+        "result": "paced"
+      },
+      {
+        "f": 14,
+        "obj_score": 9.11,
+        "conf": 0.973,
+        "sim": 0.818,
+        "result": "paced"
+      },
+      {
+        "f": 15,
+        "obj_score": 8.75,
+        "conf": 0.975,
+        "sim": 0.829,
+        "result": "added"
+      },
+      {
+        "f": 16,
+        "obj_score": 8.48,
+        "conf": 0.973,
+        "sim": 0.864,
+        "result": "paced"
+      },
+      {
+        "f": 17,
+        "obj_score": 8.35,
+        "conf": 0.978,
+        "sim": 0.885,
+        "result": "paced"
+      },
+      {
+        "f": 18,
+        "obj_score": 8.37,
+        "conf": 0.976,
+        "sim": 0.908,
+        "result": "paced"
+      },
+      {
+        "f": 19,
+        "obj_score": 8.13,
+        "conf": 0.972,
+        "sim": 0.852,
+        "result": "paced"
+      },
+      {
+        "f": 20,
+        "obj_score": 8.12,
+        "conf": 0.974,
+        "sim": 0.899,
+        "result": "evicted"
+      },
+      {
+        "f": 21,
+        "obj_score": 8.69,
+        "conf": 0.975,
+        "sim": 0.898,
+        "result": "paced"
+      },
+      {
+        "f": 22,
+        "obj_score": 8.77,
+        "conf": 0.969,
+        "sim": 0.874,
+        "result": "paced"
+      },
+      {
+        "f": 23,
+        "obj_score": 8.81,
+        "conf": 0.969,
+        "sim": 0.881,
+        "result": "paced"
+      },
+      {
+        "f": 24,
+        "obj_score": 8.48,
+        "conf": 0.961,
+        "sim": 0.891,
+        "result": "paced"
+      },
+      {
+        "f": 25,
+        "obj_score": 8.65,
+        "conf": 0.959,
+        "sim": 0.87,
+        "result": "evicted"
+      },
+      {
+        "f": 26,
+        "obj_score": 8.87,
+        "conf": 0.967,
+        "sim": 0.876,
+        "result": "paced"
+      },
+      {
+        "f": 27,
+        "obj_score": 8.8,
+        "conf": 0.975,
+        "sim": 0.881,
+        "result": "paced"
+      },
+      {
+        "f": 28,
+        "obj_score": 8.83,
+        "conf": 0.975,
+        "sim": 0.869,
+        "result": "paced"
+      },
+      {
+        "f": 29,
+        "obj_score": 8.87,
+        "conf": 0.972,
+        "sim": 0.785,
+        "result": "paced"
+      },
+      {
+        "f": 30,
+        "obj_score": 8.89,
+        "conf": 0.969,
+        "sim": 0.752,
+        "result": "evicted"
+      },
+      {
+        "f": 31,
+        "obj_score": 9.52,
+        "conf": 0.969,
+        "sim": 0.796,
+        "result": "paced"
+      },
+      {
+        "f": 32,
+        "obj_score": 9.45,
+        "conf": 0.97,
+        "sim": 0.767,
+        "result": "paced"
+      },
+      {
+        "f": 33,
+        "obj_score": 9.45,
+        "conf": 0.955,
+        "sim": 0.716,
+        "result": "paced"
+      },
+      {
+        "f": 34,
+        "obj_score": 9.26,
+        "conf": 0.957,
+        "sim": 0.793,
+        "result": "paced"
+      },
+      {
+        "f": 35,
+        "obj_score": 8.89,
+        "conf": 0.956,
+        "sim": 0.766,
+        "result": "evicted"
+      },
+      {
+        "f": 36,
+        "obj_score": 8.95,
+        "conf": 0.96,
+        "sim": 0.707,
+        "result": "paced"
+      },
+      {
+        "f": 37,
+        "obj_score": 8.89,
+        "conf": 0.961,
+        "sim": 0.753,
+        "result": "paced"
+      },
+      {
+        "f": 38,
+        "obj_score": 9.11,
+        "conf": 0.957,
+        "sim": 0.673,
+        "result": "paced"
+      },
+      {
+        "f": 39,
+        "obj_score": 9.04,
+        "conf": 0.952,
+        "sim": 0.766,
+        "result": "paced"
+      },
+      {
+        "f": 40,
+        "obj_score": 9.01,
+        "conf": 0.961,
+        "sim": 0.823,
+        "result": "evicted"
+      },
+      {
+        "f": 41,
+        "obj_score": 8.93,
+        "conf": 0.952,
+        "sim": 0.865,
+        "result": "paced"
+      },
+      {
+        "f": 42,
+        "obj_score": 9.01,
+        "conf": 0.959,
+        "sim": 0.84,
+        "result": "paced"
+      },
+      {
+        "f": 43,
+        "obj_score": 8.82,
+        "conf": 0.933,
+        "sim": 0.828,
+        "result": "paced"
+      },
+      {
+        "f": 44,
+        "obj_score": 9.12,
+        "conf": 0.945,
+        "sim": 0.86,
+        "result": "paced"
+      },
+      {
+        "f": 45,
+        "obj_score": 9.08,
+        "conf": 0.953,
+        "sim": 0.854,
+        "result": "evicted"
+      },
+      {
+        "f": 46,
+        "obj_score": 9.42,
+        "conf": 0.957,
+        "sim": 0.84,
+        "result": "paced"
+      },
+      {
+        "f": 47,
+        "obj_score": 9.58,
+        "conf": 0.962,
+        "sim": 0.839,
+        "result": "paced"
+      },
+      {
+        "f": 48,
+        "obj_score": 9.56,
+        "conf": 0.972,
+        "sim": 0.823,
+        "result": "paced"
+      },
+      {
+        "f": 49,
+        "obj_score": 9.19,
+        "conf": 0.949,
+        "sim": 0.865,
+        "result": "paced"
+      },
+      {
+        "f": 50,
+        "obj_score": 8.81,
+        "conf": 0.953,
+        "sim": 0.853,
+        "result": "evicted"
+      },
+      {
+        "f": 51,
+        "obj_score": 8.76,
+        "conf": 0.959,
+        "sim": 0.847,
+        "result": "paced"
+      },
+      {
+        "f": 52,
+        "obj_score": 8.49,
+        "conf": 0.961,
+        "sim": 0.833,
+        "result": "paced"
+      },
+      {
+        "f": 53,
+        "obj_score": 8.38,
+        "conf": 0.952,
+        "sim": 0.741,
+        "result": "paced"
+      },
+      {
+        "f": 54,
+        "obj_score": 8.33,
+        "conf": 0.946,
+        "sim": 0.796,
+        "result": "paced"
+      },
+      {
+        "f": 55,
+        "obj_score": 8.33,
+        "conf": 0.956,
+        "sim": 0.8,
+        "result": "evicted"
+      },
+      {
+        "f": 56,
+        "obj_score": 9.14,
+        "conf": 0.968,
+        "sim": 0.829,
+        "result": "paced"
+      },
+      {
+        "f": 57,
+        "obj_score": 9.03,
+        "conf": 0.965,
+        "sim": 0.821,
+        "result": "paced"
+      },
+      {
+        "f": 58,
+        "obj_score": 9.14,
+        "conf": 0.969,
+        "sim": 0.764,
+        "result": "paced"
+      },
+      {
+        "f": 59,
+        "obj_score": 8.97,
+        "conf": 0.97,
+        "sim": 0.734,
+        "result": "paced"
+      },
+      {
+        "f": 60,
+        "obj_score": 9.1,
+        "conf": 0.976,
+        "sim": 0.757,
+        "result": "evicted"
+      },
+      {
+        "f": 61,
+        "obj_score": 9.39,
+        "conf": 0.974,
+        "sim": 0.816,
+        "result": "paced"
+      },
+      {
+        "f": 62,
+        "obj_score": 9.03,
+        "conf": 0.973,
+        "sim": 0.834,
+        "result": "paced"
+      },
+      {
+        "f": 63,
+        "obj_score": 9.5,
+        "conf": 0.97,
+        "sim": 0.825,
+        "result": "paced"
+      },
+      {
+        "f": 64,
+        "obj_score": 9.75,
+        "conf": 0.97,
+        "sim": 0.84,
+        "result": "paced"
+      },
+      {
+        "f": 65,
+        "obj_score": 9.65,
+        "conf": 0.968,
+        "sim": 0.833,
+        "result": "evicted"
+      },
+      {
+        "f": 66,
+        "obj_score": 9.48,
+        "conf": 0.97,
+        "sim": 0.82,
+        "result": "paced"
+      },
+      {
+        "f": 67,
+        "obj_score": 9.55,
+        "conf": 0.972,
+        "sim": 0.796,
+        "result": "paced"
+      },
+      {
+        "f": 68,
+        "obj_score": 9.46,
+        "conf": 0.975,
+        "sim": 0.827,
+        "result": "paced"
+      },
+      {
+        "f": 69,
+        "obj_score": 9.6,
+        "conf": 0.978,
+        "sim": 0.816,
+        "result": "paced"
+      },
+      {
+        "f": 70,
+        "obj_score": 9.77,
+        "conf": 0.98,
+        "sim": 0.774,
+        "result": "evicted"
+      },
+      {
+        "f": 71,
+        "obj_score": 10.11,
+        "conf": 0.982,
+        "sim": 0.817,
+        "result": "paced"
+      },
+      {
+        "f": 72,
+        "obj_score": 10.04,
+        "conf": 0.98,
+        "sim": 0.772,
+        "result": "paced"
+      },
+      {
+        "f": 73,
+        "obj_score": 9.83,
+        "conf": 0.978,
+        "sim": 0.8,
+        "result": "paced"
+      },
+      {
+        "f": 74,
+        "obj_score": 9.89,
+        "conf": 0.978,
+        "sim": 0.762,
+        "result": "paced"
+      },
+      {
+        "f": 75,
+        "obj_score": 9.91,
+        "conf": 0.98,
+        "sim": 0.789,
+        "result": "evicted"
+      },
+      {
+        "f": 76,
+        "obj_score": 10.22,
+        "conf": 0.981,
+        "sim": 0.792,
+        "result": "paced"
+      },
+      {
+        "f": 77,
+        "obj_score": 10.17,
+        "conf": 0.982,
+        "sim": 0.811,
+        "result": "paced"
+      },
+      {
+        "f": 78,
+        "obj_score": 9.79,
+        "conf": 0.982,
+        "sim": 0.803,
+        "result": "paced"
+      },
+      {
+        "f": 79,
+        "obj_score": 9.63,
+        "conf": 0.983,
+        "sim": 0.817,
+        "result": "paced"
+      },
+      {
+        "f": 80,
+        "obj_score": 9.43,
+        "conf": 0.982,
+        "sim": 0.812,
+        "result": "evicted"
+      },
+      {
+        "f": 81,
+        "obj_score": 9.67,
+        "conf": 0.983,
+        "sim": 0.832,
+        "result": "paced"
+      },
+      {
+        "f": 82,
+        "obj_score": 9.76,
+        "conf": 0.984,
+        "sim": 0.814,
+        "result": "paced"
+      },
+      {
+        "f": 83,
+        "obj_score": 9.88,
+        "conf": 0.983,
+        "sim": 0.81,
+        "result": "paced"
+      },
+      {
+        "f": 84,
+        "obj_score": 9.74,
+        "conf": 0.98,
+        "sim": 0.811,
+        "result": "paced"
+      },
+      {
+        "f": 85,
+        "obj_score": 9.97,
+        "conf": 0.983,
+        "sim": 0.793,
+        "result": "evicted"
+      },
+      {
+        "f": 86,
+        "obj_score": 10.27,
+        "conf": 0.981,
+        "sim": 0.828,
+        "result": "paced"
+      },
+      {
+        "f": 87,
+        "obj_score": 10.52,
+        "conf": 0.979,
+        "sim": 0.829,
+        "result": "paced"
+      },
+      {
+        "f": 88,
+        "obj_score": 10.42,
+        "conf": 0.981,
+        "sim": 0.809,
+        "result": "paced"
+      },
+      {
+        "f": 89,
+        "obj_score": 10.35,
+        "conf": 0.979,
+        "sim": 0.782,
+        "result": "paced"
+      }
+    ]
+  }
+}
