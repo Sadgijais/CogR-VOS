@@ -4,7 +4,7 @@
 
 A training-free system that keeps track of *who the target is* across a video, notices when tracking stops being trustworthy, and calls an expensive reasoning model only at those moments.
 
-> Status: V0 baseline complete (J&F 50.48 on Ref-DAVIS17 val). V1 (memory) in design.
+> Status: V0 baseline complete (J&F 50.48). V1 (Semantic-Temporal Target Memory) complete (J&F 50.97, a no-regression result). V2 onward not started.
 
 ---
 
