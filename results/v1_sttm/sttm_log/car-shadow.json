@@ -1,0 +1,417 @@
+{
+  "0_1": {
+    "expression": "a silver car",
+    "summary": {
+      "bank_frames": [
+        0,
+        30,
+        35
+      ],
+      "reliabilities": [
+        1.0,
+        0.986,
+        0.961
+      ],
+      "n_events": 1,
+      "context": {
+        "max_distractor_sim": null,
+        "margin": null
+      },
+      "velocity": [
+        0.9967335149095551,
+        0.12482187592729299
+      ],
+      "stats": {
+        "writes": 2,
+        "merges": 5,
+        "evictions": 0,
+        "frames": 39,
+        "blocked": {
+          "not_visible": 0,
+          "truncated": 0,
+          "low_similarity": 0,
+          "paced": 32,
+          "not_better": 0
+        }
+      }
+    },
+    "events": [
+      {
+        "frame": 0,
+        "event": "visible"
+      }
+    ],
+    "writes": [
+      {
+        "frame": 5,
+        "action": "added",
+        "bank": [
+          0,
+          5
+        ],
+        "promoted": [
+          5
+        ],
+        "demoted": []
+      },
+      {
+        "frame": 10,
+        "action": "merged",
+        "bank": [
+          0,
+          10
+        ],
+        "promoted": [
+          10
+        ],
+        "demoted": [
+          5
+        ]
+      },
+      {
+        "frame": 15,
+        "action": "merged",
+        "bank": [
+          0,
+          15
+        ],
+        "promoted": [
+          15
+        ],
+        "demoted": [
+          10
+        ]
+      },
+      {
+        "frame": 20,
+        "action": "merged",
+        "bank": [
+          0,
+          20
+        ],
+        "promoted": [
+          20
+        ],
+        "demoted": [
+          15
+        ]
+      },
+      {
+        "frame": 25,
+        "action": "merged",
+        "bank": [
+          0,
+          25
+        ],
+        "promoted": [
+          25
+        ],
+        "demoted": [
+          20
+        ]
+      },
+      {
+        "frame": 30,
+        "action": "merged",
+        "bank": [
+          0,
+          30
+        ],
+        "promoted": [
+          30
+        ],
+        "demoted": [
+          25
+        ]
+      },
+      {
+        "frame": 35,
+        "action": "added",
+        "bank": [
+          0,
+          30,
+          35
+        ],
+        "promoted": [
+          35
+        ],
+        "demoted": []
+      }
+    ],
+    "frames": [
+      {
+        "f": 1,
+        "obj_score": 8.79,
+        "conf": 0.992,
+        "sim": 0.978,
+        "result": "paced"
+      },
+      {
+        "f": 2,
+        "obj_score": 8.79,
+        "conf": 0.991,
+        "sim": 0.978,
+        "result": "paced"
+      },
+      {
+        "f": 3,
+        "obj_score": 8.85,
+        "conf": 0.99,
+        "sim": 0.971,
+        "result": "paced"
+      },
+      {
+        "f": 4,
+        "obj_score": 8.51,
+        "conf": 0.992,
+        "sim": 0.967,
+        "result": "paced"
+      },
+      {
+        "f": 5,
+        "obj_score": 8.48,
+        "conf": 0.991,
+        "sim": 0.959,
+        "result": "added"
+      },
+      {
+        "f": 6,
+        "obj_score": 8.53,
+        "conf": 0.992,
+        "sim": 0.985,
+        "result": "paced"
+      },
+      {
+        "f": 7,
+        "obj_score": 8.49,
+        "conf": 0.992,
+        "sim": 0.981,
+        "result": "paced"
+      },
+      {
+        "f": 8,
+        "obj_score": 8.39,
+        "conf": 0.991,
+        "sim": 0.977,
+        "result": "paced"
+      },
+      {
+        "f": 9,
+        "obj_score": 8.34,
+        "conf": 0.992,
+        "sim": 0.967,
+        "result": "paced"
+      },
+      {
+        "f": 10,
+        "obj_score": 8.29,
+        "conf": 0.992,
+        "sim": 0.966,
+        "result": "merged"
+      },
+      {
+        "f": 11,
+        "obj_score": 8.41,
+        "conf": 0.993,
+        "sim": 0.976,
+        "result": "paced"
+      },
+      {
+        "f": 12,
+        "obj_score": 8.28,
+        "conf": 0.992,
+        "sim": 0.974,
+        "result": "paced"
+      },
+      {
+        "f": 13,
+        "obj_score": 8.37,
+        "conf": 0.992,
+        "sim": 0.949,
+        "result": "paced"
+      },
+      {
+        "f": 14,
+        "obj_score": 8.38,
+        "conf": 0.992,
+        "sim": 0.948,
+        "result": "paced"
+      },
+      {
+        "f": 15,
+        "obj_score": 8.35,
+        "conf": 0.992,
+        "sim": 0.947,
+        "result": "merged"
+      },
+      {
+        "f": 16,
+        "obj_score": 8.5,
+        "conf": 0.992,
+        "sim": 0.954,
+        "result": "paced"
+      },
+      {
+        "f": 17,
+        "obj_score": 8.45,
+        "conf": 0.992,
+        "sim": 0.956,
+        "result": "paced"
+      },
+      {
+        "f": 18,
+        "obj_score": 8.36,
+        "conf": 0.992,
+        "sim": 0.958,
+        "result": "paced"
+      },
+      {
+        "f": 19,
+        "obj_score": 8.38,
+        "conf": 0.992,
+        "sim": 0.955,
+        "result": "paced"
+      },
+      {
+        "f": 20,
+        "obj_score": 8.44,
+        "conf": 0.992,
+        "sim": 0.95,
+        "result": "merged"
+      },
+      {
+        "f": 21,
+        "obj_score": 8.59,
+        "conf": 0.991,
+        "sim": 0.963,
+        "result": "paced"
+      },
+      {
+        "f": 22,
+        "obj_score": 8.48,
+        "conf": 0.991,
+        "sim": 0.956,
+        "result": "paced"
+      },
+      {
+        "f": 23,
+        "obj_score": 8.46,
+        "conf": 0.991,
+        "sim": 0.955,
+        "result": "paced"
+      },
+      {
+        "f": 24,
+        "obj_score": 8.22,
+        "conf": 0.99,
+        "sim": 0.942,
+        "result": "paced"
+      },
+      {
+        "f": 25,
+        "obj_score": 8.23,
+        "conf": 0.99,
+        "sim": 0.946,
+        "result": "merged"
+      },
+      {
+        "f": 26,
+        "obj_score": 8.42,
+        "conf": 0.989,
+        "sim": 0.953,
+        "result": "paced"
+      },
+      {
+        "f": 27,
+        "obj_score": 8.34,
+        "conf": 0.989,
+        "sim": 0.945,
+        "result": "paced"
+      },
+      {
+        "f": 28,
+        "obj_score": 8.22,
+        "conf": 0.988,
+        "sim": 0.943,
+        "result": "paced"
+      },
+      {
+        "f": 29,
+        "obj_score": 8.23,
+        "conf": 0.99,
+        "sim": 0.927,
+        "result": "paced"
+      },
+      {
+        "f": 30,
+        "obj_score": 8.21,
+        "conf": 0.989,
+        "sim": 0.918,
+        "result": "merged"
+      },
+      {
+        "f": 31,
+        "obj_score": 8.33,
+        "conf": 0.99,
+        "sim": 0.949,
+        "result": "paced"
+      },
+      {
+        "f": 32,
+        "obj_score": 8.44,
+        "conf": 0.989,
+        "sim": 0.94,
+        "result": "paced"
+      },
+      {
+        "f": 33,
+        "obj_score": 8.48,
+        "conf": 0.989,
+        "sim": 0.934,
+        "result": "paced"
+      },
+      {
+        "f": 34,
+        "obj_score": 8.48,
+        "conf": 0.987,
+        "sim": 0.923,
+        "result": "paced"
+      },
+      {
+        "f": 35,
+        "obj_score": 8.45,
+        "conf": 0.985,
+        "sim": 0.898,
+        "result": "added"
+      },
+      {
+        "f": 36,
+        "obj_score": 8.45,
+        "conf": 0.986,
+        "sim": 0.93,
+        "result": "paced"
+      },
+      {
+        "f": 37,
+        "obj_score": 8.27,
+        "conf": 0.988,
+        "sim": 0.931,
+        "result": "paced"
+      },
+      {
+        "f": 38,
+        "obj_score": 7.95,
+        "conf": 0.988,
+        "sim": 0.917,
+        "result": "paced"
+      },
+      {
+        "f": 39,
+        "obj_score": 7.99,
+        "conf": 0.988,
+        "sim": 0.93,
+        "result": "paced"
+      }
+    ]
+  }
+}
