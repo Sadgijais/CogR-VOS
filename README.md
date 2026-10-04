@@ -81,12 +81,26 @@ Failure breakdown (61 expressions):
 
 The exact code that produced this number is tagged `v0-baseline-50.48`.
 
+## Current result: V1 (Semantic-Temporal Target Memory)
+
+V0 plus a bounded identity memory (frame-0 anchor plus up to 3 curated entries) whose stored frames are fed back to SAM 2 as conditioning frames. Same 30 videos, 61 objects and backbones as V0. V1 reuses the V0 pipeline, so its code lives in `baseline_v0/` and its results in `results/v1_sttm/`.
+
+| Metric | V0 | V1 |
+|---|---|---|
+| Mean J | 56.01 | 56.48 |
+| Mean F | 44.94 | 45.46 |
+| **Mean J&F** | **50.48** | **50.97** |
+| Total inference time | 2126 s | 2794 s (+31%) |
+| Peak GPU memory | 721 MB | 805 MB |
+
+Failure-mode counts are identical to V0. This is a no-regression result, not evidence that memory improves segmentation: about 90% of the gain comes from five expressions, and Ref-DAVIS17 has almost no occlusion. H1 is decided on Long-RVOS or MeViS. In V1, only appearance, spatial, reliability and the visible/absent state affect decisions; the semantic, motion and context fields are stored and logged for V2 and V4. See `results/README.md` for details. Code is tagged `v1-sttm-jf50.97`.
+
 ## Repository layout
 
 ```
 CogR-VOS/
 ├── README.md
-├── baseline_v0/        V0 code: staged pipeline, config, subsets, tools, cached grounding
+├── baseline_v0/        V0 and V1 code (V1 is a memory layer added on top of the V0 pipeline; folder name kept for history)
 ├── results/            one folder per variant (v0_baseline/, later v1_..., v2_...)
 ├── literature/
 │   ├── papers/         61 PDFs in 6 topic folders
