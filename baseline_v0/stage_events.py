@@ -50,7 +50,8 @@ from common.dataset import DavisLayout
 from common.io_utils import load_json, read_binary_mask, read_palette_mask, write_binary_mask
 from events import EVENT_TYPES, EventParams, EventTrigger, PeriodicTrigger
 
-MATCH_IOU = 0.50          # a call's verdict is "correct" if it agrees with IoU(pred, GT) >= 0.5
+MATCH_IOU = 0.50          # a call's verdict is "correct" if it agrees with IoU(pred, GT) >= 0.5 (--oracle-iou / v3.vlm.oracle_iou
+                          # changes it; 0.10 = "identity oracle": no_match only when the mask is on the wrong object or lost)
 LOG_FIELDS = ["video", "exp_id", "frame", "event", "kind", "c", "verdict", "confidence", "reason",
               "latency_s", "cached", "gt_present", "gt_iou", "correct"]
 EXP_FIELDS = ["video", "exp_id", "expression", "frames", "candidates", "calls", "suppressed",
@@ -77,6 +78,21 @@ def plan(logs, trigger_factory):
         stats[(video, exp_id)] = {"frames": len(e["frames"]), "candidates": trig.candidates,
                                   "calls": trig.calls, "suppressed": trig.suppressed, "fired": dict(trig.fired)}
     return queries, stats
+
+
+def match_period(logs, n_calls):
+    """Period p (fire when frame % p == 0, as PeriodicTrigger does) whose TOTAL number of calls over all
+    targets is closest to n_calls. Counting the real frames matters: dividing the frame total by n_calls
+    undershoots, because a target shorter than p frames never fires (e.g. 76 event calls gave 34 periodic ones)."""
+    frames = [r["f"] for _, _, e in logs for r in e["frames"]]
+    if not frames:
+        return 1
+    best_p, best_gap = 1, None
+    for p in range(1, max(frames) + 1):
+        gap = abs(sum(1 for f in frames if f % p == 0) - n_calls)
+        if best_gap is None or gap < best_gap:
+            best_p, best_gap = p, gap
+    return best_p
 
 
 # ------------------------------------------------------------------ 4. apply verdicts causally
@@ -167,18 +183,21 @@ def _score(row):
 
 # ------------------------------------------------------------------ main
 def main():
+    global MATCH_IOU
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", default="config_v3.yaml")
     ap.add_argument("--vlm", default=None, help="oracle | gemini | openai | anthropic (overrides config)")
     ap.add_argument("--schedule", default=None, help="events | periodic | every_frame")
     ap.add_argument("--period", default=None, help="frames between calls for periodic, or 'auto' = match the events budget")
     ap.add_argument("--action", default=None, help="abstain | log_only")
+    ap.add_argument("--oracle-iou", type=float, default=None, help="oracle/grading IoU threshold (default 0.5; 0.10 = identity oracle)")
     ap.add_argument("--video", action="append", default=None)
     ap.add_argument("--pred-dir", default=None)
     ap.add_argument("--results-dir", default=None)
     args = ap.parse_args()
     cfg = yaml.safe_load(open(args.config))
     v3 = cfg["v3"]
+    MATCH_IOU = float(args.oracle_iou if args.oracle_iou is not None else v3.get("vlm", {}).get("oracle_iou") or 0.5)
     provider = args.vlm or v3["vlm"].get("provider", "oracle")
     schedule = args.schedule or v3.get("schedule", "events")
     action = args.action or v3["action"].get("mode", "abstain")
@@ -215,9 +234,9 @@ def main():
         period = 1 if schedule == "every_frame" else args.period or v3.get("period", "auto")
         if str(period) == "auto":
             n_ev = sum(s["calls"] for s in plan(logs, events_factory)[1].values())
-            tracked = sum(len(e["frames"]) for _, _, e in logs)
-            period = max(1, round(tracked / max(n_ev, 1)))
-            print(f"periodic schedule matched to the events budget: {n_ev} calls -> one call every {period} frames")
+            period = match_period(logs, n_ev)
+            n_per = sum(s["calls"] for s in plan(logs, lambda e: PeriodicTrigger(period))[1].values())
+            print(f"periodic schedule matched to the events budget: {n_ev} event calls -> one call every {period} frames = {n_per} calls")
         period = int(period)
         queries, stats = plan(logs, lambda e: PeriodicTrigger(period))
     print(f"schedule={schedule}  vlm={provider}  action={action}  targets={len(logs)}  VLM calls planned={len(queries)}")
@@ -282,6 +301,7 @@ def main():
     ev_tot = {k: sum(s["fired"].get(k, 0) for s in stats.values()) for k in (*EVENT_TYPES, "periodic")}
     lines = [
         f"schedule: {schedule}", f"vlm: {provider}" + ("  (GROUND-TRUTH ORACLE: ceiling, not a result)" if oracle else ""),
+        f"oracle_iou: {MATCH_IOU}" + ("  (post-hoc identity oracle)" if oracle and MATCH_IOU < 0.5 else ""),
         f"model: {getattr(client, 'model', 'n/a')}", f"action: {action}",
         f"targets: {len(logs)}", f"videos: {len({v for v, _, _ in logs})}",
         f"tracked_target_frames: {tracked}", f"video_frames: {vid_frames}",
