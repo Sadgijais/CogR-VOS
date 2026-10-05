@@ -51,13 +51,13 @@ v3:
     fire_on_disappear: true
   vlm:
     provider: ${prov}
-    model: null               # null = built-in default for the provider; set a model your account has if needed
+    model: ${V3_VLM_MODEL:-null}
     api_key_env: null
     oracle_iou: ${oiou:-0.5}      # oracle only. 0.5 = pre-registered; 0.10 = post-hoc identity oracle (V3_ORACLE_IOU=0.10)
     cache_dir: vlm_cache/
-    workers: 8
+    workers: 1
     timeout_s: 60
-    max_tokens: 200
+    max_tokens: 2048
 EOF
 mkdir -p "results_${tag}"
 echo "[1/4] replay: events -> VLM (${prov}) -> verdicts -> masks   (${tag})"
