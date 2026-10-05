@@ -1,0 +1,77 @@
+video,exp_id,frame,event,kind,c,verdict,confidence,reason,latency_s,cached,gt_present,gt_iou,correct
+bike-packing,0_1,15,coherence_drop,identity,0.6956,match,1.0,"The unique bike frame, green hubs, and bag match perfectly.",5.11,True,True,0.6162,True
+bmx-trees,0_2,16,coherence_drop,identity,0.6364,match,0.9,The cropped image shows parts of the same white t-shirt and arm.,2.558,True,True,0.7553,True
+bmx-trees,0_2,52,coherence_drop,identity,0.7439,match,0.9,The clothing and physical build are consistent with the target boy.,4.243,True,True,0.4547,False
+bmx-trees,0_2,63,coherence_drop,identity,0.7944,match,0.9,The clothing and physical build are consistent with the target boy.,2.708,True,True,0.4894,False
+bmx-trees,0_1,14,coherence_drop,identity,0.7806,match,0.95,The bike structure and red color match the target object.,2.526,True,True,0.6596,True
+bmx-trees,0_1,24,drift_suspect,identity,0.6568,match,0.9,The object shows the same red frame and wheel structure as the target.,3.421,True,True,0.6327,True
+bmx-trees,0_1,34,coherence_drop,identity,0.7738,match,1.0,"The bike in both images is identical in color, frame, and components.",2.471,True,True,0.622,True
+bmx-trees,0_1,48,coherence_drop,identity,0.8092,match,1.0,The bike in both images is the same red BMX model.,4.722,False,True,0.5713,True
+bmx-trees,0_1,58,drift_suspect,identity,0.6066,match,0.9,The cropped image shows consistent red frame parts and wheel structure of the bike.,4.679,False,True,0.4009,False
+bmx-trees,0_1,68,drift_suspect,identity,0.6573,match,0.9,The fragments show consistent red frame parts and wheel structure of the same bike.,2.718,False,True,0.3879,False
+bmx-trees,0_1,78,drift_suspect,identity,0.7595,match,1.0,The bike shows the same red frame and distinct structural features.,9.196,True,True,0.5467,True
+breakdance,0_1,12,coherence_drop,identity,0.6915,no_match,0.9,"The second image shows only a piece of red fabric, not a person.",4.795,True,True,0.1304,True
+dog,0_1,23,coherence_drop,identity,0.7863,match,1.0,The dog's features and coat color are consistent across both images.,2.884,True,True,0.9627,True
+dogs-jump,0_3,7,coherence_drop,identity,0.7311,match,1.0,"The subject is the same person, despite the tracking artifact.",3.62,True,True,0.8812,True
+dogs-jump,0_3,44,coherence_drop,identity,0.7893,match,1.0,The person in both images is identical in appearance and clothing.,4.616,True,True,0.9195,True
+dogs-jump,0_1,4,coherence_drop,identity,0.7787,match,1.0,The dog's unique coat pattern and markings are identical in both images.,3.344,True,True,0.0004,False
+dogs-jump,0_1,15,distractor,identity,0.8346,match,1.0,The dog's unique coat pattern and breed characteristics are consistent across both images.,4.248,True,True,0.0,False
+dogs-jump,0_1,54,distractor,identity,0.8214,match,0.95,The dog's coat pattern and coloring are consistent across both images.,4.882,True,True,0.0,False
+dogs-jump,0_1,64,drift_suspect,identity,0.7521,no_match,0.9,The dog in image 2 has different fur color and pattern than image 1.,2.14,True,True,0.0,True
+dogs-jump,0_2,4,coherence_drop,identity,0.7813,match,1.0,The dog's unique coat pattern and markings are identical in both images.,2.073,True,True,0.9529,True
+dogs-jump,0_2,55,coherence_drop,identity,0.7324,match,0.9,The dog's distinctive coat pattern and coloring are consistent across both images.,1.68,True,True,0.9369,True
+dogs-jump,0_2,65,drift_suspect,identity,0.7924,match,0.9,The crop shows the same dog's head and neck area from a different angle.,3.176,True,True,0.9563,True
+drift-chicane,0_1,1,coherence_drop,identity,0.7246,match,1.0,The images show the same red and white car from the same perspective.,3.379,True,True,0.9003,True
+drift-straight,0_1,28,coherence_drop,identity,0.8086,match,1.0,"The car model, color, and visible decals are consistent between both images.",3.539,True,True,0.9844,True
+drift-straight,0_1,40,drift_suspect,identity,0.7856,match,1.0,"The car has identical livery, decals, and body style in both images.",2.332,True,True,0.9714,True
+gold-fish,0_1,67,coherence_drop,identity,0.8042,no_match,0.9,"The tracked object is a distorted blue shape, not the orange goldfish.",4.736,True,True,0.9141,False
+gold-fish,0_1,77,coherence_drop,identity,0.7956,match,0.8,The fish is in a different pose but retains the same color and features.,2.961,False,True,0.6123,True
+gold-fish,0_2,68,coherence_drop,identity,0.7945,no_match,0.9,The shape and features of the fish in image 2 do not match.,6.737,False,True,0.0,True
+gold-fish,0_4,68,coherence_drop,identity,0.8043,no_match,0.9,The second image shows a different shape and color profile than the goldfish.,2.117,False,True,0.0,True
+gold-fish,0_5,67,coherence_drop,identity,0.8078,no_match,0.9,"The second image shows a blurry, unrecognizable shape, not the goldfish.",4.371,False,True,0.0,True
+gold-fish,0_5,77,coherence_drop,identity,0.7974,no_match,0.9,The second image shows a completely different shape and structure than the goldfish.,6.833,True,True,0.0,True
+india,0_1,38,coherence_drop,identity,0.6813,match,0.9,The pattern and color of the yellow salwar suit match the target.,4.845,True,True,0.7713,True
+india,0_1,57,coherence_drop,identity,0.787,match,1.0,The pattern and colors of the clothing match the target object.,3.005,True,True,0.902,True
+india,0_2,33,coherence_drop,identity,0.726,match,0.9,The clothing pattern and colors match the target person.,4.273,True,True,0.0,False
+india,0_2,45,disappear,presence,0.0,match,1.0,A woman in a red sari is clearly visible in the middle.,4.15,True,True,0.0,True
+india,0_2,57,reappear,identity,0.4504,no_match,0.9,"The tracked object is just a small part of the head, not the person.",1.938,True,False,0.0,True
+india,0_3,29,coherence_drop,identity,0.7907,match,1.0,The person in both images is identical in appearance and clothing.,2.326,True,True,0.8383,True
+india,0_3,42,coherence_drop,identity,0.7814,match,1.0,The clothing pattern and colors match the target object perfectly.,3.651,True,True,0.8634,True
+india,0_3,57,reappear,identity,0.4579,unsure,0.5,The second image is too small and lacks sufficient detail to confirm identity.,4.825,True,True,0.7348,
+judo,0_2,20,coherence_drop,identity,0.8015,match,1.0,The person and their blue belt are consistent across both images.,2.347,True,True,0.0745,False
+judo,0_1,20,coherence_drop,identity,0.7978,match,1.0,"The person, clothing, and blue belt are consistent across both images.",2.733,True,True,0.7493,True
+kite-surf,0_1,1,coherence_drop,identity,0.7812,match,1.0,The object is the same kite and rider in a different pose.,2.704,True,True,0.3261,False
+kite-surf,0_2,1,coherence_drop,identity,0.7091,match,1.0,The object in both images is the same surfboard with identical water spray.,3.419,True,True,0.2685,False
+kite-surf,0_2,13,disappear,presence,0.0,match,1.0,The kiteboarder is clearly riding a board on the water surface.,3.458,True,True,0.4163,True
+kite-surf,0_2,24,coherence_drop,identity,0.7933,match,0.9,Both images show the same blue surfboard with white water spray.,3.186,True,True,0.604,True
+kite-surf,0_2,47,reappear,identity,0.8085,match,0.9,The object maintains the same blue color and shape characteristics of a surfboard.,3.233,True,True,0.5464,True
+lab-coat,0_1,4,disappear,presence,0.0,not_visible,1.0,No white cell phone is visible in any of the subjects' hands.,2.329,False,True,0.1139,False
+lab-coat,0_1,18,coherence_drop,identity,0.7792,no_match,0.9,"The second image shows a hand gesture, not a white cell phone.",3.12,False,True,0.1797,True
+lab-coat,0_1,31,coherence_drop,identity,0.7997,no_match,1.0,Image 2 shows a hand without a phone.,2.808,False,True,0.0327,True
+lab-coat,0_2,1,disappear,presence,0.0,not_visible,1.0,No pink cell phone is visible in the hands of the girls.,4.97,False,True,0.1154,False
+lab-coat,0_2,15,reappear,identity,0.851,match,0.9,Both images show a similar pink object consistent with a cell phone.,5.88,True,True,0.0,False
+lab-coat,0_2,28,coherence_drop,identity,0.7342,match,0.9,The object maintains consistent color and shape characteristics of a pink phone.,4.474,True,True,0.0,False
+lab-coat,0_2,38,drift_suspect,identity,0.7063,no_match,0.9,"The object in image 2 is a pen, not a cell phone.",10.961,True,True,0.0,True
+lab-coat,0_3,33,distractor,identity,0.9009,match,1.0,The image shows the same girl on the right side.,3.788,True,True,0.4969,False
+lab-coat,0_4,32,coherence_drop,identity,0.8066,match,0.9,The clothing textures and colors match the target description.,3.763,True,True,0.0782,False
+lab-coat,0_5,30,coherence_drop,identity,0.7845,match,1.0,"The person in both images has identical facial features, hair, and clothing.",6.921,True,True,0.0,False
+lab-coat,0_5,40,drift_suspect,identity,0.7662,match,1.0,The facial features and hair match the target in the original image.,4.717,True,True,0.0,False
+libby,0_1,32,coherence_drop,identity,0.7816,match,0.9,The coat pattern and body shape are consistent with the same dog.,2.294,True,True,0.866,True
+libby,0_1,43,coherence_drop,identity,0.7492,match,1.0,The dog's coat pattern and physical features are consistent across both images.,3.981,True,True,0.8683,True
+loading,0_1,34,coherence_drop,identity,0.8029,match,1.0,The person and clothing match perfectly in both images.,3.045,True,True,0.0,False
+loading,0_1,45,drift_suspect,identity,0.5987,match,1.0,The facial features and clothing match the target person.,2.816,True,True,0.0001,False
+loading,0_2,40,coherence_drop,identity,0.4299,match,0.9,The visual patterns and branding on the cardboard box match the original target.,3.389,True,True,0.6116,True
+loading,0_3,34,coherence_drop,identity,0.7985,match,1.0,The person and clothing are identical in both images.,2.929,True,True,0.9418,True
+loading,0_3,45,drift_suspect,identity,0.5926,match,1.0,The facial features and clothing match the target object.,3.268,True,True,0.9431,True
+mbike-trick,0_1,75,coherence_drop,identity,0.7512,match,0.95,"The clothing, including the white t-shirt and black pants, matches the target.",4.254,True,True,0.9135,True
+motocross-jump,0_1,16,coherence_drop,identity,0.8037,match,0.9,Both images show the same rider and motorbike with matching gear and bike colors.,5.043,False,True,0.0913,False
+motocross-jump,0_2,1,coherence_drop,identity,0.8037,match,1.0,The images show the same green motorbike with identical features and rider gear.,4.561,False,True,0.7149,True
+motocross-jump,0_2,11,drift_suspect,identity,0.7009,match,1.0,Both images show the same green motocross bike.,3.324,False,True,0.8504,True
+motocross-jump,0_2,21,drift_suspect,identity,0.5832,match,1.0,Both images show the same green motocross bike with matching design elements.,3.301,False,True,0.9289,True
+motocross-jump,0_2,31,drift_suspect,identity,0.6395,match,1.0,Both images show the same green motorbike with matching design and color scheme.,2.271,True,True,0.9087,True
+scooter-black,0_1,18,coherence_drop,identity,0.721,match,1.0,The man in the suit and helmet on a scooter is clearly the same.,4.454,True,True,0.8361,True
+shooting,0_1,11,coherence_drop,identity,0.7637,match,0.9,The object maintains the same shape and structural features of the gun.,2.294,True,True,0.4834,False
+shooting,0_1,21,drift_suspect,identity,0.5503,match,0.9,Both images show parts of a black firearm with similar texture and features.,5.323,True,True,0.9252,True
+shooting,0_1,31,drift_suspect,identity,0.7215,match,0.9,"Both images show the same rifle with a scope, despite different viewing angles.",4.58,True,True,0.9233,True
+shooting,0_2,26,coherence_drop,identity,0.7669,match,1.0,The facial features and clothing match the target in both images.,3.297,True,True,0.9523,True
+shooting,0_3,1,coherence_drop,identity,0.5711,match,0.9,Both images show the same type of twisted rope.,6.513,True,True,0.6349,True

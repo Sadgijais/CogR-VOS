@@ -6,13 +6,13 @@ One folder per ablation variant. Every number in a table comes from the full 30-
 |---|---|---|---|
 | `v0_baseline/` | Grounding-DINO + SAM 2, no memory, coherence or VLM | Done | 50.48 |
 | `v1_sttm/` | + Semantic-Temporal Target Memory (read action on; anchor_proto, delta 5) | Done | 50.97 |
-| `v2_tcs/` | + Tracklet Coherence Score | Planned | |
-| `v3_event_vlm/` | + Event-driven VLM reasoning | Planned | |
+| `v2_tcs/` | + Tracklet Coherence Score (`passive/` ships as V2; `gated/` is a negative result, 50.40) | Done | 50.97 |
+| `v3_event_vlm/` | + Event-driven VLM reasoning (`real_gemini/` = real VLM, one run; `oracle_*` = ground-truth oracle controls, ceilings only) | Done (one real run) | 50.58 |
 | `v4_reid/` | + Memory-grounded re-identification | Planned | |
 | `v5_always_on_vlm/` | Upper bound: VLM on every frame | Planned | |
 | `v6_scheduled_vlm/` | Scheduled one-shot reasoning (rival) | Planned | |
 
-Each folder holds `summary.csv`, `per_video_results.csv` and `failure_analysis.csv`.
+Each folder holds `summary.csv`, `per_video_results.csv` and `failure_analysis.csv`. V2 and V3 folders have one subfolder per run and, in addition, their own logs (`tcs_per_expression.csv`, `TCS_ANALYSIS.txt`, `v3_summary.txt`, `vlm_log.csv`) and a `CHECKSUMS.sha256`. Large per-frame logs and predicted masks are not stored in git.
 
 Baseline note: V0 uses sam2.1-hiera-tiny (forced by the 4 GB GPU). The published Grounded-SAM 2 reference is 66.2; the measured 50.48 is the working baseline.
 
@@ -24,3 +24,17 @@ Baseline note: V0 uses sam2.1-hiera-tiny (forced by the 4 GB GPU). The published
 - Settings were chosen on the ablation tier (15 videos, 34 expressions, sha256 f609ea27...cbe22) by a rule fixed in advance (`baseline_v0/V1_TUNING_PLAN.md`); grid results in `v1_sttm/tuning/`. Chosen: sim_mode=anchor_proto, delta=5, K=4.
 - Known limits: the memory can only influence SAM 2 through conditioning frames; it cannot actively re-find a reappearing target. Ref-DAVIS17 has almost no real drift or occlusion, so H1/H2/H4 are decided on Long-RVOS or MeViS, not here. The write gate cannot catch a confident drift onto a look-alike (V2/V4 territory).
 - The read action can move J in either direction on fragile videos (motocross-jump/0_2: -11.4 J under one rejected config).
+
+## V2 (TCS) notes
+
+- Shipped V2 is the passive run (score logged, memory untouched): J 56.48, F 45.46, J&F 50.97, masks identical to V1. Gated V2 (memory written only on HIGH frames): J 55.97, F 44.84, J&F 50.40, a negative result (14 expressions better, 23 worse, 24 same vs V1); it failed the pre-registered ship rule (J&F >= 50.47).
+- Frozen thresholds tau_low 0.81 / tau_high 0.92 from the 15-video ablation tier by a rule fixed in advance (`baseline_v0/V2_TUNING_PLAN.md`). Term weights are equal and untuned.
+- Cost: TCS code is 2.7% of run time; peak VRAM 1384 MB; total V2 time 2846 s.
+- The score is a weak failure detector here: mean IoU 0.77 on HIGH vs 0.78 on MEDIUM frames; 44% false alarms; AUROC for degraded frames 0.56 (mask term alone 0.62, semantic term 0.45); the tier AUROC of 0.746 did not transfer. Grounding failures (16 of 61 expressions) are invisible to the score. Details in `v2_tcs/passive/TCS_ANALYSIS.txt`.
+
+## V3 (event-driven VLM) notes
+
+- Offline replay of the V2 passive run (J&F 50.97): the VLM never feeds back into SAM 2, memory or the score. Design, controls and disclosures: `baseline_v0/V3_PLAN.md`.
+- Real VLM (`real_gemini/`, Gemini gemini-3.1-flash-lite, events + abstain): 76 calls (0.019 per tracked frame), J&F 50.58 (J 56.12, F 45.04), 140 frames blanked, 3.86 s per call, about +10% run time. No accuracy gain; its "not the same object" answers were right 8 of 11 times but it caught only 8 of 21 truly lost or absent frames. Single run, one model.
+- Oracle controls use ground-truth labels, so they are ceilings, not results: events 48.64, periodic (matched budget, 81 calls) 50.72, every frame (3,923 calls) 46.29 with the pre-registered IoU < 0.5 rule; 50.77 / 51.08 / 50.58 with the post-hoc IoU < 0.10 identity oracle (folders ending `_iou0.10`, chosen after seeing results).
+- H3 is undecided on Ref-DAVIS17 (almost no drift or occlusion); it must be tested on Long-RVOS or MeViS.
