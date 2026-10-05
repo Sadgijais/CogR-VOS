@@ -1,0 +1,21 @@
+video,exp_id,kind,onset,length,drift,c_at_onset,band_at_onset,first_flag_frame,lead_frames,flagged
+dogs-jump,0_1,grounding_failure (not detectable by TCS),0,64,False,,,,,
+gold-fish,0_2,grounding_failure (not detectable by TCS),0,76,False,,,,,
+gold-fish,0_3,grounding_failure (not detectable by TCS),0,76,False,,,,,
+gold-fish,0_4,grounding_failure (not detectable by TCS),0,76,False,,,,,
+gold-fish,0_5,grounding_failure (not detectable by TCS),0,76,False,,,,,
+india,0_2,grounding_failure (not detectable by TCS),0,79,False,,,,,
+judo,0_2,grounding_failure (not detectable by TCS),0,32,False,,,,,
+kite-surf,0_2,track_lost,37,6,False,0.0,LOW,27,10,True
+kite-surf,0_2,track_lost,44,5,False,0.0,LOW,34,10,True
+lab-coat,0_1,grounding_failure (not detectable by TCS),0,45,False,,,,,
+lab-coat,0_2,grounding_failure (not detectable by TCS),0,45,False,,,,,
+lab-coat,0_4,grounding_failure (not detectable by TCS),0,45,False,,,,,
+lab-coat,0_5,grounding_failure (not detectable by TCS),0,45,False,,,,,
+loading,0_1,grounding_failure (not detectable by TCS),0,48,False,,,,,
+loading,0_2,track_lost,38,11,False,0.34,LOW,28,10,True
+motocross-jump,0_1,identity_drift,16,5,True,0.73,LOW,6,10,True
+paragliding-launch,0_3,grounding_failure (not detectable by TCS),0,78,False,,,,,
+pigs,0_1,grounding_failure (not detectable by TCS),0,77,False,,,,,
+pigs,0_2,grounding_failure (not detectable by TCS),0,77,False,,,,,
+soapbox,0_3,grounding_failure (not detectable by TCS),0,97,False,,,,,
