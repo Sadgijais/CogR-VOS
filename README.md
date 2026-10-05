@@ -4,7 +4,7 @@
 
 A training-free system that keeps track of *who the target is* across a video, notices when tracking stops being trustworthy, and calls an expensive reasoning model only at those moments.
 
-> Status: V0 baseline complete (J&F 50.48). V1 (Semantic-Temporal Target Memory) complete (J&F 50.97, a no-regression result). V2 onward not started.
+> Status: V0 baseline complete (J&F 50.48). V1 (Semantic-Temporal Target Memory) complete (J&F 50.97, a no-regression result). V2 (Tracklet Coherence Score) complete (passive 50.97, gated 50.40 is a negative result). V3 (event-driven VLM) built and run once with a real VLM (J&F 50.58): no accuracy gain on Ref-DAVIS17, about 52x fewer VLM calls than every-frame. V4 (re-identification) not started.
 
 ---
 
@@ -95,13 +95,43 @@ V0 plus a bounded identity memory (frame-0 anchor plus up to 3 curated entries) 
 
 Failure-mode counts are identical to V0. This is a no-regression result, not evidence that memory improves segmentation: about 90% of the gain comes from five expressions, and Ref-DAVIS17 has almost no occlusion. H1 is decided on Long-RVOS or MeViS. In V1, only appearance, spatial, reliability and the visible/absent state affect decisions; the semantic, motion and context fields are stored and logged for V2 and V4. See `results/README.md` for details. Code is tagged `v1-sttm-jf50.97`.
 
+## Current result: V2 (Tracklet Coherence Score)
+
+V1 plus a per-frame score `c_t`, a weighted geometric mean of four consistency terms (mask, motion, appearance via DINOv2, semantic via CLIP) with equal, untuned weights. Frozen thresholds tau_low 0.81 and tau_high 0.92 (`baseline_v0/config_v2_final.yaml`, chosen on the 15-video ablation tier by a plan committed before running: `baseline_v0/V2_TUNING_PLAN.md`). Same 30 videos and 61 objects.
+
+| Variant | Mean J | Mean F | Mean J&F |
+|---|---|---|---|
+| V0 | 56.01 | 44.94 | 50.48 |
+| V1 | 56.48 | 45.46 | 50.97 |
+| **V2 passive (score logged, memory untouched; ships as V2)** | 56.48 | 45.46 | **50.97** (masks identical to V1) |
+| V2 gated (memory written only on HIGH frames) | 55.97 | 44.84 | 50.40 (negative result) |
+
+TCS costs 2.7% of run time and raises peak GPU memory to 1384 MB. Gated V2 failed its pre-registered ship rule (J&F at least 50.47), so passive is V2.
+
+**Honest reading.** The score is a weak failure detector on Ref-DAVIS17: mean IoU is 0.77 on HIGH frames and 0.78 on MEDIUM frames, 44% of alarms are false, and AUROC for degraded frames is 0.56 (the mask term alone scores 0.62, the semantic term 0.45, below chance). Thresholds tuned on the 15-video tier (AUROC 0.746) did not transfer to the full split. Grounding failures (16 of 61 expressions) are invisible to the score. Whether the score works as a trigger is decided on Long-RVOS or MeViS.
+
+## Current result: V3 (event-driven VLM)
+
+The V2 score and its events decide *when* to ask a VLM one small question about crops the tracker already produced ("is this still the same object?", or "is the target visible?" when the mask is empty). Events: disappear, reappear, sudden coherence drop, suspected drift, distractor confusion, with a 10-frame pause between calls. A confident "not the target" answer blanks the mask (abstain). V3 is run as an offline replay of the logged V2 passive run: the VLM never feeds back into SAM 2, memory or the score, so it can blank a wrong mask but cannot recover the target (that is V4). Design and disclosures: `baseline_v0/V3_PLAN.md`.
+
+| Run (V2 passive source = 50.97) | VLM calls | Calls per tracked frame | Mean J&F |
+|---|---|---|---|
+| **Real VLM (Gemini gemini-3.1-flash-lite), events + abstain** | 76 | 0.019 | **50.58** |
+| Ground-truth oracle, events + abstain (ceiling, not a result) | 76 | 0.019 | 48.64 |
+| Oracle, periodic schedule, matched budget | 81 | 0.021 | 50.72 |
+| Oracle, every frame | 3,923 | 1.000 | 46.29 |
+
+(The oracle uses ground-truth labels, so it is only a ceiling. Its default rule, "not the target when IoU < 0.5", is pessimistic; a post-hoc identity oracle at IoU < 0.10, chosen after seeing results, gives 50.77, 51.08 and 50.58 for events, periodic and every frame.)
+
+The real VLM answered 76 of 76 calls (no errors), took 3.86 s per call, and added about 10% to run time (3,140 s estimated vs 2,846 s). Its "not the same object" warnings were mostly right (8 of 11) but it caught only 8 of the 21 truly lost or absent frames. **No accuracy gain on Ref-DAVIS17**, with the oracle or the real VLM; the cost side works (about 52x fewer calls than every frame). The event trigger found bad frames about as often as random frames, in line with the weak coherence score, and did not beat a fixed schedule at the same call budget. This is a single run of one model on a dataset with almost no drift, so H3 is undecided and must be tested on Long-RVOS or MeViS.
+
 ## Repository layout
 
 ```
 CogR-VOS/
 ├── README.md
-├── baseline_v0/        V0 and V1 code (V1 is a memory layer added on top of the V0 pipeline; folder name kept for history)
-├── results/            one folder per variant (v0_baseline/, later v1_..., v2_...)
+├── baseline_v0/        V0 to V3 code (V1 to V3 are layers added on top of the V0 pipeline; folder name kept for history)
+├── results/            V0 and V1 result folders (V2 and V3 result folders are large and are kept outside git; their numbers are in this README, V2_TUNING_PLAN.md and V3_PLAN.md)
 ├── literature/
 │   ├── papers/         61 PDFs in 6 topic folders
 │   └── notes/          corpus notes and comparison tables
@@ -120,6 +150,20 @@ stage 4  stage4_failure_analysis.py  drift / recovery taxonomy    -> failure_ana
 ```
 
 Stages 1 and 2 run as separate processes because the two models cannot be resident together on a 4 GB GPU. Grounding output is cached (top-5 boxes per video) so later variants reuse one frontend pass.
+
+## Running V2 and V3
+
+Run from inside `baseline_v0/`. These commands are the scripts' own usage, run by the author on a 4 GB GPU; V3 needs no GPU.
+
+```
+bash tools/run_v2_full.sh passive      V2 passive (or: gated)       -> results_v2_passive/
+V3_SOURCE=v2_passive bash tools/run_v3.sh oracle                  V3 with the ground-truth oracle (CPU)
+export GEMINI_API_KEY=...              key stays in the environment, never in files
+V3_SOURCE=v2_passive V3_VLM_MODEL=gemini-3.1-flash-lite bash tools/run_v3.sh gemini    V3 with a real VLM
+bash tools/run_all_tests.sh            unit tests (CPU, no dataset, no network)
+```
+
+Answers from the VLM are cached on disk (`vlm_cache/`), so a rerun costs nothing and only failed calls are retried.
 
 **Environment notes**
 - WSL2 Ubuntu, stock cu126 PyTorch wheel, Python 3.10 or newer.

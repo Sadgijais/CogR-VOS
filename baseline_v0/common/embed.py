@@ -99,3 +99,48 @@ class CropEmbedder:
         import torch
         del self.model
         torch.cuda.empty_cache()
+
+
+def masked_crop(image, mask: np.ndarray, pad: int = 8):
+    """Tight crop around a boolean mask with the background greyed out (same recipe as
+    CropEmbedder.embed_masked). Returns a PIL image, or None if the mask is empty."""
+    from PIL import Image
+    ys, xs = np.where(mask)
+    if len(ys) == 0:
+        return None
+    h, w = mask.shape
+    y1, y2 = max(0, ys.min() - pad), min(h, ys.max() + 1 + pad)
+    x1, x2 = max(0, xs.min() - pad), min(w, xs.max() + 1 + pad)
+    arr = np.array(image.convert("RGB"))
+    grey = np.full_like(arr, 124)
+    arr = np.where(mask[..., None], arr, grey)
+    return Image.fromarray(arr[y1:y2, x1:x2])
+
+
+class ClipCropEmbedder:
+    """CLIP IMAGE embedding of the masked target crop (V2 semantic term).
+    Lives in the same space as TextEmbedder, so  emb @ text_emb  is the image-text cosine."""
+
+    def __init__(self, device: str = "cuda", model_id: str = CLIP_ID):
+        from transformers import CLIPImageProcessor, CLIPModel
+        self.device = device
+        self.proc = CLIPImageProcessor.from_pretrained(model_id)
+        self.model = CLIPModel.from_pretrained(model_id).to(device).eval()
+
+    def embed_images(self, images: list) -> np.ndarray:
+        import torch
+        with torch.no_grad():
+            inp = self.proc(images=images, return_tensors="pt")
+            out = self.model.get_image_features(pixel_values=inp["pixel_values"].to(self.device))
+            feats = _as_tensor(out, "image_embeds", "pooler_output")
+            return _l2(feats).cpu().numpy().astype(np.float32)
+
+    def embed_masked(self, image, mask: np.ndarray, pad: int = 8):
+        """L2-normalised CLIP embedding of the masked crop, or None if the mask is empty."""
+        crop = masked_crop(image, mask, pad)
+        return None if crop is None else self.embed_images([crop])[0]
+
+    def free(self):
+        import torch
+        del self.model
+        torch.cuda.empty_cache()

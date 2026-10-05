@@ -102,7 +102,7 @@ class TargetMemory:
         # ---- counters (reported per video)
         self.stats = {"writes": 0, "merges": 0, "evictions": 0, "frames": 0,
                       "blocked": {"not_visible": 0, "truncated": 0, "low_similarity": 0,
-                                  "paced": 0, "not_better": 0}}
+                                  "paced": 0, "not_better": 0, "tcs_uncertain": 0}}
 
     # ------------------------------------------------------------------ anchor
     def set_anchor(self, frame_idx: int, mask: np.ndarray, appearance: np.ndarray,
@@ -147,9 +147,11 @@ class TargetMemory:
 
     # ------------------------------------------------------------------- update
     def update(self, frame_idx: int, mask: np.ndarray, appearance: np.ndarray | None,
-               obj_score: float, pred_iou: float) -> dict:
+               obj_score: float, pred_iou: float, allow_write: bool = True) -> dict:
         """Observe one predicted frame. Returns a decision dict for logging.
-        `appearance` may be None when the mask is empty (nothing to embed)."""
+        `appearance` may be None when the mask is empty (nothing to embed).
+        `allow_write=False` (V2: the coherence score judged this frame uncertain) blocks
+        the write but still updates motion/spatial/context state. Default True = V1 exactly."""
         assert self.anchor is not None, "call set_anchor first"
         self.stats["frames"] += 1
         g = mask_geometry(mask)
@@ -195,6 +197,8 @@ class TargetMemory:
             return self._block("truncated", frame_idx, sim)
         if sim < self.p.tau_sim:
             return self._block("low_similarity", frame_idx, sim)
+        if not allow_write:
+            return self._block("tcs_uncertain", frame_idx, sim)
         self.last_emb = appearance     # accepted as the same identity (even if pacing blocks the write)
         if frame_idx - self.last_write_frame < self.p.delta:
             return self._block("paced", frame_idx, sim)
