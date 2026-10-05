@@ -1,0 +1,62 @@
+video,exp_id,expression,frames,writes,merges,evictions,blocked_not_visible,blocked_truncated,blocked_low_similarity,blocked_paced,blocked_not_better,blocked_tcs_uncertain,n_absent_events,n_reappeared_events,final_bank_frames,min_margin,missing_frames
+bike-packing,0_2,a man wearing a cap,68,13,0,10,0,0,0,55,0,0,0,0,0 65 55 60,0.625,0
+bike-packing,0_1,a black bike,68,10,3,7,0,3,1,51,0,0,0,0,0 67 57 52,,0
+blackswan,0_1,a black swan,49,1,8,0,0,0,0,40,0,0,0,0,0 45,,0
+bmx-trees,0_2,a boy wearing a white tshirt,79,15,0,12,0,0,4,60,0,0,0,0,0 66 71 76,,0
+bmx-trees,0_1,a red bmx bike,79,13,0,10,0,0,23,43,0,0,0,0,0 78 68 73,,0
+breakdance,0_1,a man in a red sweatshirt performing breakdance,83,16,0,13,0,0,1,66,0,0,0,0,0 80 70 75,0.573,0
+camel,0_1,a brown camel in the front,89,8,9,5,0,0,0,72,0,0,0,0,0 80 85 75,,0
+car-roundabout,0_1,a black car,74,9,5,6,0,0,0,60,0,0,0,0,0 40 55 70,,0
+car-shadow,0_1,a silver car,39,2,5,0,0,0,0,32,0,0,0,0,0 30 35,,0
+cows,0_1,a cow with a bell around its neck,103,9,11,6,0,0,0,83,0,0,0,0,0 90 95 100,0.439,0
+dance-twirl,0_1,a girl with blonde hair dressed in blue,89,17,0,14,0,0,0,72,0,0,0,0,0 80 85 75,0.341,0
+dog,0_1,a golden retriever walking in the grass,59,11,0,8,0,0,1,47,0,0,0,0,0 50 55 45,0.303,0
+dogs-jump,0_3,a woman in a yellow jacket,65,13,0,10,0,0,3,49,0,0,0,0,0 55 65 60,0.341,0
+dogs-jump,0_1,a white dog with black patches,65,12,0,9,0,0,3,50,0,0,0,0,0 50 57 62,0.055,0
+dogs-jump,0_2,a white dog with gray patches,65,12,0,9,0,0,3,50,0,0,0,0,0 50 57 62,0.08,0
+drift-chicane,0_1,a red and white car,51,10,0,7,0,0,0,41,0,0,0,0,0 50 40 45,0.399,0
+drift-straight,0_1,a drift car on a straight road,49,6,2,3,0,1,6,34,0,0,0,0,0 31 41 46,0.525,0
+goat,0_1,a goat walking on rocks,89,17,0,14,0,0,0,72,0,0,0,0,0 80 85 75,0.264,0
+gold-fish,0_1,a largest orange goldfish,77,15,0,12,0,0,1,61,0,0,0,0,0 65 70 75,0.348,0
+gold-fish,0_2,an orange goldfish in the center next to the largest fish,77,15,0,12,0,0,1,61,0,0,0,0,0 65 70 75,0.359,0
+gold-fish,0_3,a smallest goldfish,77,13,2,10,0,0,0,62,0,0,0,0,0 70 60 75,0.284,0
+gold-fish,0_4,a goldfish at the end,77,15,0,12,0,0,1,61,0,0,0,0,0 65 70 75,0.363,0
+gold-fish,0_5,a goldfish at the bottom,77,15,0,12,0,0,1,61,0,0,0,0,0 65 70 75,0.355,0
+horsejump-high,0_1,a horse doing high jumps,49,9,0,6,0,0,0,40,0,0,0,0,0 35 40 45,,0
+horsejump-high,0_2,a woman riding a horse,49,9,0,6,0,0,0,40,0,0,0,0,0 35 40 45,0.193,0
+india,0_1,a woman in a yellow salwar suit,80,11,0,8,19,2,5,43,0,0,1,0,0 52 57 47,0.203,0
+india,0_2,a woman in a red sari in the middle,80,11,1,8,13,2,8,45,0,0,2,2,0 68 78 63,0.523,0
+india,0_3,a lady in a black salwar on the right,80,11,1,8,13,2,8,45,0,0,2,2,0 68 78 63,0.264,0
+judo,0_2,a bald man with a black belt in the center,33,6,0,3,0,0,0,27,0,0,0,0,0 20 25 30,0.42,0
+judo,0_1,a man with a blue belt on the right,33,6,0,3,0,0,0,27,0,0,0,0,0 20 25 30,0.419,0
+kite-surf,0_1,a power kite with blue handles,49,8,1,5,0,1,0,39,0,0,0,0,0 45 40 35,0.216,0
+kite-surf,0_2,a surf-board,49,5,0,2,29,0,0,15,0,0,3,2,0 26 47 21,0.307,0
+kite-surf,0_3,a man wearing a black vest,49,9,0,6,0,0,0,40,0,0,0,0,0 35 40 45,0.544,0
+lab-coat,0_1,a white cell phone in a left hand,46,8,1,5,1,0,0,36,0,0,1,1,0 40 45 30,0.447,0
+lab-coat,0_2,a pink cell phone in a girl's hand,46,7,0,4,17,0,0,22,0,0,4,4,0 45 35 40,0.618,0
+lab-coat,0_3,a girl on the right with blonde hair,46,8,1,5,0,0,0,37,0,0,0,0,0 40 45 35,0.154,0
+lab-coat,0_4,a girl in the middle wearing a lab-coat and a black shirt,46,8,1,5,0,0,0,37,0,0,0,0,0 40 45 35,0.846,0
+lab-coat,0_5,a girl on the left holding 2 cell phones,46,6,0,3,0,0,16,24,0,0,0,0,0 20 25 32,0.174,0
+libby,0_1,a dog running in the garden,48,9,0,6,0,0,0,39,0,0,0,0,0 35 40 45,0.324,0
+loading,0_1,a fat man on the right in a black jacket,49,9,0,6,0,0,5,35,0,0,0,0,0 35 40 47,0.307,0
+loading,0_2,a cardboard box held by a man,49,7,0,4,0,0,10,32,0,0,0,0,0 35 25 30,0.234,0
+loading,0_3,a man on the left with a beard wearing jeans,49,9,0,6,0,0,5,35,0,0,0,0,0 35 40 47,0.262,0
+mbike-trick,0_1,a biker man in a white tshirt,78,15,0,12,0,0,0,63,0,0,0,0,0 65 70 75,,0
+mbike-trick,0_2,a black stunt bike,78,10,5,7,0,0,0,63,0,0,0,0,0 75 50 55,,0
+motocross-jump,0_1,a man riding a motorbike,39,7,0,4,0,0,1,31,0,0,0,0,0 35 25 30,0.195,0
+motocross-jump,0_2,a green motorbike,39,1,0,0,0,4,32,2,0,0,0,0,0 38,,0
+paragliding-launch,0_1,a black harness with an airbag,79,15,0,12,0,0,0,64,0,0,0,0,0 65 70 75,0.441,0
+paragliding-launch,0_2,a man launching a paraglider,79,15,0,12,0,0,0,64,0,0,0,0,0 65 70 75,0.645,0
+paragliding-launch,0_3,wing risers with cascade,79,15,0,12,0,0,0,64,0,0,0,0,0 65 70 75,0.627,0
+parkour,0_1,a man jumping across fences,99,19,0,16,0,0,0,80,0,0,0,0,0 95 85 90,0.747,0
+pigs,0_1,a brown and white colored piglet,78,12,3,9,0,0,0,63,0,0,0,0,0 75 60 65,0.251,0
+pigs,0_2,a brown piglet in the middle,78,12,3,9,0,0,0,63,0,0,0,0,0 75 60 65,0.267,0
+pigs,0_3,an adult pig on the right,78,12,3,9,0,0,0,63,0,0,0,0,0 75 60 65,0.218,0
+scooter-black,0_1,a man in a suit riding a scooter,42,8,0,5,0,0,0,34,0,0,0,0,0 35 40 30,0.644,0
+scooter-black,0_2,a black scooter ridden by a man,42,4,4,1,0,0,0,34,0,0,0,0,0 40 10 15,0.22,0
+shooting,0_1,a black shooting gun,39,5,0,2,0,3,14,17,0,0,0,0,0 24 37 15,0.443,0
+shooting,0_2,a black man,39,7,0,4,0,0,0,32,0,0,0,0,0 35 25 30,,0
+shooting,0_3,a rope,39,7,0,4,0,3,0,29,0,0,0,0,0 35 25 30,0.571,0
+soapbox,0_1,a blue wooden car,98,15,4,12,0,0,0,79,0,0,0,0,0 70 75 95,,0
+soapbox,0_2,a man in a white helmet driving a wooden car,98,15,4,12,0,0,0,79,0,0,0,0,0 70 75 95,0.534,0
+soapbox,0_3,a man wearing a white shirt on a wooden car without a helmet,98,15,4,12,0,0,0,79,0,0,0,0,0 70 75 95,0.529,0

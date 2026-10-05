@@ -1,0 +1,62 @@
+video,exp_id,obj_id,expression,n_frames_scored,J,F,JF
+bike-packing,0_2,2,a man wearing a cap,67,92.98,67.49,80.24
+bike-packing,0_1,1,a black bike,67,68.9,46.36,57.63
+blackswan,0_1,1,a black swan,48,95.97,74.66,85.32
+bmx-trees,0_2,2,a boy wearing a white tshirt,78,78.37,64.26,71.32
+bmx-trees,0_1,1,a red bmx bike,78,55.35,53.09,54.22
+breakdance,0_1,1,a man in a red sweatshirt performing breakdance,82,38.49,35.33,36.91
+camel,0_1,1,a brown camel in the front,88,96.46,81.46,88.96
+car-roundabout,0_1,1,a black car,73,98.53,80.91,89.72
+car-shadow,0_1,1,a silver car,38,97.57,79.17,88.37
+cows,0_1,1,a cow with a bell around its neck,102,94.81,75.49,85.15
+dance-twirl,0_1,1,a girl with blonde hair dressed in blue,88,92.23,69.48,80.86
+dog,0_1,1,a golden retriever walking in the grass,58,96.33,70.62,83.47
+dogs-jump,0_3,3,a woman in a yellow jacket,64,94.12,80.1,87.11
+dogs-jump,0_1,1,a white dog with black patches,64,0.0,0.0,0.0
+dogs-jump,0_2,2,a white dog with gray patches,64,94.64,75.1,84.87
+drift-chicane,0_1,1,a red and white car,50,91.88,69.61,80.74
+drift-straight,0_1,1,a drift car on a straight road,48,96.1,70.76,83.43
+goat,0_1,1,a goat walking on rocks,88,92.68,62.34,77.51
+gold-fish,0_1,1,a largest orange goldfish,76,89.06,61.53,75.3
+gold-fish,0_2,2,an orange goldfish in the center next to the largest fish,76,0.0,0.0,0.0
+gold-fish,0_3,3,a smallest goldfish,76,0.0,0.0,0.0
+gold-fish,0_4,4,a goldfish at the end,76,0.0,0.0,0.0
+gold-fish,0_5,5,a goldfish at the bottom,76,0.0,0.0,0.0
+horsejump-high,0_1,1,a horse doing high jumps,48,81.42,63.85,72.64
+horsejump-high,0_2,2,a woman riding a horse,48,16.8,19.54,18.17
+india,0_1,1,a woman in a yellow salwar suit,79,90.71,66.83,78.77
+india,0_2,2,a woman in a red sari in the middle,79,17.72,17.72,17.72
+india,0_3,3,a lady in a black salwar on the right,79,81.76,59.81,70.78
+judo,0_2,2,a bald man with a black belt in the center,32,0.0,0.0,0.0
+judo,0_1,1,a man with a blue belt on the right,32,86.72,67.76,77.24
+kite-surf,0_1,1,a power kite with blue handles,48,24.73,57.09,40.91
+kite-surf,0_2,2,a surf-board,48,49.16,49.25,49.21
+kite-surf,0_3,3,a man wearing a black vest,48,71.94,55.74,63.84
+lab-coat,0_1,1,a white cell phone in a left hand,45,3.64,6.88,5.26
+lab-coat,0_2,2,a pink cell phone in a girl's hand,45,4.53,11.31,7.92
+lab-coat,0_3,3,a girl on the right with blonde hair,45,51.87,41.28,46.58
+lab-coat,0_4,4,a girl in the middle wearing a lab-coat and a black shirt,45,0.0,0.0,0.0
+lab-coat,0_5,5,a girl on the left holding 2 cell phones,45,0.0,0.0,0.0
+libby,0_1,1,a dog running in the garden,47,91.14,75.62,83.38
+loading,0_1,1,a fat man on the right in a black jacket,48,0.0,0.0,0.0
+loading,0_2,2,a cardboard box held by a man,48,53.54,46.49,50.02
+loading,0_3,3,a man on the left with a beard wearing jeans,48,95.23,79.01,87.12
+mbike-trick,0_1,1,a biker man in a white tshirt,77,85.58,68.79,77.18
+mbike-trick,0_2,2,a black stunt bike,77,83.87,56.03,69.95
+motocross-jump,0_1,1,a man riding a motorbike,38,26.39,27.85,27.12
+motocross-jump,0_2,2,a green motorbike,38,84.63,52.79,68.71
+paragliding-launch,0_1,1,a black harness with an airbag,78,58.81,34.17,46.49
+paragliding-launch,0_2,2,a man launching a paraglider,78,35.33,50.65,42.99
+paragliding-launch,0_3,3,wing risers with cascade,78,0.0,0.0,0.0
+parkour,0_1,1,a man jumping across fences,98,95.05,76.81,85.93
+pigs,0_1,1,a brown and white colored piglet,77,0.0,0.0,0.0
+pigs,0_2,2,a brown piglet in the middle,77,0.0,0.0,0.0
+pigs,0_3,3,an adult pig on the right,77,95.81,71.66,83.74
+scooter-black,0_1,1,a man in a suit riding a scooter,41,73.65,58.52,66.09
+scooter-black,0_2,2,a black scooter ridden by a man,41,73.06,53.14,63.1
+shooting,0_1,1,a black shooting gun,38,72.98,45.95,59.46
+shooting,0_2,2,a black man,38,87.85,45.1,66.47
+shooting,0_3,3,a rope,38,88.24,74.33,81.29
+soapbox,0_1,1,a blue wooden car,97,72.24,55.17,63.71
+soapbox,0_2,2,a man in a white helmet driving a wooden car,97,21.99,22.34,22.17
+soapbox,0_3,3,a man wearing a white shirt on a wooden car without a helmet,97,0.0,0.0,0.0
