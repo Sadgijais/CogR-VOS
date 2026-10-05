@@ -1,0 +1,8 @@
+metric,value
+n_expressions_scored,61
+n_videos_scored,30
+mean_J,52.55
+mean_F,40.04
+mean_JF,46.29
+target_JF_ref_davis17,66.2
+delta_vs_target,-19.91

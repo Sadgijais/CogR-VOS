@@ -1,0 +1,12 @@
+sttm: on
+tcs: on
+gate_writes: off
+videos: 30
+frames: 1999
+total_inference_s: 2846.0
+total_sttm_and_tcs_overhead_s: 172.8
+total_tcs_overhead_s: 76.6
+overall_ms_per_frame: 1386.3
+median_video_ms_per_frame: 1187.9
+max_peak_alloc_mb: 1384
+max_peak_reserved_mb: 1780

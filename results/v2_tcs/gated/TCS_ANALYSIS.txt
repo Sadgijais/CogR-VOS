@@ -1,0 +1,42 @@
+TCS analysis  -  30 videos, 61 expressions (16 grounding failures left out), 2786 frames evaluated
+results: results_v2_gated   predictions: predictions_v2_gated
+thresholds used: tau_low=from log, tau_high=from log
+
+1. BANDS (stable = HIGH, uncertain = MEDIUM + LOW)
+   band      frames   share%  meanIoU   lost%  degraded%
+   HIGH        1280     45.9     0.76     0.0       17.3
+   MEDIUM      1069     38.4     0.78     0.0       17.0
+   LOW          437     15.7     0.68     7.6       24.7
+   lost frames caught as uncertain (recall): 100.0%  (n=33)
+   good frames (IoU>=0.5) wrongly flagged uncertain (false alarms): 53.5%  (n=2274)
+
+2. AUROC  (0.5 = no information, 1.0 = perfect; low score should mean bad frame)
+   signal            frames    lost   (n)  degraded    (n)
+   c_t (combined)      2786   0.967    33     0.566    512
+   mask                2767   0.619    16     0.615    494
+   motion              2764   0.749    16     0.558    494
+   appearance          2767   0.933    16     0.553    494
+   semantic            2767   0.911    16     0.453    494
+
+3. FAILURE CASES  (4 runs of >= 3 lost frames in correctly grounded tracks)
+   dogs-jump/0_1: grounding failure, whole track off-target - TCS cannot see this
+   gold-fish/0_2: grounding failure, whole track off-target - TCS cannot see this
+   gold-fish/0_3: grounding failure, whole track off-target - TCS cannot see this
+   gold-fish/0_4: grounding failure, whole track off-target - TCS cannot see this
+   gold-fish/0_5: grounding failure, whole track off-target - TCS cannot see this
+   india/0_2: grounding failure, whole track off-target - TCS cannot see this
+   judo/0_2: grounding failure, whole track off-target - TCS cannot see this
+   kite-surf/0_2: track_lost from frame 37 for 6 frames; c at onset 0.0 (LOW); flagged at frame 27 (lead +10)
+   kite-surf/0_2: track_lost from frame 44 for 5 frames; c at onset 0.0 (LOW); flagged at frame 34 (lead +10)
+   lab-coat/0_1: grounding failure, whole track off-target - TCS cannot see this
+   lab-coat/0_2: grounding failure, whole track off-target - TCS cannot see this
+   lab-coat/0_4: grounding failure, whole track off-target - TCS cannot see this
+   lab-coat/0_5: grounding failure, whole track off-target - TCS cannot see this
+   loading/0_1: grounding failure, whole track off-target - TCS cannot see this
+   loading/0_2: track_lost from frame 38 for 11 frames; c at onset 0.34 (LOW); flagged at frame 28 (lead +10)
+   motocross-jump/0_1: identity_drift from frame 16 for 5 frames; c at onset 0.73 (LOW); flagged at frame 6 (lead +10)
+   paragliding-launch/0_3: grounding failure, whole track off-target - TCS cannot see this
+   pigs/0_1: grounding failure, whole track off-target - TCS cannot see this
+   pigs/0_2: grounding failure, whole track off-target - TCS cannot see this
+   soapbox/0_3: grounding failure, whole track off-target - TCS cannot see this
+   detected: 4/4
