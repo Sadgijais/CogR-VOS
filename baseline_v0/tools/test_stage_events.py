@@ -143,6 +143,28 @@ def test_schedules_every_frame_and_matched_periodic():
         assert abs(n_per - n_events) <= max(2, n_events), (n_per, n_events)       # same order of budget
 
 
+def test_match_period_hits_the_event_budget_on_short_tracks():
+    logs = [("v", str(i), {"frames": [{"f": f} for f in range(1, 64)]}) for i in range(10)]   # 10 targets x 63 frames
+    p = se.match_period(logs, 20)
+    total = sum(1 for _, _, e in logs for r in e["frames"] if r["f"] % p == 0)
+    assert total == 20, (p, total)
+    naive = max(1, round(630 / 20))                                                          # the old rule: 32 -> only 10 calls
+    assert sum(1 for _, _, e in logs for r in e["frames"] if r["f"] % naive == 0) == 10
+    assert se.match_period([], 5) == 1
+
+
+def test_oracle_iou_threshold_changes_what_counts_as_a_match():
+    row = lambda: {"verdict": "match", "kind": "identity", "gt_present": True, "gt_iou": 0.30}
+    old = se.MATCH_IOU
+    try:
+        se.MATCH_IOU = 0.5
+        assert se._score(row())["correct"] is False          # a sloppy mask (IoU 0.30) is "no_match" under the 0.5 oracle
+        se.MATCH_IOU = 0.10
+        assert se._score(row())["correct"] is True           # but still the right object under the identity oracle
+    finally:
+        se.MATCH_IOU = old
+
+
 def test_scripted_vlm_path_parses_answers_caches_and_survives_errors():
     with tempfile.TemporaryDirectory() as td:
         tmp = Path(td)
