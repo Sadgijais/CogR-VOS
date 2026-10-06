@@ -31,6 +31,8 @@ Four contributions sit on top of the backbones:
 3. **Event-driven VLM reasoning:** the VLM fires only on the LOW branch, never on the per-frame path.
 4. **Memory-grounded re-identification:** after loss, retrieve strong memory states, propose candidates with Grounding-DINO, let the VLM compare them, resume propagation. If no valid candidate exists, emit an empty mask (target absent).
 
+**As built (V0 to V4, Ref-DAVIS17).** The list above is the design. What is implemented and measured: all six memory fields exist, but only appearance, spatial, reliability and the visible/absent log affect decisions (V1). The coherence score is computed for every frame, but in the shipped V2 it only records; letting it control the memory (gated) was worse. The VLM is called at events (disappear, reappear, coherence drop, suspected drift, distractor confusion), not only on the LOW band. V3 can blank a mask the VLM calls wrong. V4 re-identification finds and restarts the target, but it does not yet emit an empty mask when no valid candidate exists, so it cannot say "the target is absent"; an abstain option is the next step. See the result sections below for what each layer did.
+
 **Training-free claim, stated precisely:** all three backbones are frozen. The remaining hyperparameters (memory size, write thresholds, coherence weights, band thresholds) are set on Ref-DAVIS17 only and then frozen. They are never re-tuned on MeViS, Ref-YouTube-VOS or Long-RVOS.
 
 ## Hypotheses
