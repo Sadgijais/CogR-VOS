@@ -8,7 +8,7 @@ One folder per ablation variant. Every number in a table comes from the full 30-
 | `v1_sttm/` | + Semantic-Temporal Target Memory (read action on; anchor_proto, delta 5) | Done | 50.97 |
 | `v2_tcs/` | + Tracklet Coherence Score (`passive/` ships as V2; `gated/` is a negative result, 50.40) | Done | 50.97 |
 | `v3_event_vlm/` | + Event-driven VLM reasoning (`real_gemini/` = real VLM, one run; `oracle_*` = ground-truth oracle controls, ceilings only) | Done (one real run) | 50.58 |
-| `v4_reid/` | + Memory-grounded re-identification | Planned | |
+| `v4_reid/` | + Memory-grounded re-identification (`memory/`, `vlm/`; `memory_margin/` is post hoc) | Done | 50.87 (memory), 50.86 (vlm) |
 | `v5_always_on_vlm/` | Upper bound: VLM on every frame | Planned | |
 | `v6_scheduled_vlm/` | Scheduled one-shot reasoning (rival) | Planned | |
 

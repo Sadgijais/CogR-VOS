@@ -130,11 +130,10 @@ The real VLM answered 76 of 76 calls (no errors), took 3.86 s per call, and adde
 ```
 CogR-VOS/
 ├── README.md
-├── baseline_v0/        V0 to V3 code (V1 to V3 are layers added on top of the V0 pipeline; folder name kept for history)
-├── results/            V0 and V1 result folders (V2 and V3 result folders are large and are kept outside git; their numbers are in this README, V2_TUNING_PLAN.md and V3_PLAN.md)
+├── baseline_v0/        V0 to V4 code (V1 to V4 are layers added on top of the V0 pipeline; folder name kept for history)
+├── results/            V0 to V4 result folders (small files only; large per-frame logs and predicted masks are not stored in git)
 ├── literature/
-│   ├── papers/         61 PDFs in 6 topic folders
-│   └── notes/          corpus notes and comparison tables
+│   └── README.md       57 papers by theme (titles, venues, takeaways); the PDFs are not stored in git
 ```
 
 ## Running V0
@@ -202,7 +201,7 @@ Reporting rule: every number in a results table comes from the full Ref-DAVIS17 
 
 ## Literature
 
-61 papers in `literature/papers/`, grouped by theme: referring VOS, Grounding-DINO, SAM 2 and tracking, memory-guided VOS, VLM-guided VOS, and event-driven reasoning. The closest training-free rival is AL-Ref-SAM 2 (74.2 J&F on Ref-DAVIS17, reasoning once per clip on a fixed schedule).
+57 papers listed in `literature/README.md`, grouped by theme: referring VOS, Grounding-DINO, SAM 2 and tracking, memory-guided VOS, VLM-guided VOS, and event-driven reasoning. The closest training-free rival is AL-Ref-SAM 2 (74.2 J&F on Ref-DAVIS17, reasoning once per clip on a fixed schedule).
 
 ## Compute constraints
 
