@@ -176,6 +176,20 @@ stage 4  stage4_failure_analysis.py  drift / recovery taxonomy    -> failure_ana
 
 Stages 1 and 2 run as separate processes because the two models cannot be resident together on a 4 GB GPU. Grounding output is cached (top-5 boxes per video) so later variants reuse one frontend pass.
 
+## Running V1
+
+Run from inside `baseline_v0/`, after V0 stage 1 has written `grounding/` (V1 reuses that cache). The frozen V1 settings (K 4, delta 5, anchor_proto) are in `config_v1_final.yaml`.
+
+```
+python stage1b_embeddings.py --config config_v1_final.yaml    CLIP text and DINOv2 crop embeddings, cached -> embeddings/
+python stage2_sttm.py --config config_v1_final.yaml           SAM 2 with the memory                      -> predictions_v1_final/
+python stage3_evaluate.py --config config_v1_final.yaml       J and F                                    -> results_v1_final/
+python stage2_sttm.py --config config_v1_final.yaml --no-sttm --pred-dir predictions_v1_check --results-dir results_v1_check
+                                                              wrapper check: memory off, masks must equal V0
+```
+
+Stage 1b is a separate process from stage 2 for the same 4 GB reason as before. Add `--video NAME` (repeatable) to any stage to run only some videos.
+
 ## Running V2, V3 and V4
 
 Run from inside `baseline_v0/`. These commands are the scripts' own usage, run by the author on a 4 GB GPU; V3 needs no GPU.
