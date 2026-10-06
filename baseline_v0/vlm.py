@@ -237,12 +237,15 @@ class CachedVLM:
         k = self.key(images, prompt)
         p = self.dir / f"{k}.json"
         if p.exists():
-            d = json.loads(p.read_text())
-            return d["text"], float(d["latency_s"]), True
+            try:
+                d = json.loads(p.read_text())
+                return d["text"], float(d["latency_s"]), True
+            except (ValueError, KeyError, OSError):
+                pass                                    # damaged entry (an interrupted write): ask again
         t0 = time.perf_counter()
         text = self.inner.ask(images, prompt)
         lat = time.perf_counter() - t0
-        tmp = p.with_suffix(f".{os.getpid()}.tmp")
+        tmp = p.with_suffix(f".{os.getpid()}.{os.urandom(4).hex()}.tmp")   # unique per write, so threads never share a file
         tmp.write_text(json.dumps({"text": text, "latency_s": lat, "model": self.model}))
         os.replace(tmp, p)
         return text, lat, False
@@ -256,3 +259,68 @@ def make_client(vcfg: dict):
     inner = RestVLM(prov, vcfg.get("model"), vcfg.get("api_key_env"),
                     timeout=float(vcfg.get("timeout_s", 60)), max_tokens=int(vcfg.get("max_tokens", 200)))
     return CachedVLM(inner, vcfg.get("cache_dir", "vlm_cache/"))
+
+
+# ------------------------------------------------------------------ V4: the re-identification question
+REID_LETTERS = "ABCDE"
+
+
+def reid_prompt(expression: str, letters: str) -> str:
+    """Image 1 = the target at the start. Image 2 = how the tracker saw the target last (from target memory).
+    Images 3.. = the candidates on the current frame, labelled with `letters` (grey background removed)."""
+    cand = ", ".join(f"image {3 + i} = candidate {c}" for i, c in enumerate(letters))
+    return (
+        "You help an object tracker find its target again after it lost it.\n"
+        "Image 1 shows the TARGET object at the start of a video.\n"
+        "Image 2 shows the same target as the tracker saw it most recently, before it was lost.\n"
+        f"The next images show candidates on the current frame: {cand}.\n"
+        f'The target is described as: "{expression}".\n'
+        "Which candidate is the SAME object as the target? Ignore changes of pose, lighting, scale and partial "
+        "occlusion. A similar-looking but different object (another person, animal or vehicle) is NOT the target. "
+        f"If none of the candidates is the target, or you cannot tell, answer none.\n"
+        f'Reply with JSON only: {{"choice": {" | ".join(chr(34) + c + chr(34) for c in letters)} | "none", '
+        '"confidence": <0..1>, "reason": "<at most 15 words>"}'
+    )
+
+
+def parse_reid(text: str, letters: str) -> dict:
+    """Never raises. Anything unparseable, unknown or out of range becomes choice 'none' with confidence 0."""
+    out = {"choice": "none", "confidence": 0.0, "reason": ""}
+    if not text:
+        return out
+    m = re.search(r"\{.*?\}", text, flags=re.S)
+    try:
+        d = json.loads(m.group(0) if m else text)
+    except Exception:
+        return out
+    if not isinstance(d, dict):
+        return out
+    c = str(d.get("choice", "none")).strip().strip('"').upper().replace("CANDIDATE", "").strip()
+    out["choice"] = c if (len(c) == 1 and c in letters.upper()) else "none"
+    try:
+        out["confidence"] = min(1.0, max(0.0, float(d.get("confidence", 0.5))))
+    except Exception:
+        out["confidence"] = 0.5
+    out["reason"] = str(d.get("reason", ""))[:200]
+    return out
+
+
+def ask_reid(client, expression: str, start_img, memory_img, cand_imgs, conf_min: float = 0.6) -> dict:
+    """One re-ID question. cand_imgs: PIL crops in shortlist order (at most len(REID_LETTERS)); they are labelled A, B, ...
+    -> {"index": position in cand_imgs of the chosen candidate or None, "letter", "confidence", "reason",
+        "latency_s", "cached", "error"}. A choice below conf_min, an unparseable answer or an API error is "none"
+    (index None). Never raises: a failed call must not stop a run."""
+    letters = REID_LETTERS[:len(cand_imgs)]
+    res = {"index": None, "letter": "none", "confidence": 0.0, "reason": "", "latency_s": 0.0, "cached": False, "error": ""}
+    if not letters:
+        return res
+    try:
+        text, lat, cached = client.ask_timed([start_img, memory_img, *cand_imgs], reid_prompt(expression, letters))
+    except Exception as e:                                           # network, quota, timeout ...
+        res["error"], res["reason"] = f"{type(e).__name__}: {str(e)[:150]}", "error"
+        return res
+    p = parse_reid(text, letters)
+    res.update(latency_s=lat, cached=cached, letter=p["choice"], confidence=p["confidence"], reason=p["reason"])
+    if p["choice"] != "none" and p["confidence"] >= conf_min:
+        res["index"] = letters.index(p["choice"])
+    return res
