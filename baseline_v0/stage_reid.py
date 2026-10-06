@@ -44,7 +44,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import reid as R
 from events import EventParams, EventTrigger
 
-VARIANTS = ("off", "oracle", "memory", "vlm")
+VARIANTS = ("off", "oracle", "memory", "vlm", "memory_margin", "vlm_margin")
 VLM_CONF_MIN = 0.6                    # fixed in V4_PLAN.md
 POLL_EVERY = 10                       # frames between searches while the tracker's mask is empty
 GUARD_PER_ABSENT_EPISODE = 5          # VLM variant only
@@ -103,6 +103,15 @@ class SearchPlanner:
 
 # ------------------------------------------------------------------ who decides (pure, unit-tested)
 def decide_search(variant, cands, ranked, gt_mask, p: R.ReIDParams, vlm_pick=None):
+    """POST-HOC *_margin variants = the base chooser, then R.margin_gate."""
+    base = variant[:-len("_margin")] if variant.endswith("_margin") else variant
+    d = _decide_search_base(base, cands, ranked, gt_mask, p, vlm_pick)
+    if base != variant:
+        d["choice"] = R.margin_gate(d["choice"], ranked, p.switch_margin)
+    return d
+
+
+def _decide_search_base(variant, cands, ranked, gt_mask, p: R.ReIDParams, vlm_pick=None):
     """-> {"choice": candidate id or "none", "value": memory score / oracle IoU / VLM confidence or None, "vlm": dict or None}
     vlm_pick(shortlist) -> the dict returned by vlm.ask_reid (needs "index"); only called for the vlm variant."""
     if variant == "off" or not cands:
@@ -231,7 +240,7 @@ def main():
         files = [f for f in files if f.stem in set(args.video)]
     if not files:
         raise FileNotFoundError(f"no live videos: need {cand_dir}/<video>/<exp_id>.npz (run stage_candidates.py) and {grounding_dir}/<video>.json")
-    client = V.make_client(v3["vlm"]) if variant == "vlm" else None
+    client = V.make_client(v3["vlm"]) if variant.startswith("vlm") else None
 
     import torch
     from sam2.build_sam import build_sam2_video_predictor
@@ -293,7 +302,7 @@ def main():
             missing_counts[k] = 0
             cf = cand_dir / video / f"{exp_id}.npz"
             if cf.exists():
-                live[k] = Live(exp_id, CandidateStore(cf), SearchPlanner(evp, guard=(variant == "vlm")), int(vg[exp_id]["obj_id"]))
+                live[k] = Live(exp_id, CandidateStore(cf), SearchPlanner(evp, guard=variant.startswith("vlm")), int(vg[exp_id]["obj_id"]))
 
         video_masks: dict = {}
         stats = {"search_s": 0.0, "vlm_wait_s": 0.0}

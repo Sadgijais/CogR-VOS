@@ -12,9 +12,9 @@
 set -e
 cd "$(dirname "$0")/.."
 variant="$1"; shift || true
-case "$variant" in off|oracle|memory|vlm) ;; *) echo "usage: bash tools/run_v4.sh off|oracle|memory|vlm [--video NAME ...]"; exit 1 ;; esac
+case "$variant" in off|oracle|memory|vlm|memory_margin|vlm_margin) ;; *) echo "usage: bash tools/run_v4.sh off|oracle|memory|vlm [--video NAME ...]"; exit 1 ;; esac
 src=v2_passive; tag="v4_${variant}"; v3cfg="${V4_V3_CONFIG:-config_v3_gemini_events_abstain.yaml}"
-if [ "$variant" = "vlm" ] && [ -z "${GEMINI_API_KEY}" ]; then echo "set your key first:  export GEMINI_API_KEY=...your key..."; exit 1; fi
+if [[ "$variant" == vlm* ]] && [ -z "${GEMINI_API_KEY}" ]; then echo "set your key first:  export GEMINI_API_KEY=...your key..."; exit 1; fi
 test -f "config_${src}.yaml" && test -d "predictions_${src}" || { echo "need the V2 passive run: config_${src}.yaml and predictions_${src}/"; exit 1; }
 test -f "$v3cfg" || { echo "missing $v3cfg (the V3 config V4 takes its event settings and VLM from)"; exit 1; }
 test -d candidates || { echo "missing candidates/ - run stage_candidates.py first"; exit 1; }
