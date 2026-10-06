@@ -1,0 +1,20 @@
+variant: oracle
+live_videos: 2
+live_expressions: 5
+searches: 17
+restarts: 3
+label_correct_restart: 3
+label_wrong_restart: 0
+label_weak_restart: 0
+label_missed: 0
+label_correct_none: 11
+label_candidate_miss: 3
+skipped_uncached: 0
+skipped_guard_episode: 0
+skipped_guard_expression: 0
+vlm_calls: 0 (cached answers: 0)
+live_frames: 131
+total_inference_s (live reruns only): 233.8
+total_search_s: 1.0
+total_vlm_wait_s: 0.0
+max_peak_alloc_mb: 1388

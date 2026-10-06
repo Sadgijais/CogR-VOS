@@ -1,0 +1,20 @@
+label: v4_vlm_partial
+expressions_analyzed: 3   skipped (no prediction folder): 0
+settings: min_absent 2, window 10, recovery_iou 0.5, loss_iou 0.1, loss_len 5, exclude_first_last True
+
+expressions with a disappearance that returns: 2   with a disappearance that never returns: 1
+reappearance_events: 2
+recovery_rate (back at IoU >= 0.5 within 10 frames): 1 of 2 (50.0%)
+recovery_latency_frames (events recovered in the window): mean 2.00, median 2.0 (n=1)
+recovered later than the window: 0    never recovered: 1
+
+loss_episodes (>= 5 visible frames at IoU < 0.1): 3
+loss_episodes_recovered (IoU >= 0.5 returns later): 1 of 3 (33.3%)
+loss_recovery_latency_frames: mean 32.00, median 32.0 (n=1)
+loss_episodes_never_recovered: 2   (many of these are frame-0 grounding failures)
+
+scored_frames: 237   visible: 195   absent: 42
+NRE (visible but empty mask): 11 of 195 (5.6%)
+false_presence (absent but mask not empty): 10 of 42 (23.8%)
+
+Small samples: report these counts next to every rate. A rate over 3 events is an anecdote, not a statistic.

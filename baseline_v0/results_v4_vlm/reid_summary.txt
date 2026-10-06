@@ -1,0 +1,20 @@
+variant: vlm
+live_videos: 18
+live_expressions: 37
+searches: 78
+restarts: 27
+label_correct_restart: 6
+label_wrong_restart: 16
+label_weak_restart: 5
+label_missed: 8
+label_correct_none: 36
+label_candidate_miss: 7
+skipped_uncached: 0
+skipped_guard_episode: 0
+skipped_guard_expression: 0
+vlm_calls: 78 (cached answers: 11)
+live_frames: 1052
+total_inference_s (live reruns only): 1878.3
+total_search_s: -32.5
+total_vlm_wait_s: 350.7
+max_peak_alloc_mb: 1423

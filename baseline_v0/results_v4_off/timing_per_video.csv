@@ -1,0 +1,2 @@
+video,n_frames,n_objects,n_live,init_s,propagate_s,inference_s,search_s,vlm_wait_s,ms_per_frame,peak_alloc_mb,peak_reserved_mb
+kite-surf,50,3,2,1.954,80.804,83.204,0.421,0.0,1616.08,1379.5,1780.0

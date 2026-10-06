@@ -1,0 +1,6 @@
+label,kind,video,exp_id,start_frame,end_frame,length,first_visible_frame,iou_at_return,recovered_in_window,latency_frames,eventual_latency_frames,recovered
+v4_vlm_partial,reappearance,india,0_2,52,65,14,66,0.0,False,,,False
+v4_vlm_partial,loss_episode,india,0_2,1,32,32,,,,32,,True
+v4_vlm_partial,loss_episode,india,0_2,34,51,18,,,,,,False
+v4_vlm_partial,loss_episode,india,0_2,66,79,14,,,,,,False
+v4_vlm_partial,reappearance,india,0_3,46,54,9,55,0.0,True,2,2,True
