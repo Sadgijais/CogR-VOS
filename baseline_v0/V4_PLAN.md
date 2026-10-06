@@ -126,3 +126,18 @@ and labelled post-hoc.
 ## Amendments
 
 (none yet. Anything changed after the first run is added here with its date and the reason.)
+
+### 2026-10-06 (before any V4 run): candidate cache and attempt labels
+
+1. Candidates are cached for every frame (stride 1) of the 37 expressions that fire a V3 event, in two passes
+   (`stage_candidates.py`: Grounding-DINO boxes, then SAM 2 image-predictor masks from those boxes). Reason: on a 4 GB
+   card Grounding-DINO and the SAM 2 tracker cannot be resident together, so the live loop cannot compute candidates
+   lazily. Every V4 variant therefore chooses among identical candidates. This replaces "computed lazily" above.
+2. The live loop reads candidates only from this cache. A search frame that is not in the cache (frame 0, or an
+   expression without a cache file) is skipped and counted, never computed on the fly.
+3. Attempt labels (`reid.label_attempt`): the "wrong restart" label stays "restart on IoU below 0.10". A restart on a
+   candidate with IoU from 0.10 up to 0.5 is a sixth label, `weak_restart`. `correct_none` also covers "the tracker's
+   current mask is already good (IoU 0.5 or more)". "missed" means nothing changed, the current mask is not good, and
+   another candidate was good. "candidate_miss" means nothing changed, the target is visible and no candidate was good.
+4. Candidate recall measured on `india` before any chooser ran: a candidate has IoU 0.5 or more with the true target on
+   89% (0_1), 53% (0_2) and 79% (0_3) of the frames where the target is visible. This is the ceiling for every chooser.
