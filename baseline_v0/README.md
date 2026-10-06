@@ -1,6 +1,6 @@
 # CogR-VOS — V0 Baseline (Grounding-DINO + SAM2)
 
-> **Status note (2026-10-05).** This file is the original V0 setup guide, written in a sandbox *before* any real run. Its statements that stages 1 and 2 are "NOT verified" or a "first draft", and the 66.2 target, are historical. V0 has since been run on the full Ref-DAVIS17 val split (J&F 50.48; 66.2 was deliberately not chased), and V1 (J&F 50.97), V2 (passive 50.97, gated 50.40) and V3 (real VLM 50.58) have been built on top of the same pipeline in this folder. For current results see the root `README.md` and `results/README.md`; the pre-registered plans are `V1_TUNING_PLAN.md`, `V2_TUNING_PLAN.md` and `V3_PLAN.md`.
+> **Status note (2026-10-05).** This file is the original V0 setup guide, written in a sandbox *before* any real run. Its statements that stages 1 and 2 are "NOT verified" or a "first draft", and the 66.2 target, are historical. V0 has since been run on the full Ref-DAVIS17 val split (J&F 50.48; 66.2 was deliberately not chased), and V1 (J&F 50.97), V2 (passive 50.97, gated 50.40) V3 (real VLM 50.58) and V4 (memory-grounded re-identification, 50.87 memory / 50.86 VLM, no gain) have been built on top of the same pipeline in this folder. For current results see the root `README.md` and `results/README.md`; the pre-registered plans are `V1_TUNING_PLAN.md`, `V2_TUNING_PLAN.md`, `V3_PLAN.md` and `V4_PLAN.md`.
 
 This is the zero-shot backbone baseline from the CogR-VOS ablation ladder:
 Grounding-DINO finds the target in frame 0, SAM2 propagates a mask to the

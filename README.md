@@ -125,6 +125,32 @@ The V2 score and its events decide *when* to ask a VLM one small question about 
 
 The real VLM answered 76 of 76 calls (no errors), took 3.86 s per call, and added about 10% to run time (3,140 s estimated vs 2,846 s). Its "not the same object" warnings were mostly right (8 of 11) but it caught only 8 of the 21 truly lost or absent frames. **No accuracy gain on Ref-DAVIS17**, with the oracle or the real VLM; the cost side works (about 52x fewer calls than every frame). The event trigger found bad frames about as often as random frames, in line with the weak coherence score, and did not beat a fixed schedule at the same call budget. This is a single run of one model on a dataset with almost no drift, so H3 is undecided and must be tested on Long-RVOS or MeViS.
 
+## Current result: V4 (memory-grounded re-identification)
+
+V3 plus a live loop that, when tracking is lost, looks at every candidate object in the frame, picks the one that matches the target, and restarts SAM 2 on it. V3 could only blank a wrong mask; V4 tries to put the right object back. Searches start at a V3 event, and every 10 frames while the mask is empty (10-frame pause after any search). Candidates are the tracker's own mask plus the top-5 Grounding-DINO masks for that frame (duplicates with IoU above 0.7 and masks under 200 pixels dropped), computed once and cached (`baseline_v0/stage_candidates.py`) because the two models cannot share a 4 GB GPU. Each candidate gets a memory score, the geometric mean of appearance (DINOv2 cosine), position and size against the V1 memory, with equal untuned weights; the best 3 form a shortlist. Three choosers: **memory** (take the best if its score is at least 0.6), **VLM** (Gemini picks A, B, C or none, used only at confidence 0.6 or more, at most 5 calls per absent episode and 10 per expression) and an **oracle** (ground truth, a ceiling only; run as a smoke test on two videos, 3 correct restarts). The chosen object is given to SAM 2 as a new prompt at the search frame; earlier frames are never changed and V4 never blanks a mask. All settings were fixed in `baseline_v0/V4_PLAN.md` before any V4 run. Safety check: with the chooser switched off, V4 reproduces the V2 masks exactly (393 of 393 mask files identical on india and kite-surf).
+
+| Run (same 30 videos, 61 objects) | Mean J | Mean F | Mean J&F | VLM calls | Calls per tracked frame |
+|---|---|---|---|---|---|
+| V2 passive (reference) | 56.48 | 45.46 | 50.97 | 0 | 0 |
+| V3, real VLM | 56.12 | 45.04 | 50.58 | 76 | 0.019 |
+| **V4-memory chooser** | 56.39 | 45.35 | **50.87** | 0 | 0 |
+| **V4-vlm chooser (Gemini gemini-3.1-flash-lite)** | 56.38 | 45.34 | **50.86** | 78 | 0.020 |
+| V4-memory_margin (post hoc, see below) | 56.43 | 45.37 | 50.90 | 0 | 0 |
+
+Time: V4-memory costs about 5 s of search on top of V2 (2,851 s vs 2,846 s); V4-vlm is about 3,164 s (estimated as V2 time plus measured search and VLM waiting).
+
+What each search did (labelled afterwards against the human masks; restarts are live reruns on the 18 videos, 37 expressions that have candidates):
+
+| Chooser | Searches | Restarts | Correct | Wrong | Weak | No good candidate existed |
+|---|---|---|---|---|---|---|
+| memory | 79 | 15 | 5 | 7 | 3 | 10 |
+| vlm | 78 | 27 | 6 | 16 | 5 | 7 |
+| memory_margin (post hoc) | 80 | 9 | 3 | 4 | 2 | 12 |
+
+(A restart is "correct" if the new mask overlaps the truth at IoU 0.5 or more, "wrong" below 0.10.)
+
+**Honest reading.** **No improvement over V2** (50.87 and 50.86 against 50.97; single runs, within noise). The restarts that go wrong cancel the ones that go right. In each of V4-memory and V4-vlm, 7 restarts replaced a mask that was already good: for memory 2 ended better, 2 mildly worse and 3 were destroyed; for the VLM 5 were destroyed (for example gold-fish 0.91 to 0). The VLM reported confidence 0.9 to 1.0 on every answer, including the wrong ones, so its confidence does not say when it is wrong, and it restarted more often (27 against 15) and was wrong more often (16 against 7). The post-hoc margin gate (restart only if the pick beats the tracker's mask score by 0.10 or more, or the tracker mask is empty; added after seeing the results, so a diagnosis and not a result) blocked 3 destroyed restarts and also one good one, and gave 50.90. Its 4 remaining wrong restarts all happen with an empty tracker mask and in 3 of them the target is absent, so V4 needs an **abstain option** ("the target is not here, do nothing"); a VLM version of the margin gate was not run. Ref-DAVIS17 has only 4 of 61 targets that vanish (3 of them reappear), so it barely tests re-identification: H4 is undecided and must be tested on Long-RVOS or MeViS. Details: `results/v4_reid/`, `baseline_v0/V4_PLAN.md`, `baseline_v0/tools/run_v4.sh`.
+
 ## Repository layout
 
 ```
@@ -150,7 +176,7 @@ stage 4  stage4_failure_analysis.py  drift / recovery taxonomy    -> failure_ana
 
 Stages 1 and 2 run as separate processes because the two models cannot be resident together on a 4 GB GPU. Grounding output is cached (top-5 boxes per video) so later variants reuse one frontend pass.
 
-## Running V2 and V3
+## Running V2, V3 and V4
 
 Run from inside `baseline_v0/`. These commands are the scripts' own usage, run by the author on a 4 GB GPU; V3 needs no GPU.
 
@@ -160,6 +186,16 @@ V3_SOURCE=v2_passive bash tools/run_v3.sh oracle                  V3 with the gr
 export GEMINI_API_KEY=...              key stays in the environment, never in files
 V3_SOURCE=v2_passive V3_VLM_MODEL=gemini-3.1-flash-lite bash tools/run_v3.sh gemini    V3 with a real VLM
 bash tools/run_all_tests.sh            unit tests (CPU, no dataset, no network)
+```
+
+V4 needs the V2 passive run and the candidate cache (made once by `python stage_candidates.py --events-csv results_v3_gemini_events_abstain/events_per_expression.csv`, in two passes because of the 4 GB GPU; see the header of that file) first:
+
+```
+bash tools/run_v4.sh off        safety check: masks must equal V2 passive
+bash tools/run_v4.sh memory     memory chooser, no VLM, no key
+export GEMINI_API_KEY=...       key stays in the environment, never in files
+bash tools/run_v4.sh vlm        VLM chooser
+bash tools/run_v4.sh oracle     ground-truth chooser: a ceiling, never a result
 ```
 
 Answers from the VLM are cached on disk (`vlm_cache/`), so a rerun costs nothing and only failed calls are retried.
@@ -206,17 +242,3 @@ Reporting rule: every number in a results table comes from the full Ref-DAVIS17 
 ## Compute constraints
 
 Development runs on a 4 GB RTX 2050 under WSL2. This shapes the design: no two large models co-resident, SAM 2 tiny only, an API-based VLM, and disk-cached stages. Full Long-RVOS runs and the V5 always-on comparison are planned for Kaggle T4 GPUs.
-
-
-## V4: memory-grounded re-identification (Task 4) and the V0-V4 ablation (Task 5)
-Result on Ref-DAVIS17 val (30 videos, 61 expressions, one run each): **no improvement over V2.**
-
-| Version | J&F | VLM calls | Events recovered |
-|---|---|---|---|
-| V2 | 50.97 | 0 | 2 of 4 |
-| V3 | 50.58 | 76 | 2 of 4 |
-| V4-memory | 50.87 | 0 | 2 of 4 |
-| V4-vlm | 50.86 | 78 | 2 of 4 |
-| V4-memory_margin (post hoc) | 50.90 | 0 | 2 of 4 |
-
-The choosers restart even when the tracker is already right, the VLM is equally confident when wrong, and V4 cannot say the target is absent. Ref-DAVIS17 has only 4 of 61 vanishing targets, so re-ID is decided on Long-RVOS. Details: `results/v4_reid/`, `baseline_v0/V4_PLAN.md`, `baseline_v0/tools/run_v4.sh`.
