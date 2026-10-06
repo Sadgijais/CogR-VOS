@@ -37,6 +37,7 @@ class ReIDParams:
     score_min: float = 0.6      # memory-only chooser: best score must reach this, else "none"
     oracle_iou: float = 0.5     # oracle chooser and "good candidate" in the grading
     wrong_iou: float = 0.10     # restart on a candidate below this = wrong restart
+    switch_margin: float = 0.10  # POST-HOC *_margin variants only: restart only if the pick beats the tracker's current mask by this much (memory score)
 
 
 # ------------------------------------------------------------------ geometry
@@ -179,3 +180,17 @@ def label_attempt(cands, choice: str, gt_mask, p: ReIDParams):
     if any(v >= p.oracle_iou for v in ious.values()):
         return "missed", None
     return "candidate_miss", None
+
+
+# ------------------------------------------------------------------ 6. POST-HOC margin gate (V4 memory_margin / vlm_margin)
+def margin_gate(choice, ranked, margin):
+    """Keep the tracker unless the pick clearly beats its current mask. No current candidate (empty or tiny mask) -> restart is allowed."""
+    if choice in (NONE, CURRENT):
+        return choice
+    cur = next((c for c in ranked if c["id"] == CURRENT), None)
+    if cur is None:
+        return choice
+    pick = next((c for c in ranked if c["id"] == choice), None)
+    if pick is None:
+        return NONE
+    return choice if pick["score"] - cur["score"] >= margin else CURRENT
