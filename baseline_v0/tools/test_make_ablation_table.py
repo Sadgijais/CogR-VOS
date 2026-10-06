@@ -46,7 +46,7 @@ def test_table_from_fake_folders():
             "vlm_calls: 76\ncalls_per_tracked_frame: 0.0194\ncalls_per_video_frame: 0.0380\ntracked_target_frames: 3923\n"
             "video_frames: 1999\nestimated_v3_inference_s: 3139.6\n")
         summ(t / "v4", 57.0, 46.0, 51.5)
-        (t / "v4" / "reid_summary.txt").write_text("variant: vlm\nvlm_calls: 39 (cached answers: 0)\n")
+        (t / "v4" / "reid_summary.txt").write_text("variant: vlm\nvlm_calls: 39 (cached answers: 0)\ntotal_search_s: 5.0\ntotal_vlm_wait_s: 45.0\n")
         timing(t / "v4", [("a", 500.0), ("b", 350.0)])               # V4 re-ran a and b only
         rec(t / "r2", 3, 2)
         rec(t / "r4", 3, 3)
@@ -55,12 +55,12 @@ def test_table_from_fake_folders():
         by = {r["version"]: r for r in out}
         assert by["V0"]["JF"] == 50.48 and by["V0"]["time_s"] == 2125.7 and by["V0"]["calls"] == 0.0
         assert by["V3"]["calls"] == 76 and abs(by["V3"]["calls_per_tracked"] - 0.0194) < 1e-9 and by["V3"]["time_s"] == 3139.6
-        assert abs(by["V4"]["time_s"] - (1000.0 - 700.0 + 850.0)) < 1e-9, by["V4"]["time_s"]       # 1150
+        assert abs(by["V4"]["time_s"] - 1050.0) < 1e-9, by["V4"]["time_s"]       # V2 1000 + 5 + 45
         assert by["V4"]["calls"] == 39 and abs(by["V4"]["calls_per_tracked"] - 39 / 3923) < 1e-12
         assert by["V0"]["recovery"] is None and by["V4"]["recovery"]["recovered"] == 3
         md = T.write(out, t / "out")
         assert "2 of 3" in md and "3 of 3" in md and "n/a" in md and (t / "out" / "ablation_table.csv").exists()
-        assert "50.48" in md and "1150.0" in md
+        assert "50.48" in md and "1050.0" in md
 
 
 def test_missing_files_give_na_not_a_crash():

@@ -66,17 +66,13 @@ def cost_columns(d, v2_dir, frames_tracked, frames_video):
                 "tracked": num(v3.get("tracked_target_frames")), "frames": num(v3.get("video_frames")),
                 "note": "V2 time + sequential VLM latency"}
     if reid:
-        live = timing_rows(d)
-        v2 = timing_rows(v2_dir) if v2_dir else {}
         v2_total = num(read_kv(v2_dir / "timing_summary.txt").get("total_inference_s")) if v2_dir else None
-        if v2_total is None or not live or not v2:
-            return {"time_s": None, "calls": num(reid.get("vlm_calls"), 0), "note": "needs --v2-dir with timing_per_video.csv"}
-        removed = sum(v2.get(v, 0.0) for v in live)
         calls = num(reid.get("vlm_calls"), 0)
-        return {"time_s": v2_total - removed + sum(live.values()), "calls": calls,
+        extra = (num(reid.get("total_search_s"), 0.0) or 0.0) + (num(reid.get("total_vlm_wait_s"), 0.0) or 0.0)
+        return {"time_s": None if v2_total is None else v2_total + extra, "calls": calls,
                 "calls_per_tracked": calls / frames_tracked if frames_tracked else None,
                 "calls_per_video": calls / frames_video if frames_video else None,
-                "note": f"V2 total - V2 on {len(live)} re-run videos + V4 on them"}
+                "note": f"V2 total + measured extra ({extra:.1f} s of search + VLM waiting); separate wall-clock runs differ by ~15%, so they are not compared"}
     return {"time_s": num(t.get("total_inference_s")), "calls": 0.0, "calls_per_tracked": 0.0, "calls_per_video": 0.0,
             "note": "measured"}
 
