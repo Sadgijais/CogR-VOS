@@ -1,0 +1,7 @@
+video,exp_id,frame,trigger,variant,n_candidates,shortlist,choice,choice_value,action,label,gt_visible,current_iou,chosen_iou,vlm_letter,vlm_conf,vlm_latency_s,vlm_cached,vlm_error,reason
+kite-surf,0_1,1,coherence_drop,off,4,d0 current d3,none,,keep,candidate_miss,1,0.3261,,,,,,,
+kite-surf,0_2,1,coherence_drop,off,4,d3 current d0,none,,keep,candidate_miss,1,0.2685,,,,,,,
+kite-surf,0_2,13,disappear,off,4,d0 d3 d2,none,,keep,missed,1,,,,,,,,
+kite-surf,0_2,24,coherence_drop,off,2,current d2,none,,keep,correct_none,1,0.604,,,,,,,
+kite-surf,0_2,34,absent_poll,off,5,d1 d3 d2,none,,keep,correct_none,0,,,,,,,,
+kite-surf,0_2,44,absent_poll,off,3,d2 d1 d0,none,,keep,candidate_miss,1,,,,,,,,

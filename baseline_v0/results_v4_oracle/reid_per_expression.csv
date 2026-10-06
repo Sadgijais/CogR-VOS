@@ -1,0 +1,6 @@
+video,exp_id,expression,frames,searches,restarts,correct_restart,wrong_restart,weak_restart,missed,correct_none,candidate_miss,skipped_uncached,skipped_guard_episode,skipped_guard_expression,vlm_calls,vlm_cached,vlm_wait_s
+india,0_1,a woman in a yellow salwar suit,81,4,0,0,0,0,0,4,0,0,0,0,0,0,0.0
+india,0_2,a woman in a red sari in the middle,81,3,2,2,0,0,0,1,0,0,0,0,0,0,0.0
+india,0_3,a lady in a black salwar on the right,81,4,0,0,0,0,0,4,0,0,0,0,0,0,0.0
+kite-surf,0_1,a power kite with blue handles,50,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+kite-surf,0_2,a surf-board,50,5,1,1,0,0,0,2,2,0,0,0,0,0,0.0

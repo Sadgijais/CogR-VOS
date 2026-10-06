@@ -1,0 +1,20 @@
+variant: off
+live_videos: 1
+live_expressions: 2
+searches: 6
+restarts: 0
+label_correct_restart: 0
+label_wrong_restart: 0
+label_weak_restart: 0
+label_missed: 1
+label_correct_none: 2
+label_candidate_miss: 3
+skipped_uncached: 0
+skipped_guard_episode: 0
+skipped_guard_expression: 0
+vlm_calls: 0 (cached answers: 0)
+live_frames: 50
+total_inference_s (live reruns only): 83.2
+total_search_s: 0.4
+total_vlm_wait_s: 0.0
+max_peak_alloc_mb: 1380
