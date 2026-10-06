@@ -1,0 +1,21 @@
+{
+  "label": "v4_oracle_partial",
+  "expressions_analyzed": 6,
+  "expressions_skipped_no_predictions": 0,
+  "expressions_with_reappearance": 3,
+  "expressions_with_vanish_no_return": 1,
+  "reappearance_events": 4,
+  "recovered_in_window": 2,
+  "recovered_later": 0,
+  "never_recovered": 2,
+  "latency_mean": 1,
+  "latency_median": 1.0,
+  "loss_episodes": 5,
+  "loss_recovered": 3,
+  "loss_never_recovered": 2,
+  "scored_frames": 381,
+  "visible_frames": 327,
+  "nre_frames": 23,
+  "absent_frames": 54,
+  "false_presence_frames": 9
+}

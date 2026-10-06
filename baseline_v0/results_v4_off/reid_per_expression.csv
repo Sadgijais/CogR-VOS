@@ -1,0 +1,3 @@
+video,exp_id,expression,frames,searches,restarts,correct_restart,wrong_restart,weak_restart,missed,correct_none,candidate_miss,skipped_uncached,skipped_guard_episode,skipped_guard_expression,vlm_calls,vlm_cached,vlm_wait_s
+kite-surf,0_1,a power kite with blue handles,50,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+kite-surf,0_2,a surf-board,50,5,0,0,0,0,1,2,2,0,0,0,0,0,0.0

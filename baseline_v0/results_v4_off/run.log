@@ -1,0 +1,34 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+V4 variant=off; 1 live video(s); events=EventParams(tau_low=0.81, tau_high=0.92, drop_delta=0.3, drop_window=3, persist_frames=5, margin_thresh=0.0, refractory=10, keepalive=0, max_calls=0, fire_on_disappear=True)
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 2522.24it/s]
+Loading weights:   0%|          | 0/398 [00:00<?, ?it/s]Loading weights: 100%|██████████| 398/398 [00:00<00:00, 10787.50it/s]
+V4 kite-surf: 3 expression(s), 50 frames
+frame loading (JPEG):   0%|          | 0/50 [00:00<?, ?it/s]frame loading (JPEG):  12%|█▏        | 6/50 [00:00<00:00, 59.48it/s]frame loading (JPEG):  26%|██▌       | 13/50 [00:00<00:00, 60.07it/s]frame loading (JPEG):  40%|████      | 20/50 [00:00<00:00, 60.42it/s]frame loading (JPEG):  54%|█████▍    | 27/50 [00:00<00:00, 60.21it/s]frame loading (JPEG):  68%|██████▊   | 34/50 [00:00<00:00, 59.68it/s]frame loading (JPEG):  80%|████████  | 40/50 [00:00<00:00, 57.94it/s]frame loading (JPEG):  94%|█████████▍| 47/50 [00:00<00:00, 58.85it/s]frame loading (JPEG): 100%|██████████| 50/50 [00:00<00:00, 59.33it/s]
+/home/sadgi/sam2/sam2/sam2_video_predictor.py:786: UserWarning: cannot import name '_C' from 'sam2' (/home/sadgi/sam2/sam2/__init__.py)
+
+Skipping the post-processing step due to the error above. You can still use SAM 2 and it's OK to ignore the error above, although some post-processing functionality may be limited (which doesn't affect the results in most cases; see https://github.com/facebookresearch/sam2/blob/main/INSTALL.md).
+  pred_masks_gpu = fill_holes_in_mask_scores(
+propagate in video:   0%|          | 0/50 [00:00<?, ?it/s]propagate in video:   2%|▏         | 1/50 [00:00<00:10,  4.54it/s]propagate in video:   4%|▍         | 2/50 [00:01<00:26,  1.80it/s]propagate in video:   6%|▌         | 3/50 [00:01<00:30,  1.55it/s]propagate in video:   8%|▊         | 4/50 [00:02<00:33,  1.35it/s]propagate in video:  10%|█         | 5/50 [00:03<00:37,  1.19it/s]propagate in video:  12%|█▏        | 6/50 [00:04<00:41,  1.05it/s]propagate in video:  14%|█▍        | 7/50 [00:06<00:45,  1.06s/it]propagate in video:  16%|█▌        | 8/50 [00:07<00:49,  1.19s/it]propagate in video:  18%|█▊        | 9/50 [00:09<00:51,  1.27s/it]propagate in video:  20%|██        | 10/50 [00:10<00:52,  1.32s/it]propagate in video:  22%|██▏       | 11/50 [00:11<00:53,  1.36s/it]propagate in video:  24%|██▍       | 12/50 [00:13<00:52,  1.39s/it]propagate in video:  26%|██▌       | 13/50 [00:14<00:53,  1.45s/it]propagate in video:  28%|██▊       | 14/50 [00:16<00:54,  1.52s/it]propagate in video:  30%|███       | 15/50 [00:18<00:54,  1.56s/it]propagate in video:  32%|███▏      | 16/50 [00:19<00:53,  1.58s/it]propagate in video:  34%|███▍      | 17/50 [00:21<00:52,  1.59s/it]propagate in video:  36%|███▌      | 18/50 [00:23<00:52,  1.65s/it]propagate in video:  38%|███▊      | 19/50 [00:25<00:52,  1.70s/it]propagate in video:  40%|████      | 20/50 [00:27<00:52,  1.76s/it]propagate in video:  42%|████▏     | 21/50 [00:31<01:15,  2.60s/it]propagate in video:  44%|████▍     | 22/50 [00:33<01:05,  2.35s/it]propagate in video:  46%|████▌     | 23/50 [00:35<00:59,  2.20s/it]propagate in video:  48%|████▊     | 24/50 [00:36<00:53,  2.07s/it]propagate in video:  50%|█████     | 25/50 [00:38<00:49,  1.99s/it]propagate in video:  52%|█████▏    | 26/50 [00:40<00:46,  1.93s/it]propagate in video:  54%|█████▍    | 27/50 [00:42<00:42,  1.85s/it]propagate in video:  56%|█████▌    | 28/50 [00:43<00:39,  1.81s/it]propagate in video:  58%|█████▊    | 29/50 [00:45<00:37,  1.79s/it]propagate in video:  60%|██████    | 30/50 [00:47<00:35,  1.77s/it]propagate in video:  62%|██████▏   | 31/50 [00:49<00:33,  1.76s/it]propagate in video:  64%|██████▍   | 32/50 [00:50<00:30,  1.72s/it]propagate in video:  66%|██████▌   | 33/50 [00:52<00:29,  1.72s/it]propagate in video:  68%|██████▊   | 34/50 [00:54<00:28,  1.76s/it]propagate in video:  70%|███████   | 35/50 [00:56<00:27,  1.80s/it]propagate in video:  72%|███████▏  | 36/50 [00:58<00:25,  1.81s/it]propagate in video:  74%|███████▍  | 37/50 [00:59<00:23,  1.79s/it]propagate in video:  76%|███████▌  | 38/50 [01:01<00:21,  1.83s/it]propagate in video:  78%|███████▊  | 39/50 [01:06<00:29,  2.65s/it]propagate in video:  80%|████████  | 40/50 [01:08<00:24,  2.42s/it]propagate in video:  82%|████████▏ | 41/50 [01:10<00:20,  2.25s/it]propagate in video:  84%|████████▍ | 42/50 [01:11<00:16,  2.09s/it]propagate in video:  86%|████████▌ | 43/50 [01:13<00:14,  2.01s/it]propagate in video:  88%|████████▊ | 44/50 [01:15<00:11,  1.96s/it]propagate in video:  90%|█████████ | 45/50 [01:17<00:09,  1.94s/it]propagate in video:  92%|█████████▏| 46/50 [01:19<00:07,  1.89s/it]propagate in video:  94%|█████████▍| 47/50 [01:20<00:05,  1.83s/it]propagate in video:  96%|█████████▌| 48/50 [01:22<00:03,  1.82s/it]propagate in video:  98%|█████████▊| 49/50 [01:24<00:01,  1.80s/it]propagate in video: 100%|██████████| 50/50 [01:26<00:00,  1.79s/it]propagate in video: 100%|██████████| 50/50 [01:26<00:00,  1.72s/it]
+  83.2s total (0.4s searching, 0.0s waiting for the VLM), 0 restart(s), peak VRAM 1379 MB
+variant: off
+live_videos: 1
+live_expressions: 2
+searches: 6
+restarts: 0
+label_correct_restart: 0
+label_wrong_restart: 0
+label_weak_restart: 0
+label_missed: 1
+label_correct_none: 2
+label_candidate_miss: 3
+skipped_uncached: 0
+skipped_guard_episode: 0
+skipped_guard_expression: 0
+vlm_calls: 0 (cached answers: 0)
+live_frames: 50
+total_inference_s (live reruns only): 83.2
+total_search_s: 0.4
+total_vlm_wait_s: 0.0
+max_peak_alloc_mb: 1380
+Stage V4 (off) done. Predictions under predictions_v4_off/ -> next: python stage3_evaluate.py --config <config> with this predictions folder

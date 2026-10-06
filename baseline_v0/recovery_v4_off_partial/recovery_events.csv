@@ -1,0 +1,4 @@
+label,kind,video,exp_id,start_frame,end_frame,length,first_visible_frame,iou_at_return,recovered_in_window,latency_frames,eventual_latency_frames,recovered
+v4_off_partial,reappearance,kite-surf,0_2,16,20,5,21,0.5611,True,0,0,True
+v4_off_partial,reappearance,kite-surf,0_2,31,36,6,37,0.0,False,,,False
+v4_off_partial,loss_episode,kite-surf,0_2,37,42,6,,,,10,,True

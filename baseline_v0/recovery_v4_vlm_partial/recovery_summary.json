@@ -1,0 +1,21 @@
+{
+  "label": "v4_vlm_partial",
+  "expressions_analyzed": 3,
+  "expressions_skipped_no_predictions": 0,
+  "expressions_with_reappearance": 2,
+  "expressions_with_vanish_no_return": 1,
+  "reappearance_events": 2,
+  "recovered_in_window": 1,
+  "recovered_later": 0,
+  "never_recovered": 1,
+  "latency_mean": 2,
+  "latency_median": 2,
+  "loss_episodes": 3,
+  "loss_recovered": 1,
+  "loss_never_recovered": 2,
+  "scored_frames": 237,
+  "visible_frames": 195,
+  "nre_frames": 11,
+  "absent_frames": 42,
+  "false_presence_frames": 10
+}

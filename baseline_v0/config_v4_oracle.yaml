@@ -1,0 +1,87 @@
+# CogR-VOS V2 configuration = V1 (memory, frozen settings) + Tracklet Coherence Score.
+# V0/V1 settings below are unchanged; only paths and the `v2:` block are new.
+# Grounding-DINO (frame 0) + SAM2 (propagation to end) + STTM + TCS. No VLM, no re-ID.
+# Every setting that affects the reported number lives here, not hardcoded
+# in a script — see README.md "Why config.yaml owns everything" for why.
+
+dataset:
+  name: ref_davis17
+  root: /home/sadgi/data/Ref-DAVIS17/DAVIS   # <-- EDIT: must point at the 480p release
+  tier: full                       # smoke | ablation | full  (see README)
+
+  # OPEN DECISION — not yet settled, see V0_Baseline_Spec.md §7.
+  # CogR-VOS_Dataset_Subset_Protocol.md says 0; Dataset_Audit_Findings.md
+  # says 1. Pick one, write it here, and state the choice in any table you
+  # report. The loader will refuse to run if this is left null and the
+  # metadata file turns out to need it.
+  annotator_set: 0
+
+grounding:
+  model_id: IDEA-Research/grounding-dino-tiny   # HF hub id (pure PyTorch)
+  text_threshold: 0.20     # lowered on purpose (AL-Ref-SAM2 style) —
+  box_threshold: 0.15      # richer candidate set for later re-ID to use
+  top_k_boxes: 5           # V0 only uses top-1; top-5 cached for V4 later
+  device: cuda
+
+propagation:
+  model_cfg: configs/sam2.1/sam2.1_hiera_t.yaml
+  checkpoint: /home/sadgi/cogrvos/checkpoints/sam2.1_hiera_tiny.pt   # <-- EDIT
+  device: cuda
+  offload_video_to_cpu: true    # required to fit a 4 GB card
+  offload_state_to_cpu: true    # ~22% slower, large VRAM saving
+  batch_objects: true           # all of a video's expressions, one SAM2 state
+
+evaluation:
+  require_480p: true        # refuses to run on Full-Resolution data
+  exclude_first_last: true  # official DAVIS convention — see README
+  bound_th_px: 4             # boundary tolerance for the F measure
+
+failure_analysis:
+  drift_low: 0.10             # IoU below this on the target = "lost it"
+  drift_high: 0.50            # IoU above this on another object = "onto what"
+  recovery_iou: 0.50
+  recovery_window: 10         # frames
+  grounding_failure_iou: 0.10
+  track_lost_mean_iou: 0.30
+  poor_mask_gap: 0.15
+
+paths:
+  grounding_out: grounding/
+  predictions_out: predictions_v4_oracle/
+  results_out: results_v4_oracle/
+  visualizations_out: visualizations_v4_oracle/
+  failure_analysis_out: failure_analysis_v4_oracle.csv
+
+target:
+  # Grounded-SAM2 from the AL-Ref-SAM2 (AAAI 2025) ablation table — the
+  # same two frozen backbones in the same arrangement. V0 is meant to
+  # LAND here, not beat it. See README "Reading your number".
+  ref_davis17_jf: 66.2
+
+# ---- V1 (STTM) settings. Everything V0 uses above is unchanged. ----
+v1:
+  use_sttm: true
+  embeddings_out: embeddings/
+  params:                    # STTM hyperparameters (tuned on the ablation tier only, then frozen)
+    K: 4
+    tau_obj: 0.0
+    a_min: 200
+    tau_sim: 0.5
+    delta: 5
+    merge_thr: 0.95
+    half_life: 30.0
+    sim_mode: anchor_proto
+
+# ---- V2 (Tracklet Coherence Score) settings. ----
+v2:
+  gate_writes: false
+  tcs:
+    w_mask: 1.0              # term weights: fixed equal, NOT tuned (see V2_TUNING_PLAN.md)
+    w_motion: 1.0
+    w_appearance: 1.0
+    w_semantic: 1.0
+    agg: geometric           # geometric | arithmetic
+    motion_scale: 0.5        # centroid residual (in object diameters) where the motion term falls to 1/e
+    app_floor: 0.0
+    tau_low: 0.81            # TUNED on the ablation tier by tools/tcs_analysis.py --suggest, then FROZEN
+    tau_high: 0.92           # TUNED on the ablation tier by tools/tcs_analysis.py --suggest, then FROZEN
