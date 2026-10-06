@@ -4,7 +4,7 @@
 
 A training-free system that keeps track of *who the target is* across a video, notices when tracking stops being trustworthy, and calls an expensive reasoning model only at those moments.
 
-> Status: V0 baseline complete (J&F 50.48). V1 (Semantic-Temporal Target Memory) complete (J&F 50.97, a no-regression result). V2 (Tracklet Coherence Score) complete (passive 50.97, gated 50.40 is a negative result). V3 (event-driven VLM) built and run once with a real VLM (J&F 50.58): no accuracy gain on Ref-DAVIS17, about 52x fewer VLM calls than every-frame. V4 (re-identification) not started.
+> Status: V0 baseline complete (J&F 50.48). V1 (Semantic-Temporal Target Memory) complete (J&F 50.97, a no-regression result). V2 (Tracklet Coherence Score) complete (passive 50.97, gated 50.40 is a negative result). V3 (event-driven VLM) built and run once with a real VLM (J&F 50.58): no accuracy gain on Ref-DAVIS17, about 52x fewer VLM calls than every-frame. V4 (memory-grounded re-identification) is complete and was run on all 30 videos: V4-memory 50.87 and V4-vlm 50.86 J&F, no gain over V2 on Ref-DAVIS17 (it has only 4 vanishing targets); a post-hoc margin gate gave 50.90. See the V4 section below.
 
 ---
 
