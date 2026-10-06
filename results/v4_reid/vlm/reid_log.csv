@@ -1,0 +1,79 @@
+video,exp_id,frame,trigger,variant,n_candidates,shortlist,choice,choice_value,action,label,gt_visible,current_iou,chosen_iou,vlm_letter,vlm_conf,vlm_latency_s,vlm_cached,vlm_error,reason
+bike-packing,0_1,15,coherence_drop,vlm,1,current,current,1.0,keep,correct_none,1,0.6162,,A,1.0,2.6015,False,,The candidate matches the unique features of the target bike.
+bmx-trees,0_1,14,coherence_drop,vlm,2,d0 current,d0,0.9,restart,correct_restart,1,0.6596,0.507,A,0.9,2.2504,False,,Candidate A matches the frame structure and red color of the target bike.
+bmx-trees,0_2,16,coherence_drop,vlm,5,d0 current d1,none,0.8,keep,correct_none,1,0.7553,,none,0.8,3.5514,False,,None of the candidates show the boy in the white tshirt.
+bmx-trees,0_1,24,drift_suspect,vlm,2,current d0,current,0.9,keep,correct_none,1,0.6301,,A,0.9,4.2192,False,,Candidate A matches the frame and red color of the target bike.
+bmx-trees,0_1,42,coherence_drop,vlm,2,current d0,current,0.9,keep,correct_none,1,0.5716,,A,0.9,2.1883,False,,Candidate A matches the frame and red color of the target bike.
+bmx-trees,0_2,52,coherence_drop,vlm,1,current,current,1.0,keep,candidate_miss,1,0.4547,,A,1.0,2.4934,False,,"The candidate matches the target's clothing, posture, and physical appearance."
+bmx-trees,0_1,52,drift_suspect,vlm,2,current d0,current,0.9,keep,correct_none,1,0.527,,A,0.9,5.1877,False,,Candidate A matches the visual features and structure of the target bike.
+bmx-trees,0_1,62,drift_suspect,vlm,2,current d0,current,0.9,keep,candidate_miss,1,0.3194,,A,0.9,3.83,False,,Candidate A matches the visual features and structure of the target bike.
+bmx-trees,0_2,63,coherence_drop,vlm,4,current d1 d3,current,0.9,keep,candidate_miss,1,0.4894,,A,0.9,6.0643,False,,Candidate A matches the boy's white t-shirt and dark shorts from the target images.
+bmx-trees,0_1,72,drift_suspect,vlm,2,current d0,current,0.9,keep,correct_none,1,0.5363,,A,0.9,3.4,False,,Candidate A matches the visual features and structure of the target bike.
+breakdance,0_1,12,coherence_drop,vlm,3,current d4 d0,d0,0.95,restart,correct_restart,1,0.1304,0.9051,C,0.95,6.1278,False,,Candidate C shows the same red sweatshirt and person performing the same breakdance move.
+dog,0_1,23,coherence_drop,vlm,2,current d1,current,1.0,keep,correct_none,1,0.9627,,A,1.0,3.2185,False,,Candidate A is identical to the target dog in the previous frame.
+dogs-jump,0_1,4,coherence_drop,vlm,4,current d3 d2,current,1.0,keep,missed,1,0.0004,,A,1.0,6.0678,False,,Candidate A matches the target's distinctive white and black patch pattern and pose.
+dogs-jump,0_2,4,coherence_drop,vlm,3,current d1 d2,current,0.95,keep,correct_none,1,0.9529,,A,0.95,4.5254,False,,"Candidate A matches the target's color pattern, markings, and posture."
+dogs-jump,0_3,7,coherence_drop,vlm,2,current d1,current,0.95,keep,correct_none,1,0.8812,,A,0.95,5.333,False,,Candidate A matches the clothing and physical appearance of the target.
+dogs-jump,0_1,15,distractor,vlm,5,current d1 d3,current,0.95,keep,missed,1,0.0,,A,0.95,5.132,False,,Candidate A matches the coat pattern and body shape of the target dog.
+dogs-jump,0_3,44,coherence_drop,vlm,2,current d1,current,1.0,keep,correct_none,1,0.9195,,A,1.0,3.8476,False,,"Candidate A matches the target's appearance, clothing, and posture perfectly."
+dogs-jump,0_1,54,distractor,vlm,4,current d1 d2,current,0.95,keep,candidate_miss,1,0.0,,A,0.95,3.8289,False,,Candidate A matches the color pattern and tail shape of the target dog.
+dogs-jump,0_2,55,coherence_drop,vlm,3,current d3 d1,current,0.9,keep,correct_none,1,0.9369,,A,0.9,2.7054,False,,Candidate A matches the color pattern and physical build of the target dog.
+dogs-jump,0_1,64,drift_suspect,vlm,1,current,current,0.9,keep,candidate_miss,1,0.0,,A,0.9,4.9038,False,,The candidate matches the rear view and coat pattern of the target dog.
+dogs-jump,0_2,65,drift_suspect,vlm,3,current d4 d3,current,0.9,keep,correct_none,1,0.9563,,A,0.9,4.2748,False,,Candidate A matches the fur pattern and color of the target dog.
+drift-chicane,0_1,1,coherence_drop,vlm,2,current d1,current,1.0,keep,correct_none,1,0.9003,,A,1.0,5.3461,False,,Candidate A matches the visual features and color pattern of the target car.
+drift-straight,0_1,28,coherence_drop,vlm,2,current d1,current,1.0,keep,correct_none,1,0.9844,,A,1.0,2.0759,False,,Candidate A is identical to the target car shown in the previous frame.
+drift-straight,0_1,40,drift_suspect,vlm,2,current d1,current,1.0,keep,correct_none,1,0.9714,,A,1.0,3.0919,False,,Candidate A matches the visual features and markings of the target car.
+gold-fish,0_1,67,coherence_drop,vlm,5,current d0 d1,d1,0.95,restart,wrong_restart,1,0.9141,0.0,C,0.95,3.1266,False,,"Candidate C matches the body shape, fin structure, and coloration of the target goldfish."
+gold-fish,0_5,67,coherence_drop,vlm,5,current d0 d1,d1,0.9,restart,wrong_restart,1,0.0,0.0,C,0.9,4.9316,False,,The fish in candidate C matches the body shape and color of the target.
+gold-fish,0_2,68,coherence_drop,vlm,5,current d1 d0,d0,1.0,restart,wrong_restart,1,0.0,0.0036,C,1.0,2.8348,False,,"Candidate C matches the shape, color, and features of the target goldfish."
+gold-fish,0_4,68,coherence_drop,vlm,4,current d0 d1,d1,1.0,restart,wrong_restart,1,0.0,0.0,C,1.0,4.9224,False,,"Candidate C matches the goldfish's distinct body shape, color, and fin structure."
+india,0_3,29,coherence_drop,vlm,3,current d1 d4,current,0.95,keep,correct_none,1,0.8383,,A,0.95,2.8939,True,,Candidate A matches the clothing and facial features of the target lady.
+india,0_2,33,coherence_drop,vlm,4,d0 current d1,d0,0.9,restart,correct_restart,1,0.0,0.857,A,0.9,5.3758,True,,The clothing pattern and color match the target's appearance.
+india,0_1,38,coherence_drop,vlm,2,d0 current,current,1.0,keep,correct_none,1,0.7713,,B,1.0,5.0521,True,,Candidate B matches the yellow salwar suit pattern and color of the target.
+india,0_3,42,coherence_drop,vlm,5,d0 current d1,current,1.0,keep,correct_none,1,0.8634,,B,1.0,2.015,True,,Candidate B matches the clothing pattern and color of the target.
+india,0_2,45,disappear,vlm,1,d0,none,0.9,keep,missed,1,,,none,0.9,2.7981,True,,The candidate's clothing pattern and style do not match the target.
+india,0_3,52,absent_poll,vlm,4,d3 d4 d0,none,1.0,keep,correct_none,0,,,none,1.0,3.4014,True,,"The target wears a black salwar, while all candidates wear yellow patterned outfits."
+india,0_2,55,absent_poll,vlm,2,d2 d0,d2,0.9,restart,wrong_restart,0,,0.0,A,0.9,5.8304,True,,Candidate A matches the red sari and pattern seen in the target image.
+india,0_1,57,coherence_drop,vlm,4,current d0 d3,current,1.0,keep,correct_none,1,0.902,,A,1.0,3.3414,True,,Candidate A matches the yellow salwar suit pattern and color of the target.
+india,0_3,62,drift_suspect,vlm,5,d3 d4 current,current,1.0,keep,correct_none,1,0.7263,,C,1.0,3.7529,True,,Candidate C matches the facial features and clothing of the target object.
+india,0_1,67,absent_poll,vlm,2,d1 d0,none,1.0,keep,correct_none,0,,,none,1.0,2.7627,True,,"The target is in a yellow suit, while both candidates are wearing different colors."
+india,0_1,77,absent_poll,vlm,1,d0,none,1.0,keep,correct_none,0,,,none,1.0,2.415,True,,"The candidate is wearing a dark outfit, not a yellow salwar suit."
+judo,0_2,20,coherence_drop,vlm,5,current d1 d0,d0,0.95,restart,wrong_restart,1,0.0745,0.0,C,0.95,23.3885,False,,Candidate C is the only bald man with a black belt.
+judo,0_1,20,coherence_drop,vlm,4,current d0 d1,current,0.95,keep,correct_none,1,0.7493,,A,0.95,2.8144,False,,Candidate A matches the man's physical appearance and blue belt.
+kite-surf,0_1,1,coherence_drop,vlm,4,d0 current d3,d0,0.95,restart,weak_restart,1,0.3261,0.2843,A,0.95,4.8271,False,,Candidate A matches the visual appearance and pose of the target object.
+kite-surf,0_2,1,coherence_drop,vlm,4,d3 current d0,d0,0.9,restart,weak_restart,1,0.2685,0.2866,C,0.9,3.2234,False,,Candidate C matches the shape and blue color of the target surfboard.
+kite-surf,0_2,12,coherence_drop,vlm,2,current d2,current,1.0,keep,correct_none,1,0.531,,A,1.0,3.9469,False,,Candidate A matches the visual appearance and shape of the target surfboard.
+kite-surf,0_2,26,coherence_drop,vlm,4,current d3 d4,d4,0.9,restart,wrong_restart,1,0.5594,0.0477,C,0.9,4.2806,False,,The shape and the surrounding water spray match the target's appearance.
+kite-surf,0_2,36,absent_poll,vlm,4,d3 d4 d0,d4,0.9,restart,wrong_restart,0,,0.0,B,0.9,5.2939,False,,"Candidate B shows a person on a surfboard, matching the target's visual characteristics."
+kite-surf,0_2,46,absent_poll,vlm,5,d3 d1 d0,none,0.9,keep,candidate_miss,1,,,none,0.9,5.5237,False,,None of the candidates show a surfboard; they are water splashes or a person.
+lab-coat,0_2,1,disappear,vlm,3,d2 d4 d0,none,0.9,keep,candidate_miss,1,,,none,0.9,4.6059,False,,None of the candidates show a pink cell phone in a girl's hand.
+lab-coat,0_1,4,disappear,vlm,3,d1 d2 d4,d4,0.9,restart,wrong_restart,1,,0.0349,C,0.9,4.8782,False,,Candidate C matches the visual appearance of the white cell phone in the hand.
+lab-coat,0_2,15,reappear,vlm,5,current d3 d0,d0,0.9,restart,weak_restart,1,0.0,0.1458,C,0.9,3.6587,False,,Candidate C shows the same pink phone held in a hand as the target.
+lab-coat,0_1,16,coherence_drop,vlm,3,current d3 d0,d0,0.9,restart,correct_restart,1,0.0,0.5463,C,0.9,4.1816,False,,Candidate C shows the same white phone held in a hand as the target.
+lab-coat,0_2,26,coherence_drop,vlm,5,current d1 d0,d1,0.95,restart,wrong_restart,1,0.0,0.0,B,0.95,3.0407,False,,Candidate B matches the shape and color of the pink phone in the hand.
+lab-coat,0_1,28,coherence_drop,vlm,3,current d1 d0,current,0.9,keep,missed,1,0.0422,,A,0.9,5.292,False,,"Candidate A shows a hand holding a small white object, matching the target description."
+lab-coat,0_5,30,coherence_drop,vlm,5,current d1 d0,d0,0.9,restart,wrong_restart,1,0.0,0.0,C,0.9,4.2488,False,,Candidate C matches the facial features and clothing of the target.
+lab-coat,0_4,32,coherence_drop,vlm,5,current d0 d1,d1,1.0,restart,wrong_restart,1,0.0782,0.0043,C,1.0,5.5462,False,,Candidate C matches the girl in the lab-coat and black shirt.
+lab-coat,0_3,33,distractor,vlm,5,current d0 d2,d0,1.0,restart,correct_restart,1,0.4969,0.9629,B,1.0,8.0693,False,,Candidate B matches the blonde girl on the right in the target image.
+lab-coat,0_1,38,coherence_drop,vlm,4,current d4 d0,d0,0.9,restart,wrong_restart,1,0.0042,0.0,C,0.9,3.2737,False,,Candidate C shows the white cell phone held in a hand.
+lab-coat,0_2,38,drift_suspect,vlm,5,current d3 d1,d1,0.9,restart,wrong_restart,1,0.0,0.018,C,0.9,4.9724,False,,"Candidate C shows a pink object held in a hand, matching the target description."
+lab-coat,0_5,40,drift_suspect,vlm,5,current d0 d1,d1,0.9,restart,wrong_restart,1,0.0,0.0006,C,0.9,3.0449,False,,Candidate C matches the facial features and hair of the target.
+libby,0_1,32,coherence_drop,vlm,3,current d1 d2,current,0.9,keep,correct_none,1,0.866,,A,0.9,5.108,False,,Candidate A shows the same dog with matching coat pattern and tail position.
+libby,0_1,43,coherence_drop,vlm,2,current d1,current,0.95,keep,correct_none,1,0.8683,,A,0.95,3.6911,False,,"Candidate A matches the dog's markings, tail position, and overall appearance."
+loading,0_1,34,coherence_drop,vlm,3,current d1 d0,current,1.0,keep,missed,1,0.0,,A,1.0,3.7625,False,,"Candidate A matches the shirt, facial features, and clothing of the target."
+loading,0_3,34,coherence_drop,vlm,5,current d3 d0,current,1.0,keep,correct_none,1,0.9418,,A,1.0,4.9772,False,,Candidate A matches the clothing and physical appearance of the target.
+loading,0_2,40,coherence_drop,vlm,6,d4 d1 current,current,0.9,keep,correct_none,1,0.6116,,C,0.9,3.8004,False,,Candidate C shows the same Samsung TV box branding and visual features as the target.
+loading,0_1,45,drift_suspect,vlm,3,current d2 d0,none,0.9,keep,missed,1,0.0001,,none,0.9,3.4126,False,,None of the candidates match the target's distinctive black and blue shirt.
+loading,0_3,45,drift_suspect,vlm,6,current d4 d2,d4,0.9,restart,wrong_restart,1,0.9431,0.0003,B,0.9,3.1142,False,,Candidate B matches the facial features and clothing style of the target.
+mbike-trick,0_1,75,coherence_drop,vlm,2,current d1,d1,1.0,restart,weak_restart,1,0.9135,0.2041,B,1.0,3.1652,False,,"Candidate B matches the biker's clothing, gloves, and motorcycle from the target images."
+motocross-jump,0_2,1,coherence_drop,vlm,1,current,current,1.0,keep,correct_none,1,0.7149,,A,1.0,1.947,False,,Candidate A is identical to the target motorbike.
+motocross-jump,0_2,11,drift_suspect,vlm,1,current,current,1.0,keep,correct_none,1,0.8504,,A,1.0,13.4122,False,,The candidate matches the target motorbike's visual features and structure.
+motocross-jump,0_1,16,coherence_drop,vlm,4,current d0 d4,current,0.95,keep,missed,1,0.0913,,A,0.95,7.381,False,,Candidate A matches the motorbike's visual features and rider's gear from the target image.
+motocross-jump,0_2,21,drift_suspect,vlm,1,current,current,1.0,keep,correct_none,1,0.9289,,A,1.0,2.4535,False,,The candidate matches the green motorbike's visual features and branding.
+motocross-jump,0_2,31,drift_suspect,vlm,1,current,current,1.0,keep,correct_none,1,0.9087,,A,1.0,2.6184,False,,"The candidate is identical to the target motorbike, including the number 108."
+scooter-black,0_1,18,coherence_drop,vlm,3,current d1 d3,d1,1.0,restart,weak_restart,1,0.8361,0.2031,B,1.0,4.7647,False,,Candidate B matches the man in a suit on the scooter perfectly.
+shooting,0_3,1,coherence_drop,vlm,2,d0 current,d0,0.9,restart,correct_restart,1,0.6349,0.8238,A,0.9,3.7723,False,,Candidate A matches the texture and appearance of the rope in the target images.
+shooting,0_1,11,coherence_drop,vlm,5,current d4 d0,current,0.9,keep,missed,1,0.4834,,A,0.9,3.5073,False,,Candidate A matches the shape and orientation of the target gun.
+shooting,0_1,21,drift_suspect,vlm,1,current,current,0.9,keep,correct_none,1,0.9252,,A,0.9,4.6599,False,,The candidate matches the visual features and structure of the target gun.
+shooting,0_2,26,coherence_drop,vlm,1,current,current,1.0,keep,correct_none,1,0.9523,,A,1.0,8.0962,False,,The candidate matches the facial features and clothing of the target.
+shooting,0_1,31,drift_suspect,vlm,1,current,current,1.0,keep,correct_none,1,0.9233,,A,1.0,7.1924,False,,The candidate matches the visual features and scope of the target gun.

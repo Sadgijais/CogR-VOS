@@ -208,3 +208,16 @@ Reporting rule: every number in a results table comes from the full Ref-DAVIS17 
 
 Development runs on a 4 GB RTX 2050 under WSL2. This shapes the design: no two large models co-resident, SAM 2 tiny only, an API-based VLM, and disk-cached stages. Full Long-RVOS runs and the V5 always-on comparison are planned for Kaggle T4 GPUs.
 
+
+## V4: memory-grounded re-identification (Task 4) and the V0-V4 ablation (Task 5)
+Result on Ref-DAVIS17 val (30 videos, 61 expressions, one run each): **no improvement over V2.**
+
+| Version | J&F | VLM calls | Events recovered |
+|---|---|---|---|
+| V2 | 50.97 | 0 | 2 of 4 |
+| V3 | 50.58 | 76 | 2 of 4 |
+| V4-memory | 50.87 | 0 | 2 of 4 |
+| V4-vlm | 50.86 | 78 | 2 of 4 |
+| V4-memory_margin (post hoc) | 50.90 | 0 | 2 of 4 |
+
+The choosers restart even when the tracker is already right, the VLM is equally confident when wrong, and V4 cannot say the target is absent. Ref-DAVIS17 has only 4 of 61 vanishing targets, so re-ID is decided on Long-RVOS. Details: `results/v4_reid/`, `baseline_v0/V4_PLAN.md`, `baseline_v0/tools/run_v4.sh`.
