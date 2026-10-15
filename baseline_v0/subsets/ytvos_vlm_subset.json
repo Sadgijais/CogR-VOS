@@ -1,0 +1,36 @@
+{
+  "dataset": "ref_youtube_vos_train_slice_vlm_subset",
+  "rule": "first K videos of the slice in sha256(seed_text+video) order, K largest with planned V3 events calls <= 40",
+  "seed_text": "cogrvos-task6-ytvos-v1",
+  "max_calls": 40,
+  "K": 10,
+  "planned_calls_on_subset": 40,
+  "planned_calls_full_slice": 171,
+  "sentences_on_subset": 36,
+  "events_csv": "/home/sadgi/cogrvos/task6_ytvos/baseline_v0/results_v3_oracle_events_log_only/events_per_expression.csv",
+  "events_csv_sha256": "12bbcad999d6df950a3f6be171543c172aff81b1cda9c6849f3f3545e435e863",
+  "videos": [
+    "39bc49a28c",
+    "39befd99fb",
+    "5104aa1fea",
+    "5d663000ff",
+    "a7203deb2d",
+    "ab199e8dfb",
+    "b8c03d1091",
+    "bfd91d0742",
+    "ef232a2aed",
+    "efe828affa"
+  ],
+  "hash_order_of_chosen": [
+    "bfd91d0742",
+    "5d663000ff",
+    "5104aa1fea",
+    "39befd99fb",
+    "efe828affa",
+    "39bc49a28c",
+    "b8c03d1091",
+    "ab199e8dfb",
+    "a7203deb2d",
+    "ef232a2aed"
+  ]
+}
