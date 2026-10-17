@@ -108,3 +108,30 @@ or the free Gemini quota runs out (then the VLM rows stay partial and say so).
 - On Ref-DAVIS17 the ladder gave no accuracy gain (J&F 50.48 -> about 51); the contribution is V3's lower cost.
   We do not expect that to change and will not describe any gain smaller than the noise as an improvement.
 - VLM rows use a subset because of the free-tier quota.
+
+## AMENDMENT 1 (2026-10-17): written after V0, V1, V2 and V4-memory were run, BEFORE any real Gemini call
+
+Mentor reply (Arpit Sir, 17 Oct 2026). Rules adopted from now on:
+1. Label for the Ref-YouTube-VOS slice in every table and in the report: "Reserved subset from the training split -
+   not official validation." No claim of official-validation or independent-test results.
+2. Real-VLM versions (V3, V4-vlm) run only on the pre-declared 10-video subset (subsets/ytvos_vlm_subset.json,
+   commit 12b5e1b, rule in tools/pick_vlm_subset.py), the same videos for both. V0, V1, V2 and V4-memory are also
+   reported on that subset, and on all 50 videos.
+3. For every version on the same videos: J, F, J&F and inference time (tools/subset_table.py). For the VLM versions:
+   ACTUAL executed VLM calls and calls per tracked frame.
+4. The 171 calls counted on all 50 videos come from the event schedule (oracle replay, no API). They are called
+   "estimated/projected" and kept apart from actual calls.
+5. Frozen: video ids, prompts, thresholds, configs, protocol. Nothing changes after results are seen. The pipeline
+   code (V0-V4, prompts in vlm.py) is the repository version at commit 2d50ba3 and was not edited for Task 6; the run
+   configs differ only in dataset path and tier name.
+Order of work: (a) fair comparison of all versions on the 10-video subset, then (b) full-50-video results and
+failure cases, reported separately.
+
+Definitions fixed here (they replace the wording in sections 4 and 5 where different):
+- FPS = tracked target frames / stage-2 inference seconds. It excludes the one-off Grounding-DINO stage (175 s)
+  and the embeddings cache.
+- Calls per frame = VLM calls / tracked target frames (4916 on 50 videos, 976 on the subset), not the 4740 scored.
+- V4-memory time = V2 time + measured search time (11.9 s on 50 videos).
+
+Results seen before this amendment (no Gemini involved), J&F on all 50 videos: V0 44.04, V1 43.96, V2 passive
+43.96, V4-memory 43.80. V4-memory made 26 restarts: 3 correct, 21 wrong, 2 weak. No setting was changed after seeing them.
