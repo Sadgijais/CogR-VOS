@@ -1,0 +1,92 @@
+video,exp_id,expression,frames,searches,restarts,correct_restart,wrong_restart,weak_restart,missed,correct_none,candidate_miss,skipped_uncached,skipped_guard_episode,skipped_guard_expression,vlm_calls,vlm_cached,vlm_wait_s
+2c54cfbb78,0,a crocodile in the water is pulled up by a person,36,3,0,0,0,0,1,0,2,0,0,0,0,0,0.0
+2c54cfbb78,1,a crocodile being caught by a man,36,3,0,0,0,0,2,0,1,0,0,0,0,0,0.0
+2c54cfbb78,2,a man wearing red standing in water,36,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+2c54cfbb78,3,a person grabbing a crocodile,36,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+39bc49a28c,0,a green parrot moving around a brown floor,36,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+39bc49a28c,1,a green parrot walking,36,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+46565a75f8,0,a blue hat on a person on a bike,20,2,0,0,0,0,1,0,1,0,0,0,0,0,0.0
+46565a75f8,2,a blue bike being ridden on a trail,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+46565a75f8,3,a dirt bike being ridden on a path,20,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+49e7326789,0,the first sheep to pass by the man,36,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+49e7326789,1,a white sheep walking through a metal walkway ahead of another sheep,36,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+49e7326789,2,the second sheep to pass by the man,36,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+49e7326789,3,a sheep following another through a metal corridor,36,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+4a3471bdf5,0,an elephant standing in an enclosure,20,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+4a3471bdf5,1,an elephant is walking on the field,20,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+4a3471bdf5,2,an elephant laying in an enclosure,20,2,0,0,0,0,0,0,2,0,0,0,0,0,0.0
+4a3471bdf5,3,an elephant is behind another elephant in the down,20,2,0,0,0,0,1,0,1,0,0,0,0,0,0.0
+4a3471bdf5,4,an elephant standing in the background of view,20,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0
+4a3471bdf5,5,a giraffe is standing far behind backside in the green fied,20,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0
+5104aa1fea,0,a helmet of a byciclist farthest to the left,20,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+5104aa1fea,1,a person wearing a hat while riding a bike,20,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+5104aa1fea,4,a person is wearing a hat while riding with the others,20,2,0,0,0,0,0,0,2,0,0,0,0,0,0.0
+5104aa1fea,5,a person on a bike in a red shirt in front of someone in yellow,20,1,1,0,1,0,0,0,0,0,0,0,0,0,0.0
+541d7935d7,0,a green and black parrot is laying on the white carpet getting their head rubbed,35,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+541d7935d7,1,a green parrot being pet by a person,35,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+541d7935d7,2,a hand is touching the feathers of a parrots head laying on the carpet,35,4,0,0,0,0,0,4,0,0,0,0,0,0,0.0
+541d7935d7,3,a hand petting a green parrot,35,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+621584cffe,2,a baby monkey being held by an adult monkey on some rocks,36,3,1,0,1,0,0,0,2,0,0,0,0,0,0.0
+66852243cb,2,a person in a yellow vest walking towards a plane,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+6a986084e2,1,a toilet basin is placed in the corner of the bathroom,20,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+7053e4f41e,0,an orange goldfish swimming,36,2,1,1,0,0,0,1,0,0,0,0,0,0,0.0
+7053e4f41e,1,a yellow fish swimming from the left to the right of the view,36,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+7053e4f41e,2,a yellow fish swimming towards the back of the tank,36,2,0,0,0,0,1,1,0,0,0,0,0,0,0.0
+7053e4f41e,3,a fish on the right hand moving in opposite direction of the yellow fish,36,2,0,0,0,0,1,1,0,0,0,0,0,0,0.0
+7106b020ab,0,a person on a bike in black shorts and an orange shirt,19,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+7106b020ab,1,the last person in view with orange shirt riding a bicycle,19,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+7b18b3db87,0,"an ape swinging on the right, and kicking an ape on the left",36,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+7b18b3db87,1,a monkey actively swinging,36,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+7b18b3db87,2,an ape swinging on the left and getting kicked by another ape,36,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+7b18b3db87,3,a monkey just handing from a bar,36,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0
+8953138465,0,a parrot on the left of others standing on a branch,36,2,1,0,1,0,0,1,0,0,0,0,0,0,0.0
+8953138465,1,a yellow and green bird on a perch while a blue and white bird flutters around,36,2,1,0,1,0,0,1,0,0,0,0,0,0,0.0
+8953138465,2,a parrot on the right of the view,36,2,1,0,1,0,0,0,1,0,0,0,0,0,0.0
+8953138465,3,a blue and white bird behind a yellow and green bird,36,2,1,0,1,0,0,0,1,0,0,0,0,0,0.0
+8953138465,4,a white and blue parrot on the lower right hand side but flies higher,36,2,1,0,1,0,1,0,0,0,0,0,0,0,0.0
+8953138465,5,a white and blue bird in a cage,36,2,0,0,0,0,1,1,0,0,0,0,0,0,0.0
+8b3645d826,0,a hand holding a knife,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+8b3645d826,1,a hand grabbing knife,20,2,1,0,1,0,1,0,0,0,0,0,0,0,0.0
+8b3645d826,2,a black knife is laying on a wooden table,20,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+8b3645d826,3,a black knife and holster,20,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+93901858ee,0,a leopard walking around,30,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+ab199e8dfb,0,a blue helmet being worn by a man on a red motorcycle,20,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+ab199e8dfb,1,the hat is being worn by a person riding a motorbike,20,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+ab199e8dfb,3,a person wearing a black jacket is riding a motorbike,20,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+ab199e8dfb,5,a motorbike is being rode by a man wearing a helmet,20,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0
+adb0b5a270,0,an ape is walking in between other apes in the rocks,36,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+adb0b5a270,1,a baby monkey climbing on rocks,36,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+b6b4738b78,3,a baby wearing a green shirt and a dark blue jacket,20,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+b70a5a0d50,0,a guy getting hit by tennis balls,36,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+b70a5a0d50,1,"a man wearing a grey shirt, dodging tennis balls",36,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+b70a5a0d50,2,a racket being held by a guy on a court,36,4,0,0,0,0,0,4,0,0,0,0,0,0,0.0
+b70a5a0d50,3,a tennis racket being used by a man wearing a grey shirt,36,4,0,0,0,0,0,4,0,0,0,0,0,0,0.0
+b8c03d1091,0,a tennis racket being used by a man,36,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+b8c03d1091,1,a tennis racket is holded up by a person in his right hand,36,3,1,0,1,0,0,2,0,0,0,0,0,0,0.0
+b8c03d1091,2,a man in an orange shirt holding a tennis racket,36,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+b8c03d1091,3,a person raising his left arm and holding a racket in the tennis stadium,36,3,2,0,0,2,1,0,0,0,0,0,0,0,0.0
+bbb4302dda,0,a red parrot walking across a room,36,3,1,0,1,0,0,2,0,0,0,0,0,0,0.0
+bbb4302dda,1,a red and blue bird,36,3,1,0,1,0,0,2,0,0,0,0,0,0,0.0
+ce1af99b4b,0,a larger fox with babies around,30,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+ce1af99b4b,1,a big fox sitting in the middle cleans his young one head by licking,30,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+dbd66dc3ac,1,a slug in grass,36,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+de4ddbccb1,0,a tan rabbit sitting on the floor,36,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+de4ddbccb1,1,a rabbit with a child,36,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+de4ddbccb1,2,a person playing with a tan rabbit on the floor,36,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+de4ddbccb1,3,a child playing with a rabbit,36,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+eb7921facd,0,a man surfing a wave standing up,36,4,0,0,0,0,0,4,0,0,0,0,0,0,0.0
+eb7921facd,1,a person surfing the waves of the sea,36,4,0,0,0,0,0,4,0,0,0,0,0,0,0.0
+eb7921facd,2,a surfboard being rode by a man wearing red,36,4,0,0,0,0,3,0,1,0,0,0,0,0,0.0
+eb7921facd,3,a surfboard being used by a person,36,4,0,0,0,0,3,0,1,0,0,0,0,0,0.0
+ef232a2aed,0,a raccoon playing with a dog,30,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0
+ef232a2aed,1,a raccoon running around a dog,30,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0
+ef232a2aed,2,a dog playing with a racooon,30,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+ef232a2aed,3,a dog running from a raccoon,30,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+efe828affa,1,a snake closest to the right hand of a person,36,2,0,0,0,0,1,0,1,0,0,0,0,0,0.0
+f2cfd94d64,0,an eagle on the right sitting on a persons arm,30,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+f2cfd94d64,1,the eagle tethered to the man s glove,30,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+f2cfd94d64,2,a person wearing green holding an eagle on their arm,30,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+fffe5f8df6,0,a fox on a roof facing left,36,4,3,1,2,0,1,0,0,0,0,0,0,0,0.0
+fffe5f8df6,1,a fox standing on a tube at the back of the roof,36,4,3,1,2,0,1,0,0,0,0,0,0,0,0.0
+fffe5f8df6,2,a fox sitting on a roof facing right,36,4,3,0,3,0,0,1,0,0,0,0,0,0,0.0
+fffe5f8df6,3,a fox on the front of the roof,36,4,3,0,3,0,0,1,0,0,0,0,0,0,0.0

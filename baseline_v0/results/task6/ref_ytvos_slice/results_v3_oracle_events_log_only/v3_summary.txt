@@ -1,0 +1,27 @@
+schedule: events
+vlm: oracle  (GROUND-TRUTH ORACLE: ceiling, not a result)
+oracle_iou: 0.5
+model: n/a
+action: log_only
+targets: 176
+videos: 50
+tracked_target_frames: 4916
+video_frames: 1473
+vlm_calls: 171
+calls_per_tracked_frame: 0.0348
+calls_per_video_frame: 0.1161
+reference_cost_every_frame_calls: 4916
+reference_cost_one_shot_calls: 176
+candidate_events: 643
+suppressed_by_pacing: 472
+events_fired: reappear=3, coherence_drop=122, distractor=15, drift_suspect=31
+verdicts: match=104, no_match=67, not_visible=0, unsure=0
+verdict_accuracy_vs_ground_truth: 1.000  (n=171 graded calls, 'unsure' not graded)
+blanked_frames: 0  (0.00% of tracked frames)
+false_absence_flags: 0
+vlm_latency_sum_s: 0.0  (what a live sequential system would pay)
+vlm_latency_mean_s: 0.00
+vlm_cached_calls: 0
+replay_wall_s: 0.6  (1 parallel workers)
+source_v2_inference_s: 2529.9
+estimated_v3_inference_s: 2529.9  (V2 time + sequential VLM latency)

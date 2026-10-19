@@ -1,0 +1,25 @@
+tags,video,exp_id,expression,J,F,JF,failure_mode,n_drift_events,drift_onto_obj,n_reappearance_events,recovery_rate,n_false_absence_frames,events
+example_grounding_failure,2db0576a5c,1,a penguin is searching something down and look around while walking,0.0,0.0,0.0,grounding_failure,1,2,0,,0,loss_episode:1-34:rec=False
+example_grounding_failure,46565a75f8,0,a blue hat on a person on a bike,0.0,0.0,0.0,grounding_failure,0,,0,,0,loss_episode:1-18:rec=False
+example_grounding_failure,49e7326789,2,the second sheep to pass by the man,0.0,0.0,0.0,grounding_failure,1,1,0,,1,loss_episode:25-34:rec=False
+best,5104aa1fea,1,a person wearing a hat while riding a bike,93.28,78.69,85.98,ok,0,,0,,0,
+example_poor_mask_quality,5104aa1fea,3,a person in a white shirt riding a bike on the left and in the back of the pack,56.64,27.0,41.82,poor_mask_quality,0,,0,,0,
+disappearance,541d7935d7,2,a hand is touching the feathers of a parrots head laying on the carpet,93.06,69.89,81.48,poor_mask_quality,0,,1,1.0,0,reappearance:4-5:rec=True
+disappearance;failed_recovery,541d7935d7,3,a hand petting a green parrot,0.0,1.77,0.89,grounding_failure,2,1;1,1,0.0,0,reappearance:4-5:rec=False; loss_episode:6-28:rec=False
+disappearance;example_identity_drift;failed_recovery,8953138465,2,a parrot on the right of the view,23.72,27.94,25.83,identity_drift,4,1;1;1;1,2,0.0,0,reappearance:9-10:rec=False; loss_episode:25-29:rec=False
+disappearance;example_identity_drift;failed_recovery,8953138465,3,a blue and white bird behind a yellow and green bird,23.73,28.0,25.87,identity_drift,4,1;1;1;1,2,0.0,0,reappearance:9-10:rec=False; loss_episode:25-29:rec=False
+example_poor_mask_quality,ab199e8dfb,2,a man riding a red motorcycle,42.09,26.47,34.28,poor_mask_quality,0,,0,,0,
+example_poor_mask_quality,b6b4738b78,0,"a boy, wearing a blue shirt, helps a boy take off his jacket",50.62,34.12,42.37,poor_mask_quality,0,,0,,0,
+disappearance,b70a5a0d50,2,a racket being held by a guy on a court,74.19,56.07,65.13,poor_mask_quality,0,,2,1.0,0,reappearance:26-29:rec=True
+disappearance,b70a5a0d50,3,a tennis racket being used by a man wearing a grey shirt,74.19,56.05,65.12,poor_mask_quality,0,,2,1.0,0,reappearance:26-29:rec=True
+disappearance,b8c03d1091,0,a tennis racket being used by a man,82.84,68.41,75.63,ok,0,,3,1.0,0,reappearance:23-25:rec=True
+disappearance,b8c03d1091,1,a tennis racket is holded up by a person in his right hand,83.4,68.93,76.17,ok,0,,3,1.0,0,reappearance:23-25:rec=True
+disappearance;failed_recovery,e22de45950,4,a bird that extends its neck,0.0,0.25,0.13,grounding_failure,2,1;1,1,0.0,0,reappearance:14-16:rec=False; loss_episode:1-13:rec=False
+disappearance;failed_recovery,e22de45950,5,a bird jumping up and down behind a zebra,0.0,0.25,0.12,grounding_failure,2,1;1,1,0.0,0,reappearance:14-16:rec=False; loss_episode:1-13:rec=False
+disappearance;failed_recovery,ef232a2aed,0,a raccoon playing with a dog,0.19,4.41,2.3,grounding_failure,2,2;2,1,0.0,0,reappearance:16-18:rec=False; loss_episode:1-15:rec=False; loss_episode:19-28:rec=False
+disappearance;failed_recovery,ef232a2aed,1,a raccoon running around a dog,0.19,4.4,2.29,grounding_failure,2,2;2,1,0.0,0,reappearance:16-18:rec=False; loss_episode:1-15:rec=False; loss_episode:19-28:rec=False
+worst,efe828affa,1,a snake closest to the right hand of a person,0.0,0.0,0.0,grounding_failure,0,,0,,2,loss_episode:1-34:rec=False
+worst,efe828affa,2,a black snake second row second from the right,0.0,0.0,0.0,grounding_failure,1,1,0,,0,loss_episode:1-34:rec=False
+worst,efe828affa,3,a dark snake near the one on the extreme right closest to the man s hand,0.0,0.0,0.0,grounding_failure,1,1,0,,0,loss_episode:1-34:rec=False
+best,fffe5f8df6,2,a fox sitting on a roof facing right,96.73,96.25,96.49,ok,0,,1,1.0,0,
+best,fffe5f8df6,3,a fox on the front of the roof,96.73,96.25,96.49,ok,0,,1,1.0,0,

@@ -1,0 +1,9 @@
+videos: 10
+version       sent       J       F     J&F   infer_s  tracked    FPS
+V0              36   58.57   37.62   48.10     433.9      976   2.25
+V1              36   58.61   37.76   48.19     482.3      976   2.02
+V2passive       36   58.61   37.76   48.19     495.7      976   1.97
+V4memory        36   58.57   37.74   48.15     495.7      976   1.97
+V3gemini        36   58.61   37.70   48.16     739.5      976   1.32
+V4vlm           36   57.96   37.31   47.64    1329.2      976   0.73
+note: first video of a run includes CUDA warm-up; single runs; small sample, differences under about 1 J&F are noise

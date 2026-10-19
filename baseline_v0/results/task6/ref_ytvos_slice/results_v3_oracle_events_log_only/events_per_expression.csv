@@ -1,0 +1,177 @@
+video,exp_id,expression,frames,candidates,calls,suppressed,reappear,disappear,coherence_drop,distractor,drift_suspect,keepalive,periodic,blanked_frames,false_absence_flags
+1ca240fede,0,a train on train tracks,19,0,0,0,0,0,0,0,0,0,0,0,0
+1ca240fede,1,a train moving on the track overtaking another train,19,0,0,0,0,0,0,0,0,0,0,0,0
+2c54cfbb78,0,a crocodile in the water is pulled up by a person,35,6,3,3,0,0,3,0,0,0,0,0,0
+2c54cfbb78,1,a crocodile being caught by a man,35,6,3,3,0,0,3,0,0,0,0,0,0
+2c54cfbb78,2,a man wearing red standing in water,35,8,3,5,0,0,2,0,1,0,0,0,0
+2c54cfbb78,3,a person grabbing a crocodile,35,5,3,2,0,0,3,0,0,0,0,0,0
+2db0576a5c,0,a penguin looking down as it walks ahead of the others,35,0,0,0,0,0,0,0,0,0,0,0,0
+2db0576a5c,1,a penguin is searching something down and look around while walking,35,0,0,0,0,0,0,0,0,0,0,0,0
+2db0576a5c,2,the first penguin on the right hand side of others walking forward,35,0,0,0,0,0,0,0,0,0,0,0,0
+2db0576a5c,3,a penguin walking with many penguins behind it,35,0,0,0,0,0,0,0,0,0,0,0,0
+351c822748,0,a leopard inside a fence by the water pond,35,0,0,0,0,0,0,0,0,0,0,0,0
+351c822748,1,a leopard walking away from a wire fence towards the direction of a water pool,35,0,0,0,0,0,0,0,0,0,0,0,0
+39bc49a28c,0,a green parrot moving around a brown floor,35,7,3,4,0,0,3,0,0,0,0,0,0
+39bc49a28c,1,a green parrot walking,35,7,3,4,0,0,3,0,0,0,0,0,0
+39befd99fb,0,a lizard on a leash,26,0,0,0,0,0,0,0,0,0,0,0,0
+39befd99fb,1,a lizard with a leash on its neck seated in a container of water,26,0,0,0,0,0,0,0,0,0,0,0,0
+42f17cd14d,0,a white cow next to black ones,18,0,0,0,0,0,0,0,0,0,0,0,0
+42f17cd14d,1,a white cow to the right of others moving right wards,18,0,0,0,0,0,0,0,0,0,0,0,0
+46565a75f8,0,a blue hat on a person on a bike,19,5,2,3,0,0,2,0,0,0,0,0,0
+46565a75f8,1,a motorcycle helmet,19,0,0,0,0,0,0,0,0,0,0,0,0
+46565a75f8,2,a blue bike being ridden on a trail,19,1,1,0,0,0,1,0,0,0,0,0,0
+46565a75f8,3,a dirt bike being ridden on a path,19,2,2,0,0,0,2,0,0,0,0,0,0
+482fb439c2,0,a rabbit digging a hole,29,0,0,0,0,0,0,0,0,0,0,0,0
+482fb439c2,1,a brown rabbit digging a hole,29,0,0,0,0,0,0,0,0,0,0,0,0
+49e7326789,0,the first sheep to pass by the man,35,6,1,5,0,0,1,0,0,0,0,0,0
+49e7326789,1,a white sheep walking through a metal walkway ahead of another sheep,35,6,1,5,0,0,1,0,0,0,0,0,0
+49e7326789,2,the second sheep to pass by the man,35,6,1,5,0,0,1,0,0,0,0,0,0
+49e7326789,3,a sheep following another through a metal corridor,35,6,1,5,0,0,1,0,0,0,0,0,0
+4a3471bdf5,0,an elephant standing in an enclosure,19,16,2,14,0,0,0,2,0,0,0,0,0
+4a3471bdf5,1,an elephant is walking on the field,19,16,2,14,0,0,0,2,0,0,0,0,0
+4a3471bdf5,2,an elephant laying in an enclosure,19,16,2,14,0,0,0,2,0,0,0,0,0
+4a3471bdf5,3,an elephant is behind another elephant in the down,19,15,2,13,0,0,0,2,0,0,0,0,0
+4a3471bdf5,4,an elephant standing in the background of view,19,15,2,13,0,0,1,0,1,0,0,0,0
+4a3471bdf5,5,a giraffe is standing far behind backside in the green fied,19,16,2,14,0,0,0,2,0,0,0,0,0
+5104aa1fea,0,a helmet of a byciclist farthest to the left,19,3,2,1,0,0,2,0,0,0,0,0,0
+5104aa1fea,1,a person wearing a hat while riding a bike,19,4,2,2,0,0,2,0,0,0,0,0,0
+5104aa1fea,2,a person wearing bike shorts is riding behind the others,19,0,0,0,0,0,0,0,0,0,0,0,0
+5104aa1fea,3,a person in a white shirt riding a bike on the left and in the back of the pack,19,0,0,0,0,0,0,0,0,0,0,0,0
+5104aa1fea,4,a person is wearing a hat while riding with the others,19,3,2,1,0,0,2,0,0,0,0,0,0
+5104aa1fea,5,a person on a bike in a red shirt in front of someone in yellow,19,2,1,1,0,0,1,0,0,0,0,0,0
+541d7935d7,0,a green and black parrot is laying on the white carpet getting their head rubbed,34,3,3,0,0,0,1,2,0,0,0,0,0
+541d7935d7,1,a green parrot being pet by a person,34,4,3,1,0,0,1,2,0,0,0,0,0
+541d7935d7,2,a hand is touching the feathers of a parrots head laying on the carpet,34,12,3,9,0,0,3,0,0,0,0,0,0
+541d7935d7,3,a hand petting a green parrot,34,1,1,0,0,0,1,0,0,0,0,0,0
+5d663000ff,0,a medium sized goldfish swimming in a dark tank,29,0,0,0,0,0,0,0,0,0,0,0,0
+5d663000ff,1,a golden fish is swimming around near plants,29,0,0,0,0,0,0,0,0,0,0,0,0
+5d663000ff,2,a gold fish on the bottom left swimming in a tank,29,0,0,0,0,0,0,0,0,0,0,0,0
+5d663000ff,3,a white colored fish is seeing another fish with its mouth opened,29,0,0,0,0,0,0,0,0,0,0,0,0
+61c7172650,0,a parakeet in a cage,34,0,0,0,0,0,0,0,0,0,0,0,0
+61c7172650,1,a parrot inside a cage,34,0,0,0,0,0,0,0,0,0,0,0,0
+61c7172650,2,a parrot outside of a cage,34,0,0,0,0,0,0,0,0,0,0,0,0
+61c7172650,3,a parrot on the outside of a cage,34,0,0,0,0,0,0,0,0,0,0,0,0
+621584cffe,0,a monkey holding a baby monkey on some rocks,35,0,0,0,0,0,0,0,0,0,0,0,0
+621584cffe,1,a light colored monkey with a baby in front of it,35,0,0,0,0,0,0,0,0,0,0,0,0
+621584cffe,2,a baby monkey being held by an adult monkey on some rocks,35,6,3,3,0,0,3,0,0,0,0,0,0
+621584cffe,3,a baby in front of a larger monkey,35,0,0,0,0,0,0,0,0,0,0,0,0
+621584cffe,4,a monkey sitting next to two other monkeys on rocks,35,0,0,0,0,0,0,0,0,0,0,0,0
+621584cffe,5,an adult monkey that walk away,35,0,0,0,0,0,0,0,0,0,0,0,0
+66852243cb,0,a silver plane,19,0,0,0,0,0,0,0,0,0,0,0,0
+66852243cb,1,a lufthansa airplane with a man standing in front of it,19,0,0,0,0,0,0,0,0,0,0,0,0
+66852243cb,2,a person in a yellow vest walking towards a plane,19,1,1,0,0,0,1,0,0,0,0,0,0
+66852243cb,3,a person stand on the right hand side of a plane,19,0,0,0,0,0,0,0,0,0,0,0,0
+6a986084e2,0,a toilet on the left hand side of the room,19,0,0,0,0,0,0,0,0,0,0,0,0
+6a986084e2,1,a toilet basin is placed in the corner of the bathroom,19,1,1,0,0,0,0,1,0,0,0,0,0
+7053e4f41e,0,an orange goldfish swimming,35,5,2,3,0,0,2,0,0,0,0,0,0
+7053e4f41e,1,a yellow fish swimming from the left to the right of the view,35,10,2,8,0,0,1,0,1,0,0,0,0
+7053e4f41e,2,a yellow fish swimming towards the back of the tank,35,6,2,4,0,0,2,0,0,0,0,0,0
+7053e4f41e,3,a fish on the right hand moving in opposite direction of the yellow fish,35,8,2,6,0,0,1,0,1,0,0,0,0
+70a6b875fa,0,an orange fish swimming in a white bowl,35,0,0,0,0,0,0,0,0,0,0,0,0
+70a6b875fa,1,a gold fish swimming in a bowl,35,0,0,0,0,0,0,0,0,0,0,0,0
+7106b020ab,0,a person on a bike in black shorts and an orange shirt,18,1,1,0,0,0,1,0,0,0,0,0,0
+7106b020ab,1,the last person in view with orange shirt riding a bicycle,18,1,1,0,0,0,1,0,0,0,0,0,0
+7b18b3db87,0,"an ape swinging on the right, and kicking an ape on the left",35,2,1,1,0,0,1,0,0,0,0,0,0
+7b18b3db87,1,a monkey actively swinging,35,2,1,1,0,0,1,0,0,0,0,0,0
+7b18b3db87,2,an ape swinging on the left and getting kicked by another ape,35,2,1,1,0,0,1,0,0,0,0,0,0
+7b18b3db87,3,a monkey just handing from a bar,35,3,2,1,0,0,2,0,0,0,0,0,0
+890976d6da,0,a parked white sedan that shows the entire hood,18,0,0,0,0,0,0,0,0,0,0,0,0
+890976d6da,1,a white car with a black stripe,18,0,0,0,0,0,0,0,0,0,0,0,0
+8953138465,0,a parrot on the left of others standing on a branch,35,3,1,2,0,0,1,0,0,0,0,0,0
+8953138465,1,a yellow and green bird on a perch while a blue and white bird flutters around,35,4,1,3,0,0,1,0,0,0,0,0,0
+8953138465,2,a parrot on the right of the view,35,3,1,2,0,0,1,0,0,0,0,0,0
+8953138465,3,a blue and white bird behind a yellow and green bird,35,4,1,3,0,0,1,0,0,0,0,0,0
+8953138465,4,a white and blue parrot on the lower right hand side but flies higher,35,3,1,2,0,0,1,0,0,0,0,0,0
+8953138465,5,a white and blue bird in a cage,35,4,1,3,0,0,1,0,0,0,0,0,0
+8b3645d826,0,a hand holding a knife,19,1,1,0,0,0,1,0,0,0,0,0,0
+8b3645d826,1,a hand grabbing knife,19,8,2,6,0,0,1,0,1,0,0,0,0
+8b3645d826,2,a black knife is laying on a wooden table,19,1,1,0,0,0,1,0,0,0,0,0,0
+8b3645d826,3,a black knife and holster,19,8,2,6,0,0,1,0,1,0,0,0,0
+93901858ee,0,a leopard walking around,29,1,1,0,0,0,1,0,0,0,0,0,0
+93901858ee,1,a leopard walking to the right,29,0,0,0,0,0,0,0,0,0,0,0,0
+a177c2733c,0,a snake coiled up in grass,29,0,0,0,0,0,0,0,0,0,0,0,0
+a177c2733c,1,a gray snake,29,0,0,0,0,0,0,0,0,0,0,0,0
+a6c3a374e9,0,a turtle swimming,35,0,0,0,0,0,0,0,0,0,0,0,0
+a6c3a374e9,1,a turtle that is swallowing,35,0,0,0,0,0,0,0,0,0,0,0,0
+a7203deb2d,0,a panda eating with greenery behind him,28,0,0,0,0,0,0,0,0,0,0,0,0
+a7203deb2d,1,a giant_panda eating bamboo,28,0,0,0,0,0,0,0,0,0,0,0,0
+ab199e8dfb,0,a blue helmet being worn by a man on a red motorcycle,19,6,2,4,0,0,2,0,0,0,0,0,0
+ab199e8dfb,1,the hat is being worn by a person riding a motorbike,19,5,2,3,0,0,2,0,0,0,0,0,0
+ab199e8dfb,2,a man riding a red motorcycle,19,0,0,0,0,0,0,0,0,0,0,0,0
+ab199e8dfb,3,a person wearing a black jacket is riding a motorbike,19,1,1,0,0,0,1,0,0,0,0,0,0
+ab199e8dfb,4,a red motorcycle being ridden by a man in a blue helmet,19,0,0,0,0,0,0,0,0,0,0,0,0
+ab199e8dfb,5,a motorbike is being rode by a man wearing a helmet,19,6,2,4,0,0,2,0,0,0,0,0,0
+adb0b5a270,0,an ape is walking in between other apes in the rocks,35,6,1,5,0,0,1,0,0,0,0,0,0
+adb0b5a270,1,a baby monkey climbing on rocks,35,9,2,7,0,0,2,0,0,0,0,0,0
+b0a68228dc,0,an elephant standing by a fence,18,0,0,0,0,0,0,0,0,0,0,0,0
+b0a68228dc,1,a brown elephant standing alone with 2 people behind him,18,0,0,0,0,0,0,0,0,0,0,0,0
+b0a68228dc,2,a man in a blue shirt and a black hat,18,0,0,0,0,0,0,0,0,0,0,0,0
+b0a68228dc,3,a man standing in front of another man just behind an elephant,18,0,0,0,0,0,0,0,0,0,0,0,0
+b0a68228dc,4,a person in a blue shirt and black shorts,18,0,0,0,0,0,0,0,0,0,0,0,0
+b0a68228dc,5,aam with blond hair wearing dark blue shirt standing behind another man,18,0,0,0,0,0,0,0,0,0,0,0,0
+b6b4738b78,0,"a boy, wearing a blue shirt, helps a boy take off his jacket",19,0,0,0,0,0,0,0,0,0,0,0,0
+b6b4738b78,1,"a toddler wearing a light blue shirt, helping another toddler with his jacket",19,0,0,0,0,0,0,0,0,0,0,0,0
+b6b4738b78,2,a little boy has another boy help him take his jacket off,19,0,0,0,0,0,0,0,0,0,0,0,0
+b6b4738b78,3,a baby wearing a green shirt and a dark blue jacket,19,1,1,0,0,0,1,0,0,0,0,0,0
+b6b4738b78,4,a bucket in the corner sitting beside a toilet,19,0,0,0,0,0,0,0,0,0,0,0,0
+b6b4738b78,5,"a black trash basket, between the white toilet and the white cabinets",19,0,0,0,0,0,0,0,0,0,0,0,0
+b70a5a0d50,0,a guy getting hit by tennis balls,35,7,2,5,0,0,2,0,0,0,0,0,0
+b70a5a0d50,1,"a man wearing a grey shirt, dodging tennis balls",35,7,2,5,0,0,2,0,0,0,0,0,0
+b70a5a0d50,2,a racket being held by a guy on a court,35,29,4,25,0,0,1,0,3,0,0,0,0
+b70a5a0d50,3,a tennis racket being used by a man wearing a grey shirt,35,29,4,25,0,0,1,0,3,0,0,0,0
+b8c03d1091,0,a tennis racket being used by a man,35,18,3,15,1,0,1,0,1,0,0,0,0
+b8c03d1091,1,a tennis racket is holded up by a person in his right hand,35,15,3,12,1,0,1,0,1,0,0,0,0
+b8c03d1091,2,a man in an orange shirt holding a tennis racket,35,1,1,0,0,0,1,0,0,0,0,0,0
+b8c03d1091,3,a person raising his left arm and holding a racket in the tennis stadium,35,15,3,12,1,0,1,0,1,0,0,0,0
+bbb4302dda,0,a red parrot walking across a room,35,4,2,2,0,0,2,0,0,0,0,0,0
+bbb4302dda,1,a red and blue bird,35,4,2,2,0,0,2,0,0,0,0,0,0
+bfd91d0742,0,a snail on the right of the view eating leaf,29,0,0,0,0,0,0,0,0,0,0,0,0
+bfd91d0742,1,a snail eating a plant,29,0,0,0,0,0,0,0,0,0,0,0,0
+c2a9903b8b,0,a small ape holding a piece of straw and grabbing it with her lips,35,0,0,0,0,0,0,0,0,0,0,0,0
+c2a9903b8b,1,"a gorilla walking in front of another with a straw in its hand, chewing it",35,0,0,0,0,0,0,0,0,0,0,0,0
+c2a9903b8b,2,a large ape covered in straw to the right of a smaller ape,35,0,0,0,0,0,0,0,0,0,0,0,0
+c2a9903b8b,3,a bigger gorilla stead while another walks right in front it,35,0,0,0,0,0,0,0,0,0,0,0,0
+c3457af795,0,a grey car in the foreground of the screen,19,0,0,0,0,0,0,0,0,0,0,0,0
+c3457af795,1,a silver car with other cars behind it,19,0,0,0,0,0,0,0,0,0,0,0,0
+c3457af795,2,a silver car in the street,19,0,0,0,0,0,0,0,0,0,0,0,0
+c3457af795,3,a blue sedan parked close to a brick wall a little far from other cars,19,0,0,0,0,0,0,0,0,0,0,0,0
+ce1af99b4b,0,a larger fox with babies around,29,1,1,0,0,0,1,0,0,0,0,0,0
+ce1af99b4b,1,a big fox sitting in the middle cleans his young one head by licking,29,1,1,0,0,0,1,0,0,0,0,0,0
+dbd66dc3ac,0,a snail crawling over sticks,35,0,0,0,0,0,0,0,0,0,0,0,0
+dbd66dc3ac,1,a slug in grass,35,1,1,0,0,0,1,0,0,0,0,0,0
+de4ddbccb1,0,a tan rabbit sitting on the floor,35,1,1,0,0,0,1,0,0,0,0,0,0
+de4ddbccb1,1,a rabbit with a child,35,2,2,0,0,0,2,0,0,0,0,0,0
+de4ddbccb1,2,a person playing with a tan rabbit on the floor,35,1,1,0,0,0,1,0,0,0,0,0,0
+de4ddbccb1,3,a child playing with a rabbit,35,1,1,0,0,0,1,0,0,0,0,0,0
+e22de45950,0,a zebra standing by a rock,19,0,0,0,0,0,0,0,0,0,0,0,0
+e22de45950,1,a zebra standing and wagging its tail,19,0,0,0,0,0,0,0,0,0,0,0,0
+e22de45950,2,a bird sitting by another that extends its neck,19,0,0,0,0,0,0,0,0,0,0,0,0
+e22de45950,3,a bird in the background behind a zebra,19,0,0,0,0,0,0,0,0,0,0,0,0
+e22de45950,4,a bird that extends its neck,19,0,0,0,0,0,0,0,0,0,0,0,0
+e22de45950,5,a bird jumping up and down behind a zebra,19,0,0,0,0,0,0,0,0,0,0,0,0
+e672ccd250,0,the second red fire truck moving in the line,18,0,0,0,0,0,0,0,0,0,0,0,0
+e672ccd250,1,an orange truck following behind a white truck,18,0,0,0,0,0,0,0,0,0,0,0,0
+e672ccd250,2,the third red fire truck moving in the line,18,0,0,0,0,0,0,0,0,0,0,0,0
+e672ccd250,3,a red truck following behind an orange truck,18,0,0,0,0,0,0,0,0,0,0,0,0
+e699da0cdf,0,a duck walking up a hill behind another,35,0,0,0,0,0,0,0,0,0,0,0,0
+e699da0cdf,1,a duck with a black head walking up a dirt hill,35,0,0,0,0,0,0,0,0,0,0,0,0
+eb7921facd,0,a man surfing a wave standing up,35,23,4,19,0,0,1,0,3,0,0,0,0
+eb7921facd,1,a person surfing the waves of the sea,35,23,4,19,0,0,1,0,3,0,0,0,0
+eb7921facd,2,a surfboard being rode by a man wearing red,35,24,4,20,0,0,1,0,3,0,0,0,0
+eb7921facd,3,a surfboard being used by a person,35,24,4,20,0,0,1,0,3,0,0,0,0
+ef232a2aed,0,a raccoon playing with a dog,29,11,2,9,0,0,2,0,0,0,0,0,0
+ef232a2aed,1,a raccoon running around a dog,29,7,2,5,0,0,2,0,0,0,0,0,0
+ef232a2aed,2,a dog playing with a racooon,29,7,2,5,0,0,2,0,0,0,0,0,0
+ef232a2aed,3,a dog running from a raccoon,29,7,2,5,0,0,2,0,0,0,0,0,0
+efe828affa,0,a snake second row to the far right,35,0,0,0,0,0,0,0,0,0,0,0,0
+efe828affa,1,a snake closest to the right hand of a person,35,5,2,3,0,0,2,0,0,0,0,0,0
+efe828affa,2,a black snake second row second from the right,35,0,0,0,0,0,0,0,0,0,0,0,0
+efe828affa,3,a dark snake near the one on the extreme right closest to the man s hand,35,0,0,0,0,0,0,0,0,0,0,0,0
+f2cfd94d64,0,an eagle on the right sitting on a persons arm,29,16,2,14,0,0,1,0,1,0,0,0,0
+f2cfd94d64,1,the eagle tethered to the man s glove,29,14,2,12,0,0,1,0,1,0,0,0,0
+f2cfd94d64,2,a person wearing green holding an eagle on their arm,29,18,3,15,0,0,1,0,2,0,0,0,0
+f2cfd94d64,3,the man in the green shirt holding the eagle,29,0,0,0,0,0,0,0,0,0,0,0,0
+fffe5f8df6,0,a fox on a roof facing left,35,2,1,1,0,0,1,0,0,0,0,0,0
+fffe5f8df6,1,a fox standing on a tube at the back of the roof,35,2,1,1,0,0,1,0,0,0,0,0,0
+fffe5f8df6,2,a fox sitting on a roof facing right,35,2,1,1,0,0,1,0,0,0,0,0,0
+fffe5f8df6,3,a fox on the front of the roof,35,2,1,1,0,0,1,0,0,0,0,0,0

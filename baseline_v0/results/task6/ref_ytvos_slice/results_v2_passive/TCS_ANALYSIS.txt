@@ -1,0 +1,87 @@
+TCS analysis  -  50 videos, 176 expressions (61 grounding failures left out), 2940 frames evaluated
+results: results_v2_passive   predictions: predictions_v2_passive
+thresholds used: tau_low=from log, tau_high=from log
+
+1. BANDS (stable = HIGH, uncertain = MEDIUM + LOW)
+   band      frames   share%  meanIoU   lost%  degraded%
+   HIGH        1300     44.2     0.87     0.2        3.3
+   MEDIUM      1148     39.0     0.85     0.7        4.1
+   LOW          492     16.7     0.82     2.8        3.9
+   lost frames caught as uncertain (recall): 91.7%  (n=24)
+   good frames (IoU>=0.5) wrongly flagged uncertain (false alarms): 55.6%  (n=2831)
+
+2. AUROC  (0.5 = no information, 1.0 = perfect; low score should mean bad frame)
+   signal            frames    lost   (n)  degraded    (n)
+   c_t (combined)      2940   0.810    24     0.551    109
+   mask                2934   0.654    18     0.513    103
+   motion              2927   0.748    18     0.563    103
+   appearance          2934   0.669    18     0.507    103
+   semantic            2934   0.697    18     0.493    103
+
+3. FAILURE CASES  (4 runs of >= 3 lost frames in correctly grounded tracks)
+   2c54cfbb78/0: grounding failure, whole track off-target - TCS cannot see this
+   2c54cfbb78/1: grounding failure, whole track off-target - TCS cannot see this
+   2db0576a5c/1: grounding failure, whole track off-target - TCS cannot see this
+   2db0576a5c/3: grounding failure, whole track off-target - TCS cannot see this
+   46565a75f8/0: grounding failure, whole track off-target - TCS cannot see this
+   49e7326789/2: grounding failure, whole track off-target - TCS cannot see this
+   49e7326789/3: grounding failure, whole track off-target - TCS cannot see this
+   4a3471bdf5/2: grounding failure, whole track off-target - TCS cannot see this
+   4a3471bdf5/3: grounding failure, whole track off-target - TCS cannot see this
+   4a3471bdf5/4: grounding failure, whole track off-target - TCS cannot see this
+   4a3471bdf5/5: grounding failure, whole track off-target - TCS cannot see this
+   5104aa1fea/4: grounding failure, whole track off-target - TCS cannot see this
+   5104aa1fea/5: grounding failure, whole track off-target - TCS cannot see this
+   541d7935d7/3: grounding failure, whole track off-target - TCS cannot see this
+   5d663000ff/2: grounding failure, whole track off-target - TCS cannot see this
+   5d663000ff/3: grounding failure, whole track off-target - TCS cannot see this
+   61c7172650/0: grounding failure, whole track off-target - TCS cannot see this
+   61c7172650/1: grounding failure, whole track off-target - TCS cannot see this
+   61c7172650/2: grounding failure, whole track off-target - TCS cannot see this
+   61c7172650/3: grounding failure, whole track off-target - TCS cannot see this
+   621584cffe/2: grounding failure, whole track off-target - TCS cannot see this
+   621584cffe/3: grounding failure, whole track off-target - TCS cannot see this
+   621584cffe/4: grounding failure, whole track off-target - TCS cannot see this
+   621584cffe/5: grounding failure, whole track off-target - TCS cannot see this
+   66852243cb/3: grounding failure, whole track off-target - TCS cannot see this
+   6a986084e2/1: grounding failure, whole track off-target - TCS cannot see this
+   7053e4f41e/2: grounding failure, whole track off-target - TCS cannot see this
+   7053e4f41e/3: grounding failure, whole track off-target - TCS cannot see this
+   7b18b3db87/2: grounding failure, whole track off-target - TCS cannot see this
+   7b18b3db87/3: grounding failure, whole track off-target - TCS cannot see this
+   8953138465/2: identity_drift from frame 25 for 5 frames; c at onset 0.76 (LOW); flagged at frame 17 (lead +8)
+   8953138465/3: identity_drift from frame 25 for 5 frames; c at onset 0.76 (LOW); flagged at frame 17 (lead +8)
+   8953138465/4: grounding failure, whole track off-target - TCS cannot see this
+   8953138465/5: grounding failure, whole track off-target - TCS cannot see this
+   8b3645d826/1: grounding failure, whole track off-target - TCS cannot see this
+   8b3645d826/2: grounding failure, whole track off-target - TCS cannot see this
+   ab199e8dfb/5: grounding failure, whole track off-target - TCS cannot see this
+   b0a68228dc/3: grounding failure, whole track off-target - TCS cannot see this
+   b0a68228dc/5: grounding failure, whole track off-target - TCS cannot see this
+   b6b4738b78/2: grounding failure, whole track off-target - TCS cannot see this
+   b8c03d1091/0: track_lost from frame 18 for 3 frames; c at onset 0.0 (LOW); flagged at frame 8 (lead +10)
+   b8c03d1091/1: track_lost from frame 18 for 3 frames; c at onset 0.0 (LOW); flagged at frame 8 (lead +10)
+   b8c03d1091/3: grounding failure, whole track off-target - TCS cannot see this
+   c2a9903b8b/2: grounding failure, whole track off-target - TCS cannot see this
+   c2a9903b8b/3: grounding failure, whole track off-target - TCS cannot see this
+   c3457af795/2: grounding failure, whole track off-target - TCS cannot see this
+   c3457af795/3: grounding failure, whole track off-target - TCS cannot see this
+   de4ddbccb1/2: grounding failure, whole track off-target - TCS cannot see this
+   de4ddbccb1/3: grounding failure, whole track off-target - TCS cannot see this
+   e22de45950/2: grounding failure, whole track off-target - TCS cannot see this
+   e22de45950/3: grounding failure, whole track off-target - TCS cannot see this
+   e22de45950/4: grounding failure, whole track off-target - TCS cannot see this
+   e22de45950/5: grounding failure, whole track off-target - TCS cannot see this
+   e672ccd250/2: grounding failure, whole track off-target - TCS cannot see this
+   e672ccd250/3: grounding failure, whole track off-target - TCS cannot see this
+   eb7921facd/2: grounding failure, whole track off-target - TCS cannot see this
+   eb7921facd/3: grounding failure, whole track off-target - TCS cannot see this
+   ef232a2aed/0: grounding failure, whole track off-target - TCS cannot see this
+   ef232a2aed/1: grounding failure, whole track off-target - TCS cannot see this
+   efe828affa/1: grounding failure, whole track off-target - TCS cannot see this
+   efe828affa/2: grounding failure, whole track off-target - TCS cannot see this
+   efe828affa/3: grounding failure, whole track off-target - TCS cannot see this
+   f2cfd94d64/2: grounding failure, whole track off-target - TCS cannot see this
+   fffe5f8df6/0: grounding failure, whole track off-target - TCS cannot see this
+   fffe5f8df6/1: grounding failure, whole track off-target - TCS cannot see this
+   detected: 4/4

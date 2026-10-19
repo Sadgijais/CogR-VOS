@@ -1,0 +1,41 @@
+video,exp_id,frame,trigger,variant,n_candidates,shortlist,choice,choice_value,action,label,gt_visible,current_iou,chosen_iou,vlm_letter,vlm_conf,vlm_latency_s,vlm_cached,vlm_error,reason
+39bc49a28c,0,5,coherence_drop,vlm,2,current d1,current,1.0,keep,correct_none,1,0.9249,,A,1.0,11.0845,False,,Candidate A matches the green parrot's appearance and pose from the previous frame.
+39bc49a28c,1,5,coherence_drop,vlm,1,current,current,1.0,keep,correct_none,1,0.9248,,A,1.0,4.3654,False,,The candidate is the same green parrot as shown in the previous frames.
+39bc49a28c,0,15,coherence_drop,vlm,2,current d1,current,1.0,keep,correct_none,1,0.9355,,A,1.0,7.3687,False,,Candidate A is the same green parrot as shown in the previous frames.
+39bc49a28c,1,15,coherence_drop,vlm,1,current,current,1.0,keep,correct_none,1,0.9356,,A,1.0,2.7661,False,,The candidate is identical to the target parrot in appearance and features.
+39bc49a28c,0,26,coherence_drop,vlm,2,current d1,current,1.0,keep,correct_none,1,0.9303,,A,1.0,3.9231,False,,Candidate A matches the visual appearance and pose of the target parrot.
+39bc49a28c,1,26,coherence_drop,vlm,1,current,current,1.0,keep,correct_none,1,0.9304,,A,1.0,2.3182,False,,The candidate is identical to the target parrot in appearance and features.
+5104aa1fea,0,1,coherence_drop,vlm,3,current d0 d2,current,0.9,keep,correct_none,1,0.9292,,A,0.9,2.3055,False,,Candidate A matches the shape and dark color of the target helmet.
+5104aa1fea,1,1,coherence_drop,vlm,4,current d4 d2,none,1.0,keep,correct_none,1,0.9296,,none,1.0,5.6191,False,,None of the candidates show a person riding a bike.
+5104aa1fea,4,1,coherence_drop,vlm,5,current d4 d2,d2,0.9,restart,wrong_restart,1,0.0,0.0,C,0.9,7.7157,False,,"Candidate C is a cyclist wearing a helmet, matching the target description."
+5104aa1fea,5,1,coherence_drop,vlm,6,d1 current d2,d2,0.95,restart,wrong_restart,1,0.0,0.0,C,0.95,20.1907,False,,Candidate C shows the cyclist in the red shirt clearly.
+5104aa1fea,0,12,coherence_drop,vlm,4,current d1 d2,current,0.9,keep,correct_none,1,0.9097,,A,0.9,18.6134,False,,Candidate A matches the shape and white highlights of the target helmet.
+5104aa1fea,1,12,coherence_drop,vlm,3,current d2 d1,d1,1.0,restart,wrong_restart,1,0.9108,0.0515,C,1.0,16.4959,False,,Candidate C shows the same cyclist with the matching helmet and jersey.
+5104aa1fea,4,12,coherence_drop,vlm,5,current d4 d3,d3,1.0,restart,wrong_restart,1,0.0,0.0,C,1.0,14.96,False,,Candidate C is the only person wearing a helmet while riding a bicycle.
+ab199e8dfb,0,1,coherence_drop,vlm,3,current d1 d2,d1,1.0,restart,weak_restart,1,0.8909,0.1296,B,1.0,11.6821,False,,Candidate B shows the man wearing the blue helmet on the red motorcycle.
+ab199e8dfb,1,1,coherence_drop,vlm,4,current d1 d2,d1,1.0,restart,weak_restart,1,0.888,0.1298,B,1.0,9.7359,False,,Candidate B shows the person wearing the blue helmet while riding a motorbike.
+ab199e8dfb,3,1,coherence_drop,vlm,4,current d1 d2,d2,0.9,restart,wrong_restart,1,0.6526,0.012,C,0.9,124.6458,False,,"Candidate C shows the person on the motorbike, matching the target description."
+ab199e8dfb,5,1,coherence_drop,vlm,4,current d1 d2,d1,0.9,restart,wrong_restart,1,0.0,0.0268,B,0.9,35.076,False,,"Candidate B shows the man on the motorbike, matching the target description."
+ab199e8dfb,0,11,coherence_drop,vlm,4,current d1 d2,d2,1.0,restart,wrong_restart,1,0.8375,0.0,C,1.0,8.2467,False,,Candidate C shows the man on the red motorcycle wearing the blue helmet.
+ab199e8dfb,1,11,coherence_drop,vlm,5,current d2 d4,d4,0.9,restart,wrong_restart,1,0.8391,0.0,C,0.9,27.5911,False,,Candidate C shows the same helmet on a person riding a motorbike.
+ab199e8dfb,5,11,coherence_drop,vlm,4,current d1 d2,none,0.0,keep,missed,1,0.0,,none,0.0,0.0,False,RuntimeError: gemini failed after 3 tries: HTTP Error 503: Service Unavailable,error
+b8c03d1091,0,6,coherence_drop,vlm,2,current d1,current,0.95,keep,correct_none,1,0.8236,,A,0.95,66.0058,False,,Candidate A is the same tennis racket seen from a different angle.
+b8c03d1091,1,6,coherence_drop,vlm,4,current d2 d3,current,1.0,keep,correct_none,1,0.8881,,A,1.0,7.5615,False,,Candidate A is clearly the tennis racket shown in the previous frames.
+b8c03d1091,3,6,coherence_drop,vlm,5,d2 d3 current,current,0.9,keep,missed,1,0.0001,,C,0.9,18.7288,False,,"Candidate C is the tennis racket, which matches the target object."
+b8c03d1091,2,7,coherence_drop,vlm,3,current d3 d2,current,0.95,keep,correct_none,1,0.9514,,A,0.95,7.1283,False,,"Candidate A matches the person's appearance, clothing, and pose from the previous frame."
+b8c03d1091,0,16,drift_suspect,vlm,2,current d0,current,0.95,keep,correct_none,1,0.8242,,A,0.95,101.0514,False,,"Candidate A matches the racket's frame color, pattern, and handle design."
+b8c03d1091,1,16,drift_suspect,vlm,4,current d0 d4,d4,0.9,restart,wrong_restart,1,0.8199,0.0811,C,0.9,36.6603,False,,Candidate C shows the person holding the tennis racket in their right hand.
+b8c03d1091,3,16,drift_suspect,vlm,3,d1 current d0,d0,0.9,restart,correct_restart,1,0.0,0.9686,C,0.9,21.9338,False,,"Candidate C shows the person holding the racket, matching the target description."
+b8c03d1091,0,26,reappear,vlm,3,current d2 d1,d2,1.0,restart,weak_restart,1,0.9701,0.3554,B,1.0,30.8272,False,,Candidate B shows the same tennis racket being held by the man.
+b8c03d1091,1,26,reappear,vlm,4,d4 d2 current,current,1.0,keep,correct_none,1,0.9711,,C,1.0,9.7274,False,,Candidate C is clearly the same tennis racket as the target.
+b8c03d1091,3,26,reappear,vlm,5,d4 d2 d3,none,0.9,keep,missed,1,0.0,,none,0.9,3.4109,False,,None of the candidates show a person holding a tennis racket.
+ef232a2aed,0,4,coherence_drop,vlm,2,current d3,current,0.9,keep,missed,1,0.002,,A,0.9,2.7529,False,,Candidate A matches the color pattern and body shape of the target raccoon.
+ef232a2aed,1,4,coherence_drop,vlm,2,current d2,current,0.9,keep,missed,1,0.002,,A,0.9,2.4864,False,,Candidate A matches the fur pattern and body shape of the target raccoon.
+ef232a2aed,2,4,coherence_drop,vlm,3,current d1 d3,current,0.95,keep,correct_none,1,0.9018,,A,0.95,1.9873,False,,Candidate A matches the dog's fur pattern and body shape from the target images.
+ef232a2aed,3,4,coherence_drop,vlm,3,current d1 d2,current,0.95,keep,correct_none,1,0.9018,,A,0.95,3.245,False,,Candidate A matches the fur pattern and body shape of the target dog.
+ef232a2aed,0,20,coherence_drop,vlm,3,current d2 d1,d1,0.9,restart,correct_restart,1,0.0,0.8932,C,0.9,13.5943,False,,"Candidate C shows the dog from the target pair, matching the previous frame."
+ef232a2aed,1,20,coherence_drop,vlm,3,current d1 d2,d2,1.0,restart,correct_restart,1,0.0,0.8635,C,1.0,6.2877,False,,"Candidate C clearly shows the raccoon, matching the target description."
+ef232a2aed,3,20,coherence_drop,vlm,2,current d2,current,0.95,keep,correct_none,1,0.9144,,A,0.95,4.8058,False,,Candidate A matches the dog's fur pattern and body shape from the target images.
+ef232a2aed,2,22,coherence_drop,vlm,5,current d2 d4,d2,0.9,restart,wrong_restart,1,0.8879,0.0121,B,0.9,31.4195,False,,"Candidate B matches the dog's fur color, texture, and general body shape."
+efe828affa,1,21,coherence_drop,vlm,5,current d1 d3,none,1.0,keep,missed,1,0.0,,none,1.0,2.358,False,,None of the candidates are a snake; they are all images of hands.
+efe828affa,1,33,coherence_drop,vlm,4,current d1 d0,d0,1.0,restart,wrong_restart,1,0.0,0.0,C,1.0,20.7626,False,,"Candidate C is the only image showing a snake, matching the target description."

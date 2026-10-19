@@ -1,0 +1,41 @@
+video,exp_id,frame,event,kind,c,verdict,confidence,reason,latency_s,cached,gt_present,gt_iou,correct
+39bc49a28c,0,5,coherence_drop,identity,0.7375,match,1.0,The parrot in both images is identical in appearance and pose.,2.838,False,True,0.9249,True
+39bc49a28c,0,15,coherence_drop,identity,0.809,match,1.0,The bird in both images is the same species with identical markings.,2.777,False,True,0.9355,True
+39bc49a28c,0,26,coherence_drop,identity,0.7764,match,1.0,Both images show the same green parrot with a distinct neck ring.,1.901,False,True,0.9303,True
+39bc49a28c,1,5,coherence_drop,identity,0.7361,match,1.0,The images show the same green parrot from a nearly identical angle.,3.413,False,True,0.9248,True
+39bc49a28c,1,15,coherence_drop,identity,0.8075,match,1.0,The bird in both images is a ring-necked parakeet with identical markings.,1.966,False,True,0.9356,True
+39bc49a28c,1,26,coherence_drop,identity,0.7803,match,1.0,The images show the same green parrot from different angles.,2.037,False,True,0.9304,True
+5104aa1fea,0,1,coherence_drop,identity,0.6713,match,1.0,"The helmet shape, color, and white highlights are identical in both images.",1.734,False,True,0.9292,True
+5104aa1fea,0,12,coherence_drop,identity,0.7512,match,0.9,The helmet design and white markings are consistent between both images.,70.005,False,True,0.9097,True
+5104aa1fea,1,1,coherence_drop,identity,0.6585,match,1.0,"The hat in both images is identical in shape, color, and features.",2.401,False,True,0.9296,True
+5104aa1fea,1,12,coherence_drop,identity,0.7014,match,1.0,"The hat in both images is identical in shape, color, and markings.",5.545,False,True,0.9108,True
+5104aa1fea,4,1,coherence_drop,identity,0.669,match,1.0,"The hat in both images is identical in shape, color, and features.",4.062,False,True,0.0,False
+5104aa1fea,4,12,coherence_drop,identity,0.722,match,1.0,"The hat in both images is identical in shape, color, and markings.",8.886,False,True,0.0,False
+5104aa1fea,5,1,coherence_drop,identity,0.6848,match,1.0,The bike frame and cyclist's legs are identical in both images.,1.411,False,True,0.0,False
+ab199e8dfb,0,1,coherence_drop,identity,0.6541,match,1.0,"The helmet in both images is identical in color, shape, and texture.",2.093,False,True,0.8909,True
+ab199e8dfb,0,11,coherence_drop,identity,0.7827,match,0.9,The blue helmet in both images appears to be the same object.,2.397,False,True,0.8402,True
+ab199e8dfb,1,1,coherence_drop,identity,0.6549,match,1.0,"The helmet in both images is identical in color, shape, and texture.",2.047,False,True,0.888,True
+ab199e8dfb,1,11,coherence_drop,identity,0.7819,match,0.9,"The helmet shape, color, and texture are consistent between both images.",2.031,False,True,0.8419,True
+ab199e8dfb,3,1,coherence_drop,identity,0.7993,match,1.0,The images are identical.,2.003,False,True,0.6526,True
+ab199e8dfb,5,1,coherence_drop,identity,0.6591,match,1.0,The images show the exact same blue helmet.,2.618,False,True,0.0,False
+ab199e8dfb,5,11,coherence_drop,identity,0.7738,match,1.0,"The helmet in both images is identical in color, shape, and texture.",1.56,False,True,0.0,False
+b8c03d1091,0,6,coherence_drop,identity,0.5543,match,1.0,The racket is the same object shown from a different angle.,17.02,False,True,0.8236,True
+b8c03d1091,0,16,drift_suspect,identity,0.344,match,1.0,The tennis racket has the same distinctive red and white frame design.,2.123,False,True,0.8242,True
+b8c03d1091,0,26,reappear,identity,0.9623,match,1.0,"The tennis racket has identical design, color scheme, and structural features.",1.841,False,True,0.9701,True
+b8c03d1091,1,6,coherence_drop,identity,0.4925,match,0.9,The racket shows the same color scheme and design features in a different orientation.,1.583,False,True,0.8881,True
+b8c03d1091,1,16,drift_suspect,identity,0.3448,match,0.95,The tennis racket has the same color scheme and design features.,1.572,False,True,0.8199,True
+b8c03d1091,1,26,reappear,identity,0.9609,match,0.9,"The tennis rackets share identical design, color scheme, and structural features.",2.361,False,True,0.9711,True
+b8c03d1091,2,7,coherence_drop,identity,0.7919,match,1.0,The person and clothing pattern are identical in both images.,2.757,False,True,0.9514,True
+b8c03d1091,3,6,coherence_drop,identity,0.4877,match,0.9,"The object is a tennis racket, consistent with the target description.",3.122,False,True,0.0001,False
+b8c03d1091,3,16,drift_suspect,identity,0.3392,match,0.9,"The object is a tennis racket, likely the same one seen from a different angle.",10.707,False,True,0.0,False
+b8c03d1091,3,26,reappear,identity,0.961,no_match,0.9,"The target is a person, but the tracker is following a tennis racket.",1.17,False,True,0.0,True
+ef232a2aed,0,4,coherence_drop,identity,0.7673,match,0.9,The object is the same dog seen from a slightly different angle.,11.488,False,True,0.002,False
+ef232a2aed,0,20,coherence_drop,identity,0.808,match,0.95,The images show the same dog from a similar perspective.,13.483,False,True,0.0,False
+ef232a2aed,1,4,coherence_drop,identity,0.7717,match,0.9,The images show the same dog from slightly different angles.,16.24,False,True,0.002,False
+ef232a2aed,1,20,coherence_drop,identity,0.8037,match,1.0,The image shows the same dog from a slightly different angle.,8.432,False,True,0.0,False
+ef232a2aed,2,4,coherence_drop,identity,0.776,match,0.9,The object shows the same fur pattern and body shape as the dog.,10.032,False,True,0.9018,True
+ef232a2aed,2,22,coherence_drop,identity,0.7292,match,0.9,Both images show the same dog with consistent fur color and markings.,1.682,False,True,0.8879,True
+ef232a2aed,3,4,coherence_drop,identity,0.768,match,0.9,Both images show the same dog from a similar rear-facing perspective.,1.67,False,True,0.9018,True
+ef232a2aed,3,20,coherence_drop,identity,0.8038,match,1.0,The images show the same dog from a similar rear-facing perspective.,1.344,False,True,0.9144,True
+efe828affa,1,21,coherence_drop,identity,0.7815,no_match,1.0,"The image shows a human hand, not a snake.",2.185,False,True,0.0,True
+efe828affa,1,33,coherence_drop,identity,0.7806,no_match,1.0,"The tracked object is a human hand, not a snake.",9.289,False,True,0.0,True
