@@ -193,3 +193,23 @@ Facts below were read from the meta files only (no model, no frames).
 8. Honest limits: single runs; fixed subsets, so differences under about 1 J&F are noise; the frame-0 grounding step may miss targets
    that are not visible or not distinct in frame 0 (likely for MeViS motion sentences), which will show up as grounding failures; time
    estimates come from another dataset; whether SAM 2.1 saw these videos in training is not verified.
+
+## AMENDMENT 3 (2026-10-20): pilot outcome, memory finding, stress test and a fallback rule. Written BEFORE any full run on MeViS or Long-RVOS
+
+1. Pilot (Amendment 2, section 6: first 3 videos in hash order of each subset, V0, V1, V2 passive) finished without a crash on MeViS
+   and, at the time of writing, V0 and V1 finished on Long-RVOS (V2 still running). No code or setting was changed. The pilot log
+   prints recovery counts; they were seen incidentally, are NOT reported, and no setting was changed because of them.
+2. Measured speed in the pilot (tracked frames = sum over sentences of (frames-1): 2919 for MeViS, 3252 for Long-RVOS):
+   MeViS V0 about 2.40 and V1 about 2.02 frames/s; Long-RVOS V0 about 2.00 and V1 about 1.65 frames/s. Projected GPU time for
+   V0 + V1 + V2 + V4-memory on the full subsets (ESTIMATE, V2 and V4-memory assumed about 3 % above V1): about 5.8 h (MeViS) and
+   about 8.2 h (Long-RVOS). Actual times will be reported.
+3. Memory finding: RAM used reached 11.9 GB (WSL limit 11.7 GiB) at the switch between two Long-RVOS videos of 420 and 432 frames, and
+   was about 7.3 GB while one 420-frame video ran. Estimate: about 16 MB per frame, so the longest subset video (675 frames) needs about
+   11.4 GB while it runs. WSL memory was raised from 7.4 GB to 12 GB (.wslconfig, laptop has 15.2 GB) and swap to 24 GB. This changes the
+   laptop's settings only; the code and the configs are untouched. MeViS needs no change (at most 216 frames).
+4. Stress test before the full Long-RVOS run: V0 stage 1 and stage 2 only, on the 675-frame video alone (a one-video tier manifest in a
+   separate run folder). Its outputs are thrown away and are not reported; it only shows whether that video fits in memory.
+5. Fallback rule, fixed now: if the stress test or the full run is killed for lack of memory although WSL has 12 GB RAM and 24 GB swap,
+   the Long-RVOS subset is rebuilt with tools/build_longrvos_subset.py plus a new option --max-frames 500 (videos longer than 500 frames
+   are skipped; same hash order and same budget), the new list is committed before the rerun, and every table says "videos up to 500
+   frames". No other fallback. Nothing here is ever decided from accuracy.
