@@ -135,3 +135,61 @@ Definitions fixed here (they replace the wording in sections 4 and 5 where diffe
 
 Results seen before this amendment (no Gemini involved), J&F on all 50 videos: V0 44.04, V1 43.96, V2 passive
 43.96, V4-memory 43.80. V4-memory made 26 restarts: 3 correct, 21 wrong, 2 weak. No setting was changed after seeing them.
+
+## AMENDMENT 2 (2026-10-20): MeViS and Long-RVOS, written BEFORE any MeViS or Long-RVOS data is converted and BEFORE any model is run on it
+
+Mentor's Task 6 order: after Ref-YouTube-VOS (done, Amendment 1), run the whole ladder (V0-V4) on MeViS, then Long-RVOS, with
+the same frozen models, configs, code, thresholds and prompts. Both datasets were already on the laptop (no download).
+Facts below were read from the meta files only (no model, no frames).
+
+1. Splits and labels (use exactly in every table and in the report):
+   - MeViS: "MeViS valid_u subset (official MeViS v2 split with public masks; fixed subset; offline evaluation, not the
+     online leaderboard)". valid_u = 50 videos, 907 sentences, frames 25-216 per video (mean 68.8), every frame annotated.
+   - Long-RVOS: "Long-RVOS valid subset (official valid split; fixed subset)". valid = 112 videos, 1326 sentences
+     (460 static, 427 dynamic, 439 hybrid), 188-675 frames per video (mean 378.9), frames already every 5th.
+   Neither is comparable to a leaderboard (subset, training-free single-box method).
+
+2. Which sentences are run:
+   - MeViS valid_u has 656 single-target, 213 multi-target (several objects) and 38 no-target (object absent) sentences. The method
+     follows ONE frame-0 box, so only the single-target sentences are run. The other 251 are NOT RUN, are counted and reported
+     as "not supported by this method", and are never dropped silently.
+   - Long-RVOS sentences have one object each, so none are excluded by this rule.
+
+3. Fixed subsets (rules in the two tools, no randomness; lists and content hashes in the manifest files):
+   - tools/build_mevis_subset.py -> subsets/mevis_valid_u_subset.json. Videos ordered by sha256("cogrvos-task6-mevis-v1"+video),
+     kept while the running total of tracked frames (single-target sentences x (frames-1)) is <= 12000; stop at the first video
+     that does not fit.
+   - tools/build_longrvos_subset.py -> subsets/longrvos_valid_subset.json. Per video one sentence of each type (static, dynamic,
+     hybrid; the hash-smallest of that type); videos lacking a type are skipped; videos ordered by
+     sha256("cogrvos-task6-longrvos-v1"+video); kept while the running total of tracked frames (3 x (frames-1)) is <= 13500;
+     stop at the first video that does not fit.
+   - Budgets are set from time, not from accuracy: at the YouTube-VOS speed (V0+V1+V2+V4-memory about 1.98 s per tracked frame)
+     the chosen subsets need about 5.9 h (MeViS) and 6.9 h (Long-RVOS). These are ESTIMATES. MeViS frames are 1080p and Long-RVOS
+     videos are long, so the real time can differ; actual times will be reported.
+   - Result of the two tools (counted on the meta files only, no model): MeViS subset = 12 videos, 213 sentences, 10744 tracked
+     frames (47 of 50 videos had a single-target sentence; in the 12 chosen videos 8 no-target and 48 multi-target sentences are NOT
+     RUN). Long-RVOS subset = 11 videos, 33 sentences, 12474 tracked frames, 235-675 frames per video (88 of 112 videos have all 3
+     sentence types; the 24 without are skipped by rule, so the subset is drawn from the 88 only).
+
+4. Versions: V0, V1, V2 passive and V4-memory on the whole subset; V3 planned calls counted from the event schedule (no API,
+   labelled "estimated/projected"). Real Gemini rows (V3, V4-vlm) only on a smaller VLM subset: the first K videos of the subset in
+   the same hash order, K the largest value with at most 40 planned V3 calls (computed from the V2 passive log with
+   tools/pick_vlm_subset.py before any API call, then committed). The other versions are also reported on that VLM subset. Actual VLM
+   calls and calls per tracked frame are reported separately from projected ones. Same definitions as Amendment 1.
+
+5. Conversion (the pipeline is not edited): frames and masks are converted into the Ref-DAVIS17 480p folder shape, 480 px height
+   (bilinear for images, nearest for masks). MeViS masks come from RLE in mask_dict.json; Long-RVOS masks from the per-object PNGs
+   (a frame without a PNG is an empty mask). The converters are committed before the pilot. If two objects overlap on a pixel the
+   single label PNG can keep only one, so the converter counts overlapping pixels and the count is reported.
+
+6. Pilot: the first 3 videos in hash order of each subset, through V0-V2, only to check paths, time per frame and memory. Pilot
+   numbers are NOT reported. Only crashes and path mistakes may be fixed afterwards, each logged. No setting that affects accuracy
+   changes after the pilot.
+
+7. Stop rules: as in section 6 of this plan. In addition, if a long Long-RVOS video does not fit in 7.4 GB RAM or the run is much
+   slower than estimated, stop and report; any change (smaller subset, video cap) is written as Amendment 3 before the rerun and is
+   never decided from accuracy.
+
+8. Honest limits: single runs; fixed subsets, so differences under about 1 J&F are noise; the frame-0 grounding step may miss targets
+   that are not visible or not distinct in frame 0 (likely for MeViS motion sentences), which will show up as grounding failures; time
+   estimates come from another dataset; whether SAM 2.1 saw these videos in training is not verified.
