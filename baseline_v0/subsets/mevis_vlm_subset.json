@@ -1,0 +1,18 @@
+{
+  "dataset": "ref_youtube_vos_train_slice_vlm_subset",
+  "rule": "first K videos of the slice in sha256(seed_text+video) order, K largest with planned V3 events calls <= 40",
+  "seed_text": "cogrvos-task6-mevis-v1",
+  "max_calls": 40,
+  "K": 1,
+  "planned_calls_on_subset": 40,
+  "planned_calls_full_slice": 445,
+  "sentences_on_subset": 21,
+  "events_csv": "results_v3_oracle_events_log_only/events_per_expression.csv",
+  "events_csv_sha256": "328cf1dc746c892af333a057a6b7978e122cf5e6312c339d06e67f76333af232",
+  "videos": [
+    "7ca2e40c5af3"
+  ],
+  "hash_order_of_chosen": [
+    "7ca2e40c5af3"
+  ]
+}
