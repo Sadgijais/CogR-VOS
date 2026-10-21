@@ -213,3 +213,14 @@ Facts below were read from the meta files only (no model, no frames).
    the Long-RVOS subset is rebuilt with tools/build_longrvos_subset.py plus a new option --max-frames 500 (videos longer than 500 frames
    are skipped; same hash order and same budget), the new list is committed before the rerun, and every table says "videos up to 500
    frames". No other fallback. Nothing here is ever decided from accuracy.
+
+## AMENDMENT 4 (2026-10-21): minimum VLM subset size. Written BEFORE any Gemini call on either dataset
+
+1. Amendment 2 says the VLM subset is the first K videos in hash order with K as large as possible while the planned V3 calls stay at
+   40 or fewer. On Long-RVOS the first video in hash order (39db436191, 3 sentences) already needs 59 planned calls, so the rule gives
+   K = 0, an empty subset. The planned calls come from the oracle replay (no API, no accuracy).
+2. New rule, for Long-RVOS only: K = 1, the first video in hash order (39db436191, 3 sentences, 59 planned calls). The cap of 40 is
+   exceeded and every table and the final report say so. The list is made with tools/pick_vlm_subset.py --max-calls 59, which gives
+   K = 1; nothing else in the tool changes.
+3. MeViS is unchanged: 1 video (7ca2e40c5af3), 21 sentences, 40 planned calls (committed as b6609a6; label-only fix 0fdfb2a).
+4. Nothing here uses accuracy. The V4-vlm runs on the same video(s) as V3 on each dataset, as in Amendment 2.
