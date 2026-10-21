@@ -1,0 +1,18 @@
+{
+  "dataset": "longrvos_valid_one_sentence_per_type_vlm_subset",
+  "rule": "first K videos of the slice in sha256(seed_text+video) order, K largest with planned V3 events calls <= 59",
+  "seed_text": "cogrvos-task6-longrvos-v1",
+  "max_calls": 59,
+  "K": 1,
+  "planned_calls_on_subset": 59,
+  "planned_calls_full_slice": 442,
+  "sentences_on_subset": 3,
+  "events_csv": "results_v3_oracle_events_log_only/events_per_expression.csv",
+  "events_csv_sha256": "f89fdc0a28ec90572c604c663480e132f35dcdef27d3d03e17b6c4faa6ae93cc",
+  "videos": [
+    "39db436191"
+  ],
+  "hash_order_of_chosen": [
+    "39db436191"
+  ]
+}
