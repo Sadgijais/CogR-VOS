@@ -1,5 +1,5 @@
 {
-  "dataset": "ref_youtube_vos_train_slice_vlm_subset",
+  "dataset": "mevis_valid_u_single_target_vlm_subset",
   "rule": "first K videos of the slice in sha256(seed_text+video) order, K largest with planned V3 events calls <= 40",
   "seed_text": "cogrvos-task6-mevis-v1",
   "max_calls": 40,
