@@ -1,0 +1,7 @@
+label,kind,video,exp_id,start_frame,end_frame,length,first_visible_frame,iou_at_return,recovered_in_window,latency_frames,eventual_latency_frames,recovered
+sub_v0,loss_episode,bd4aefda10,3,1,430,430,,,,,,False
+sub_v0,loss_episode,bd4aefda10,8,1,430,430,,,,,,False
+sub_v0,loss_episode,f6f82de62a,0,1,95,95,,,,95,,True
+sub_v0,loss_episode,f6f82de62a,0,97,233,137,,,,,,False
+sub_v0,loss_episode,f6f82de62a,1,96,134,39,,,,39,,True
+sub_v0,loss_episode,f6f82de62a,4,96,135,40,,,,41,,True

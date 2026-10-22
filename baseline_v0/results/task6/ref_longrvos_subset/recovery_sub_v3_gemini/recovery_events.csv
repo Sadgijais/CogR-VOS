@@ -1,0 +1,11 @@
+label,kind,video,exp_id,start_frame,end_frame,length,first_visible_frame,iou_at_return,recovered_in_window,latency_frames,eventual_latency_frames,recovered
+sub_v3_gemini,loss_episode,bd4aefda10,3,1,430,430,,,,,,False
+sub_v3_gemini,loss_episode,bd4aefda10,8,1,430,430,,,,,,False
+sub_v3_gemini,loss_episode,f6f82de62a,0,1,233,233,,,,,,False
+sub_v3_gemini,loss_episode,f6f82de62a,1,85,123,39,,,,39,,True
+sub_v3_gemini,loss_episode,f6f82de62a,1,136,168,33,,,,33,,True
+sub_v3_gemini,loss_episode,f6f82de62a,1,199,212,14,,,,14,,True
+sub_v3_gemini,loss_episode,f6f82de62a,4,85,111,27,,,,27,,True
+sub_v3_gemini,loss_episode,f6f82de62a,4,113,117,5,,,,5,,True
+sub_v3_gemini,loss_episode,f6f82de62a,4,124,134,11,,,,11,,True
+sub_v3_gemini,loss_episode,f6f82de62a,4,162,201,40,,,,40,,True

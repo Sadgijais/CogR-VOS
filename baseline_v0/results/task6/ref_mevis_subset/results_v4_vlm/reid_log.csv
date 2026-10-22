@@ -1,0 +1,61 @@
+video,exp_id,frame,trigger,variant,n_candidates,shortlist,choice,choice_value,action,label,gt_visible,current_iou,chosen_iou,vlm_letter,vlm_conf,vlm_latency_s,vlm_cached,vlm_error,reason
+7ca2e40c5af3,0,3,coherence_drop,vlm,2,current d3,current,0.9,keep,correct_none,1,0.886,,A,0.9,5.6466,False,,Candidate A matches the monkey's posture and appearance from the previous frame.
+7ca2e40c5af3,1,3,coherence_drop,vlm,1,current,current,1.0,keep,candidate_miss,1,0.0009,,A,1.0,17.7671,False,,"The candidate matches the target's shape, color, and distinctive pose."
+7ca2e40c5af3,2,3,coherence_drop,vlm,2,current d2,current,0.9,keep,correct_none,0,0.0,,A,0.9,14.0265,False,,Candidate A matches the monkey's posture and appearance in the previous frame.
+7ca2e40c5af3,3,3,coherence_drop,vlm,4,current d3 d4,d4,0.9,restart,weak_restart,1,0.0009,0.1042,C,0.9,6.8599,False,,Candidate C shows the turtle being moved by a monkey on a stone.
+7ca2e40c5af3,4,3,coherence_drop,vlm,3,current d2 d1,d2,0.9,restart,wrong_restart,1,0.8852,0.0746,B,0.9,63.4163,False,,Candidate B shows the monkey in a similar posture and color as the target.
+7ca2e40c5af3,5,3,coherence_drop,vlm,3,current d2 d1,current,0.9,keep,correct_none,0,0.0,,A,0.9,5.7795,False,,Candidate A shows the same monkey in a similar posture to the target.
+7ca2e40c5af3,6,3,coherence_drop,vlm,2,current d3,none,0.0,keep,correct_none,1,0.8856,,none,0.0,0.0,False,RuntimeError: gemini failed after 3 tries: HTTP Error 503: Service Unavailable,error
+7ca2e40c5af3,7,3,coherence_drop,vlm,1,current,none,0.0,keep,correct_none,0,0.0,,none,0.0,0.0,False,RuntimeError: gemini failed after 3 tries: HTTP Error 503: Service Unavailable,error
+7ca2e40c5af3,8,3,coherence_drop,vlm,2,current d0,current,0.9,keep,correct_none,1,0.8856,,A,0.9,6.0912,False,,Candidate A shows the monkey in a similar jumping pose to the target.
+7ca2e40c5af3,9,3,coherence_drop,vlm,2,current d3,none,0.0,keep,candidate_miss,1,0.0009,,none,0.0,0.0,False,RuntimeError: gemini failed after 3 tries: HTTP Error 503: Service Unavailable,error
+7ca2e40c5af3,10,3,coherence_drop,vlm,3,current d4 d3,d3,0.95,restart,weak_restart,1,0.8855,0.4723,C,0.95,5.4171,False,,"Candidate C shows the monkey holding the turtle, matching the target description."
+7ca2e40c5af3,11,3,coherence_drop,vlm,1,current,current,1.0,keep,candidate_miss,1,0.001,,A,1.0,8.8154,False,,"The candidate matches the shape, texture, and orientation of the target object."
+7ca2e40c5af3,12,3,coherence_drop,vlm,1,current,current,0.95,keep,correct_none,1,0.8856,,A,0.95,8.3925,False,,"The candidate matches the target's appearance, color, and posture."
+7ca2e40c5af3,13,3,coherence_drop,vlm,2,current d3,current,0.9,keep,correct_none,1,0.8857,,A,0.9,12.9836,False,,Candidate A matches the posture and appearance of the target monkey.
+7ca2e40c5af3,14,3,coherence_drop,vlm,3,current d0 d2,d2,0.95,restart,weak_restart,1,0.0009,0.1011,C,0.95,3.2382,False,,"Candidate C shows the turtle being interacted with by a monkey, matching the description."
+7ca2e40c5af3,15,3,coherence_drop,vlm,1,current,current,1.0,keep,candidate_miss,1,0.0011,,A,1.0,15.6976,False,,"The candidate matches the target's appearance, posture, and distinctive features."
+7ca2e40c5af3,16,3,coherence_drop,vlm,2,current d1,current,0.9,keep,correct_none,0,0.0,,A,0.9,2.8626,False,,Candidate A matches the monkey's posture and appearance from the previous frame.
+7ca2e40c5af3,17,3,coherence_drop,vlm,3,current d2 d1,d2,0.95,restart,wrong_restart,0,0.0,0.0,B,0.95,3.2471,False,,Candidate B shows the same monkey in a similar leaping pose.
+7ca2e40c5af3,18,3,coherence_drop,vlm,3,current d2 d1,current,0.9,keep,correct_none,0,0.0,,A,0.9,7.2015,False,,Candidate A matches the monkey's body shape and posture from the previous frame.
+7ca2e40c5af3,19,3,coherence_drop,vlm,3,current d2 d1,current,0.9,keep,correct_none,0,0.0,,A,0.9,5.8919,False,,Candidate A matches the monkey's posture and appearance from the previous frame.
+7ca2e40c5af3,0,45,coherence_drop,vlm,5,current d1 d2,current,0.9,keep,correct_none,1,0.7967,,A,0.9,13.6604,False,,Candidate A matches the monkey's body shape and posture from the previous frame.
+7ca2e40c5af3,1,45,coherence_drop,vlm,4,current d2 d1,current,0.9,keep,candidate_miss,1,0.0,,A,0.9,4.2359,False,,Candidate A matches the shape and texture of the turtle in the target images.
+7ca2e40c5af3,2,45,coherence_drop,vlm,4,current d2 d1,d1,0.9,restart,weak_restart,1,0.0345,0.259,C,0.9,4.138,False,,Candidate C shows the monkey in a similar jumping pose as the target.
+7ca2e40c5af3,3,45,coherence_drop,vlm,3,current d2 d1,d2,0.9,restart,wrong_restart,1,0.0,0.0752,B,0.9,6.3489,False,,Candidate B shows the same monkey-like figure and posture as the target.
+7ca2e40c5af3,4,45,coherence_drop,vlm,3,current d1 d2,current,0.9,keep,correct_none,1,0.7962,,A,0.9,5.2738,False,,"Candidate A matches the monkey's body shape, color, and posture from the previous frame."
+7ca2e40c5af3,5,45,coherence_drop,vlm,3,current d1 d2,current,0.9,keep,candidate_miss,1,0.0345,,A,0.9,10.1156,False,,Candidate A matches the monkey's body shape and fur color from the target images.
+7ca2e40c5af3,6,45,coherence_drop,vlm,4,current d1 d2,d1,0.9,restart,correct_restart,1,0.7967,0.5727,B,0.9,6.658,False,,Candidate B matches the monkey's appearance and posture from the previous frame.
+7ca2e40c5af3,7,45,coherence_drop,vlm,3,current d1 d2,current,0.9,keep,candidate_miss,1,0.0346,,A,0.9,5.1628,False,,Candidate A matches the monkey's body shape and posture from the previous frame.
+7ca2e40c5af3,8,45,coherence_drop,vlm,3,current d2 d1,current,0.9,keep,correct_none,1,0.7967,,A,0.9,6.7474,False,,Candidate A shows the monkey in a similar jumping pose to the target.
+7ca2e40c5af3,9,45,coherence_drop,vlm,3,current d4 d2,current,0.9,keep,candidate_miss,1,0.0,,A,0.9,5.9619,False,,Candidate A matches the posture and features of the target monkey.
+7ca2e40c5af3,10,45,coherence_drop,vlm,5,current d1 d3,d3,0.9,restart,weak_restart,1,0.7961,0.5,C,0.9,8.5191,False,,"Candidate C shows the monkey holding the turtle, matching the target description."
+7ca2e40c5af3,11,45,coherence_drop,vlm,3,current d1 d2,current,0.9,keep,candidate_miss,1,0.0,,A,0.9,6.5663,False,,Candidate A matches the shape and texture of the target turtle.
+7ca2e40c5af3,12,45,coherence_drop,vlm,4,current d1 d3,d3,0.9,restart,weak_restart,1,0.7967,0.4828,C,0.9,4.1815,False,,Candidate C matches the body shape and posture of the target monkey.
+7ca2e40c5af3,13,45,coherence_drop,vlm,4,current d1 d2,current,0.9,keep,correct_none,1,0.7967,,A,0.9,9.644,False,,Candidate A matches the posture and appearance of the target monkey.
+7ca2e40c5af3,14,45,coherence_drop,vlm,5,current d1 d3,current,0.9,keep,candidate_miss,1,0.0,,A,0.9,5.5961,False,,Candidate A matches the shape and texture of the target turtle.
+7ca2e40c5af3,15,45,coherence_drop,vlm,3,current d1 d2,d2,0.9,restart,wrong_restart,1,0.0,0.0,C,0.9,4.6774,False,,Candidate C shows the same monkey-handled turtle structure as the target.
+7ca2e40c5af3,16,45,coherence_drop,vlm,4,current d3 d1,current,0.9,keep,candidate_miss,1,0.0345,,A,0.9,3.1414,False,,Candidate A matches the monkey's body shape and posture from the previous frame.
+7ca2e40c5af3,17,45,coherence_drop,vlm,3,current d1 d4,current,0.9,keep,candidate_miss,1,0.0375,,A,0.9,7.0097,False,,Candidate A matches the monkey's body shape and posture from the target images.
+7ca2e40c5af3,18,45,coherence_drop,vlm,3,current d1 d4,current,0.9,keep,candidate_miss,1,0.0343,,A,0.9,47.1118,False,,Candidate A matches the monkey's body shape and fur color from the target images.
+7ca2e40c5af3,19,45,coherence_drop,vlm,3,current d1 d4,current,0.9,keep,candidate_miss,1,0.0343,,A,0.9,8.0681,False,,Candidate A matches the monkey's body shape and posture from the previous frame.
+7ca2e40c5af3,0,55,absent_poll,vlm,3,d0 d1 d2,d1,0.9,restart,wrong_restart,0,,0.0,B,0.9,2.0691,False,,"Candidate B matches the monkey's body shape, color, and posture from the target images."
+7ca2e40c5af3,1,55,absent_poll,vlm,3,d0 d1 d2,d1,0.9,restart,wrong_restart,1,,0.0,B,0.9,3.8205,False,,Candidate B shows the same turtle shape and color as the target.
+7ca2e40c5af3,2,55,absent_poll,vlm,2,d0 d1,d0,0.9,restart,correct_restart,1,,0.8814,A,0.9,2.4742,False,,"Candidate A matches the monkey's body shape, posture, and tail position."
+7ca2e40c5af3,3,55,absent_poll,vlm,4,d4 d0 d3,d3,0.9,restart,wrong_restart,1,,0.0845,C,0.9,3.5049,False,,"Candidate C shows the turtle being moved by a monkey, matching the target description."
+7ca2e40c5af3,4,55,absent_poll,vlm,4,d2 d3 d0,d0,0.9,restart,wrong_restart,0,,0.0,C,0.9,3.6273,False,,Candidate C shows the same monkey with similar body shape and tail.
+7ca2e40c5af3,5,55,absent_poll,vlm,4,d4 d2 d0,d0,0.95,restart,correct_restart,1,,0.8815,C,0.95,3.5468,False,,"Candidate C matches the monkey's body shape, fur color, and tail position."
+7ca2e40c5af3,6,55,absent_poll,vlm,3,d0 d1 d3,d1,0.9,restart,wrong_restart,0,,0.0,B,0.9,6.0259,False,,Candidate B matches the monkey's body shape and posture from the target images.
+7ca2e40c5af3,7,55,absent_poll,vlm,2,d0 d1,d0,0.95,restart,correct_restart,1,,0.8816,A,0.95,3.2516,False,,"Candidate A matches the monkey's body shape, color, and posture from the target images."
+7ca2e40c5af3,8,55,absent_poll,vlm,2,d0 d1,d0,0.95,restart,wrong_restart,0,,0.0,A,0.95,3.9095,False,,"Candidate A matches the monkey's body shape, posture, and tail position."
+7ca2e40c5af3,9,55,absent_poll,vlm,4,d0 d3 d2,d3,0.9,restart,wrong_restart,1,,0.0,B,0.9,2.3305,False,,Candidate B shows the same monkey and turtle toy in a similar pose.
+7ca2e40c5af3,10,55,absent_poll,vlm,4,d2 d0 d4,d4,0.9,restart,wrong_restart,0,,0.0,C,0.9,6.7409,False,,"Candidate C shows the monkey with the turtle, matching the target description."
+7ca2e40c5af3,11,55,absent_poll,vlm,3,d0 d1 d2,d1,0.9,restart,wrong_restart,1,,0.0,B,0.9,3.3036,False,,Candidate B matches the shape and orientation of the target turtle.
+7ca2e40c5af3,12,55,absent_poll,vlm,1,d0,d0,0.9,restart,wrong_restart,0,,0.0,A,0.9,1.8509,False,,The candidate matches the physical appearance and posture of the target monkey.
+7ca2e40c5af3,13,55,absent_poll,vlm,1,d0,d0,0.9,restart,wrong_restart,0,,0.0,A,0.9,1.6628,False,,The candidate matches the physical appearance and posture of the target monkey.
+7ca2e40c5af3,14,55,absent_poll,vlm,4,d1 d0 d2,d1,1.0,restart,correct_restart,1,,0.9167,A,1.0,11.067,False,,Candidate A matches the visual appearance and texture of the target turtle.
+7ca2e40c5af3,15,55,absent_poll,vlm,3,d0 d2 d3,d2,0.9,restart,wrong_restart,1,,0.0869,B,0.9,4.7555,False,,Candidate B shows the same turtle-like object with similar texture and shape.
+7ca2e40c5af3,16,55,absent_poll,vlm,2,d0 d1,d0,0.95,restart,correct_restart,1,,0.8801,A,0.95,2.3516,False,,Candidate A matches the monkey's physical features and posture from the target images.
+7ca2e40c5af3,17,55,absent_poll,vlm,2,d0 d1,d1,0.95,restart,wrong_restart,1,,0.0183,B,0.95,1.6702,False,,"Candidate B matches the monkey's body shape, fur color, and posture."
+7ca2e40c5af3,18,55,absent_poll,vlm,3,d2 d0 d1,d1,0.95,restart,wrong_restart,1,,0.019,C,0.95,2.8266,False,,Candidate C shows the monkey in a similar pose to the target.
+7ca2e40c5af3,19,55,absent_poll,vlm,3,d2 d0 d1,d1,0.95,restart,wrong_restart,1,,0.0183,C,0.95,1.8907,False,,Candidate C shows the monkey in a similar pose to the target.

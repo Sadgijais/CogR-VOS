@@ -1,0 +1,8 @@
+sentences: 213
+selected: 39 (tags: best/worst 3 each, disappearance, failed_recovery, example_<mode> 3 each)
+failure_mode counts (all sentences): grounding_failure=129, identity_drift=26, ok=21, poor_mask_quality=35, track_lost_no_distractor=2
+distractor confusion (drifted onto another object): 131
+sentences with identity drift events: 131
+recovery_events kinds: loss_episode=163, reappearance=22
+disappearance events (non-loss_episode rows): 22; recovered==False: 16
+false absence frames (all sentences): 461

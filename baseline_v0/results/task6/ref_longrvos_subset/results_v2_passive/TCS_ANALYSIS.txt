@@ -1,0 +1,58 @@
+TCS analysis  -  11 videos, 33 expressions (23 grounding failures left out), 2892 frames evaluated
+results: results_v2_passive   predictions: predictions_v2_passive
+thresholds used: tau_low=from log, tau_high=from log
+
+1. BANDS (stable = HIGH, uncertain = MEDIUM + LOW)
+   band      frames   share%  meanIoU   lost%  degraded%
+   HIGH        1199     41.5     0.69     6.2       43.1
+   MEDIUM       747     25.8     0.68    21.3       34.4
+   LOW          946     32.7     0.35    61.2       62.9
+   lost frames caught as uncertain (recall): 90.9%  (n=812)
+   good frames (IoU>=0.5) wrongly flagged uncertain (false alarms): 55.2%  (n=1523)
+
+2. AUROC  (0.5 = no information, 1.0 = perfect; low score should mean bad frame)
+   signal            frames    lost   (n)  degraded    (n)
+   c_t (combined)      2892   0.866   812     0.646   1369
+   mask                2661   0.600   581     0.599   1138
+   motion              2633   0.938   564     0.700   1117
+   appearance          2661   0.569   581     0.480   1138
+   semantic            2661   0.504   581     0.308   1138
+
+3. FAILURE CASES  (13 runs of >= 3 lost frames in correctly grounded tracks)
+   092ba1d6df/5: track_lost from frame 21 for 9 frames; c at onset 0.937 (HIGH); flagged at frame 15 (lead +6)
+   092ba1d6df/5: track_lost from frame 47 for 17 frames; c at onset 0.944 (HIGH); flagged at frame 48 (lead -1)
+   092ba1d6df/5: track_lost from frame 67 for 22 frames; c at onset 0.852 (MEDIUM); flagged at frame 64 (lead +3)
+   092ba1d6df/5: track_lost from frame 96 for 20 frames; c at onset 0.892 (MEDIUM); flagged at frame 87 (lead +9)
+   092ba1d6df/5: track_lost from frame 214 for 3 frames; c at onset 0.758 (LOW); flagged at frame 206 (lead +8)
+   092ba1d6df/6: grounding failure, whole track off-target - TCS cannot see this
+   092ba1d6df/9: grounding failure, whole track off-target - TCS cannot see this
+   1a5dead3e3/1: grounding failure, whole track off-target - TCS cannot see this
+   1a5dead3e3/4: grounding failure, whole track off-target - TCS cannot see this
+   235ff86d37/1: grounding failure, whole track off-target - TCS cannot see this
+   235ff86d37/10: grounding failure, whole track off-target - TCS cannot see this
+   235ff86d37/4: grounding failure, whole track off-target - TCS cannot see this
+   24b7b95ca4/15: grounding failure, whole track off-target - TCS cannot see this
+   24b7b95ca4/22: grounding failure, whole track off-target - TCS cannot see this
+   24b7b95ca4/6: grounding failure, whole track off-target - TCS cannot see this
+   2683deffcb/0: grounding failure, whole track off-target - TCS cannot see this
+   2683deffcb/1: identity_drift from frame 1 for 65 frames; c at onset 0.648 (LOW); flagged at frame 1 (lead +0)
+   2683deffcb/1: identity_drift from frame 67 for 173 frames; c at onset 0.427 (LOW); flagged at frame 57 (lead +10)
+   2683deffcb/1: identity_drift from frame 241 for 433 frames; c at onset 0.0 (LOW); flagged at frame 231 (lead +10)
+   2683deffcb/6: grounding failure, whole track off-target - TCS cannot see this
+   39db436191/11: grounding failure, whole track off-target - TCS cannot see this
+   39db436191/4: grounding failure, whole track off-target - TCS cannot see this
+   39db436191/7: grounding failure, whole track off-target - TCS cannot see this
+   8b0e20e373/0: grounding failure, whole track off-target - TCS cannot see this
+   8b0e20e373/1: track_lost from frame 236 for 14 frames; c at onset 0.0 (LOW); flagged at frame 226 (lead +10)
+   8b0e20e373/6: grounding failure, whole track off-target - TCS cannot see this
+   bd4aefda10/3: grounding failure, whole track off-target - TCS cannot see this
+   bd4aefda10/8: grounding failure, whole track off-target - TCS cannot see this
+   e6f1a061ea/12: grounding failure, whole track off-target - TCS cannot see this
+   e6f1a061ea/13: grounding failure, whole track off-target - TCS cannot see this
+   e6f1a061ea/28: grounding failure, whole track off-target - TCS cannot see this
+   f6f82de62a/0: grounding failure, whole track off-target - TCS cannot see this
+   f6f82de62a/1: track_lost from frame 96 for 16 frames; c at onset 0.731 (LOW); flagged at frame 86 (lead +10)
+   f6f82de62a/1: track_lost from frame 113 for 11 frames; c at onset 0.0 (LOW); flagged at frame 103 (lead +10)
+   f6f82de62a/4: track_lost from frame 96 for 16 frames; c at onset 0.709 (LOW); flagged at frame 86 (lead +10)
+   f6f82de62a/4: track_lost from frame 113 for 5 frames; c at onset 0.0 (LOW); flagged at frame 103 (lead +10)
+   detected: 13/13

@@ -1,0 +1,22 @@
+video,exp_id,expression,frames,candidates,calls,suppressed,reappear,disappear,coherence_drop,distractor,drift_suspect,keepalive,periodic,blanked_frames,false_absence_flags
+7ca2e40c5af3,0,Monkey moving around and jumping to the left,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,1,Turtle being pushed around,59,7,2,5,0,0,2,0,0,0,0,40,0
+7ca2e40c5af3,2,Monkey jumping to the right,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,3,turtle is moved by monkeys on stone,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,4,monkey crawling around on rocks then jumping to the left,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,5,monkey jumping right to the rock then crawling around,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,6,the monkey who was the first to move the turtle,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,7,monkey jumping from left,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,8,monkey jumping to left,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,9,turtle played by monkey,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,10,monkey holding the turtle then jump away,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,11,turtle turned upside down,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,12,The monkey that left first.,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,13,The first monkey to leave.,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,14, The turtle played with by the monkeys.,59,7,2,5,0,0,2,0,0,0,0,55,0
+7ca2e40c5af3,15,The monkey-handled turtle.,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,16,The monkey that jumped onto the rock from the left side.,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,17,The monkey leaping onto the rock from the left.,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,18,The monkey that made a jump to the rock from the left.,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,19,The monkey jumping onto the rock on the left.,59,7,2,5,0,0,2,0,0,0,0,0,0
+7ca2e40c5af3,20,The object being teased by the monkeys.,59,0,0,0,0,0,0,0,0,0,0,0,0

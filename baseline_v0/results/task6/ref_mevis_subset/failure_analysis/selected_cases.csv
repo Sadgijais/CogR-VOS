@@ -1,0 +1,40 @@
+tags,video,exp_id,expression,J,F,JF,failure_mode,n_drift_events,drift_onto_obj,n_reappearance_events,recovery_rate,n_false_absence_frames,events
+example_poor_mask_quality,16ae95660b3a,1,elephant walking behind and putting its trunk on others ,75.37,52.93,64.15,poor_mask_quality,0,,0,,0,
+example_poor_mask_quality,16ae95660b3a,3,Elephant putting its trunk on another elephant's back,75.37,52.93,64.15,poor_mask_quality,0,,0,,0,
+example_poor_mask_quality,16ae95660b3a,7,elephant moving behind and putting its trunk on others,75.38,52.93,64.15,poor_mask_quality,0,,0,,0,
+example_identity_drift,16ae95660b3a,14,The elephant being pressed on its back by the other elephant's trunk.,18.15,30.85,24.5,identity_drift,2,1;1,0,,0,loss_episode:22-28:rec=False
+example_identity_drift,16ae95660b3a,15,The elephant with its back pressed down by the other elephant's nose.,18.15,30.85,24.5,identity_drift,2,1;1,0,,0,loss_episode:22-28:rec=False
+example_grounding_failure,3dde46eaaf53,0,The monkey sitting crouched at the center of the hole.,0.0,0.0,0.0,grounding_failure,1,3,0,,0,loss_episode:1-39:rec=False
+example_track_lost_no_distractor,3dde46eaaf53,4,come out from one door walk to the left door and back,6.71,7.2,6.95,track_lost_no_distractor,0,,0,,0,loss_episode:6-38:rec=False
+example_track_lost_no_distractor,3dde46eaaf53,8,come out from one door move to the left-side door and back,6.52,6.96,6.74,track_lost_no_distractor,0,,0,,0,loss_episode:6-38:rec=False
+example_grounding_failure,3dde46eaaf53,16,The monkey squatting in the middle of the cave entrance.,0.0,0.0,0.0,grounding_failure,1,3,0,,0,loss_episode:1-39:rec=False
+example_grounding_failure,3dde46eaaf53,17,The monkey in a crouched position at the entrance of the cave.,0.0,0.0,0.0,grounding_failure,1,3,0,,0,loss_episode:1-39:rec=False
+disappearance;failed_recovery,410dae675d9a,0,Girl riding bicycle in a circle,15.91,18.83,17.37,grounding_failure,2,5;5,1,0.0,19,reappearance:12-19:rec=False; loss_episode:1-11:rec=False; loss_episode:20-51:rec=False
+disappearance;failed_recovery,410dae675d9a,3,Bicycle moving in a circle,1.18,3.44,2.31,grounding_failure,3,4;4;4,1,0.0,0,reappearance:12-18:rec=False; loss_episode:1-11:rec=False; loss_episode:19-31:rec=False; loss_episode:33-51:rec=False
+disappearance,410dae675d9a,7,moving bike,73.96,62.65,68.31,identity_drift,1,1,1,1.0,0,reappearance:12-18:rec=True
+disappearance,410dae675d9a,8,moving bicycle,73.96,62.65,68.3,identity_drift,1,1,1,1.0,0,reappearance:12-18:rec=True
+disappearance;failed_recovery,410dae675d9a,9,little girl riding a bicycle,15.91,18.82,17.37,grounding_failure,2,5;5,1,0.0,19,reappearance:12-19:rec=False; loss_episode:1-11:rec=False; loss_episode:20-51:rec=False
+disappearance;failed_recovery,410dae675d9a,11,Bicycle shifting in a circle,34.23,30.14,32.18,identity_drift,1,1,1,0.0,20,reappearance:12-18:rec=False; loss_episode:19-48:rec=True
+disappearance,410dae675d9a,12,The individual who is cycling.,87.95,68.36,78.15,poor_mask_quality,0,,1,1.0,0,reappearance:12-19:rec=True
+disappearance,410dae675d9a,13,The person on a bike.,58.85,46.33,52.59,ok,0,,1,1.0,0,reappearance:12-19:rec=True
+disappearance,410dae675d9a,14,The cyclist.,87.94,68.34,78.14,poor_mask_quality,0,,1,1.0,0,reappearance:12-19:rec=True
+disappearance,410dae675d9a,15,The one riding a bicycle.,58.84,46.33,52.59,ok,0,,1,1.0,0,reappearance:12-19:rec=True
+best,410dae675d9a,21,The black car parked without moving.,94.34,89.25,91.8,ok,0,,0,,0,
+best,410dae675d9a,23,The black car that is stationary.,94.39,89.34,91.87,ok,0,,0,,0,
+best,410dae675d9a,25,The black automobile not in motion.,94.38,89.33,91.86,ok,0,,0,,0,
+disappearance;failed_recovery,410dae675d9a,31,The bicycle in motion.,1.18,3.44,2.31,grounding_failure,3,4;4;4,1,0.0,0,reappearance:12-18:rec=False; loss_episode:1-11:rec=False; loss_episode:19-31:rec=False; loss_episode:33-51:rec=False
+disappearance;failed_recovery,410dae675d9a,32,The moving bicycle.,34.25,30.16,32.2,identity_drift,1,1,1,0.0,20,reappearance:12-18:rec=False; loss_episode:19-48:rec=True
+disappearance;failed_recovery,410dae675d9a,33,The bike that is currently moving.,34.23,30.14,32.18,identity_drift,1,1,1,0.0,20,reappearance:12-18:rec=False; loss_episode:19-48:rec=True
+disappearance;failed_recovery,410dae675d9a,34,The bicycle that is on the move.,34.24,30.15,32.2,identity_drift,1,1,1,0.0,20,reappearance:12-18:rec=False; loss_episode:19-48:rec=True
+disappearance;failed_recovery,410dae675d9a,35,The mobile bicycle.,34.25,30.16,32.2,identity_drift,1,1,1,0.0,20,reappearance:12-18:rec=False; loss_episode:19-48:rec=True
+example_identity_drift,4fddcf8823f0,8,The bird that was the first to reach the cage floor.,21.45,17.46,19.45,identity_drift,2,3;3,0,,0,loss_episode:15-31:rec=True
+disappearance;failed_recovery,7ca2e40c5af3,1,Turtle being pushed around,0.29,4.68,2.49,grounding_failure,2,1;1,1,0.0,6,reappearance:41-42:rec=False; loss_episode:1-40:rec=False; loss_episode:43-58:rec=False
+disappearance;failed_recovery,7ca2e40c5af3,3,turtle is moved by monkeys on stone,0.29,4.69,2.49,grounding_failure,2,1;1,1,0.0,6,reappearance:41-42:rec=False; loss_episode:1-40:rec=False; loss_episode:43-58:rec=False
+disappearance;failed_recovery,7ca2e40c5af3,9,turtle played by monkey,0.3,4.76,2.53,grounding_failure,2,1;1,1,0.0,6,reappearance:41-42:rec=False; loss_episode:1-40:rec=False; loss_episode:43-58:rec=False
+disappearance;failed_recovery,7ca2e40c5af3,11,turtle turned upside down,0.31,4.79,2.55,grounding_failure,2,1;1,1,0.0,6,reappearance:41-42:rec=False; loss_episode:1-40:rec=False; loss_episode:43-58:rec=False
+disappearance;failed_recovery,7ca2e40c5af3,14, The turtle played with by the monkeys.,0.3,4.72,2.51,grounding_failure,2,1;1,1,0.0,6,reappearance:41-42:rec=False; loss_episode:1-40:rec=False; loss_episode:43-58:rec=False
+disappearance;failed_recovery,7ca2e40c5af3,15,The monkey-handled turtle.,0.32,4.88,2.6,grounding_failure,2,1;1,1,0.0,6,reappearance:41-42:rec=False; loss_episode:1-40:rec=False; loss_episode:43-58:rec=False
+disappearance;failed_recovery,7ca2e40c5af3,20,The object being teased by the monkeys.,1.61,5.7,3.65,grounding_failure,0,,1,0.0,0,reappearance:41-42:rec=False; loss_episode:1-40:rec=False; loss_episode:43-58:rec=False
+worst,ee6855dcefee,13,The rabbit munching on food at the bottom-right corner.,0.0,0.0,0.0,grounding_failure,1,1,0,,0,loss_episode:1-43:rec=False
+worst,ee6855dcefee,14,The rabbit eating its meal at the lower right corner.,0.0,0.0,0.0,grounding_failure,1,1,0,,0,loss_episode:1-43:rec=False
+worst,ee6855dcefee,15,The rabbit enjoying its food in the right-bottom corner.,0.0,0.0,0.0,grounding_failure,1,1,0,,0,loss_episode:1-43:rec=False

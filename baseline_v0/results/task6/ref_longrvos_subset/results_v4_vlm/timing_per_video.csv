@@ -1,0 +1,2 @@
+video,n_frames,n_objects,n_live,init_s,propagate_s,inference_s,search_s,vlm_wait_s,ms_per_frame,peak_alloc_mb,peak_reserved_mb
+f6f82de62a,235,3,3,8.645,959.249,969.013,3.743,389.992,4081.91,1479.0,1884.0

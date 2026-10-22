@@ -1,0 +1,31 @@
+video,exp_id,frame,trigger,variant,n_candidates,shortlist,choice,choice_value,action,label,gt_visible,current_iou,chosen_iou,vlm_letter,vlm_conf,vlm_latency_s,vlm_cached,vlm_error,reason
+f6f82de62a,0,3,coherence_drop,vlm,5,current d0 d1,d1,1.0,restart,correct_restart,1,0.0,0.9659,C,1.0,6.1401,False,,Candidate C clearly shows the hippopotamus matching the target description.
+f6f82de62a,1,75,coherence_drop,vlm,3,current d1 d4,current,0.9,keep,correct_none,1,0.988,,A,0.9,5.1502,False,,Candidate A matches the visual features and orientation of the target hippopotamus.
+f6f82de62a,4,75,coherence_drop,vlm,4,current d1 d3,d3,0.9,restart,wrong_restart,1,0.9891,0.0045,C,0.9,5.8152,False,,Candidate C shows the same hippopotamus swimming in the water.
+f6f82de62a,0,76,coherence_drop,vlm,5,d3 d0 current,d3,0.9,restart,wrong_restart,1,0.0,0.072,A,0.9,5.9527,False,,Candidate A shows the large hippopotamus with the smaller one in front.
+f6f82de62a,1,85,drift_suspect,vlm,2,current d1,current,0.9,keep,correct_none,1,0.9817,,A,0.9,4.8432,False,,Candidate A matches the visual texture and shape of the target hippopotamus's body.
+f6f82de62a,4,85,distractor,vlm,5,current d1 d3,current,0.9,keep,correct_none,1,0.9809,,A,0.9,5.9251,False,,Candidate A shows the same hippopotamus body shape and texture as the target.
+f6f82de62a,0,86,drift_suspect,vlm,4,current d4 d0,current,0.9,keep,missed,1,0.0,,A,0.9,5.7724,False,,Candidate A shows the same hippopotamus and small calf as the target.
+f6f82de62a,4,95,distractor,vlm,5,current d2 d3,none,0.8,keep,correct_none,1,0.9293,,none,0.8,5.2921,False,,"The candidates show only parts of a hippopotamus, not the full target object."
+f6f82de62a,0,96,coherence_drop,vlm,4,d1 current d0,current,0.9,keep,missed,1,0.0,,B,0.9,35.2933,False,,Candidate B shows the large hippopotamus with a smaller one in front.
+f6f82de62a,1,96,drift_suspect,vlm,3,current d3 d0,d0,0.9,restart,correct_restart,1,0.0125,0.9111,C,0.9,3.4114,False,,Candidate C shows the characteristic body shape and texture of the target hippopotamus.
+f6f82de62a,4,105,drift_suspect,vlm,5,current d3 d4,d4,0.9,restart,wrong_restart,1,0.0,0.0,C,0.9,6.9874,False,,Candidate C shows the hippopotamus's body shape and texture consistent with the target.
+f6f82de62a,1,106,absent_poll,vlm,3,d0 d2 d3,d2,0.9,restart,wrong_restart,1,,0.0,B,0.9,6.4111,False,,"Candidate B shows the large hippopotamus, matching the target's appearance and context."
+f6f82de62a,4,115,distractor,vlm,6,current d2 d0,d0,0.9,restart,correct_restart,1,0.0,0.9277,C,0.9,8.7863,False,,Candidate C shows the characteristic rounded back and skin texture of the hippopotamus.
+f6f82de62a,1,116,absent_poll,vlm,2,d0 d2,d2,0.9,restart,correct_restart,1,,0.679,B,0.9,7.1803,False,,"Candidate B shows the large hippopotamus following the smaller one, matching the target description."
+f6f82de62a,4,125,distractor,vlm,5,current d0 d3,d3,0.9,restart,wrong_restart,1,0.0,0.0002,C,0.9,10.0467,False,,Candidate C shows the distinct shape and texture of the hippopotamus's back.
+f6f82de62a,1,129,coherence_drop,vlm,2,current d2,current,0.9,keep,correct_none,1,0.8801,,A,0.9,6.8213,False,,Candidate A shows the same large hippopotamus following the smaller one.
+f6f82de62a,0,133,coherence_drop,vlm,5,current d2 d3,none,0.8,keep,missed,1,0.0,,none,0.8,6.216,False,,None of the candidates show the large hippopotamus with a small one.
+f6f82de62a,4,135,drift_suspect,vlm,5,current d0 d2,d2,0.9,restart,wrong_restart,1,0.0006,0.0,C,0.9,6.5268,False,,Candidate C shows the distinct head and snout shape of the target hippopotamus.
+f6f82de62a,1,139,drift_suspect,vlm,4,current d1 d3,current,0.9,keep,correct_none,1,0.9256,,A,0.9,24.793,False,,Candidate A matches the visual features and scale of the target hippopotamus.
+f6f82de62a,0,144,drift_suspect,vlm,5,current d3 d0,d3,0.9,restart,wrong_restart,1,0.0,0.0329,B,0.9,24.5831,False,,Candidate B matches the shape and relative positioning of the hippopotamuses in the target.
+f6f82de62a,4,145,drift_suspect,vlm,4,current d1 d2,current,0.9,keep,correct_none,1,0.9784,,A,0.9,4.863,False,,Candidate A matches the shape and appearance of the hippopotamus in the target image.
+f6f82de62a,0,154,absent_poll,vlm,3,d0 d1 d2,d2,0.9,restart,wrong_restart,1,,0.0561,C,0.9,22.3765,False,,Candidate C shows the large hippopotamus with the smaller one in front.
+f6f82de62a,4,160,coherence_drop,vlm,5,current d1 d2,current,0.9,keep,correct_none,1,0.9886,,A,0.9,78.4908,False,,Candidate A shows the same hippopotamus body shape and texture as the target.
+f6f82de62a,1,162,coherence_drop,vlm,2,current d0,current,0.95,keep,correct_none,1,0.9037,,A,0.95,11.38,False,,Candidate A shows the large hippopotamus body matching the target's appearance and context.
+f6f82de62a,0,164,absent_poll,vlm,3,d2 d0 d1,d1,0.9,restart,weak_restart,1,,0.3517,C,0.9,10.0699,False,,Candidate C shows the large hippopotamus with the smaller one in front.
+f6f82de62a,4,170,drift_suspect,vlm,4,current d1 d3,current,0.9,keep,correct_none,1,0.9734,,A,0.9,14.3355,False,,Candidate A shows the same hippopotamus profile and skin texture as the target.
+f6f82de62a,0,174,absent_poll,vlm,3,d1 d2 d0,d1,0.9,restart,wrong_restart,1,,0.0238,A,0.9,11.2238,False,,Candidate A shows the large hippopotamus with the smaller one in front.
+f6f82de62a,1,180,coherence_drop,vlm,3,current d0 d3,d0,0.9,restart,wrong_restart,1,0.8667,0.0002,B,0.9,9.4105,False,,Candidate B shows the same large hippopotamus body shape and texture as the target.
+f6f82de62a,0,184,disappear,vlm,3,d0 d1 d2,d0,0.9,restart,correct_restart,1,,0.9739,A,0.9,31.7108,False,,Candidate A shows the large hippopotamus with the smaller one in front.
+f6f82de62a,1,197,coherence_drop,vlm,2,current d1,current,0.9,keep,correct_none,1,0.8807,,A,0.9,4.183,False,,Candidate A matches the body shape and orientation of the target hippopotamus.

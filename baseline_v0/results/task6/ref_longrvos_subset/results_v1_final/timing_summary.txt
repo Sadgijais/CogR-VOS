@@ -1,0 +1,9 @@
+sttm: on
+videos: 11
+frames: 4169
+total_inference_s: 8027.5
+total_sttm_overhead_s: 244.6
+overall_ms_per_frame: 1832.3
+median_video_ms_per_frame: 1768.1
+max_peak_alloc_mb: 805
+max_peak_reserved_mb: 1184

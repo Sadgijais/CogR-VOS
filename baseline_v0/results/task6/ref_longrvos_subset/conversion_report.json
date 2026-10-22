@@ -1,0 +1,30 @@
+{
+  "videos": 11,
+  "sentences": 33,
+  "images": 4169,
+  "masks": 4169,
+  "sizes": [
+    [
+      480,
+      854
+    ],
+    [
+      640,
+      480
+    ],
+    [
+      722,
+      480
+    ],
+    [
+      854,
+      480
+    ]
+  ],
+  "overlap_other_other_px": 598871,
+  "overlap_target_over_other_px": 7413944,
+  "overlap_target_target_px_LOST": 15662,
+  "target_frames_vanished_by_resize": 0,
+  "frames_with_no_target_png": 537,
+  "manifest_sha256": "d5afa5a267096eae1b01ac624051da90a464ea20a5be2f16ef302c77db7daf9a"
+}

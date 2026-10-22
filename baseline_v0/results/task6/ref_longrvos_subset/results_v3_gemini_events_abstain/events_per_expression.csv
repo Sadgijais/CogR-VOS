@@ -1,0 +1,7 @@
+video,exp_id,expression,frames,candidates,calls,suppressed,reappear,disappear,coherence_drop,distractor,drift_suspect,keepalive,periodic,blanked_frames,false_absence_flags
+bd4aefda10,2,"A woman wearing black clothes and floral pants, to the left of another woman wearing black clothes, with a sofa behind her.",431,0,0,0,0,0,0,0,0,0,0,0,0
+bd4aefda10,3,A woman played the accordion the whole time.,431,0,0,0,0,0,0,0,0,0,0,0,0
+bd4aefda10,8,A woman in glasses and floral pants plays a red accordion near a seated woman.,431,0,0,0,0,0,0,0,0,0,0,0,0
+f6f82de62a,0,"A large hippopotamus, in the water, with a small hippopotamus in front of it.",234,33,10,23,2,1,5,1,1,0,0,62,1
+f6f82de62a,1,"The large hippopotamus follows the small hippopotamus, swimming, then gently nudges the small hippopotamus's body with its mouth.",234,30,9,21,2,0,5,0,2,0,0,86,0
+f6f82de62a,4,"A large hippopotamus follows a smaller one in water, nudging it gently with its mouth.",234,36,9,27,1,1,5,0,2,0,0,78,1

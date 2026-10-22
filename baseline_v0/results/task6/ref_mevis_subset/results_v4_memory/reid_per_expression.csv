@@ -1,0 +1,190 @@
+video,exp_id,expression,frames,searches,restarts,correct_restart,wrong_restart,weak_restart,missed,correct_none,candidate_miss,skipped_uncached,skipped_guard_episode,skipped_guard_expression,vlm_calls,vlm_cached,vlm_wait_s
+16ae95660b3a,1,elephant walking behind and putting its trunk on others ,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,2,elephant walking ahead,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,3,Elephant putting its trunk on another elephant's back,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,4,Elephant crushed by another elephant's trunk,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,5,play with the other one using nose,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,7,elephant moving behind and putting its trunk on others,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,8,elephant moving ahead,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,9,The elephant using its nose to press against the back of the other elephant.,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,10,The elephant with its trunk touching the back of the other elephant.,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,11,The elephant pressing its nose against the other elephant's back.,30,2,1,0,0,1,0,1,0,0,0,0,0,0,0.0
+16ae95660b3a,12,The elephant leaning forward and touching its trunk to the back of the other elephant.,30,2,1,0,0,1,0,1,0,0,0,0,0,0,0.0
+16ae95660b3a,13,The elephant using its trunk to nudge the back of the other elephant.,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,14,The elephant being pressed on its back by the other elephant's trunk.,30,2,1,0,0,1,0,0,1,0,0,0,0,0,0.0
+16ae95660b3a,15,The elephant with its back pressed down by the other elephant's nose.,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,16,The elephant having its back held down by the other elephant's trunk.,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,17,The elephant being nudged on its back by the other elephant's trunk.,30,1,1,1,0,0,0,0,0,0,0,0,0,0,0.0
+16ae95660b3a,18,The elephant being pressed against its back by the other elephant's nose.,30,2,1,0,0,1,0,0,1,0,0,0,0,0,0.0
+16ae95660b3a,19,the elephant that goes in front,30,1,1,0,0,1,0,0,0,0,0,0,0,0,0.0
+329909730c21,0,Airplane moving forward,70,3,0,0,0,0,0,2,1,0,0,0,0,0,0.0
+329909730c21,1,Airplane moving from right to left,70,3,0,0,0,0,2,1,0,0,0,0,0,0,0.0
+329909730c21,2,Airplane moving from left to right,70,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+329909730c21,3,aircraft moving leftward,70,3,0,0,0,0,2,1,0,0,0,0,0,0,0.0
+329909730c21,4,Aircraft moving rightward,70,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+329909730c21,5,airplane moving to left,70,3,0,0,0,0,2,1,0,0,0,0,0,0,0.0
+329909730c21,6,airplane moving to right in front,70,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+329909730c21,7,move forward towards us,70,3,0,0,0,0,0,2,1,0,0,0,0,0,0.0
+329909730c21,8,move to the left,70,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+329909730c21,9,move to the right,70,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+329909730c21,10,The aircraft moving towards us.,70,3,0,0,0,0,0,2,1,0,0,0,0,0,0.0
+329909730c21,11,The plane coming towards us.,70,3,0,0,0,0,0,2,1,0,0,0,0,0,0.0
+329909730c21,12,The airplane advancing in our direction.,70,3,0,0,0,0,0,2,1,0,0,0,0,0,0.0
+329909730c21,13,The aircraft approaching us.,70,3,0,0,0,0,0,2,1,0,0,0,0,0,0.0
+329909730c21,14,The plane facing our direction and moving.,70,3,0,0,0,0,0,2,1,0,0,0,0,0,0.0
+329909730c21,15,The aircraft moving to the left.,70,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+329909730c21,16,The plane going left.,70,3,0,0,0,0,1,1,1,0,0,0,0,0,0.0
+329909730c21,17,The airplane in motion to the left.,70,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+329909730c21,18,The aircraft heading left.,70,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+329909730c21,19,The plane in the process of moving left.,70,3,0,0,0,0,1,1,1,0,0,0,0,0,0.0
+329909730c21,20,The aircraft moving to the right.,70,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+329909730c21,21,The plane going right.,70,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+329909730c21,22,The airplane in motion to the right.,70,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+329909730c21,23,The aircraft heading right.,70,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+329909730c21,24,The plane in the process of moving right.,70,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+3ab5432a1927,0,Bear chasing another bear around by walking in circle,115,8,2,0,2,0,0,6,0,0,0,0,0,0,0.0
+3ab5432a1927,1,Bear being chased and walking backward,115,7,0,0,0,0,6,0,1,0,0,0,0,0,0.0
+3ab5432a1927,3,bear fight then sit,115,10,0,0,0,0,0,10,0,0,0,0,0,0,0.0
+3ab5432a1927,8,The bear moving in reverse.,115,8,0,0,0,0,7,0,1,0,0,0,0,0,0.0
+3ab5432a1927,9,The bear retreating while walking.,115,7,1,1,0,0,5,0,1,0,0,0,0,0,0.0
+3ab5432a1927,10,The backward-walking bear.,115,7,0,0,0,0,6,0,1,0,0,0,0,0,0.0
+3ab5432a1927,11,The bear backward-moving on foot.,115,8,0,0,0,0,7,0,1,0,0,0,0,0,0.0
+3dde46eaaf53,4,come out from one door walk to the left door and back,41,2,0,0,0,0,0,0,2,0,0,0,0,0,0.0
+3dde46eaaf53,8,come out from one door move to the left-side door and back,41,2,0,0,0,0,0,0,2,0,0,0,0,0,0.0
+3dde46eaaf53,9,The monkey that comes out of the cave and then goes back in.,41,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+3dde46eaaf53,13,The monkey coming out of the cave and then going back inside.,41,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+3dde46eaaf53,25,"In the middle of the video, it stands alone at the entrance of a cave",41,2,0,0,0,0,0,0,2,0,0,0,0,0,0.0
+410dae675d9a,0,Girl riding bicycle in a circle,53,5,4,0,4,0,1,0,0,0,0,0,0,0,0.0
+410dae675d9a,2,Stationary bicycle,53,5,2,2,0,0,3,0,0,0,0,0,0,0,0.0
+410dae675d9a,3,Bicycle moving in a circle,53,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0
+410dae675d9a,4,parking black car,53,4,2,2,0,0,2,0,0,0,0,0,0,0,0.0
+410dae675d9a,5,parking white car,53,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,6,still bike,53,5,2,2,0,0,3,0,0,0,0,0,0,0,0.0
+410dae675d9a,7,moving bike,53,5,3,0,2,1,0,2,0,0,0,0,0,0,0.0
+410dae675d9a,8,moving bicycle,53,5,3,0,2,1,0,2,0,0,0,0,0,0,0.0
+410dae675d9a,9,little girl riding a bicycle,53,5,4,0,4,0,1,0,0,0,0,0,0,0,0.0
+410dae675d9a,10,parked bicycle,53,5,4,4,0,0,1,0,0,0,0,0,0,0,0.0
+410dae675d9a,11,Bicycle shifting in a circle,53,5,4,0,3,1,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,12,The individual who is cycling.,53,3,1,1,0,0,0,2,0,0,0,0,0,0,0.0
+410dae675d9a,13,The person on a bike.,53,4,1,0,1,0,1,2,0,0,0,0,0,0,0.0
+410dae675d9a,14,The cyclist.,53,3,1,1,0,0,0,2,0,0,0,0,0,0,0.0
+410dae675d9a,15,The one riding a bicycle.,53,4,1,0,1,0,1,2,0,0,0,0,0,0,0.0
+410dae675d9a,16,The white car parked without moving.,53,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,17,The motionless white car parked.,53,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,18,The white car that is stationary.,53,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,19,The unmoving white car parked.,53,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,20,The white automobile not in motion.,53,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,21,The black car parked without moving.,53,4,1,0,1,0,0,3,0,0,0,0,0,0,0.0
+410dae675d9a,22,The motionless black car parked.,53,4,2,0,2,0,0,2,0,0,0,0,0,0,0.0
+410dae675d9a,23,The black car that is stationary.,53,4,1,0,1,0,0,3,0,0,0,0,0,0,0.0
+410dae675d9a,24,The unmoving black car parked.,53,4,2,0,2,0,0,2,0,0,0,0,0,0,0.0
+410dae675d9a,25,The black automobile not in motion.,53,4,2,0,2,0,0,2,0,0,0,0,0,0,0.0
+410dae675d9a,26,The stationary bicycle parked without moving.,53,5,4,4,0,0,1,0,0,0,0,0,0,0,0.0
+410dae675d9a,27,The unmoving bicycle parked.,53,5,4,4,0,0,1,0,0,0,0,0,0,0,0.0
+410dae675d9a,28,The bike that is not in motion.,53,5,4,4,0,0,1,0,0,0,0,0,0,0,0.0
+410dae675d9a,29,The bicycle at rest and not moving.,53,5,4,4,0,0,1,0,0,0,0,0,0,0,0.0
+410dae675d9a,30,The parked bicycle that has not been ridden.,53,5,4,4,0,0,1,0,0,0,0,0,0,0,0.0
+410dae675d9a,31,The bicycle in motion.,53,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0
+410dae675d9a,32,The moving bicycle.,53,5,4,0,3,1,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,33,The bike that is currently moving.,53,5,4,0,3,1,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,34,The bicycle that is on the move.,53,5,4,0,3,1,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,35,The mobile bicycle.,53,5,4,0,3,1,0,1,0,0,0,0,0,0,0.0
+410dae675d9a,36,The girl is circling around what?,53,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+4fddcf8823f0,8,The bird that was the first to reach the cage floor.,36,3,1,0,1,0,1,1,0,0,0,0,0,0,0.0
+4fddcf8823f0,10,The bird that has not reached the bottom of the cage yet.,36,3,1,0,0,1,2,0,0,0,0,0,0,0,0.0
+4fddcf8823f0,11,The bird that hasn't touched the cage floor so far.,36,3,1,0,1,0,2,0,0,0,0,0,0,0,0.0
+4fddcf8823f0,13,The bird that arrived at the cage bottom in second place.,36,4,1,0,0,1,1,1,1,0,0,0,0,0,0.0
+4fddcf8823f0,14,The second bird that touched the cage floor.,36,4,1,0,0,1,1,1,1,0,0,0,0,0,0.0
+7ca2e40c5af3,0,Monkey moving around and jumping to the left,60,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+7ca2e40c5af3,1,Turtle being pushed around,60,3,0,0,0,0,0,0,3,0,0,0,0,0,0.0
+7ca2e40c5af3,2,Monkey jumping to the right,60,3,0,0,0,0,1,1,1,0,0,0,0,0,0.0
+7ca2e40c5af3,3,turtle is moved by monkeys on stone,60,3,0,0,0,0,1,0,2,0,0,0,0,0,0.0
+7ca2e40c5af3,4,monkey crawling around on rocks then jumping to the left,60,3,1,0,1,0,0,2,0,0,0,0,0,0,0.0
+7ca2e40c5af3,5,monkey jumping right to the rock then crawling around,60,3,1,0,1,0,0,1,1,0,0,0,0,0,0.0
+7ca2e40c5af3,6,the monkey who was the first to move the turtle,60,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+7ca2e40c5af3,7,monkey jumping from left,60,3,0,0,0,0,1,1,1,0,0,0,0,0,0.0
+7ca2e40c5af3,8,monkey jumping to left,60,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+7ca2e40c5af3,9,turtle played by monkey,60,3,0,0,0,0,0,0,3,0,0,0,0,0,0.0
+7ca2e40c5af3,10,monkey holding the turtle then jump away,60,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+7ca2e40c5af3,11,turtle turned upside down,60,3,0,0,0,0,0,0,3,0,0,0,0,0,0.0
+7ca2e40c5af3,12,The monkey that left first.,60,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+7ca2e40c5af3,13,The first monkey to leave.,60,3,0,0,0,0,0,3,0,0,0,0,0,0,0.0
+7ca2e40c5af3,14, The turtle played with by the monkeys.,60,3,0,0,0,0,1,0,2,0,0,0,0,0,0.0
+7ca2e40c5af3,15,The monkey-handled turtle.,60,3,0,0,0,0,0,0,3,0,0,0,0,0,0.0
+7ca2e40c5af3,16,The monkey that jumped onto the rock from the left side.,60,3,0,0,0,0,1,1,1,0,0,0,0,0,0.0
+7ca2e40c5af3,17,The monkey leaping onto the rock from the left.,60,3,0,0,0,0,1,1,1,0,0,0,0,0,0.0
+7ca2e40c5af3,18,The monkey that made a jump to the rock from the left.,60,3,0,0,0,0,1,1,1,0,0,0,0,0,0.0
+7ca2e40c5af3,19,The monkey jumping onto the rock on the left.,60,3,0,0,0,0,1,1,1,0,0,0,0,0,0.0
+945c47a50243,0,Man walking backwards and taking a hoop from a bear,31,3,0,0,0,0,2,0,1,0,0,0,0,0,0.0
+945c47a50243,3,The bear on the left turning the hula hoop with its head,31,3,0,0,0,0,2,0,1,0,0,0,0,0,0.0
+945c47a50243,4,The bear on the right hula hooping with its neck,31,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+945c47a50243,5,"A bear standing upright, twirling a hula hoop with its neck.",31,3,0,0,0,0,2,0,1,0,0,0,0,0,0.0
+945c47a50243,6,An upright bear skillfully rotating a hula hoop around its neck,31,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+945c47a50243,7,A standing bear effortlessly spinning a hula hoop using its neck.,31,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+945c47a50243,8,"A bear on its hind legs, gracefully maneuvering a hula hoop with its neck",31,3,0,0,0,0,2,0,1,0,0,0,0,0,0.0
+945c47a50243,9,A bear standing tall and amusingly swinging a hula hoop with its neck,31,3,0,0,0,0,2,0,1,0,0,0,0,0,0.0
+945c47a50243,10,A towering bear showcasing its agility by spinning a hula hoop with its neck,31,3,0,0,0,0,2,0,1,0,0,0,0,0,0.0
+945c47a50243,11,"A bear in an upright position, skillfully manipulating a hula hoop with its neck.",31,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+945c47a50243,12,A man clapping and stepping back while next to the hula-hooping bear.,31,3,1,0,1,0,2,0,0,0,0,0,0,0,0.0
+945c47a50243,13,A man applauding and moving backwards alongside the bear twirling the hula hoop.,31,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+945c47a50243,14,A man clapping his hands and gracefully stepping away from the hula-hooping bear,31,3,0,0,0,0,1,0,2,0,0,0,0,0,0.0
+945c47a50243,15,A man applauding and gracefully retreating while standing next to the hula-hooping bear,31,2,0,0,0,0,1,0,1,0,0,0,0,0,0.0
+945c47a50243,16,A bear using its mouth to spin a small hula hoop.,31,3,0,0,0,0,2,0,1,0,0,0,0,0,0.0
+945c47a50243,17,The bear twirling a small hula hoop with its mouth.,31,3,0,0,0,0,1,0,2,0,0,0,0,0,0.0
+945c47a50243,18,The bear skillfully rotating a tiny hula hoop using only its mouth.,31,3,0,0,0,0,1,0,2,0,0,0,0,0,0.0
+945c47a50243,19,"With its mouth, the bear effortlessly spinning a miniature hula hoop.",31,3,0,0,0,0,3,0,0,0,0,0,0,0,0.0
+945c47a50243,20,"The trainer on the left, guiding the bear to perform the hula hoop trick using its mouth.",31,3,0,0,0,0,2,0,1,0,0,0,0,0,0.0
+945c47a50243,21,"The trainer on the left, directing the bear's hula hoop performance with its mouth.",31,3,0,0,0,0,1,0,2,0,0,0,0,0,0.0
+b4d6cf8c922c,0,Tiger walking from right to left,73,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+b4d6cf8c922c,1,tiger walking from distance and lying down on the ground to drink water,73,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+b4d6cf8c922c,2,The tiger that moved from the right to the left.,73,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+b4d6cf8c922c,3,The tiger that shifted positions from the right to the left.,73,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+b4d6cf8c922c,4,The tiger that transitioned from the right to the left.,73,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+b4d6cf8c922c,5,The tiger that traveled from the right to the left.,73,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+b4d6cf8c922c,6,The tiger that crossed from the right to the left.,73,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+b4d6cf8c922c,12,The tiger that came to drink water last.,73,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+b4d6cf8c922c,13,The last tiger that approached for drinking water.,73,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+b4d6cf8c922c,14,The final tiger to walk over and start drinking water.,73,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+b4d6cf8c922c,15,The tiger that arrived last to drink water.,73,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+b4d6cf8c922c,16,The latest tiger to come and drink water.,73,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+d56a6ec78cfa,1,front elephant walking to backwards,48,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+d56a6ec78cfa,2,elephant in the distance moving to left,48,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0
+d56a6ec78cfa,3,turn and walk away from us,48,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+d56a6ec78cfa,4,front elephant moving to backwards,48,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+d56a6ec78cfa,5,turn and move away from us,48,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+d56a6ec78cfa,6,The elephant facing us and then turning around to walk away.,48,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+d56a6ec78cfa,7,The large elephant that initially faced us but then walked backward.,48,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+d56a6ec78cfa,8,The elephant which was initially facing us but turned and moved away.,48,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+d56a6ec78cfa,9,The elephant that turned its back to us and walked away.,48,2,0,0,0,0,0,2,0,0,0,0,0,0,0.0
+d56a6ec78cfa,10,"The big elephant that first faced us, then turned around and walked backward.",48,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+d56a6ec78cfa,11,The elephant walking to the left.,48,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+d56a6ec78cfa,12,The elephant moving towards the left.,48,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+d56a6ec78cfa,13,The big elephant going to the left.,48,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+d56a6ec78cfa,14,The elephant walking in the leftward direction.,48,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+d56a6ec78cfa,15,The elephant heading left.,48,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+e339e02b5b3c,1,cow shaking head and looking us,48,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+e339e02b5b3c,2,the cow eating without moving position,48,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+e339e02b5b3c,10,The leading cow among the group.,48,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+e339e02b5b3c,11,The cow taking the lead in the herd.,48,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+e339e02b5b3c,12,who moved to the furthest,48,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+e339e02b5b3c,13,the second cow from left at the end of the video,48,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,1,Rabbit moving around and eating leaves,45,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,2,rabbit eating and walking,45,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,3,moving white rabbit,45,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,4,standing still and eating white rabbit,45,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+ee6855dcefee,5,jump to the left then jump back,45,1,0,0,0,0,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,6,The rabbit that changed its location.,45,2,1,1,0,0,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,7,The rabbit that shifted its position.,45,2,1,1,0,0,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,8,The rabbit that relocated itself.,45,2,1,1,0,0,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,9,The rabbit that moved to a different spot.,45,2,1,1,0,0,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,10,The rabbit that altered its position.,45,2,1,0,0,1,1,0,0,0,0,0,0,0,0.0
+ee6855dcefee,11,The rabbit eating in the bottom-right corner.,45,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+ee6855dcefee,12,The rabbit that is having food in the lower right corner.,45,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+ee6855dcefee,13,The rabbit munching on food at the bottom-right corner.,45,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+ee6855dcefee,14,The rabbit eating its meal at the lower right corner.,45,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+ee6855dcefee,15,The rabbit enjoying its food in the right-bottom corner.,45,1,0,0,0,0,0,0,1,0,0,0,0,0,0.0
+ee6855dcefee,16,The white rabbit that hasn't moved from its position.,45,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+ee6855dcefee,17,The white rabbit staying in place without moving.,45,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+ee6855dcefee,18,The stationary white rabbit.,45,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+ee6855dcefee,19,The unmoving white rabbit.,45,1,0,0,0,0,0,1,0,0,0,0,0,0,0.0
+ee6855dcefee,20,The rabbit with the most exercise.,45,2,0,0,0,0,2,0,0,0,0,0,0,0,0.0

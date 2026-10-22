@@ -1,0 +1,4 @@
+video,exp_id,expression,frames,searches,restarts,correct_restart,wrong_restart,weak_restart,missed,correct_none,candidate_miss,skipped_uncached,skipped_guard_episode,skipped_guard_expression,vlm_calls,vlm_cached,vlm_wait_s
+f6f82de62a,0,"A large hippopotamus, in the water, with a small hippopotamus in front of it.",235,10,7,2,4,1,3,0,0,0,0,41,10,0,159.339
+f6f82de62a,1,"The large hippopotamus follows the small hippopotamus, swimming, then gently nudges the small hippopotamus's body with its mouth.",235,10,4,2,2,0,0,6,0,0,0,1,10,0,83.584
+f6f82de62a,4,"A large hippopotamus follows a smaller one in water, nudging it gently with its mouth.",235,10,5,1,4,0,0,5,0,0,0,2,10,0,147.069

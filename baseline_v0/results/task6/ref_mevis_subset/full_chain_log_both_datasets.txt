@@ -1,0 +1,62 @@
+nohup: ignoring input
+[2026-10-20 16:23:42] === mevis: V0, V1, V2 passive ===
+[2026-10-20 16:23:42] === ladder start ===
+[2026-10-20 16:23:42] START V0 stage1 grounding
+[2026-10-20 16:26:59] DONE  V0 stage1 grounding
+[2026-10-20 16:26:59] START V0 stage2 propagation
+[2026-10-20 17:46:02] DONE  V0 stage2 propagation
+[2026-10-20 17:46:02] START V0 stage3 evaluate
+[2026-10-20 17:50:43] DONE  V0 stage3 evaluate
+[2026-10-20 17:50:43] START V0 stage4 failures
+[2026-10-20 17:56:22] DONE  V0 stage4 failures
+[2026-10-20 17:56:22] START V0 recovery
+[2026-10-20 17:56:46] DONE  V0 recovery
+[2026-10-20 17:56:46] START V1 stage1b embeddings
+[2026-10-20 17:57:13] DONE  V1 stage1b embeddings
+[2026-10-20 17:57:13] START V1 stage2 STTM
+[2026-10-20 19:32:50] DONE  V1 stage2 STTM
+[2026-10-20 19:32:50] START V1 stage3 evaluate
+[2026-10-20 19:37:20] DONE  V1 stage3 evaluate
+[2026-10-20 19:37:20] START V1 stage4 failures
+[2026-10-20 19:42:41] DONE  V1 stage4 failures
+[2026-10-20 19:42:41] START V1 recovery
+[2026-10-20 19:43:06] DONE  V1 recovery
+[2026-10-20 19:43:06] START V2 passive (all steps)
+[2026-10-20 21:31:34] DONE  V2 passive (all steps)
+[2026-10-20 21:31:34] START V2 recovery
+[2026-10-20 21:31:59] DONE  V2 recovery
+[2026-10-20 21:31:59] === ladder finished OK ===
+[2026-10-20 21:31:59] === mevis: V3 oracle replay (planned calls) ===
+[2026-10-20 21:41:50] === mevis: candidates + V4 memory ===
+[2026-10-21 01:54:48] === mevis: finished ===
+[2026-10-21 01:54:48] === longrvos: V0, V1, V2 passive ===
+[2026-10-21 01:54:48] === ladder start ===
+[2026-10-21 01:54:48] START V0 stage1 grounding
+[2026-10-21 01:55:47] DONE  V0 stage1 grounding
+[2026-10-21 01:55:47] START V0 stage2 propagation
+[2026-10-21 03:54:15] DONE  V0 stage2 propagation
+[2026-10-21 03:54:15] START V0 stage3 evaluate
+[2026-10-21 03:58:01] DONE  V0 stage3 evaluate
+[2026-10-21 03:58:01] START V0 stage4 failures
+[2026-10-21 04:02:17] DONE  V0 stage4 failures
+[2026-10-21 04:02:17] START V0 recovery
+[2026-10-21 04:02:42] DONE  V0 recovery
+[2026-10-21 04:02:42] START V1 stage1b embeddings
+[2026-10-21 04:03:07] DONE  V1 stage1b embeddings
+[2026-10-21 04:03:07] START V1 stage2 STTM
+[2026-10-21 06:31:31] DONE  V1 stage2 STTM
+[2026-10-21 06:31:31] START V1 stage3 evaluate
+[2026-10-21 06:35:19] DONE  V1 stage3 evaluate
+[2026-10-21 06:35:19] START V1 stage4 failures
+[2026-10-21 06:39:44] DONE  V1 stage4 failures
+[2026-10-21 06:39:44] START V1 recovery
+[2026-10-21 06:40:08] DONE  V1 recovery
+[2026-10-21 06:40:08] START V2 passive (all steps)
+[2026-10-21 09:16:03] DONE  V2 passive (all steps)
+[2026-10-21 09:16:03] START V2 recovery
+[2026-10-21 09:16:28] DONE  V2 recovery
+[2026-10-21 09:16:28] === ladder finished OK ===
+[2026-10-21 09:16:28] === longrvos: V3 oracle replay (planned calls) ===
+[2026-10-21 09:24:36] === longrvos: candidates + V4 memory ===
+[2026-10-21 14:55:45] === longrvos: finished ===
+[2026-10-21 14:55:45] ALL DONE

@@ -1,0 +1,34 @@
+video,exp_id,expression,frames,candidates,calls,suppressed,reappear,disappear,coherence_drop,distractor,drift_suspect,keepalive,periodic,blanked_frames,false_absence_flags
+092ba1d6df,5,A hand holding a remote control.,234,11,7,4,0,0,6,1,0,0,0,0,0
+092ba1d6df,6,"The hand manipulates the joystick, controlling the drone.",234,23,8,15,0,0,7,0,1,0,0,0,0
+092ba1d6df,9,A white drone remote in a hand controls the nearby drone.,234,73,15,58,2,2,9,0,2,0,0,0,2
+1a5dead3e3,2,"A man wearing blue clothes, sitting in front of a baby.",428,251,29,222,4,0,2,0,23,0,0,0,0
+1a5dead3e3,1,"The baby is eating and playing with a string in its hand, occasionally opens his mouth to eat.",428,58,15,43,2,0,11,0,2,0,0,0,0
+1a5dead3e3,4,"A baby in a blue bib sits in a stroller, eating and playing with a string.",428,264,31,233,2,2,4,17,6,0,0,0,2
+20eaede0fb,0,"A girl wearing red clothes and a necklace, with some small robotic cars in front of her.",234,57,8,49,0,0,3,1,4,0,0,0,0
+20eaede0fb,3,"The girl stands in front of the table, looking at the toys on it, adjusting their positions, then bends down to examine them closely.",234,35,6,29,0,0,4,0,2,0,0,0,0
+20eaede0fb,7,A blonde girl in red adjusts toys on a table and examines them closely.,234,35,6,29,0,0,4,0,2,0,0,0,0
+235ff86d37,4,"A bird standing on a branch, positioned to the right of two other birds at the beginning of the video.",234,85,13,72,1,0,5,2,5,0,0,0,0
+235ff86d37,1,"The bird eats, then gets startled by another bird, recovers, continues eating, looks left and right, then resumes eating.",234,85,13,72,1,0,5,6,1,0,0,0,0
+235ff86d37,10,"A bird on a the right branch flies to a perch, grabbing something with its beak.",234,85,13,72,1,0,5,6,1,0,0,0,0
+24b7b95ca4,6,"A woman with golden long hair, wearing a gold sequined dress, standing in an indoor hallway, holding a wine glass in her right hand.",234,48,7,41,1,0,4,2,0,0,0,0,0
+24b7b95ca4,15,"A man stands against the right side of the door, then turns left and chats with the woman opposite.",234,44,11,33,3,0,7,0,1,0,0,0,0
+24b7b95ca4,22,"A man in black, left of a blonde woman, raises and lowers his right hand while talking.",234,88,16,72,6,3,3,0,4,0,0,0,2
+2683deffcb,0,A blonde girl.,674,55,16,39,5,0,10,0,1,0,0,0,0
+2683deffcb,1,A girl is playing with a ball in the yard.,674,283,52,231,7,4,26,0,15,0,0,0,4
+2683deffcb,6,A woman in pink plays with a child using a ball.,674,125,44,81,0,0,41,0,3,0,0,0,0
+39db436191,4,A black and white Border Collie standing next to a wire fence.,419,149,26,123,3,2,11,0,10,0,0,0,2
+39db436191,7,"The Border Collie runs across the grass, looks outside the right side of the fence, then moves away from the camera, crouches down, and finally runs out of the frame.",419,6,5,1,0,0,5,0,0,0,0,0,0
+39db436191,11,"A black and white Border Collie runs across the grass near another, crouches by the fence, then exits the frame.",419,181,28,153,2,2,11,0,13,0,0,0,1
+8b0e20e373,0,"A man in black clothes, with a child and a dog",503,13,5,8,0,0,5,0,0,0,0,0,0
+8b0e20e373,1,"A man sits on the ground, looking at a girl. He then hands the little girl something to eat and stretches his left hand toward the camera.",503,10,2,8,1,0,1,0,0,0,0,0,0
+8b0e20e373,6,"A man in black watches a child play with a dog, give the girl snack, finally stretches his left hand toward the camera.",503,16,6,10,0,0,5,0,1,0,0,0,0
+bd4aefda10,2,"A woman wearing black clothes and floral pants, to the left of another woman wearing black clothes, with a sofa behind her.",431,0,0,0,0,0,0,0,0,0,0,0,0
+bd4aefda10,3,A woman played the accordion the whole time.,431,0,0,0,0,0,0,0,0,0,0,0,0
+bd4aefda10,8,A woman in glasses and floral pants plays a red accordion near a seated woman.,431,0,0,0,0,0,0,0,0,0,0,0,0
+e6f1a061ea,12,"A woman wearing a white top, dark jeans, and a red hat, sitting closely next to a girl in a pink outfit.",533,40,10,30,1,1,6,0,2,0,0,0,1
+e6f1a061ea,13,"The woman sits opposite, smiling while watching the girl in black play.",533,55,14,41,0,0,10,0,4,0,0,0,0
+e6f1a061ea,28,A black-and-white penguin toy with a black lid is held by a girl in pink.,533,37,8,29,2,0,6,0,0,0,0,0,0
+f6f82de62a,0,"A large hippopotamus, in the water, with a small hippopotamus in front of it.",234,33,10,23,2,1,5,1,1,0,0,0,1
+f6f82de62a,1,"The large hippopotamus follows the small hippopotamus, swimming, then gently nudges the small hippopotamus's body with its mouth.",234,30,9,21,2,0,5,0,2,0,0,0,0
+f6f82de62a,4,"A large hippopotamus follows a smaller one in water, nudging it gently with its mouth.",234,36,9,27,1,1,5,0,2,0,0,0,1

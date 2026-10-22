@@ -1,0 +1,21 @@
+{
+  "label": "v2_passive",
+  "expressions_analyzed": 213,
+  "expressions_skipped_no_predictions": 0,
+  "expressions_with_reappearance": 22,
+  "expressions_with_vanish_no_return": 16,
+  "reappearance_events": 22,
+  "recovered_in_window": 6,
+  "recovered_later": 5,
+  "never_recovered": 11,
+  "latency_mean": 0.3333333333333333,
+  "latency_median": 0.0,
+  "loss_episodes": 163,
+  "loss_recovered": 12,
+  "loss_never_recovered": 151,
+  "scored_frames": 10531,
+  "visible_frames": 9932,
+  "nre_frames": 520,
+  "absent_frames": 599,
+  "false_presence_frames": 471
+}

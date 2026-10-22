@@ -1,0 +1,10 @@
+label,kind,video,exp_id,start_frame,end_frame,length,first_visible_frame,iou_at_return,recovered_in_window,latency_frames,eventual_latency_frames,recovered
+sub_v4_vlm,loss_episode,bd4aefda10,3,1,430,430,,,,,,False
+sub_v4_vlm,loss_episode,bd4aefda10,8,1,430,430,,,,,,False
+sub_v4_vlm,loss_episode,f6f82de62a,0,4,163,160,,,,180,,True
+sub_v4_vlm,loss_episode,f6f82de62a,0,165,183,19,,,,19,,True
+sub_v4_vlm,loss_episode,f6f82de62a,0,185,233,49,,,,,,False
+sub_v4_vlm,loss_episode,f6f82de62a,1,97,111,15,,,,15,,True
+sub_v4_vlm,loss_episode,f6f82de62a,1,117,124,8,,,,8,,True
+sub_v4_vlm,loss_episode,f6f82de62a,4,96,114,19,,,,19,,True
+sub_v4_vlm,loss_episode,f6f82de62a,4,116,142,27,,,,27,,True

@@ -1,0 +1,29 @@
+video,exp_id,frame,event,kind,c,verdict,confidence,reason,latency_s,cached,gt_present,gt_iou,correct
+f6f82de62a,0,3,coherence_drop,identity,0.7816,match,1.0,The visual patterns and shapes in both images are identical.,3.551,False,True,0.0,False
+f6f82de62a,0,76,coherence_drop,identity,0.4193,no_match,0.9,"The cropped image shows only a small portion of water, not a hippopotamus.",2.358,False,True,0.0,True
+f6f82de62a,0,86,distractor,identity,0.705,unsure,0.5,The image is too abstract and unclear to identify as a hippopotamus.,16.539,False,True,0.0,
+f6f82de62a,0,96,coherence_drop,identity,0.5165,unsure,0.5,The crop is too small and unclear to identify the hippopotamus.,2.401,False,True,0.0004,
+f6f82de62a,0,131,coherence_drop,identity,0.666,match,0.9,The shapes and relative positions of the two hippos are consistent.,12.349,False,True,0.0,False
+f6f82de62a,0,142,disappear,presence,0.0,match,1.0,A large hippopotamus and a smaller one are clearly visible in the water.,36.999,False,True,0.0,True
+f6f82de62a,0,162,reappear,identity,0.8151,unsure,0.5,The images are too abstract and unclear to confirm they are the same object.,6.93,False,True,0.0,
+f6f82de62a,0,181,reappear,identity,0.7366,unsure,0.5,The image is too abstract and unclear to identify a hippopotamus.,1.84,False,True,0.0,
+f6f82de62a,0,192,drift_suspect,identity,0.4717,unsure,0.5,The crop is too small and unclear to identify the hippopotamus.,2.946,False,True,0.0,
+f6f82de62a,0,212,coherence_drop,identity,0.7227,no_match,0.9,The cropped image shows only water and lacks the hippopotamus features.,6.732,False,True,0.0,True
+f6f82de62a,1,75,coherence_drop,identity,0.785,match,0.9,Both images show the same hippopotamus species in the same underwater environment.,7.777,False,True,0.988,True
+f6f82de62a,1,85,drift_suspect,identity,0.7595,no_match,0.9,"Image 1 shows a hippo head, while Image 2 shows a hippo body.",2.246,False,True,0.9817,False
+f6f82de62a,1,96,drift_suspect,identity,0.7308,unsure,0.4,The second image is too blurry and lacks identifiable features to confirm a match.,9.546,False,True,0.0125,
+f6f82de62a,1,112,reappear,identity,0.7338,no_match,0.9,The tracker is following a different hippopotamus than the target specified.,3.486,False,True,0.9193,False
+f6f82de62a,1,124,reappear,identity,0.7222,match,0.9,Both images show the same hippopotamus from different angles while swimming.,2.997,False,True,0.963,True
+f6f82de62a,1,136,coherence_drop,identity,0.7912,no_match,0.9,The tracker is following a different part of the hippopotamus's body.,6.039,False,True,0.9563,False
+f6f82de62a,1,169,coherence_drop,identity,0.8018,match,0.9,Both images show the same hippopotamus from different angles.,4.391,False,True,0.9742,True
+f6f82de62a,1,199,coherence_drop,identity,0.777,no_match,0.9,"Image 2 shows a generic body part, not the distinct head of the hippopotamus.",8.743,False,True,0.9603,False
+f6f82de62a,1,213,coherence_drop,identity,0.8006,match,0.9,"The crop shows the back of the hippopotamus, consistent with the target's body.",5.199,False,True,0.991,True
+f6f82de62a,4,75,coherence_drop,identity,0.8013,match,0.9,Both images show the same hippopotamus from different angles and distances.,2.82,False,True,0.9891,True
+f6f82de62a,4,85,drift_suspect,identity,0.7782,no_match,0.9,"Image 2 shows a hippo's back, while Image 1 shows a hippo's head.",3.103,False,True,0.9821,False
+f6f82de62a,4,97,disappear,presence,0.0,match,1.0,A large hippopotamus is clearly visible underwater in the frame.,3.881,False,True,0.0,True
+f6f82de62a,4,112,reappear,identity,0.7303,match,0.9,"Both images show hippos in water, consistent with the described interaction.",4.938,False,True,0.919,True
+f6f82de62a,4,124,drift_suspect,identity,0.7992,no_match,0.9,"The second image shows only the back of a hippopotamus, lacking identifying facial features.",5.772,False,True,0.9607,False
+f6f82de62a,4,135,coherence_drop,identity,0.7898,match,0.9,The images show the same hippopotamus from different angles and perspectives.,6.031,False,True,0.9444,True
+f6f82de62a,4,162,coherence_drop,identity,0.7966,no_match,0.9,Image 2 shows a different part of the animal or a different subject entirely.,4.832,False,True,0.9049,False
+f6f82de62a,4,199,coherence_drop,identity,0.7984,no_match,0.9,"The second image shows a fragmented, unrecognizable portion of a hippopotamus.",41.136,False,True,0.9665,False
+f6f82de62a,4,212,coherence_drop,identity,0.7987,match,0.9,Both images show the same hippopotamus from different angles underwater.,5.507,False,True,0.9009,True

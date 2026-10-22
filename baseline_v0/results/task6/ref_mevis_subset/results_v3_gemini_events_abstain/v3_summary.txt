@@ -1,0 +1,27 @@
+schedule: events
+vlm: gemini
+oracle_iou: 0.5
+model: gemini-3.1-flash-lite
+action: abstain
+targets: 21
+videos: 1
+tracked_target_frames: 1239
+video_frames: 60
+vlm_calls: 40
+calls_per_tracked_frame: 0.0323
+calls_per_video_frame: 0.6667
+reference_cost_every_frame_calls: 1239
+reference_cost_one_shot_calls: 21
+candidate_events: 140
+suppressed_by_pacing: 100
+events_fired: coherence_drop=40
+verdicts: match=37, no_match=3, not_visible=0, unsure=0
+verdict_accuracy_vs_ground_truth: 0.425  (n=40 graded calls, 'unsure' not graded)
+blanked_frames: 95  (7.67% of tracked frames)
+false_absence_flags: 0
+vlm_latency_sum_s: 339.1  (what a live sequential system would pay)
+vlm_latency_mean_s: 8.48
+vlm_cached_calls: 3
+replay_wall_s: 273.4  (1 parallel workers)
+source_v2_inference_s: 5415.3
+estimated_v3_inference_s: 5754.4  (V2 time + sequential VLM latency)

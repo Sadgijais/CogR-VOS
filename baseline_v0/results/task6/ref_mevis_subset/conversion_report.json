@@ -1,0 +1,42 @@
+{
+  "videos": 12,
+  "sentences": 213,
+  "images": 650,
+  "masks": 650,
+  "sizes": [
+    [
+      636,
+      480
+    ],
+    [
+      734,
+      480
+    ],
+    [
+      854,
+      480
+    ],
+    [
+      898,
+      480
+    ],
+    [
+      948,
+      480
+    ],
+    [
+      1030,
+      480
+    ],
+    [
+      1040,
+      480
+    ]
+  ],
+  "overlap_other_other_px": 0,
+  "overlap_target_over_other_px": 0,
+  "overlap_target_target_px_LOST": 0,
+  "target_frames_vanished_by_resize": 0,
+  "pycocotools_checked_masks": 0,
+  "manifest_sha256": "bb3c31f0f35640e7dc425b7bfbb2d7067cac0d2751847d421fb083f2732f46d9"
+}

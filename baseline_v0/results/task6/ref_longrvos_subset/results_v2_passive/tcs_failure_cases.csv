@@ -1,0 +1,37 @@
+video,exp_id,kind,onset,length,drift,c_at_onset,band_at_onset,first_flag_frame,lead_frames,flagged
+092ba1d6df,5,track_lost,21,9,False,0.937,HIGH,15,6,True
+092ba1d6df,5,track_lost,47,17,False,0.944,HIGH,48,-1,True
+092ba1d6df,5,track_lost,67,22,False,0.852,MEDIUM,64,3,True
+092ba1d6df,5,track_lost,96,20,False,0.892,MEDIUM,87,9,True
+092ba1d6df,5,track_lost,214,3,False,0.758,LOW,206,8,True
+092ba1d6df,6,grounding_failure (not detectable by TCS),0,233,False,,,,,
+092ba1d6df,9,grounding_failure (not detectable by TCS),0,233,False,,,,,
+1a5dead3e3,1,grounding_failure (not detectable by TCS),0,427,False,,,,,
+1a5dead3e3,4,grounding_failure (not detectable by TCS),0,427,False,,,,,
+235ff86d37,1,grounding_failure (not detectable by TCS),0,233,False,,,,,
+235ff86d37,10,grounding_failure (not detectable by TCS),0,233,False,,,,,
+235ff86d37,4,grounding_failure (not detectable by TCS),0,233,False,,,,,
+24b7b95ca4,15,grounding_failure (not detectable by TCS),0,233,False,,,,,
+24b7b95ca4,22,grounding_failure (not detectable by TCS),0,233,False,,,,,
+24b7b95ca4,6,grounding_failure (not detectable by TCS),0,233,False,,,,,
+2683deffcb,0,grounding_failure (not detectable by TCS),0,673,False,,,,,
+2683deffcb,1,identity_drift,1,65,True,0.648,LOW,1,0,True
+2683deffcb,1,identity_drift,67,173,True,0.427,LOW,57,10,True
+2683deffcb,1,identity_drift,241,433,True,0.0,LOW,231,10,True
+2683deffcb,6,grounding_failure (not detectable by TCS),0,673,False,,,,,
+39db436191,11,grounding_failure (not detectable by TCS),0,418,False,,,,,
+39db436191,4,grounding_failure (not detectable by TCS),0,418,False,,,,,
+39db436191,7,grounding_failure (not detectable by TCS),0,418,False,,,,,
+8b0e20e373,0,grounding_failure (not detectable by TCS),0,502,False,,,,,
+8b0e20e373,1,track_lost,236,14,False,0.0,LOW,226,10,True
+8b0e20e373,6,grounding_failure (not detectable by TCS),0,502,False,,,,,
+bd4aefda10,3,grounding_failure (not detectable by TCS),0,430,False,,,,,
+bd4aefda10,8,grounding_failure (not detectable by TCS),0,430,False,,,,,
+e6f1a061ea,12,grounding_failure (not detectable by TCS),0,532,False,,,,,
+e6f1a061ea,13,grounding_failure (not detectable by TCS),0,532,False,,,,,
+e6f1a061ea,28,grounding_failure (not detectable by TCS),0,532,False,,,,,
+f6f82de62a,0,grounding_failure (not detectable by TCS),0,233,False,,,,,
+f6f82de62a,1,track_lost,96,16,False,0.731,LOW,86,10,True
+f6f82de62a,1,track_lost,113,11,False,0.0,LOW,103,10,True
+f6f82de62a,4,track_lost,96,16,False,0.709,LOW,86,10,True
+f6f82de62a,4,track_lost,113,5,False,0.0,LOW,103,10,True

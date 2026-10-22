@@ -64,6 +64,8 @@ def main():
     ap.add_argument("--cases", nargs="+", required=True)
     ap.add_argument("--out-dir", required=True)
     ap.add_argument("--n", type=int, default=8)
+    ap.add_argument("--label", default="Reserved subset from the training split - not official validation.",
+                    help="split label written on every picture (default: the Ref-YouTube-VOS slice label)")
     a = ap.parse_args()
 
     res = {(r["video"], r["exp_id"]): r for r in csv.DictReader(open(a.results, newline=""))}
@@ -107,7 +109,7 @@ def main():
         cv2.putText(head, ascii_("%s  exp %s  J&F %.1f  %s  %s" % (video, exp, float(r["JF"]), mode, tags))[:150], (8, 20),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.55, (255, 255, 255), 1, cv2.LINE_AA)
         cv2.putText(head, ascii_('"%s"' % r["expression"])[:150], (8, 42), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200, 230, 255), 1, cv2.LINE_AA)
-        cv2.putText(head, "green outline = ground truth, red = prediction. Reserved subset from the training split - not official validation.",
+        cv2.putText(head, ascii_("green outline = ground truth, red = prediction. " + a.label)[:170],
                     (8, 58), cv2.FONT_HERSHEY_SIMPLEX, 0.4, (180, 180, 180), 1, cv2.LINE_AA)
         out = os.path.join(a.out_dir, "%s_exp%s.png" % (video, exp))
         cv2.imwrite(out, np.vstack([head, body]))

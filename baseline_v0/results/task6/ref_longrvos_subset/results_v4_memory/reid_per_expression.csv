@@ -1,0 +1,31 @@
+video,exp_id,expression,frames,searches,restarts,correct_restart,wrong_restart,weak_restart,missed,correct_none,candidate_miss,skipped_uncached,skipped_guard_episode,skipped_guard_expression,vlm_calls,vlm_cached,vlm_wait_s
+092ba1d6df,5,A hand holding a remote control.,235,7,0,0,0,0,4,2,1,0,0,0,0,0,0.0
+092ba1d6df,6,"The hand manipulates the joystick, controlling the drone.",235,8,0,0,0,0,5,2,1,0,0,0,0,0,0.0
+092ba1d6df,9,A white drone remote in a hand controls the nearby drone.,235,21,9,0,9,0,8,1,3,0,0,0,0,0,0.0
+1a5dead3e3,2,"A man wearing blue clothes, sitting in front of a baby.",429,33,2,2,0,0,0,31,0,0,0,0,0,0,0.0
+1a5dead3e3,1,"The baby is eating and playing with a string in its hand, occasionally opens his mouth to eat.",429,41,35,0,35,0,6,0,0,0,0,0,0,0,0.0
+1a5dead3e3,4,"A baby in a blue bib sits in a stroller, eating and playing with a string.",429,32,0,0,0,0,30,0,2,0,0,0,0,0,0.0
+20eaede0fb,0,"A girl wearing red clothes and a necklace, with some small robotic cars in front of her.",235,8,0,0,0,0,0,8,0,0,0,0,0,0,0.0
+20eaede0fb,3,"The girl stands in front of the table, looking at the toys on it, adjusting their positions, then bends down to examine them closely.",235,6,0,0,0,0,0,6,0,0,0,0,0,0,0.0
+20eaede0fb,7,A blonde girl in red adjusts toys on a table and examines them closely.,235,6,0,0,0,0,0,6,0,0,0,0,0,0,0.0
+235ff86d37,4,"A bird standing on a branch, positioned to the right of two other birds at the beginning of the video.",235,13,0,0,0,0,2,9,2,0,0,0,0,0,0.0
+235ff86d37,1,"The bird eats, then gets startled by another bird, recovers, continues eating, looks left and right, then resumes eating.",235,13,0,0,0,0,13,0,0,0,0,0,0,0,0.0
+235ff86d37,10,"A bird on a the right branch flies to a perch, grabbing something with its beak.",235,13,0,0,0,0,0,9,4,0,0,0,0,0,0.0
+24b7b95ca4,6,"A woman with golden long hair, wearing a gold sequined dress, standing in an indoor hallway, holding a wine glass in her right hand.",235,8,2,0,1,1,2,2,2,0,0,0,0,0,0.0
+24b7b95ca4,15,"A man stands against the right side of the door, then turns left and chats with the woman opposite.",235,15,2,0,2,0,7,6,0,0,0,0,0,0,0.0
+24b7b95ca4,22,"A man in black, left of a blonde woman, raises and lowers his right hand while talking.",235,24,12,0,12,0,0,8,4,0,0,0,0,0,0.0
+2683deffcb,0,A blonde girl.,675,40,16,16,0,0,24,0,0,0,0,0,0,0,0.0
+2683deffcb,1,A girl is playing with a ball in the yard.,675,62,9,4,5,0,51,0,2,0,0,0,0,0,0.0
+2683deffcb,6,A woman in pink plays with a child using a ball.,675,45,1,0,0,1,24,20,0,0,0,0,0,0,0.0
+39db436191,4,A black and white Border Collie standing next to a wire fence.,420,36,2,0,2,0,26,6,2,0,0,0,0,0,0.0
+39db436191,7,"The Border Collie runs across the grass, looks outside the right side of the fence, then moves away from the camera, crouches down, and finally runs out of the frame.",420,5,0,0,0,0,0,4,1,0,0,0,0,0,0.0
+39db436191,11,"A black and white Border Collie runs across the grass near another, crouches by the fence, then exits the frame.",420,29,1,0,1,0,3,15,10,0,0,0,0,0,0.0
+8b0e20e373,0,"A man in black clothes, with a child and a dog",504,6,1,0,1,0,3,2,0,0,0,0,0,0,0.0
+8b0e20e373,1,"A man sits on the ground, looking at a girl. He then hands the little girl something to eat and stretches his left hand toward the camera.",504,31,17,1,16,0,0,14,0,0,0,0,0,0,0.0
+8b0e20e373,6,"A man in black watches a child play with a dog, give the girl snack, finally stretches his left hand toward the camera.",504,6,1,0,1,0,3,2,0,0,0,0,0,0,0.0
+e6f1a061ea,12,"A woman wearing a white top, dark jeans, and a red hat, sitting closely next to a girl in a pink outfit.",534,25,14,0,14,0,1,4,6,0,0,0,0,0,0.0
+e6f1a061ea,13,"The woman sits opposite, smiling while watching the girl in black play.",534,28,2,0,2,0,5,15,6,0,0,0,0,0,0.0
+e6f1a061ea,28,A black-and-white penguin toy with a black lid is held by a girl in pink.,534,25,14,0,13,1,0,9,2,0,0,0,0,0,0.0
+f6f82de62a,0,"A large hippopotamus, in the water, with a small hippopotamus in front of it.",235,11,3,1,2,0,8,0,0,0,0,0,0,0,0.0
+f6f82de62a,1,"The large hippopotamus follows the small hippopotamus, swimming, then gently nudges the small hippopotamus's body with its mouth.",235,10,2,2,0,0,1,7,0,0,0,0,0,0,0.0
+f6f82de62a,4,"A large hippopotamus follows a smaller one in water, nudging it gently with its mouth.",235,16,14,14,0,0,0,2,0,0,0,0,0,0,0.0
