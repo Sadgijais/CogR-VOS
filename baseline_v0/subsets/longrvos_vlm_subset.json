@@ -1,18 +1,58 @@
 {
   "dataset": "longrvos_valid_one_sentence_per_type_vlm_subset",
-  "rule": "first K videos of the slice in sha256(seed_text+video) order, K largest with planned V3 events calls <= 59",
+  "rule": "videos of the dataset in sha256(seed_text+video) order; add a video if the planned V3 events calls on the chosen videos stay <= 40, else skip it and continue (Amendment 5)",
   "seed_text": "cogrvos-task6-longrvos-v1",
-  "max_calls": 59,
-  "K": 1,
-  "planned_calls_on_subset": 59,
+  "max_calls": 40,
+  "K": 2,
+  "planned_calls_on_subset": 28,
   "planned_calls_full_slice": 442,
-  "sentences_on_subset": 3,
+  "sentences_on_subset": 6,
   "events_csv": "results_v3_oracle_events_log_only/events_per_expression.csv",
   "events_csv_sha256": "f89fdc0a28ec90572c604c663480e132f35dcdef27d3d03e17b6c4faa6ae93cc",
   "videos": [
-    "39db436191"
+    "bd4aefda10",
+    "f6f82de62a"
   ],
   "hash_order_of_chosen": [
-    "39db436191"
+    "f6f82de62a",
+    "bd4aefda10"
+  ],
+  "skipped_in_hash_order": [
+    {
+      "video": "39db436191",
+      "planned_calls": 59
+    },
+    {
+      "video": "1a5dead3e3",
+      "planned_calls": 75
+    },
+    {
+      "video": "092ba1d6df",
+      "planned_calls": 30
+    },
+    {
+      "video": "235ff86d37",
+      "planned_calls": 39
+    },
+    {
+      "video": "20eaede0fb",
+      "planned_calls": 20
+    },
+    {
+      "video": "2683deffcb",
+      "planned_calls": 112
+    },
+    {
+      "video": "24b7b95ca4",
+      "planned_calls": 34
+    },
+    {
+      "video": "8b0e20e373",
+      "planned_calls": 13
+    },
+    {
+      "video": "e6f1a061ea",
+      "planned_calls": 32
+    }
   ]
 }

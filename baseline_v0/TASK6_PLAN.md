@@ -224,3 +224,20 @@ Facts below were read from the meta files only (no model, no frames).
    K = 1; nothing else in the tool changes.
 3. MeViS is unchanged: 1 video (7ca2e40c5af3), 21 sentences, 40 planned calls (committed as b6609a6; label-only fix 0fdfb2a).
 4. Nothing here uses accuracy. The V4-vlm runs on the same video(s) as V3 on each dataset, as in Amendment 2.
+
+## AMENDMENT 5 (2026-10-22): VLM subset rule changed to "skip videos that do not fit"; replaces Amendment 4 item 2. Written BEFORE any Long-RVOS Gemini call
+
+1. Reason. Arpit Sir's reply (WhatsApp, 22 Oct 06:35 and 06:49): do not force the 59-call video; check whether suitable videos fit within
+   40 calls, several videos are better, otherwise a single-video pilot clearly labelled; report actual VLM calls, J, F, J&F, recovery and
+   failure cases; state the API limitation; do not claim overall performance from one video.
+2. New rule (both datasets): take the videos in hash order; add a video if the planned V3 events calls on the chosen videos stay <= 40,
+   otherwise skip it and continue. Planned calls come from the oracle replay (events_per_expression.csv); accuracy is never used.
+   Tool: tools/pick_vlm_subset_skip.py (61 lines, md5 9287815d3d7083ba7c35ac2ea3eda49b).
+3. MeViS: no change. 7ca2e40c5af3 (21 sentences, 40 planned calls); every other video would exceed 40. The new tool reproduces the committed
+   list exactly. Real Gemini V3 and V4-vlm on this list were run on 22 Oct, before this amendment: V3 = 40 answers (3 of them from an earlier
+   attempt that was stopped after HTTP 503 errors), V4-vlm = 60 calls.
+4. Long-RVOS: f6f82de62a (28 planned calls) and bd4aefda10 (0 planned calls) = 2 videos, 6 sentences, 28 planned calls. Skipped in hash
+   order: 39db436191 (59), 1a5dead3e3 (75), 092ba1d6df (30), 235ff86d37 (39), 20eaede0fb (20), 2683deffcb (112), 24b7b95ca4 (34),
+   8b0e20e373 (13, would make 41), e6f1a061ea (32). Amendment 4 item 2 (K = 1 on 39db436191) is withdrawn.
+5. Nothing here uses accuracy. V4-vlm runs on the same videos as V3. Every table says "VLM subset, K videos"; the report says that the VLM
+   rows are a small subset because of the API limit and that single-video rows are pilots, not a Long-RVOS evaluation.
