@@ -26,6 +26,8 @@ def main():
     ap.add_argument("--reps", type=int, default=10000)
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--same", type=float, default=1.0, help="|difference| below this J&F counts as 'same'")
+    ap.add_argument("--drop-top", type=int, default=0, help="Amendment 6 item 8: also report B - A without the K sentences with the largest gain "
+                    "(a sensitivity check; 0 = off, output unchanged)")
     a = ap.parse_args()
 
     run = Path(a.run).expanduser()
@@ -65,6 +67,21 @@ def main():
     tot = D.sum()
     top = np.sort(D)[::-1][:3].sum()
     print(f"\nthe 3 sentences with the largest gain add up to {top:.1f} of the total {tot:.1f} J&F points (sum over sentences)")
+    if a.drop_top > 0:
+        order = np.argsort(-D, kind="stable")[:a.drop_top]
+        keep = np.ones(len(keys), bool)
+        keep[order] = False
+        print(f"\nsensitivity: without the {a.drop_top} sentences with the largest gain (they are picked after seeing the results, so this is a check, not a result)")
+        for i in order:
+            print(f"  dropped {keys[i][0]} exp {keys[i][1]}: A {A[i]:.2f}  B {B[i]:.2f}  B-A {D[i]:+.2f}")
+        vk = [v for v in vids if keep[idx[v]].any()]
+        ck = np.array([keep[idx[v]].sum() for v in vk], float)
+        sk = np.array([D[idx[v]][keep[idx[v]]].sum() for v in vk])
+        rng2 = np.random.default_rng(a.seed)
+        boot2 = [sk[s].sum() / ck[s].sum() for s in (rng2.integers(0, len(vk), len(vk)) for _ in range(a.reps))]
+        lo2, hi2 = np.percentile(boot2, [2.5, 97.5])
+        print(f"  remaining {int(keep.sum())} sentences in {len(vk)} videos: A {A[keep].mean():.2f}  B {B[keep].mean():.2f}  B - A {D[keep].mean():+.2f}   "
+              f"95% interval [{lo2:+.2f}, {hi2:+.2f}] from {a.reps} resamples of those videos (seed {a.seed})")
     print("Single run. Interval covers video sampling only; sentences of one video are resampled together.")
 
 
