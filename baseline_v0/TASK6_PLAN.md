@@ -241,3 +241,71 @@ Facts below were read from the meta files only (no model, no frames).
    8b0e20e373 (13, would make 41), e6f1a061ea (32). Amendment 4 item 2 (K = 1 on 39db436191) is withdrawn.
 5. Nothing here uses accuracy. V4-vlm runs on the same videos as V3. Every table says "VLM subset, K videos"; the report says that the VLM
    rows are a small subset because of the API limit and that single-video rows are pilots, not a Long-RVOS evaluation.
+
+## AMENDMENT 6 (2026-11-02): candidate-selection experiment with A0, A1 and A3 (no VLM). Written BEFORE any candidate-selection run and BEFORE any Gemini call for it
+
+1. Approval. Arpit Sir approved the revised candidate-selection protocol in his WhatsApp message of 2 Nov 10:58 am: proceed with A0, A1
+   and A3, do not include a VLM arm now, update the plan amendment and start the runs; his seven conditions are covered in items 3 to 12 below. The
+   protocol text is the Claude Doc "CogR-VOS Candidate-Selection Experiment: Protocol, Revised after Sir's Review" (revision 27 of 27 Oct);
+   this amendment repeats everything that is frozen so the repository does not depend on that Doc.
+2. Question. Can the frame-0 box be chosen better than top-1, using only the boxes Grounding-DINO already gave and evidence a real system
+   could collect, and does a better box give better V0 segmentation? Nothing is run yet; the audit numbers behind it (top-1 correct in
+   37.7% and 27.6% of the visible group, correct box in the cached top-5 in 82.7% and 86.2%) come from subsets and single runs.
+3. Data, pool and tracker, identical for every arm (Sir's condition 1 and 2). Data: MeViS valid_u subset (12 videos, 213 single-target
+   sentences) and Long-RVOS valid subset (11 videos, 33 sentences), always labelled as subsets. Pool: the cached top-5 Grounding-DINO boxes
+   of frame 0 (grounding/<video>.json), no new detector run; the list is sorted by detector score in all 246 sentences, so top-1 = best
+   detector-score box = A0 (counted once). Tracker after the choice: V0 exactly (SAM 2.1 Hiera-tiny, the chosen box as the prompt at
+   frame 0, no memory, no trust score, no VLM, no re-ID). Scoring: the same stage 3 code (J, F, J&F). Every other setting is identical
+   between arms; only the way the box is chosen differs.
+4. Arms (fixed now).
+   A0: top-1 (highest detector score).
+   A1: crop each pool box from frame 0 (the box plus 8 pixels of padding, no masking), CLIP ViT-B/32 image embedding (openai/clip-vit-base-patch32,
+       frozen, as in common/embed.py), cosine with the CLIP text embedding of the sentence text exactly as in the data (no prompt template);
+       the highest cosine wins; a tie goes to the higher detector score.
+   A3 (multi-frame, no VLM): for each pool box, start SAM 2.1 from that box at frame 0 and follow it for the first N frames (frame 0 plus
+       N - 1 more, counted in the dataset's own annotated frame list; on Long-RVOS one listed frame is 5 video frames). On each frame take
+       the masked crop (8 pixels of padding, grey background outside the mask, as in common/embed.py), its CLIP image embedding and the
+       cosine with the sentence embedding. A frame whose mask is empty or under 200 pixels scores 0. A candidate's score is the mean over its
+       N frames; the highest wins; a tie goes to the higher detector score. The N-frame tracks are thrown away; V0 is run again from frame 0
+       over the whole video with the chosen box, and all J, F and J&F values come only from this run.
+   N = 5 and N = 10 are two pre-declared arms (A3-5 and A3-10). Both are reported with equal status; neither is chosen after the results
+   (Sir's condition 3).
+   Frame-0-only sanity rows (no tracking run, seconds on the CPU, not arms): largest box, smallest box, and the expected accuracy of a
+   random pick from the pool.
+5. Groups and denominators (MeViS / Long-RVOS). All sentences 213 / 33 (J, F, J&F). Target visible in frame 0: 191 / 29 (choice accuracy,
+   mean IoU of the chosen box). Target absent in frame 0: 22 / 4 (own group; choice accuracy not defined; they are not recovered here).
+   Original top-1 correct / partial overlap / another annotated object / elsewhere: 72 / 26 / 80 / 13 and 8 / 8 / 6 / 7. Target in the
+   cached pool: 158 / 25. Choice accuracy = share of the visible group whose chosen box has IoU >= 0.5 with the ground-truth box.
+6. Oracle references, diagnostic only and never results of any arm. Normal start (= A0): 26.88 / 30.38. Ground-truth-box start for the
+   visible group (the absent group keeps its normal start): 64.29 / 61.15. Best-cached-candidate start (IoU >= 0.5, otherwise top-1): 52.80 /
+   61.22, slightly optimistic because it also swaps in a better box when top-1 already hit (15 sentences in MeViS, 1 in Long-RVOS). The
+   denominators are all 213 and all 33 sentences. They are reported in their own lines and tables.
+7. Measures, for every arm and both datasets (Sir's condition 4): choice accuracy and mean IoU of the chosen box; J, F and J&F; the same split
+   by group of item 5; per-video and per-sentence results (how many sentences got better, stayed the same (|difference| < 1 J&F) or got
+   worse); cost (selection time per sentence, total time, extra SAM 2 frames, CLIP passes, frames observed N, selection delay, all
+   reported separately from the V0 tracking time). Differences: each arm minus A0, and A3 minus A1, with a 95% interval from 10,000
+   resamples of the videos (seed 0; the interval covers the choice of videos only, not run-to-run variation). Limitation stated next to
+   every table: single runs on 12 and 11 videos, so one or two videos can dominate a result. If time allows, A0 is repeated once on
+   Long-RVOS to show how much two identical runs differ.
+8. Sensitivity (Sir's condition 5). For every paired comparison, on Long-RVOS and also on MeViS, the result is reported with and without
+   the 3 sentences that have the largest gain (as printed by tools/compare_pair.py), and we say whether the direction and size remain. The
+   same is done for the V1-from-the-ground-truth-box comparison (V1gt minus V0gt: MeViS -1.64, Long-RVOS +7.51, where the 3 largest
+   sentences give 151.8 of 247.7 points). compare_pair.py has no option for this yet; the option (or a separate script) is committed before
+   the numbers are produced.
+9. Ground-truth-initialised and end-to-end results are reported separately (Sir's condition 6). Any table that starts from the ground-truth
+   box (V0gt, V1gt, later versions) is labelled as a diagnostic ceiling and is never listed in the same ranking as the arms A0, A1, A3.
+10. Claim rules, fixed now. A3 is a candidate core contribution only if it beats A0 and A1 on both datasets and on both measures (choice
+   accuracy and J&F) in the point estimates, and the 95% intervals are shown; a strong claim is written only if the intervals exclude zero,
+   otherwise the result is described, not claimed. With wide intervals we say so. The VLM: no VLM arm and no Gemini call under this
+   amendment (Sir's condition 7). After A0, A1 and A3 are complete and reviewed, a separate protocol proposes a pre-declared subset within
+   40 calls or a local VLM; a VLM becomes part of the core method only if it measurably beats the best non-VLM arm and the extra cost is
+   justified. The same separate protocol covers V3 and V4 from the ground-truth start.
+11. Order of work. (a) Frame-0-only sanity rows; (b) A1; (c) A3 selection pass for N = 5 and N = 10 (GPU); (d) a downstream V0 run for each
+   arm. To save time, only the sentences whose chosen box differs from A0 are re-run, after a one-time mask-identity check (tools/
+   audit_mask_identity.py) that sentences with an unchanged box give identical masks; if the check finds any difference, every sentence
+   of that arm is re-run. (e) Paired tables, per-video results, failure frames and pictures.
+12. Reproducibility (Sir's closing instruction). Every config, selection score (per sentence and candidate), chosen box, log, per_video_results.csv,
+   timing and the commit hash of this amendment are kept in the run folders; nothing is overwritten or deleted. Any change after the first
+   run is a dated amendment with its reason, and results already seen are reported as they are.
+13. Honest limits. Single runs on small subsets; A3 is an offline look-ahead of N frames, not an online method; targets absent in frame 0
+   are not recovered; motion evidence is not used (CLIP sees one frame at a time); all time estimates are estimates, not measurements.
