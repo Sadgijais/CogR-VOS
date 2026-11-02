@@ -309,3 +309,20 @@ Facts below were read from the meta files only (no model, no frames).
    run is a dated amendment with its reason, and results already seen are reported as they are.
 13. Honest limits. Single runs on small subsets; A3 is an offline look-ahead of N frames, not an online method; targets absent in frame 0
    are not recovered; motion evidence is not used (CLIP sees one frame at a time); all time estimates are estimates, not measurements.
+
+## AMENDMENT 7 (2026-11-02): every arm is re-run on ALL sentences; what was seen before the A1 downstream run. Written BEFORE any downstream V0 run of A1 and BEFORE any A3 run
+
+1. Change to Amendment 6 item 11. The downstream V0 run of every arm covers ALL sentences of the dataset (213 MeViS, 33 Long-RVOS), not only
+   the sentences whose chosen box differs from A0, and the one-time mask-identity check is not used. Reason: it is simpler, needs no merging of
+   results from two runs, and is conservative (a superset of the planned runs). Cost, an ESTIMATE from the earlier oracle V0 runs: about 1.2 h on
+   MeViS and 1.8 h on Long-RVOS per arm. Scoring, metrics, groups, intervals and claim rules of Amendment 6 are unchanged.
+2. Disclosure of what was seen before this amendment, no setting was changed because of it. Frame-0 rows (commit 1ec8918) and the choice accuracy of
+   A1 (tools committed as 16982b9) were computed before the A1 downstream run. Choice accuracy on the visible group (MeViS 191, Long-RVOS 29):
+   A0 37.7% and 27.6%; largest box 38.7% and 41.4%; smallest box 35.1% and 17.2%; random pick (expected) 38.6% and 28.2%; A1 38.7% and 44.8%.
+   On Long-RVOS the largest box (12 of 29) is already above A0 (8 of 29). Amendment 6 item 10 is NOT changed (A3 must beat A0 and A1); the
+   largest-box row stays a frame-0 reference row and gets no downstream V0 run unless Sir asks for one.
+3. Run files, same pattern as the oracle runs: per arm a grounding folder written by the selection tool (A1: grounding_a1_clip), config_<arm>.yaml
+   (only the five path lines differ from config.yaml, checked with diff), and run_arm.sh (a copy of run_oracle.sh with the names changed, same GPU
+   temperature guard). The V0 code, SAM 2.1 Hiera-tiny and stage 3 are unchanged. No Gemini call.
+4. Order: A1 downstream (MeViS, then Long-RVOS); then the A3 selection tool is written and tested on the CPU and run on the GPU for N = 5 and
+   N = 10; then the downstream V0 run of each A3 arm; then the paired tables, per-video results, sensitivity and pictures.
