@@ -326,3 +326,55 @@ Facts below were read from the meta files only (no model, no frames).
    temperature guard). The V0 code, SAM 2.1 Hiera-tiny and stage 3 are unchanged. No Gemini call.
 4. Order: A1 downstream (MeViS, then Long-RVOS); then the A3 selection tool is written and tested on the CPU and run on the GPU for N = 5 and
    N = 10; then the downstream V0 run of each A3 arm; then the paired tables, per-video results, sensitivity and pictures.
+
+## AMENDMENT 8 (2026-11-03): Sir's review of the A0, A1 and A3-5 results; A3 N=10, a largest-box reference arm, failure and cost analysis, consistency view. Written BEFORE any A3 N=10 result and BEFORE any largest-box downstream run. No Gemini call
+1. Direction. Arpit Sir's WhatsApp reply of 3 Nov 9:37 am (to the update sent 3 Nov 1:36 am), in summary: report the results honestly; A3 looks
+   promising but its results are not consistent, so it is not claimed as a successful method; run A3 N=10 with the same frozen settings and no tuning
+   or change after seeing results; run the largest-box baseline downstream on both datasets with the same V0 tracker as an additional reference /
+   exploratory experiment and update the protocol; inspect the videos and sentences where A3 helped and where it hurt and find why the CLIP ranking
+   was wrong (similar-object confusion or mask quality); analyse the overhead of the A3 selection pass against its accuracy gain; no Gemini calls now,
+   the VLM question is decided only after the N=10 and largest-box results are complete; the focus is consistent improvement, not a high gain on a few
+   videos; all results, negative ones included, are documented.
+2. Seen before this amendment (disclosure). J&F of A0, A1 and A3-5 on both datasets with their paired comparisons (A3 tool committed as a56072f);
+   choice accuracy of A0, A1, A3-5 and A3-10 (MeViS 37.7, 38.7, 45.0, 43.5%; Long-RVOS 27.6, 44.8, 31.0, 31.0%); the frame-0 choice accuracy of the
+   largest box (38.7% and 41.4%, commit 1ec8918, and the self-check of item 4). NOT seen: any J&F of A3-10 or of the largest-box arm. The A3-10 MeViS
+   run started on 3 Nov at 11:23 IST, as already declared in Amendments 6 and 7, before this text was committed.
+3. A3 N=10 downstream. Exactly as declared in Amendment 6 items 4 and 11 and in Amendment 7: arm a3_n10, config_a3_n10.yaml = config.yaml with the
+   five output-path lines changed, the boxes of grounding_a3_n10 (same selection pass as N=5), every sentence re-run, same V0 tracker. No setting is
+   changed after seeing results. Reported with equal status to A3-5.
+4. Largest-box reference arm ("largest"). Change to Amendment 7 item 2 (earlier: no downstream run unless Sir asks; Sir asked). Definition: among the
+   cached top-5 boxes of frame 0 the box with the largest area (x2 - x1) * (y2 - y1); an exact tie goes to the higher detector score; no image, no
+   text, no ground truth. Tool tools/select_largest_box.py (68 lines, md5 b4a9a34825d2edbb5f77084611bbadad) writes <run>/grounding_largest (box moved
+   to the front in 111 of 213 MeViS and 22 of 33 Long-RVOS sentences) and selection_largest.csv. Self-check with tools/choice_accuracy.py reproduces
+   the frame-0 rows: MeViS 74 of 191 (38.7%), Long-RVOS 12 of 29 (41.4%). Downstream: config_largest.yaml, bash run_arm.sh largest, every sentence,
+   both datasets, same V0 tracker. Status: an additional reference / exploratory experiment. It is a trivial size rule, not a candidate method; it is
+   reported in its own line and is not one of the candidate arms of the claim rule (Amendment 6 item 10). Where A1 or A3 are compared with it, the
+   table says so.
+5. Failure analysis (CPU only; no new tracking, no Gemini). For A3-5 and A3-10, with A1 alongside, per sentence and from the saved files only
+   (selection_a3.csv frame scores and cosines, the cached pool, the ground-truth masks of frame 0, per_video_results.csv): the sentence text; whether
+   the pool contains the target (a box with IoU >= 0.5 with the ground-truth box); the chosen box of A0 and of the arm and whether each is a hit; the
+   J&F of each arm. For every wrong pick when the pool does contain the target, one reason from three fixed categories: (a) similar-object confusion =
+   the chosen box has IoU >= 0.5 with the ground-truth box of another annotated object of the same video; (b) mask quality = the target candidate
+   scored 0 on at least one tracked frame (mask under 200 pixels or empty) and its mean over its non-zero frames would have been the highest; (c)
+   other = neither of these (for example the chosen box overlaps no annotated object, or the target candidate simply scored lower). The sentences that
+   gained or lost are listed per dataset with their text. Pictures (tools/render_cases.py) of at most three gain and three loss sentences per dataset,
+   chosen by a stated rule (largest and smallest J&F of A3-5 minus A0) and labelled as picked after seeing results. The tool and these definitions are
+   committed before the numbers are produced.
+6. Cost analysis. For every arm and dataset, in one table: selection time in total and per sentence, extra SAM 2 frames, CLIP passes, V0 tracking time
+   and ms per frame, the ratio of selection time to V0 tracking time, and next to it the change in J&F and in choice accuracy. Two runs on the same
+   videos differ in tracking time (Long-RVOS: A1 6244 s, A3-5 7038 s, 13%), so no time difference below about 15% is interpreted. A3 is an offline
+   look-ahead of N frames, not an online method.
+7. Consistency view (added after seeing the A0, A1 and A3-5 results; disclosed). Per video, for every arm minus A0 and minus A1: the number of videos
+   improved, unchanged (|difference| < 1 J&F) and worse; and a leave-one-video-out range of the paired difference (the difference recomputed with each
+   single video dropped in turn, minimum and maximum). tools/compare_pair.py gets a --leave-one-out option, committed before the numbers are produced.
+   A gain is called consistent only if the sign of the difference holds in all leave-one-video-out recomputations; otherwise we say which video it
+   depends on. The 3-largest-gain-sentence check of Amendment 6 item 8 stays.
+8. VLM and Gemini. No VLM arm, no Gemini call and no V2-V4 run from the ground-truth start under this amendment. After A3-10 and the largest-box
+   downstream results and the failure analysis are complete and reviewed, a separate protocol decides whether a VLM judge is needed or a better non-
+   VLM selection mechanism is developed (Sir's instruction).
+9. Claim rules unchanged (Amendment 6 item 10): A3 is not claimed as a successful method; results are described as they are, negative ones included.
+   Single runs on 12 and 11 videos; one or two videos can dominate a result.
+10. Reproducibility. Configs, selection files, logs, per_video_results.csv and timing of every arm stay in the run folders; nothing is overwritten or
+   deleted. The interrupted run (a3_n5 on MeViS, 2 Nov, stopped at 18:44 IST after 6 of 12 videos because the laptop smelled hot) is kept as
+   predictions_a3_n5_killed_partial_20261102 and results_a3_n5_killed_partial_20261102, is not part of any result, and the arm was then run again
+   completely.
