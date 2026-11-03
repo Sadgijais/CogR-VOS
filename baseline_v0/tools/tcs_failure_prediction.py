@@ -5,8 +5,8 @@ FROZEN values stored in the TCS log: tau_low 0.81, tau_high 0.92). Uses the exis
 ground truth of the subset.
 
 Definitions (fixed before any number of this tool was produced):
-  frame t of a sentence = a frame of its TCS log (f = 1, 2, ...; f = 0 is the initial frame and is not scored; prediction file <f:05d>.png, ground truth
-  file frames[f] of meta_expressions.json). Target mask G_t = palette index obj_id of the ground truth; P_t = predicted mask.
+  frame t of a sentence = a frame of its TCS log (f = 1, 2, ...; f = 0 is the initial frame and is not scored; prediction file AND ground truth file are both named frames[f] of
+  meta_expressions.json (on Long-RVOS the names are every 5th frame, not positions)). Target mask G_t = palette index obj_id of the ground truth; P_t = predicted mask.
   gt visible = G_t non-empty. FAILED = gt visible and IoU(P_t, G_t) < 0.50 (an empty prediction on a visible target is failed, IoU 0).
   TCS low-is-bad: a low coherence c_t = a predicted problem. Flags: LOW = band LOW; LOW+MEDIUM = band not HIGH.
   DETECTION (k = 0): population = gt visible and prediction non-empty; positive = FAILED at t.
@@ -121,13 +121,16 @@ def main():
             if not g0.any():
                 n_absent_f0 += 1
                 continue
-            p0f = run / a.pred / video / exp_id / "00000.png"
+            p0f = run / a.pred / video / exp_id / f"{names[0]}.png"
             ground_ok = p0f.exists() and iou(read_binary_mask(p0f), g0) >= GROUND_IOU
             frs = []
             for r in ent["frames"]:
                 f = int(r["f"])
-                pf = run / a.pred / video / exp_id / f"{f:05d}.png"
-                if not pf.exists() or f >= len(names):
+                if f >= len(names):
+                    n_missing += 1
+                    continue
+                pf = run / a.pred / video / exp_id / f"{names[f]}.png"  # file named by the frame name, as the ground truth
+                if not pf.exists():
                     n_missing += 1
                     continue
                 P, arr = read_binary_mask(pf), gt_arr(f)
