@@ -28,6 +28,8 @@ def main():
     ap.add_argument("--same", type=float, default=1.0, help="|difference| below this J&F counts as 'same'")
     ap.add_argument("--drop-top", type=int, default=0, help="Amendment 6 item 8: also report B - A without the K sentences with the largest gain "
                     "(a sensitivity check; 0 = off, output unchanged)")
+    ap.add_argument("--leave-one-out", action="store_true", help="Amendment 8 item 7: also report the videos improved / unchanged / worse and B - A "
+                    "recomputed with each single video dropped in turn (off = output unchanged)")
     a = ap.parse_args()
 
     run = Path(a.run).expanduser()
@@ -82,6 +84,19 @@ def main():
         lo2, hi2 = np.percentile(boot2, [2.5, 97.5])
         print(f"  remaining {int(keep.sum())} sentences in {len(vk)} videos: A {A[keep].mean():.2f}  B {B[keep].mean():.2f}  B - A {D[keep].mean():+.2f}   "
               f"95% interval [{lo2:+.2f}, {hi2:+.2f}] from {a.reps} resamples of those videos (seed {a.seed})")
+    if a.leave_one_out:
+        pv = np.array([D[idx[v]].mean() for v in vids])
+        print(f"\nvideos (mean per-video difference; |diff| < {a.same:g} counts as unchanged): B better {int((pv >= a.same).sum())}, "
+              f"unchanged {int((abs(pv) < a.same).sum())}, B worse {int((pv <= -a.same).sum())}, of {len(vids)}")
+        print("\nleave-one-video-out (Amendment 8 item 7): B - A over all sentences with each single video dropped in turn")
+        loo = sorted(((tot - sd[i]) / (len(keys) - cnt[i]), v, int(cnt[i])) for i, v in enumerate(vids))
+        print(f"  {'video dropped':16s} {'n':>3} {'B-A without it':>15}")
+        for d, v, n in loo:
+            print(f"  {v:16s} {n:>3} {d:>+15.2f}")
+        sg = np.sign(D.mean())
+        same_sign = sum(1 for d, _, _ in loo if np.sign(d) == sg)
+        print(f"  range {loo[0][0]:+.2f} (without {loo[0][1]}) to {loo[-1][0]:+.2f} (without {loo[-1][1]}); "
+              f"the sign of B - A ({D.mean():+.2f}) holds in {same_sign} of {len(loo)} recomputations")
     print("Single run. Interval covers video sampling only; sentences of one video are resampled together.")
 
 
