@@ -71,7 +71,7 @@ def main():
         sys.exit(f"refusing to overwrite: {outp}")
     outp.parent.mkdir(parents=True, exist_ok=True)
     meta = json.load(open(root / "meta_expressions" / "meta_expressions.json"))["videos"]
-    sel3 = load_csv(run / f"grounding_a3_n{a.n}" / "selection_a3.csv")
+    sel3 = load_csv(run / f"grounding_a3_n5" / "selection_a3.csv")
     sel1 = load_csv(run / "grounding_a1_clip" / "selection_a1.csv")
     jf0, jf1, jf3 = (load_jf(run / d / "per_video_results.csv") for d in ("results", "results_a1_clip", f"results_a3_n{a.n}"))
     audit_keys = {(r["video"], r["exp_id"]) for r in csv.DictReader(open(Path(a.audit).expanduser()))}
