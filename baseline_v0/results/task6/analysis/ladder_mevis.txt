@@ -1,0 +1,31 @@
+MeViS valid_u subset (12 videos, single-target sentences) - not the full benchmark
+reference = results   sentences 213   videos 12   (single runs; sentences of one video are not independent)
+
+variant                                 J&F    diff       95% interval  videos b/s/w   sent b/s/w  videos differing
+results                               26.88   (ref)
+results_a1_clip                       27.06   +0.19     [-4.43, +6.10]         5/1/6    56/112/45          12 of 12
+results_a3_n5                         32.16   +5.28    [-0.74, +12.21]         5/3/4    62/121/30          11 of 12
+results_a3_n10                        31.51   +4.63    [-2.49, +12.54]         6/2/4    60/125/28          11 of 12
+results_largest                       28.16   +1.28     [-3.31, +8.12]         3/4/5    43/134/36          11 of 12
+results_v1_final                      25.93   -0.95     [-2.51, +0.11]        1/10/1    18/172/23          12 of 12
+results_v2_passive                    25.93   -0.95     [-2.51, +0.11]        1/10/1    18/172/23          12 of 12
+results_v3_gemini_events_abstain      25.94   -0.94     [-2.50, +0.12]        1/10/1    20/170/23          12 of 12
+results_v4_memory                     25.96   -0.92     [-2.45, +0.13]        1/10/1    31/146/36          12 of 12
+results_v4_vlm                        25.89   -0.99     [-2.52, +0.09]        1/10/1    23/160/30          12 of 12
+
+COST (timing_per_video.csv; search_s and vlm_wait_s are NOT added to inference_s; overhead is against results on the same videos; under 15% is not interpreted)
+variant                              vids live inference_s  search_s vlm_wait_s  over_all  over_live  read?  peakMB  select_s searches vlm_calls
+results                                12  n/a      4430.2       n/a        n/a       n/a        n/a    ref     781       n/a      n/a       n/a
+results_a1_clip                        12  n/a      4371.4       n/a        n/a     -1.3%        n/a     no     781      68.7      n/a       n/a
+results_a3_n5                          12  n/a      4631.9       n/a        n/a     +4.6%        n/a     no     781    4046.0      n/a       n/a
+results_a3_n10                         12  n/a      4420.3       n/a        n/a     -0.2%        n/a     no     781    4046.0      n/a       n/a
+results_largest                        12  n/a      4462.3       n/a        n/a     +0.7%        n/a     no     781       n/a      n/a       n/a
+results_v1_final                       12  n/a      5347.8       n/a        n/a    +20.7%        n/a    yes     865       n/a      n/a       n/a
+results_v2_passive                     12  n/a      5415.3       n/a        n/a    +22.2%        n/a    yes    1442       n/a      n/a       n/a
+results_v3_gemini_events_abstain                      no timing_per_video.csv       n/a      n/a        40
+results_v4_memory                      12   12      5782.6      29.0        0.0    +30.5%        n/a    yes    1750       n/a      493         0
+results_v4_vlm                          1    1      1193.7      55.8      438.8   +130.2%        n/a    yes    1537       n/a       60        60
+
+Notes: V3 has no timing_per_video.csv (only v3_summary.txt). 'live' = videos with n_live > 0; for those variants the time of the live videos is the only one that contains VLM work. A1 / A3 selection time (select_s) is separate from the tracking time. Time differences under 15% are not interpreted.
+
+wrote /home/sadgi/cogrvos/analysis/ladder_mevis_stat.csv and /home/sadgi/cogrvos/analysis/ladder_mevis_cost.csv

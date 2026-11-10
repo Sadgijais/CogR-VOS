@@ -1,0 +1,51 @@
+Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark (reference arm): largest box vs results
+A = results   B = results_largest   sentences 33
+mean J&F  A 30.38   B 26.85   B - A -3.53
+sentences: B better 9, same (|diff| < 1) 12, B worse 12
+B - A over all sentences: -3.53   95% interval [-23.33, +17.14] from 10000 resamples of the 11 videos (seed 0)
+
+group (cached top-1 box at frame 0)         n       A       B     B-A
+top-1 correct                               8   70.61   34.11  -36.50
+top-1 partial overlap                       8   13.72   31.40  +17.68
+top-1 on another annotated object           6    2.73   47.59  +44.87
+top-1 elsewhere                             7   28.34    5.99  -22.36
+target absent at frame 0                    4   28.29    8.61  -19.68
+
+per video (mean over its sentences):  video            n       A       B     B-A
+                                      8b0e20e373       3   29.99   88.72  +58.73
+                                      bd4aefda10       3   13.73   56.90  +43.17
+                                      2683deffcb       3    0.40   27.79  +27.39
+                                      092ba1d6df       3   15.71   24.47   +8.76
+                                      1a5dead3e3       3   23.86   22.86   -1.00
+                                      39db436191       3    4.02    1.18   -2.84
+                                      24b7b95ca4       3   19.76    4.59  -15.18
+                                      e6f1a061ea       3   48.63   29.31  -19.32
+                                      f6f82de62a       3   47.70    8.50  -39.20
+                                      235ff86d37       3   41.35    0.11  -41.24
+                                      20eaede0fb       3   89.05   30.90  -58.15
+
+the 3 sentences with the largest gain add up to 257.1 of the total -116.7 J&F points (sum over sentences)
+
+sensitivity: without the 3 sentences with the largest gain (they are picked after seeing the results, so this is a check, not a result)
+  dropped 8b0e20e373 exp 0: A 0.63  B 88.72  B-A +88.09
+  dropped 8b0e20e373 exp 6: A 0.62  B 88.71  B-A +88.09
+  dropped 2683deffcb exp 6: A 0.18  B 81.13  B-A +80.95
+  remaining 30 sentences in 11 videos: A 33.37  B 20.91  B - A -12.46   95% interval [-28.63, +5.00] from 10000 resamples of those videos (seed 0)
+
+videos (mean per-video difference; |diff| < 1 counts as unchanged): B better 4, unchanged 0, B worse 7, of 11
+
+leave-one-video-out (Amendment 8 item 7): B - A over all sentences with each single video dropped in turn
+  video dropped      n  B-A without it
+  8b0e20e373         3           -9.76
+  bd4aefda10         3           -8.21
+  2683deffcb         3           -6.63
+  092ba1d6df         3           -4.76
+  1a5dead3e3         3           -3.79
+  39db436191         3           -3.60
+  24b7b95ca4         3           -2.37
+  e6f1a061ea         3           -1.96
+  f6f82de62a         3           +0.03
+  235ff86d37         3           +0.24
+  20eaede0fb         3           +1.93
+  range -9.76 (without 8b0e20e373) to +1.93 (without 20eaede0fb); the sign of B - A (-3.53) holds in 8 of 11 recomputations
+Single run. Interval covers video sampling only; sentences of one video are resampled together.

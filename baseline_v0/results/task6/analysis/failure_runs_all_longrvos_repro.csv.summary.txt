@@ -1,0 +1,68 @@
+command: tools/failure_runs_all.py --root /home/sadgi/data/LongRVOS-subset --run /home/sadgi/cogrvos/task6_longrvos/baseline_v0 --min-run 3 --out /home/sadgi/cogrvos/analysis/failure_runs_all_longrvos_repro.csv --label Long-RVOS repro check
+Long-RVOS repro check
+other-object pool: annotated
+NOTE prediction_file_missing:A0: 0
+NOTE prediction_file_missing:A1: 0
+NOTE prediction_file_missing:A3-10: 0
+NOTE prediction_file_missing:A3-5: 0
+NOTE prediction_file_missing:largest: 0
+min run 3, window 10, hit 0.5. Single run on a subset; descriptive. Sentences of one video are not independent.
+switch = another object (pool: annotated) has IoU >= hit with the prediction in at least one frame of the failure run; switch>=min = in at least min-run frames.
+
+=== group visible_f0 ===
+C1. failure runs per arm
+   arm      sentences with>=1 run with>=2 runs  runs first runs later runs
+   A0              29          26           15    54         26         28
+   A1              29          25           16    84         25         59
+   A3-5            29          26           17    75         26         49
+   A3-10           29          26           17    74         26         48
+   largest         29          26           15    75         26         49
+C2. category of first runs and of later (2nd, 3rd, ...) runs; 'switch' = runs with another object (pool above) >= hit in some frame of the run
+   arm       which  runs  reid  init drift  prop  switch  switch, not drift  switch>=min
+   A0        first    26     3    21     0     2       4                  4            4
+   A0        later    28    24     0     0     4       5                  5            5
+   A1        first    25     4    15     0     6       2                  2            2
+   A1        later    59    24     0     0    35       5                  5            5
+   A3-5      first    26     1    19     0     6       3                  3            3
+   A3-5      later    49    25     0     0    24       4                  4            4
+   A3-10     first    26     1    19     0     6       3                  3            3
+   A3-10     later    48    26     0     0    22       4                  4            4
+   largest   first    26     5    18     0     3       2                  2            2
+   largest   later    49    19     0     0    30       0                  0            0
+C3. sentences: drift in ANY run, and a switch in ANY run
+   arm      sentences drift run (any) switch (any run) switch, no drift run switch only after loss  switch>=min (any)
+   A0              29               0                4                    4                      0                  4
+   A1              29               0                3                    3                      1                  3
+   A3-5            29               0                3                    3                      0                  3
+   A3-10           29               0                3                    3                      0                  3
+   largest         29               0                2                    2                      0                  2
+
+=== group absent_f0 ===
+C1. failure runs per arm
+   arm      sentences with>=1 run with>=2 runs  runs first runs later runs
+   A0               4           4            3     9          4          5
+   A1               4           4            3    11          4          7
+   A3-5             4           4            3    11          4          7
+   A3-10            4           4            3    11          4          7
+   largest          4           4            3    11          4          7
+C2. category of first runs and of later (2nd, 3rd, ...) runs; 'switch' = runs with another object (pool above) >= hit in some frame of the run
+   arm       which  runs  reid  init drift  prop  switch  switch, not drift  switch>=min
+   A0        first     4     0     3     0     1       1                  1            1
+   A0        later     5     4     0     0     1       0                  0            0
+   A1        first     4     0     4     0     0       0                  0            0
+   A1        later     7     7     0     0     0       0                  0            0
+   A3-5      first     4     0     4     0     0       0                  0            0
+   A3-5      later     7     7     0     0     0       0                  0            0
+   A3-10     first     4     0     4     0     0       0                  0            0
+   A3-10     later     7     7     0     0     0       0                  0            0
+   largest   first     4     0     4     0     0       0                  0            0
+   largest   later     7     7     0     0     0       0                  0            0
+C3. sentences: drift in ANY run, and a switch in ANY run
+   arm      sentences drift run (any) switch (any run) switch, no drift run switch only after loss  switch>=min (any)
+   A0               4               0                1                    1                      0                  1
+   A1               4               0                0                    0                      0                  0
+   A3-5             4               0                0                    0                      0                  0
+   A3-10            4               0                0                    0                      0                  0
+   largest          4               0                0                    0                      0                  0
+
+'switch only after loss' = a propagation-failure run in which another object is reached only after the first failed frame (first_switch_pos > 0).

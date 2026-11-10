@@ -1,0 +1,83 @@
+Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark
+runs /home/sadgi/cogrvos/analysis/failure_runs_all_allobj_longrvos.csv; sentences 165; old-label rows 165; min run for switch>=min: 3. Single run on a subset; descriptive.
+
+=== V1. group visible_f0: run category x switch ===
+   arm       which  category  runs  switch  switch>=min
+   A0        first      reid     3       0            0
+   A0        first      init    21      10           10
+   A0        first      prop     2       2            0
+   A0        later      reid    24      12           10
+   A0        later      prop     4       0            0
+   A1        first      reid     4       1            1
+   A1        first      init    15       7            7
+   A1        first      prop     6       2            0
+   A1        later      reid    24      11           11
+   A1        later      prop    35       1            1
+   A3-5      first      reid     1       1            1
+   A3-5      first      init    19       8            7
+   A3-5      first      prop     6       3            0
+   A3-5      later      reid    25      11           11
+   A3-5      later      prop    24       0            0
+   A3-10     first      reid     1       1            1
+   A3-10     first      init    19       8            8
+   A3-10     first      prop     6       3            0
+   A3-10     later      reid    26      12           12
+   A3-10     later      prop    22       0            0
+   largest   first      reid     5       1            1
+   largest   first      init    18       5            5
+   largest   first      prop     3       0            0
+   largest   later      reid    19       6            6
+   largest   later      prop    30       0            0
+
+=== V1. group absent_f0: run category x switch ===
+   arm       which  category  runs  switch  switch>=min
+   A0        first      init     3       1            1
+   A0        first      prop     1       0            0
+   A0        later      reid     4       0            0
+   A0        later      prop     1       0            0
+   A1        first      init     4       2            2
+   A1        later      reid     7       5            3
+   A3-5      first      init     4       1            1
+   A3-5      later      reid     7       3            1
+   A3-10     first      init     4       1            1
+   A3-10     later      reid     7       3            1
+   largest   first      init     4       2            2
+   largest   later      reid     7       3            3
+
+=== V2. group visible_f0: old drift label (n_drift_events > 0) vs new switch (a failure run with another object >= 0.5) ===
+   arm         n  both  old only  new only  neither  old total  new total  no old row
+   A0         29    13         4         0       12         17         13           0
+   A1         29    10         6         0       13         16         10           0
+   A3-5       29    12         4         0       13         16         12           0
+   A3-10      29    12         4         0       13         16         12           0
+   largest    29     6         5         0       18         11          6           0
+
+=== V2. group absent_f0: old drift label (n_drift_events > 0) vs new switch (a failure run with another object >= 0.5) ===
+   arm         n  both  old only  new only  neither  old total  new total  no old row
+   A0          4     1         1         0        2          2          1           0
+   A1          4     3         1         0        0          4          3           0
+   A3-5        4     1         1         0        2          2          1           0
+   A3-10       4     1         1         0        2          2          1           0
+   largest     4     2         0         0        2          2          2           0
+
+=== V3. concentration (group visible_f0) ===
+   arm      videos  videos with later run later runs  largest video its share  sentences with switch  largest video its share
+   A0           11                      9         28     092ba1d6df      0.25                     13     2683deffcb      0.23
+   A1           11                      9         59     bd4aefda10      0.39                     10     235ff86d37      0.20
+   A3-5         11                      8         49     2683deffcb      0.33                     12     f6f82de62a      0.25
+   A3-10        11                      8         48     2683deffcb      0.33                     12     f6f82de62a      0.25
+   largest      11                      8         49     bd4aefda10      0.47                      6     24b7b95ca4      0.33
+
+=== V3b. per video, arm A0, group visible_f0 ===
+   video            sentences with>=1 run  runs later runs  switch sentences  old drift sentences
+   092ba1d6df               3           3    10          7                 1                    1
+   1a5dead3e3               3           3     4          1                 1                    1
+   20eaede0fb               3           0     0          0                 0                    0
+   235ff86d37               3           3     5          2                 1                    3
+   24b7b95ca4               2           2     7          5                 1                    1
+   2683deffcb               3           3     8          5                 3                    3
+   39db436191               1           1     2          1                 0                    1
+   8b0e20e373               3           3     5          2                 2                    3
+   bd4aefda10               3           3     3          0                 0                    0
+   e6f1a061ea               2           2     6          4                 2                    2
+   f6f82de62a               3           3     4          1                 2                    2

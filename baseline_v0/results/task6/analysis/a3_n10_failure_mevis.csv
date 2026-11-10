@@ -1,0 +1,214 @@
+video,exp_id,expression,n_candidates,visible_f0,pool_has_target,target_pos,a0_hit,a1_pos,a1_hit,a3_pos,a3_hit,a0_reason,a1_reason,a3_reason,a3_sim_flag,a3_mask_flag,target_zero_frames,target_nonzero_mean,a3_score_chosen,a3_score_target,JF_A0,JF_A1,JF_A3,dJF_A3_minus_A0,dJF_A3_minus_A1
+16ae95660b3a,1,elephant walking behind and putting its trunk on others ,3,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,0.2884,0.2884,66.59,66.59,66.59,0.0,0.0
+16ae95660b3a,2,elephant walking ahead,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,22.88,22.88,22.88,0.0,0.0
+16ae95660b3a,3,Elephant putting its trunk on another elephant's back,5,1,1,2,1,0,1,0,1,hit,hit,hit,,,,,0.2695,0.258,66.58,66.58,66.58,0.0,0.0
+16ae95660b3a,4,Elephant crushed by another elephant's trunk,5,1,1,2,1,0,1,0,1,hit,hit,hit,,,,,0.2643,0.2639,22.89,22.89,22.89,0.0,0.0
+16ae95660b3a,5,play with the other one using nose,4,1,1,3,1,0,1,0,1,hit,hit,hit,,,,,0.2357,0.2357,66.6,66.6,66.6,0.0,0.0
+16ae95660b3a,7,elephant moving behind and putting its trunk on others,3,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,0.2774,0.2774,66.59,66.59,66.59,0.0,0.0
+16ae95660b3a,8,elephant moving ahead,2,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,0.275,0.275,22.88,22.88,22.88,0.0,0.0
+16ae95660b3a,9,The elephant using its nose to press against the back of the other elephant.,5,1,1,2,1,3,1,0,1,hit,hit,hit,,,,,0.2944,0.2841,66.59,66.62,66.59,0.0,-0.030000000000001137
+16ae95660b3a,10,The elephant with its trunk touching the back of the other elephant.,4,1,1,3,1,3,1,0,1,hit,hit,hit,,,,,0.2911,0.2908,66.61,66.62,66.61,0.0,-0.010000000000005116
+16ae95660b3a,11,The elephant pressing its nose against the other elephant's back.,5,1,1,3,1,3,1,0,1,hit,hit,hit,,,,,0.2779,0.2696,66.6,73.44,66.6,0.0,-6.840000000000003
+16ae95660b3a,12,The elephant leaning forward and touching its trunk to the back of the other elephant.,5,1,1,3,1,3,1,0,1,hit,hit,hit,,,,,0.2896,0.2805,66.61,73.43,66.61,0.0,-6.820000000000007
+16ae95660b3a,13,The elephant using its trunk to nudge the back of the other elephant.,5,1,1,2,1,0,1,0,1,hit,hit,hit,,,,,0.2787,0.2664,66.59,66.59,66.59,0.0,0.0
+16ae95660b3a,14,The elephant being pressed on its back by the other elephant's trunk.,5,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,0.2785,0.2785,22.87,22.87,22.87,0.0,0.0
+16ae95660b3a,15,The elephant with its back pressed down by the other elephant's nose.,5,1,1,2,1,2,1,0,1,hit,hit,hit,,,,,0.3004,0.3,22.87,22.86,22.87,0.0,0.010000000000001563
+16ae95660b3a,16,The elephant having its back held down by the other elephant's trunk.,4,1,1,3,1,3,1,0,1,hit,hit,hit,,,,,0.2808,0.2808,22.88,22.87,22.88,0.0,0.00999999999999801
+16ae95660b3a,17,The elephant being nudged on its back by the other elephant's trunk.,5,1,1,4,1,4,1,0,1,hit,hit,hit,,,,,0.2761,0.276,22.88,22.86,22.88,0.0,0.019999999999999574
+16ae95660b3a,18,The elephant being pressed against its back by the other elephant's nose.,5,1,1,3,1,0,1,0,1,hit,hit,hit,,,,,0.2793,0.279,22.87,22.87,22.87,0.0,0.0
+16ae95660b3a,19,the elephant that goes in front,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,22.88,22.88,22.88,0.0,0.0
+329909730c21,0,Airplane moving forward,4,1,1,0,1,3,0,1,1,hit,similar_object,hit,,,,,0.2739,0.268,50.14,7.93,72.03,21.89,64.1
+329909730c21,1,Airplane moving from right to left,4,1,1,2,0,1,0,1,0,similar_object,similar_object,similar_object,1,0,0,0.2781,0.284,0.2781,40.53,5.78,5.78,-34.75,0.0
+329909730c21,2,Airplane moving from left to right,4,0,,,,0,,1,,absent_f0,absent_f0,absent_f0,,,,,,,2.18,2.18,1.94,-0.2400000000000002,-0.2400000000000002
+329909730c21,3,aircraft moving leftward,5,1,1,2,0,1,0,4,0,similar_object,similar_object,similar_object,1,0,0,0.2659,0.2769,0.2659,40.53,5.77,40.54,0.00999999999999801,34.769999999999996
+329909730c21,4,Aircraft moving rightward,5,0,,,,1,,1,,absent_f0,absent_f0,absent_f0,,,,,,,2.18,1.94,1.94,-0.2400000000000002,0.0
+329909730c21,5,airplane moving to left,4,1,1,2,0,0,0,1,0,similar_object,similar_object,similar_object,1,0,0,0.2818,0.2865,0.2818,40.53,40.53,5.79,-34.74,-34.74
+329909730c21,6,airplane moving to right in front,4,0,,,,1,,1,,absent_f0,absent_f0,absent_f0,,,,,,,2.18,1.94,1.94,-0.2400000000000002,0.0
+329909730c21,7,move forward towards us,4,1,1,0,1,0,1,1,1,hit,hit,hit,,,,,0.2155,0.2101,50.16,50.16,72.01,21.85000000000001,21.85000000000001
+329909730c21,8,move to the left,3,1,1,2,0,0,0,1,0,similar_object,similar_object,similar_object,1,0,0,0.2065,0.2218,0.2065,40.53,40.53,5.72,-34.81,-34.81
+329909730c21,9,move to the right,2,0,,,,0,,1,,absent_f0,absent_f0,absent_f0,,,,,,,2.18,2.18,1.93,-0.2500000000000002,-0.2500000000000002
+329909730c21,10,The aircraft moving towards us.,4,1,1,0,1,3,0,1,1,hit,similar_object,hit,,,,,0.2769,0.2724,50.15,7.93,72.01,21.860000000000007,64.08000000000001
+329909730c21,11,The plane coming towards us.,5,1,1,0,1,2,0,1,1,hit,similar_object,hit,,,,,0.2661,0.2589,50.15,7.93,72.03,21.880000000000003,64.1
+329909730c21,12,The airplane advancing in our direction.,4,1,1,0,1,0,1,1,1,hit,hit,hit,,,,,0.2612,0.2539,50.14,50.14,71.52,21.379999999999995,21.379999999999995
+329909730c21,13,The aircraft approaching us.,3,1,1,0,1,0,1,1,1,hit,hit,hit,,,,,0.27,0.2613,50.14,50.14,72.03,21.89,21.89
+329909730c21,14,The plane facing our direction and moving.,4,1,1,0,1,3,0,1,1,hit,similar_object,hit,,,,,0.2552,0.2481,50.15,7.93,72.04,21.890000000000008,64.11000000000001
+329909730c21,15,The aircraft moving to the left.,4,1,1,2,0,0,0,3,0,similar_object,similar_object,similar_object,1,0,0,0.2754,0.2955,0.2754,40.53,40.53,40.56,0.030000000000001137,0.030000000000001137
+329909730c21,16,The plane going left.,3,1,1,2,0,0,0,1,0,similar_object,similar_object,similar_object,1,0,0,0.2515,0.2801,0.2515,40.53,40.53,4.52,-36.010000000000005,-36.010000000000005
+329909730c21,17,The airplane in motion to the left.,4,1,1,2,0,2,1,1,0,similar_object,hit,similar_object,1,0,0,0.2564,0.2749,0.2564,40.53,82.6,5.79,-34.74,-76.80999999999999
+329909730c21,18,The aircraft heading left.,3,1,1,2,0,0,0,1,0,similar_object,similar_object,similar_object,1,0,0,0.2607,0.2793,0.2607,40.53,40.53,5.78,-34.75,-34.75
+329909730c21,19,The plane in the process of moving left.,4,1,1,2,0,1,0,1,0,similar_object,similar_object,similar_object,1,0,0,0.2614,0.2881,0.2614,40.53,5.78,5.78,-34.75,0.0
+329909730c21,20,The aircraft moving to the right.,4,0,,,,0,,3,,absent_f0,absent_f0,absent_f0,,,,,,,2.18,2.18,2.22,0.040000000000000036,0.040000000000000036
+329909730c21,21,The plane going right.,4,0,,,,0,,1,,absent_f0,absent_f0,absent_f0,,,,,,,2.18,2.18,1.9,-0.28000000000000025,-0.28000000000000025
+329909730c21,22,The airplane in motion to the right.,4,0,,,,2,,1,,absent_f0,absent_f0,absent_f0,,,,,,,2.18,0.76,1.91,-0.27000000000000024,1.15
+329909730c21,23,The aircraft heading right.,4,0,,,,0,,1,,absent_f0,absent_f0,absent_f0,,,,,,,2.18,2.18,1.94,-0.2400000000000002,-0.2400000000000002
+329909730c21,24,The plane in the process of moving right.,4,0,,,,1,,1,,absent_f0,absent_f0,absent_f0,,,,,,,2.18,1.94,1.94,-0.2400000000000002,0.0
+3ab5432a1927,0,Bear chasing another bear around by walking in circle,5,1,1,0,1,3,0,1,0,hit,other,other,0,0,0,0.2719,0.2889,0.2719,80.7,27.25,57.1,-23.6,29.85
+3ab5432a1927,1,Bear being chased and walking backward,5,1,1,1,0,2,0,2,0,similar_object,other,other,0,0,0,0.2565,0.2802,0.2565,3.59,12.35,12.35,8.76,0.0
+3ab5432a1927,3,bear fight then sit,5,1,1,1,0,0,0,0,0,other,other,other,0,0,0,0.2561,0.2802,0.2561,57.02,57.02,57.02,0.0,0.0
+3ab5432a1927,8,The bear moving in reverse.,5,1,1,1,0,2,0,2,0,similar_object,other,other,0,0,0,0.2447,0.2647,0.2447,3.59,12.32,12.32,8.73,0.0
+3ab5432a1927,9,The bear retreating while walking.,4,1,1,1,0,3,0,0,0,similar_object,other,similar_object,1,0,0,0.2527,0.2676,0.2527,3.59,12.42,3.59,0.0,-8.83
+3ab5432a1927,10,The backward-walking bear.,5,1,1,1,0,1,1,3,0,similar_object,hit,other,0,0,0,0.272,0.2806,0.272,3.59,71.87,12.35,8.76,-59.52
+3ab5432a1927,11,The bear backward-moving on foot.,5,1,1,1,0,2,1,3,0,similar_object,hit,other,0,0,0,0.2619,0.2805,0.2619,3.59,78.8,12.43,8.84,-66.37
+3dde46eaaf53,0,The monkey sitting crouched at the center of the hole.,5,1,1,3,0,3,1,1,1,other,hit,hit,,,,,0.2515,0.2463,0.0,63.99,67.55,67.55,3.559999999999995
+3dde46eaaf53,1,Monkey running out of a hole to the left then right,5,1,0,,0,1,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.261,,3.88,7.2,3.88,0.0,-3.3200000000000003
+3dde46eaaf53,3,monkey walking in and out of the gate,5,1,0,,0,2,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2259,,3.89,1.91,3.89,0.0,1.9800000000000002
+3dde46eaaf53,4,come out from one door walk to the left door and back,5,1,0,,0,4,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2339,,6.98,1.94,7.31,0.3299999999999992,5.369999999999999
+3dde46eaaf53,6,Monkey jogging out of a hole to the left-side then right-side,5,1,0,,0,1,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2603,,3.88,6.8,3.88,0.0,-2.92
+3dde46eaaf53,7,monkey moving in and out of the gate,5,1,0,,0,4,0,3,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2211,,3.89,1.93,0.0,-3.89,-1.93
+3dde46eaaf53,8,come out from one door move to the left-side door and back,5,1,0,,0,4,0,4,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.243,,6.78,4.96,4.96,-1.8200000000000003,0.0
+3dde46eaaf53,9,The monkey that comes out of the cave and then goes back in.,5,1,0,,0,3,0,4,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2504,,2.16,6.56,19.62,17.46,13.060000000000002
+3dde46eaaf53,10,The monkey going in and out of the hole.,5,1,0,,0,4,0,4,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.225,,3.88,7.1,7.1,3.2199999999999998,0.0
+3dde46eaaf53,11,The monkey exiting and re-entering the cave.,5,1,0,,0,3,0,3,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2911,,3.89,0.81,0.81,-3.08,0.0
+3dde46eaaf53,12,The monkey emerging from the hole and returning inside.,5,1,0,,0,1,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2488,,3.89,6.81,6.81,2.9199999999999995,0.0
+3dde46eaaf53,13,The monkey coming out of the cave and then going back inside.,5,1,0,,0,2,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2334,,1.95,6.76,3.89,1.9400000000000002,-2.8699999999999997
+3dde46eaaf53,14,The monkey that runs from the middle to the left and then runs back again.,5,1,0,,0,2,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2487,,3.88,1.71,3.88,0.0,2.17
+3dde46eaaf53,15,The monkey running to the left and then returning to the middle.,5,1,0,,0,4,0,4,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2817,,3.87,7.65,7.65,3.7800000000000002,0.0
+3dde46eaaf53,16,The monkey squatting in the middle of the cave entrance.,5,1,1,2,0,3,0,0,0,other,other,other,0,0,0,0.2357,0.2431,0.2357,0.0,11.24,0.0,0.0,-11.24
+3dde46eaaf53,17,The monkey in a crouched position at the entrance of the cave.,5,1,1,3,0,4,0,4,0,other,other,other,0,0,0,0.2417,0.269,0.2417,0.0,12.79,12.79,12.79,0.0
+3dde46eaaf53,18,The monkey sitting down in the middle,5,1,1,1,0,3,0,3,0,other,other,other,0,0,0,0.243,0.2796,0.243,0.0,0.0,0.0,0.0,0.0
+3dde46eaaf53,19,The monkey crouching near the center of the cave's entrance.,5,1,1,3,0,2,0,2,0,other,other,other,0,0,0,0.2352,0.2417,0.2352,0.0,11.52,11.52,11.52,0.0
+3dde46eaaf53,25,"In the middle of the video, it stands alone at the entrance of a cave",5,1,0,,0,3,0,2,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2947,,11.34,12.84,8.99,-2.3499999999999996,-3.8499999999999996
+3dde46eaaf53,26,who traveled the longest distance,3,1,0,,0,2,0,2,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2276,,1.09,7.61,7.61,6.5200000000000005,0.0
+410dae675d9a,0,Girl riding bicycle in a circle,4,1,1,1,0,0,0,2,1,similar_object,similar_object,hit,,,,,0.309,0.2438,22.16,22.16,52.55,30.389999999999997,30.389999999999997
+410dae675d9a,2,Stationary bicycle,2,1,1,1,0,1,1,0,0,similar_object,hit,similar_object,1,0,0,0.2668,0.2825,0.2668,1.14,66.82,1.14,0.0,-65.67999999999999
+410dae675d9a,3,Bicycle moving in a circle,2,1,1,1,0,0,0,0,0,similar_object,similar_object,similar_object,1,0,0,0.261,0.2661,0.261,2.35,2.35,2.35,0.0,0.0
+410dae675d9a,4,parking black car,2,1,1,1,0,0,0,0,0,similar_object,similar_object,similar_object,1,0,0,0.2258,0.2514,0.2258,0.0,0.0,0.0,0.0,0.0
+410dae675d9a,5,parking white car,2,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,0.2553,0.2553,90.11,90.11,90.11,0.0,0.0
+410dae675d9a,6,still bike,2,1,1,1,0,1,1,0,0,similar_object,hit,similar_object,1,0,0,0.2556,0.2702,0.2556,1.14,66.75,1.14,0.0,-65.61
+410dae675d9a,7,moving bike,2,1,1,0,1,1,0,0,1,hit,similar_object,hit,,,,,0.2782,0.2782,68.35,2.36,68.35,0.0,65.99
+410dae675d9a,8,moving bicycle,2,1,1,0,1,1,0,0,1,hit,similar_object,hit,,,,,0.2782,0.2782,68.34,2.36,68.34,0.0,65.98
+410dae675d9a,9,little girl riding a bicycle,4,1,1,1,0,0,0,2,1,similar_object,similar_object,hit,,,,,0.3122,0.2466,22.16,22.16,52.55,30.389999999999997,30.389999999999997
+410dae675d9a,10,parked bicycle,2,1,1,1,0,1,1,0,0,similar_object,hit,similar_object,1,0,0,0.2607,0.266,0.2607,1.14,66.76,1.14,0.0,-65.62
+410dae675d9a,11,Bicycle shifting in a circle,3,1,1,0,1,1,0,1,0,hit,similar_object,similar_object,1,0,0,0.2631,0.2759,0.2631,68.31,2.35,2.35,-65.96000000000001,0.0
+410dae675d9a,12,The individual who is cycling.,2,1,1,0,1,0,1,1,1,hit,hit,hit,,,,,0.278,0.2314,78.85,78.85,52.55,-26.299999999999997,-26.299999999999997
+410dae675d9a,13,The person on a bike.,4,1,1,1,1,3,0,0,1,hit,similar_object,hit,,,,,0.2854,0.2325,52.55,1.99,52.55,0.0,50.559999999999995
+410dae675d9a,14,The cyclist.,3,1,1,0,1,2,0,2,0,hit,similar_object,similar_object,1,0,0,0.1928,0.2404,0.1928,78.87,1.99,1.99,-76.88000000000001,0.0
+410dae675d9a,15,The one riding a bicycle.,4,1,1,2,1,3,0,0,1,hit,similar_object,hit,,,,,0.2765,0.2312,52.55,1.99,52.55,0.0,50.559999999999995
+410dae675d9a,16,The white car parked without moving.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,90.03,90.03,90.03,0.0,0.0
+410dae675d9a,17,The motionless white car parked.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,90.04,90.04,90.04,0.0,0.0
+410dae675d9a,18,The white car that is stationary.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,90.03,90.03,90.03,0.0,0.0
+410dae675d9a,19,The unmoving white car parked.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,90.04,90.04,90.04,0.0,0.0
+410dae675d9a,20,The white automobile not in motion.,2,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,0.242,0.242,90.03,90.03,90.03,0.0,0.0
+410dae675d9a,21,The black car parked without moving.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,92.3,92.3,92.3,0.0,0.0
+410dae675d9a,22,The motionless black car parked.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,92.31,92.31,92.31,0.0,0.0
+410dae675d9a,23,The black car that is stationary.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,92.36,92.36,92.36,0.0,0.0
+410dae675d9a,24,The unmoving black car parked.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,92.3,92.3,92.3,0.0,0.0
+410dae675d9a,25,The black automobile not in motion.,2,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,0.2296,0.2296,92.36,92.36,92.36,0.0,0.0
+410dae675d9a,26,The stationary bicycle parked without moving.,2,1,1,1,0,1,1,0,0,similar_object,hit,similar_object,1,0,0,0.2409,0.25,0.2409,1.14,66.85,1.14,0.0,-65.71
+410dae675d9a,27,The unmoving bicycle parked.,2,1,1,1,0,1,1,1,1,similar_object,hit,hit,,,,,0.2507,0.2507,1.14,66.85,66.85,65.71,0.0
+410dae675d9a,28,The bike that is not in motion.,3,1,1,1,0,1,1,2,0,similar_object,hit,other,0,0,0,0.2702,0.2795,0.2702,1.15,66.53,50.17,49.02,-16.36
+410dae675d9a,29,The bicycle at rest and not moving.,2,1,1,1,0,1,1,1,1,similar_object,hit,hit,,,,,0.2421,0.2421,1.14,66.65,66.65,65.51,0.0
+410dae675d9a,30,The parked bicycle that has not been ridden.,2,1,1,1,0,1,1,1,1,similar_object,hit,hit,,,,,0.259,0.259,1.14,66.8,66.8,65.66,0.0
+410dae675d9a,31,The bicycle in motion.,2,1,1,1,0,0,0,1,1,similar_object,similar_object,hit,,,,,0.2621,0.2621,2.35,2.35,68.35,66.0,66.0
+410dae675d9a,32,The moving bicycle.,2,1,1,0,1,1,0,0,1,hit,similar_object,hit,,,,,0.2706,0.2706,68.36,2.35,68.36,0.0,66.01
+410dae675d9a,33,The bike that is currently moving.,2,1,1,0,1,1,0,0,1,hit,similar_object,hit,,,,,0.2734,0.2734,68.31,2.35,68.31,0.0,65.96000000000001
+410dae675d9a,34,The bicycle that is on the move.,2,1,1,0,1,1,0,0,1,hit,similar_object,hit,,,,,0.2619,0.2619,68.36,2.35,68.36,0.0,66.01
+410dae675d9a,35,The mobile bicycle.,2,1,1,0,1,1,0,1,0,hit,similar_object,similar_object,1,0,0,0.2723,0.2745,0.2723,68.36,2.36,2.36,-66.0,0.0
+410dae675d9a,36,The girl is circling around what?,4,1,1,2,0,0,0,0,0,similar_object,similar_object,similar_object,1,0,0,0.2132,0.2348,0.2132,1.35,1.35,1.35,0.0,0.0
+4fddcf8823f0,5,The bird that arrived at the bottom of the cage first.,5,1,1,1,0,4,1,0,0,other,hit,other,0,0,0,0.2458,0.2957,0.2458,1.24,13.23,1.24,0.0,-11.99
+4fddcf8823f0,6,The bird that reached the cage bottom before others.,5,1,1,1,0,2,1,0,0,other,hit,other,0,0,0,0.2623,0.2923,0.2623,1.24,13.21,1.24,0.0,-11.97
+4fddcf8823f0,7,The bird that got to the bottom of the cage earliest.,5,1,1,1,0,3,0,0,0,other,similar_object,other,0,0,0,0.2373,0.2896,0.2373,1.24,19.53,1.24,0.0,-18.290000000000003
+4fddcf8823f0,8,The bird that was the first to reach the cage floor.,5,1,1,0,1,2,1,1,0,hit,hit,other,0,0,0,0.2556,0.295,0.2556,18.6,13.3,1.24,-17.360000000000003,-12.06
+4fddcf8823f0,9,The bird that reached the bottom of the cage initially.,5,1,1,1,0,2,1,0,0,other,hit,other,0,0,0,0.2628,0.3104,0.2628,1.24,13.25,1.24,0.0,-12.01
+4fddcf8823f0,10,The bird that has not reached the bottom of the cage yet.,5,1,0,,0,3,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2879,,3.66,1.2,0.79,-2.87,-0.4099999999999999
+4fddcf8823f0,11,The bird that hasn't touched the cage floor so far.,5,1,1,1,0,2,0,4,0,similar_object,similar_object,similar_object,1,0,0,0.2146,0.2493,0.2146,3.62,0.97,6.34,2.7199999999999998,5.37
+4fddcf8823f0,12,The second bird to reach the bottom of the cage.,5,1,1,4,0,3,1,0,0,other,hit,other,0,0,0,0.246,0.296,0.246,1.23,35.61,1.23,0.0,-34.38
+4fddcf8823f0,13,The bird that arrived at the cage bottom in second place.,5,1,1,4,0,0,0,1,0,similar_object,similar_object,other,0,0,0,0.2442,0.2842,0.2442,37.22,37.22,1.23,-35.99,-35.99
+4fddcf8823f0,14,The second bird that touched the cage floor.,5,1,1,1,0,1,1,0,0,similar_object,hit,similar_object,1,0,0,0.2378,0.2457,0.2378,37.05,25.4,37.05,0.0,11.649999999999999
+7ca2e40c5af3,0,Monkey moving around and jumping to the left,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,73.58,73.58,73.58,0.0,0.0
+7ca2e40c5af3,1,Turtle being pushed around,1,1,0,,0,0,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,,,2.4,2.4,2.4,0.0,0.0
+7ca2e40c5af3,2,Monkey jumping to the right,1,0,,,,0,,0,,absent_f0,absent_f0,absent_f0,,,,,,,0.92,0.92,0.92,0.0,0.0
+7ca2e40c5af3,3,turtle is moved by monkeys on stone,4,1,0,,0,1,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2606,,2.41,3.19,3.19,0.7799999999999998,0.0
+7ca2e40c5af3,4,monkey crawling around on rocks then jumping to the left,2,1,1,0,1,1,0,1,0,hit,other,other,0,0,0,0.2385,0.2462,0.2385,73.57,6.91,6.91,-66.66,0.0
+7ca2e40c5af3,5,monkey jumping right to the rock then crawling around,2,0,,,,1,,1,,absent_f0,absent_f0,absent_f0,,,,,,,0.93,5.55,5.55,4.62,0.0
+7ca2e40c5af3,6,the monkey who was the first to move the turtle,2,1,1,0,1,0,1,1,1,hit,hit,hit,,,,,0.2337,0.2334,73.53,73.53,73.62,0.09000000000000341,0.09000000000000341
+7ca2e40c5af3,7,monkey jumping from left,1,0,,,,0,,0,,absent_f0,absent_f0,absent_f0,,,,,,,0.92,0.92,0.92,0.0,0.0
+7ca2e40c5af3,8,monkey jumping to left,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,73.53,73.53,73.53,0.0,0.0
+7ca2e40c5af3,9,turtle played by monkey,4,1,0,,0,2,0,2,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2659,,2.45,3.44,3.44,0.9899999999999998,0.0
+7ca2e40c5af3,10,monkey holding the turtle then jump away,4,1,1,0,1,2,0,2,0,hit,other,other,0,0,0,0.2552,0.2788,0.2552,73.53,13.85,13.85,-59.68,0.0
+7ca2e40c5af3,11,turtle turned upside down,1,1,0,,0,0,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,,,2.46,2.46,2.46,0.0,0.0
+7ca2e40c5af3,12,The monkey that left first.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,73.52,73.52,73.52,0.0,0.0
+7ca2e40c5af3,13,The first monkey to leave.,1,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,,,73.57,73.57,73.57,0.0,0.0
+7ca2e40c5af3,14, The turtle played with by the monkeys.,3,1,0,,0,2,0,2,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2263,,2.42,2.35,2.35,-0.06999999999999984,0.0
+7ca2e40c5af3,15,The monkey-handled turtle.,1,1,0,,0,0,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,,,2.5,2.5,2.5,0.0,0.0
+7ca2e40c5af3,16,The monkey that jumped onto the rock from the left side.,2,0,,,,1,,1,,absent_f0,absent_f0,absent_f0,,,,,,,0.92,5.54,5.54,4.62,0.0
+7ca2e40c5af3,17,The monkey leaping onto the rock from the left.,2,0,,,,1,,1,,absent_f0,absent_f0,absent_f0,,,,,,,0.93,5.4,5.4,4.470000000000001,0.0
+7ca2e40c5af3,18,The monkey that made a jump to the rock from the left.,2,0,,,,1,,1,,absent_f0,absent_f0,absent_f0,,,,,,,0.92,6.7,6.7,5.78,0.0
+7ca2e40c5af3,19,The monkey jumping onto the rock on the left.,2,0,,,,1,,1,,absent_f0,absent_f0,absent_f0,,,,,,,0.92,5.45,5.45,4.53,0.0
+7ca2e40c5af3,20,The object being teased by the monkeys.,2,1,0,,0,0,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2287,,3.67,3.67,3.67,0.0,0.0
+945c47a50243,0,Man walking backwards and taking a hoop from a bear,5,1,1,4,0,1,0,1,0,other,similar_object,similar_object,1,0,0,0.2186,0.2393,0.2186,0.0,0.0,0.0,0.0,0.0
+945c47a50243,2,Man clapping his hands,5,1,1,1,0,0,0,0,0,similar_object,similar_object,similar_object,1,0,0,0.2268,0.253,0.2268,5.12,5.12,5.12,0.0,0.0
+945c47a50243,3,The bear on the left turning the hula hoop with its head,5,1,1,3,0,1,0,1,0,other,similar_object,similar_object,1,0,0,0.2268,0.2504,0.2268,0.0,0.0,0.0,0.0,0.0
+945c47a50243,4,The bear on the right hula hooping with its neck,5,1,1,0,1,3,0,3,0,hit,other,other,0,0,0,0.2516,0.2682,0.2516,86.06,67.67,67.67,-18.39,0.0
+945c47a50243,5,"A bear standing upright, twirling a hula hoop with its neck.",5,1,1,1,0,1,1,1,1,other,hit,hit,,,,,0.266,0.266,10.09,85.91,85.91,75.82,0.0
+945c47a50243,6,An upright bear skillfully rotating a hula hoop around its neck,5,1,1,1,0,1,1,1,1,other,hit,hit,,,,,0.2531,0.2531,10.09,85.97,85.97,75.88,0.0
+945c47a50243,7,A standing bear effortlessly spinning a hula hoop using its neck.,5,1,1,1,0,1,1,1,1,other,hit,hit,,,,,0.2506,0.2506,10.09,85.91,85.91,75.82,0.0
+945c47a50243,8,"A bear on its hind legs, gracefully maneuvering a hula hoop with its neck",5,1,1,1,0,4,0,1,1,other,other,hit,,,,,0.2688,0.2688,10.09,0.0,85.99,75.89999999999999,85.99
+945c47a50243,9,A bear standing tall and amusingly swinging a hula hoop with its neck,5,1,1,1,0,1,1,1,1,other,hit,hit,,,,,0.2588,0.2588,10.09,85.91,85.91,75.82,0.0
+945c47a50243,10,A towering bear showcasing its agility by spinning a hula hoop with its neck,5,1,1,1,0,1,1,1,1,other,hit,hit,,,,,0.2577,0.2577,10.08,85.98,85.98,75.9,0.0
+945c47a50243,11,"A bear in an upright position, skillfully manipulating a hula hoop with its neck.",5,1,1,3,0,3,1,3,1,other,hit,hit,,,,,0.2633,0.2633,10.09,85.98,85.98,75.89,0.0
+945c47a50243,12,A man clapping and stepping back while next to the hula-hooping bear.,5,1,1,1,0,4,0,2,0,other,similar_object,similar_object,1,0,0,0.2274,0.2526,0.2274,3.11,0.0,5.11,2.0000000000000004,5.11
+945c47a50243,13,A man applauding and moving backwards alongside the bear twirling the hula hoop.,5,1,1,2,0,4,0,1,0,other,similar_object,similar_object,1,0,0,0.2137,0.2421,0.2137,3.11,0.0,5.18,2.07,5.18
+945c47a50243,14,A man clapping his hands and gracefully stepping away from the hula-hooping bear,5,1,1,4,0,1,0,1,0,other,similar_object,similar_object,1,0,0,0.2312,0.2615,0.2312,3.11,5.13,5.13,2.02,0.0
+945c47a50243,15,A man applauding and gracefully retreating while standing next to the hula-hooping bear,5,1,1,3,0,4,0,0,0,similar_object,similar_object,similar_object,1,0,0,0.2227,0.2489,0.2227,5.18,0.0,5.18,0.0,5.18
+945c47a50243,16,A bear using its mouth to spin a small hula hoop.,5,1,1,4,0,1,0,1,0,other,similar_object,similar_object,1,0,0,0.2158,0.2389,0.2158,0.0,0.0,0.0,0.0,0.0
+945c47a50243,17,The bear twirling a small hula hoop with its mouth.,5,1,0,,0,4,0,4,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2688,,0.0,0.0,0.0,0.0,0.0
+945c47a50243,18,The bear skillfully rotating a tiny hula hoop using only its mouth.,5,1,1,3,0,1,0,1,0,other,similar_object,similar_object,1,0,0,0.2205,0.2464,0.2205,0.0,0.0,0.0,0.0,0.0
+945c47a50243,19,"With its mouth, the bear effortlessly spinning a miniature hula hoop.",5,1,1,2,0,1,0,1,0,other,similar_object,similar_object,1,0,0,0.2243,0.2477,0.2243,0.0,0.0,0.0,0.0,0.0
+945c47a50243,20,"The trainer on the left, guiding the bear to perform the hula hoop trick using its mouth.",5,1,1,2,0,1,0,3,0,similar_object,similar_object,similar_object,1,0,0,0.2021,0.2298,0.2021,0.0,11.38,0.0,0.0,-11.38
+945c47a50243,21,"The trainer on the left, directing the bear's hula hoop performance with its mouth.",5,1,1,3,0,4,0,4,0,similar_object,similar_object,similar_object,1,0,0,0.1958,0.2223,0.1958,0.0,0.0,0.0,0.0,0.0
+945c47a50243,30,the bear playing something with its neck,5,1,1,1,0,0,0,1,1,similar_object,similar_object,hit,,,,,0.2505,0.2505,0.0,0.0,86.09,86.09,86.09
+b4d6cf8c922c,0,Tiger walking from right to left,4,1,1,2,0,2,1,3,0,other,hit,other,0,0,0,0.2513,0.2844,0.2513,2.5,64.14,7.56,5.06,-56.58
+b4d6cf8c922c,1,tiger walking from distance and lying down on the ground to drink water,5,0,,,,4,,4,,absent_f0,absent_f0,absent_f0,,,,,,,2.28,2.49,2.49,0.2100000000000004,0.0
+b4d6cf8c922c,2,The tiger that moved from the right to the left.,4,1,1,2,0,3,0,3,0,other,other,other,0,0,0,0.2527,0.2954,0.2527,2.49,7.52,7.52,5.029999999999999,0.0
+b4d6cf8c922c,3,The tiger that shifted positions from the right to the left.,4,1,1,3,0,0,0,1,0,other,other,other,0,0,0,0.2364,0.2705,0.2364,2.5,2.5,7.56,5.06,5.06
+b4d6cf8c922c,4,The tiger that transitioned from the right to the left.,5,1,1,2,0,3,0,3,0,other,other,other,0,0,0,0.2426,0.2888,0.2426,2.5,7.52,7.52,5.02,0.0
+b4d6cf8c922c,5,The tiger that traveled from the right to the left.,4,1,1,1,0,3,0,3,0,other,other,other,0,0,0,0.2512,0.3039,0.2512,2.49,7.54,7.54,5.05,0.0
+b4d6cf8c922c,6,The tiger that crossed from the right to the left.,4,1,1,1,0,3,0,3,0,other,other,other,0,0,0,0.2386,0.2934,0.2386,2.49,7.5,7.5,5.01,0.0
+b4d6cf8c922c,12,The tiger that came to drink water last.,5,0,,,,1,,4,,absent_f0,absent_f0,absent_f0,,,,,,,2.27,1.61,2.51,0.23999999999999977,0.8999999999999997
+b4d6cf8c922c,13,The last tiger that approached for drinking water.,5,0,,,,1,,0,,absent_f0,absent_f0,absent_f0,,,,,,,2.27,1.62,2.27,0.0,0.6499999999999999
+b4d6cf8c922c,14,The final tiger to walk over and start drinking water.,5,0,,,,1,,1,,absent_f0,absent_f0,absent_f0,,,,,,,2.28,1.6,1.6,-0.6799999999999997,0.0
+b4d6cf8c922c,15,The tiger that arrived last to drink water.,5,0,,,,2,,4,,absent_f0,absent_f0,absent_f0,,,,,,,2.28,1.61,2.5,0.2200000000000002,0.8899999999999999
+b4d6cf8c922c,16,The latest tiger to come and drink water.,5,0,,,,1,,4,,absent_f0,absent_f0,absent_f0,,,,,,,2.29,1.61,2.5,0.20999999999999996,0.8899999999999999
+d56a6ec78cfa,1,front elephant walking to backwards,3,1,1,0,1,0,1,2,1,hit,hit,hit,,,,,0.3062,0.3034,78.33,78.33,78.83,0.5,0.5
+d56a6ec78cfa,2,elephant in the distance moving to left,4,1,1,1,0,1,1,2,0,similar_object,hit,similar_object,1,0,0,0.27,0.2747,0.27,4.81,74.08,4.64,-0.16999999999999993,-69.44
+d56a6ec78cfa,3,turn and walk away from us,5,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,0.2369,0.2369,78.32,78.32,78.32,0.0,0.0
+d56a6ec78cfa,4,front elephant moving to backwards,3,1,1,0,1,1,0,2,1,hit,similar_object,hit,,,,,0.3073,0.3045,78.33,3.48,78.87,0.5400000000000063,75.39
+d56a6ec78cfa,5,turn and move away from us,3,1,1,0,1,0,1,0,1,hit,hit,hit,,,,,0.2265,0.2265,78.34,78.34,78.34,0.0,0.0
+d56a6ec78cfa,6,The elephant facing us and then turning around to walk away.,3,1,1,0,1,0,1,2,1,hit,hit,hit,,,,,0.2858,0.2838,78.36,78.36,78.91,0.5499999999999972,0.5499999999999972
+d56a6ec78cfa,7,The large elephant that initially faced us but then walked backward.,2,1,1,0,1,1,0,1,0,hit,similar_object,similar_object,1,0,0,0.2721,0.2738,0.2721,78.32,3.48,3.48,-74.83999999999999,0.0
+d56a6ec78cfa,8,The elephant which was initially facing us but turned and moved away.,3,1,1,0,1,1,0,1,0,hit,similar_object,similar_object,1,0,0,0.2656,0.2665,0.2656,78.33,3.48,3.48,-74.85,0.0
+d56a6ec78cfa,9,The elephant that turned its back to us and walked away.,3,1,1,0,1,0,1,2,1,hit,hit,hit,,,,,0.2731,0.2727,78.35,78.35,79.02,0.6700000000000017,0.6700000000000017
+d56a6ec78cfa,10,"The big elephant that first faced us, then turned around and walked backward.",2,1,1,0,1,1,0,1,0,hit,similar_object,similar_object,1,0,0,0.2723,0.273,0.2723,78.36,3.52,3.52,-74.84,0.0
+d56a6ec78cfa,11,The elephant walking to the left.,3,1,1,1,0,0,0,2,0,similar_object,similar_object,similar_object,1,0,0,0.2832,0.2908,0.2832,4.81,4.81,4.6,-0.20999999999999996,-0.20999999999999996
+d56a6ec78cfa,12,The elephant moving towards the left.,3,1,1,1,0,1,1,2,0,similar_object,hit,similar_object,1,0,0,0.285,0.2917,0.285,4.8,74.08,4.57,-0.22999999999999954,-69.50999999999999
+d56a6ec78cfa,13,The big elephant going to the left.,3,1,1,2,0,0,0,1,0,similar_object,similar_object,similar_object,1,0,0,0.2674,0.273,0.2674,4.81,4.81,4.56,-0.25,-0.25
+d56a6ec78cfa,14,The elephant walking in the leftward direction.,3,1,1,1,0,1,1,0,0,similar_object,hit,similar_object,1,0,0,0.2878,0.2914,0.2878,4.81,74.08,4.81,0.0,-69.27
+d56a6ec78cfa,15,The elephant heading left.,3,1,1,1,0,0,0,2,0,similar_object,similar_object,similar_object,1,0,0,0.2722,0.2776,0.2722,4.8,4.8,4.55,-0.25,-0.25
+e339e02b5b3c,1,cow shaking head and looking us,5,1,1,2,1,1,0,2,1,hit,other,hit,,,,,0.2596,0.2596,83.1,6.63,83.1,0.0,76.47
+e339e02b5b3c,2,the cow eating without moving position,3,1,1,1,0,0,0,0,0,similar_object,similar_object,similar_object,1,0,0,0.2716,0.3019,0.2716,0.01,0.01,0.01,0.0,0.0
+e339e02b5b3c,5,standing still eating the grass without changing position,5,1,0,,0,1,0,3,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2011,,0.41,0.04,0.0,-0.41,-0.04
+e339e02b5b3c,10,The leading cow among the group.,4,1,0,,0,0,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2877,,0.0,0.0,0.0,0.0,0.0
+e339e02b5b3c,11,The cow taking the lead in the herd.,4,1,0,,0,0,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2583,,0.0,0.0,0.0,0.0,0.0
+e339e02b5b3c,12,who moved to the furthest,4,1,0,,0,0,0,2,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2248,,0.0,0.0,0.0,0.0,0.0
+e339e02b5b3c,13,the second cow from left at the end of the video,4,1,1,1,0,0,0,0,0,similar_object,similar_object,similar_object,1,0,0,0.2786,0.3054,0.2786,0.01,0.01,0.01,0.0,0.0
+ee6855dcefee,1,Rabbit moving around and eating leaves,5,1,1,1,0,2,0,1,1,similar_object,other,hit,,,,,0.265,0.265,6.22,2.34,85.86,79.64,83.52
+ee6855dcefee,2,rabbit eating and walking,2,1,1,1,0,1,1,1,1,similar_object,hit,hit,,,,,0.2688,0.2688,6.22,85.86,85.86,79.64,0.0
+ee6855dcefee,3,moving white rabbit,2,1,1,1,0,0,0,1,1,similar_object,similar_object,hit,,,,,0.284,0.284,6.22,6.22,85.85,79.63,79.63
+ee6855dcefee,4,standing still and eating white rabbit,2,1,1,0,1,1,0,0,1,hit,similar_object,hit,,,,,0.2681,0.2681,86.05,6.25,86.05,0.0,79.8
+ee6855dcefee,5,jump to the left then jump back,5,1,1,1,0,4,0,1,1,similar_object,similar_object,hit,,,,,0.2545,0.2545,6.22,6.22,85.86,79.64,79.64
+ee6855dcefee,6,The rabbit that changed its location.,2,1,1,1,0,0,0,1,1,similar_object,similar_object,hit,,,,,0.2876,0.2876,6.22,6.22,85.85,79.63,79.63
+ee6855dcefee,7,The rabbit that shifted its position.,2,1,1,1,0,0,0,1,1,similar_object,similar_object,hit,,,,,0.2736,0.2736,6.22,6.22,85.85,79.63,79.63
+ee6855dcefee,8,The rabbit that relocated itself.,2,1,1,1,0,0,0,1,1,similar_object,similar_object,hit,,,,,0.2528,0.2528,6.22,6.22,85.85,79.63,79.63
+ee6855dcefee,9,The rabbit that moved to a different spot.,4,1,1,2,0,0,0,2,1,similar_object,similar_object,hit,,,,,0.2665,0.2665,6.22,6.22,85.85,79.63,79.63
+ee6855dcefee,10,The rabbit that altered its position.,2,1,1,1,0,0,0,1,1,similar_object,similar_object,hit,,,,,0.2939,0.2939,6.22,6.22,85.85,79.63,79.63
+ee6855dcefee,11,The rabbit eating in the bottom-right corner.,2,1,0,,0,1,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2619,,0.0,0.0,0.0,0.0,0.0
+ee6855dcefee,12,The rabbit that is having food in the lower right corner.,3,1,0,,0,1,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.263,,0.0,0.0,0.0,0.0,0.0
+ee6855dcefee,13,The rabbit munching on food at the bottom-right corner.,4,1,0,,0,1,0,0,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2457,,0.0,0.0,0.0,0.0,0.0
+ee6855dcefee,14,The rabbit eating its meal at the lower right corner.,3,1,0,,0,1,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2631,,0.0,0.0,0.0,0.0,0.0
+ee6855dcefee,15,The rabbit enjoying its food in the right-bottom corner.,4,1,0,,0,1,0,1,0,target_not_in_pool,target_not_in_pool,target_not_in_pool,,,,,0.2685,,0.0,0.0,0.0,0.0,0.0
+ee6855dcefee,16,The white rabbit that hasn't moved from its position.,2,1,1,0,1,1,0,1,0,hit,similar_object,similar_object,1,0,0,0.2865,0.2925,0.2865,86.04,6.25,6.25,-79.79,0.0
+ee6855dcefee,17,The white rabbit staying in place without moving.,2,1,1,0,1,0,1,1,0,hit,hit,similar_object,1,0,0,0.2742,0.2789,0.2742,86.05,86.05,6.25,-79.8,-79.8
+ee6855dcefee,18,The stationary white rabbit.,2,1,1,0,1,1,0,0,1,hit,similar_object,hit,,,,,0.2737,0.2737,86.04,6.25,86.04,0.0,79.79
+ee6855dcefee,19,The unmoving white rabbit.,2,1,1,0,1,0,1,1,0,hit,hit,similar_object,1,0,0,0.2801,0.2847,0.2801,86.04,86.04,6.25,-79.79,-79.79
+ee6855dcefee,20,The rabbit with the most exercise.,3,1,1,1,0,0,0,1,1,similar_object,similar_object,hit,,,,,0.2767,0.2767,6.22,6.22,85.85,79.63,79.63

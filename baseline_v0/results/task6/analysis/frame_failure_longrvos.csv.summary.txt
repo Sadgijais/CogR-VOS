@@ -1,0 +1,72 @@
+command: tools/frame_failure_analysis.py --root /home/sadgi/data/LongRVOS-subset --run /home/sadgi/cogrvos/task6_longrvos/baseline_v0 --min-run 3 --out /home/sadgi/cogrvos/analysis/frame_failure_longrvos.csv --label Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark
+Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark
+
+A. Sentence lengths (ground truth only). Sentences 33: visible at frame 0 29, absent at frame 0 but visible later 4, never visible 0
+   annotated frames per video (median over sentences) 420; visible frames per sentence (median over sentences seen at least once) 235
+   sentences with only 1 or 2 visible frames: 0 of 33 (0.0%). Fixed rule: more than 10% -> use --min-run 2, else 3. Rule says: 3. This run uses --min-run 3.
+   NOTE prediction_file_missing:A0: 0
+   NOTE prediction_file_missing:A1: 0
+   NOTE prediction_file_missing:A3-10: 0
+   NOTE prediction_file_missing:A3-5: 0
+   NOTE prediction_file_missing:largest: 0
+
+B. Failure category of the first failure run, group visible_f0 (min run 3, window 10); similar = other object IoU >= 0.5 at the onset
+   arm         n  none  reid  init drift  prop similar  mean J&F
+   A0         29     3     3    21     0     2       2     30.67
+   A1         29     4     4    15     0     6       2     41.11
+   A3-5       29     3     1    19     0     6       2     38.14
+   A3-10      29     3     1    19     0     6       2     36.40
+   largest    29     3     5    18     0     3       1     29.36
+
+B. Failure category of the first failure run, group absent_f0 (min run 3, window 10); similar = other object IoU >= 0.5 at the onset
+   arm         n  none  reid  init drift  prop similar  mean J&F
+   A0          4     0     0     3     0     1       1     28.29
+   A1          4     0     0     4     0     0       0     13.52
+   A3-5        4     0     0     4     0     0       0     13.16
+   A3-10       4     0     0     4     0     0       0     13.16
+   largest     4     0     0     4     0     0       0      8.61
+   (never-visible sentences: 0; they cannot fail and are not in the tables)
+
+C. Propagation of the first failure run, group visible_f0 (median unless stated)
+   arm      failing onset pos onset frac  run len recovers %  failed after (mean)
+   A0            26       0.0       0.00    111.5       30.8                 0.89
+   A1            25       0.0       0.00     60.0       48.0                 0.79
+   A3-5          26       0.0       0.00     89.0       50.0                 0.75
+   A3-10         26       0.0       0.00     89.0       46.2                 0.75
+   largest       26       0.0       0.00     96.0       34.6                 0.95
+   later-onset failures only (reid, drift, propagation: the target was found first and then lost):
+   A0       n   5  median onset fraction 0.41  recovers 60.0%
+   A1       n  10  median onset fraction 0.28  recovers 60.0%
+   A3-5     n   7  median onset fraction 0.27  recovers 85.7%
+   A3-10    n   7  median onset fraction 0.27  recovers 85.7%
+   largest  n   8  median onset fraction 0.43  recovers 50.0%
+
+D. Occlusion / disappearance EVENTS (all groups, summed over sentences)
+   arm      absent runs reappearances  sentences with >=1  false-presence frames  missed-presence frames
+   A0                68            53                  19                   1561                    1288
+   A1                68            53                  19                   1191                    1072
+   A3-5              68            53                  19                   1394                     678
+   A3-10             68            53                  19                   1630                     589
+   largest           68            53                  19                    936                    1052
+
+E. Start box (box IoU >= 0.5 with the ground-truth box at frame 0) versus the later outcome, group visible_f0
+   arm       start    n no failure  initial  later  mean J&F
+   A0        right    8          3        1      4     70.61
+   A0        wrong   21          0       20      1     15.46
+   A1        right   13          4        1      8     69.94
+   A1        wrong   16          0       14      2     17.69
+   A3-5      right    9          3        1      5     72.37
+   A3-5      wrong   20          0       18      2     22.74
+   A3-10     right    9          3        1      5     72.55
+   A3-10     wrong   20          0       18      2     20.12
+   largest   right   12          3        2      7     58.20
+   largest   wrong   17          0       16      1      9.01
+
+F. Existing sentence-level labels (failure_analysis*.csv, unchanged), counted per arm; not merged with B
+   A0       grounding_failure 22, identity_drift 4, ok 5, poor_mask_quality 1, track_lost_no_distractor 1
+   A1       grounding_failure 18, identity_drift 6, ok 4, poor_mask_quality 3, track_lost_no_distractor 2
+   A3-5     grounding_failure 19, identity_drift 4, ok 4, poor_mask_quality 2, track_lost_no_distractor 4
+   A3-10    grounding_failure 19, identity_drift 4, ok 4, poor_mask_quality 2, track_lost_no_distractor 4
+   largest  grounding_failure 20, identity_drift 3, ok 3, poor_mask_quality 3, track_lost_no_distractor 4
+
+Single run on a subset; descriptive. Sentences of one video are not independent. Categories follow the fixed rules above, not pictures.

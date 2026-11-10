@@ -1,0 +1,91 @@
+Decision-wise table of the live VLM calls. Dataset: Long-RVOS valid subset (11 videos) - live VLM video only
+V3 log: /home/sadgi/cogrvos/task6_longrvos/baseline_v0/results_v3_gemini_events_abstain/vlm_log.csv
+V4 log: /home/sadgi/cogrvos/task6_longrvos/baseline_v0/results_v4_vlm/reid_log.csv
+Reading rules: these are the calls made on the live video(s) only. Counts, not rates. One run. No new Gemini call was made.
+State thresholds: good IoU >= 0.50, lost IoU < 0.10, poor in between, absent = target not in the label.
+V3 correct = the existing log column; unsure and not-visible-for-identity are not graded by it.
+
+==============================================================================
+V3  (Long-RVOS valid subset (11 videos) - live VLM video only): 28 decisions
+live video(s): f6f82de62a
+
+Group by true state of the tracker mask on the call frame
+  group                     good    poor    lost  absent unknown   total
+  correct                      8       0       4       0       0      12
+  incorrect                    8       0       2       0       0      10
+  unsure                       0       0       6       0       0       6
+  total                       16       0      12       0       0      28
+
+V3 identity calls: answer by true state
+  answer                    good    poor    lost  absent unknown   total
+  match                        8       0       2       0       0      10
+  no_match                     8       0       2       0       0      10
+  unsure                       0       0       6       0       0       6
+  total                       16       0      10       0       0      26
+
+V3 presence calls: answer by true state
+  answer                    good    poor    lost  absent unknown   total
+  match                        0       0       2       0       0       2
+  total                        0       0       2       0       0       2
+
+V3 answers that would blank the mask (no_match, confidence at or above the blank threshold), by true state
+  effect                    good    poor    lost  absent unknown   total
+  blank_mask                   8       0       2       0       0      10
+  total                        8       0       2       0       0      10
+
+  per sentence (video, sentence): calls | correct incorrect unsure no_good_cand invalid failed other
+    f6f82de62a   0:  10 |   3   2   5   0   0   0   0
+    f6f82de62a   1:   9 |   4   4   1   0   0   0   0
+    f6f82de62a   4:   9 |   5   4   0   0   0   0   0
+
+  cached answers: 0 of 28 | uncached answered calls: 28, mean latency 7.90 s (cached rows keep their stored latency and are left out)
+
+==============================================================================
+V4vlm  (Long-RVOS valid subset (11 videos) - live VLM video only): 30 decisions
+live video(s): f6f82de62a
+
+Group by true state of the tracker mask on the call frame
+  group                     good    poor    lost  absent unknown   total
+  correct                     11       0       3       0       2      16
+  incorrect                    2       0       8       0       4      14
+  total                       13       0      11       0       6      30
+
+V4-vlm label by true state of the current mask
+  label                     good    poor    lost  absent unknown   total
+  correct_restart              0       0       3       0       2       5
+  correct_none                11       0       0       0       0      11
+  wrong_restart                2       0       5       0       3      10
+  weak_restart                 0       0       0       0       1       1
+  missed                       0       0       3       0       0       3
+  total                       13       0      11       0       6      30
+
+V4-vlm action by true state
+  effect                    good    poor    lost  absent unknown   total
+  keep                        11       0       3       0       0      14
+  restart                      2       0       8       0       6      16
+  total                       13       0      11       0       6      30
+
+  restarts (current IoU -> chosen IoU):
+    video f6f82de62a sentence 0 frame 3  label correct_restart  0.0 -> 0.9659
+    video f6f82de62a sentence 4 frame 75  label wrong_restart  0.9891 -> 0.0045
+    video f6f82de62a sentence 0 frame 76  label wrong_restart  0.0 -> 0.072
+    video f6f82de62a sentence 1 frame 96  label correct_restart  0.0125 -> 0.9111
+    video f6f82de62a sentence 4 frame 105  label wrong_restart  0.0 -> 0.0
+    video f6f82de62a sentence 1 frame 106  label wrong_restart   -> 0.0
+    video f6f82de62a sentence 4 frame 115  label correct_restart  0.0 -> 0.9277
+    video f6f82de62a sentence 1 frame 116  label correct_restart   -> 0.679
+    video f6f82de62a sentence 4 frame 125  label wrong_restart  0.0 -> 0.0002
+    video f6f82de62a sentence 4 frame 135  label wrong_restart  0.0006 -> 0.0
+    video f6f82de62a sentence 0 frame 144  label wrong_restart  0.0 -> 0.0329
+    video f6f82de62a sentence 0 frame 154  label wrong_restart   -> 0.0561
+    video f6f82de62a sentence 0 frame 164  label weak_restart   -> 0.3517
+    video f6f82de62a sentence 0 frame 174  label wrong_restart   -> 0.0238
+    video f6f82de62a sentence 1 frame 180  label wrong_restart  0.8667 -> 0.0002
+    video f6f82de62a sentence 0 frame 184  label correct_restart   -> 0.9739
+
+  per sentence (video, sentence): calls | correct incorrect unsure no_good_cand invalid failed other
+    f6f82de62a   0:  10 |   2   8   0   0   0   0   0
+    f6f82de62a   1:  10 |   8   2   0   0   0   0   0
+    f6f82de62a   4:  10 |   6   4   0   0   0   0   0
+
+  cached answers: 0 of 30 | uncached answered calls: 30, mean latency 13.00 s (cached rows keep their stored latency and are left out)

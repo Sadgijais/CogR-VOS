@@ -1,0 +1,176 @@
+Old sentence labels versus the new first-failure category. Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark
+new CSV: /home/sadgi/cogrvos/analysis/frame_failure_longrvos.csv
+run folder (old labels): /home/sadgi/cogrvos/task6_longrvos/baseline_v0
+Single run on a subset; descriptive. Sentences of one video are not independent. n_drift_events counts drift events in ANY frame.
+Old identity_drift = at least one drift event, among sentences whose first visible frame IoU is at least 0.10 (old rule order).
+
+==============================================================================
+ARM A0: 33 new rows, 33 joined, 0 without an old row
+
+group visible_f0 (29 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       1      18       0       0      19
+  identity_drift                   0       1       1       0       2       4
+  track_lost_no_distractor         0       0       1       0       0       1
+  poor_mask_quality                0       0       1       0       0       1
+  ok                               3       1       0       0       0       4
+  total                            3       3      21       0       2      29
+
+  sentences with at least one old drift event (n_drift_events > 0): 17
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0      13       0       0      13
+  identity_drift                   0       1       1       0       2       4
+  total                            0       1      14       0       2      17
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 2
+
+group absent_f0 (4 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       3       0       0       3
+  ok                               0       0       0       0       1       1
+  total                            0       0       3       0       1       4
+
+  sentences with at least one old drift event (n_drift_events > 0): 2
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       2       0       0       2
+  total                            0       0       2       0       0       2
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 1
+
+==============================================================================
+ARM A1: 33 new rows, 33 joined, 0 without an old row
+
+group visible_f0 (29 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       1      13       0       0      14
+  identity_drift                   0       3       0       0       3       6
+  track_lost_no_distractor         0       0       2       0       0       2
+  poor_mask_quality                1       0       0       0       2       3
+  ok                               3       0       0       0       1       4
+  total                            4       4      15       0       6      29
+
+  sentences with at least one old drift event (n_drift_events > 0): 16
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       1       9       0       0      10
+  identity_drift                   0       3       0       0       3       6
+  total                            0       4       9       0       3      16
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 2
+
+group absent_f0 (4 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       4       0       0       4
+  total                            0       0       4       0       0       4
+
+  sentences with at least one old drift event (n_drift_events > 0): 4
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       4       0       0       4
+  total                            0       0       4       0       0       4
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 0
+
+==============================================================================
+ARM A3-5: 33 new rows, 33 joined, 0 without an old row
+
+group visible_f0 (29 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       1      14       0       0      15
+  identity_drift                   0       0       0       0       4       4
+  track_lost_no_distractor         0       0       4       0       0       4
+  poor_mask_quality                0       0       0       0       2       2
+  ok                               3       0       1       0       0       4
+  total                            3       1      19       0       6      29
+
+  sentences with at least one old drift event (n_drift_events > 0): 16
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       1      11       0       0      12
+  identity_drift                   0       0       0       0       4       4
+  total                            0       1      11       0       4      16
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 2
+
+group absent_f0 (4 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       4       0       0       4
+  total                            0       0       4       0       0       4
+
+  sentences with at least one old drift event (n_drift_events > 0): 2
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       2       0       0       2
+  total                            0       0       2       0       0       2
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 0
+
+==============================================================================
+ARM A3-10: 33 new rows, 33 joined, 0 without an old row
+
+group visible_f0 (29 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       1      14       0       0      15
+  identity_drift                   0       0       0       0       4       4
+  track_lost_no_distractor         0       0       4       0       0       4
+  poor_mask_quality                0       0       0       0       2       2
+  ok                               3       0       1       0       0       4
+  total                            3       1      19       0       6      29
+
+  sentences with at least one old drift event (n_drift_events > 0): 16
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       1      11       0       0      12
+  identity_drift                   0       0       0       0       4       4
+  total                            0       1      11       0       4      16
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 2
+
+group absent_f0 (4 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       4       0       0       4
+  total                            0       0       4       0       0       4
+
+  sentences with at least one old drift event (n_drift_events > 0): 2
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       2       0       0       2
+  total                            0       0       2       0       0       2
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 0
+
+==============================================================================
+ARM largest: 33 new rows, 33 joined, 0 without an old row
+
+group visible_f0 (29 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       1      15       0       0      16
+  identity_drift                   0       3       0       0       0       3
+  track_lost_no_distractor         0       0       3       0       1       4
+  poor_mask_quality                2       0       0       0       1       3
+  ok                               1       1       0       0       1       3
+  total                            3       5      18       0       3      29
+
+  sentences with at least one old drift event (n_drift_events > 0): 11
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       1       7       0       0       8
+  identity_drift                   0       3       0       0       0       3
+  total                            0       4       7       0       0      11
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 1
+
+group absent_f0 (4 sentences)
+  old failure_mode x new category of the first failure run
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       4       0       0       4
+  total                            0       0       4       0       0       4
+
+  sentences with at least one old drift event (n_drift_events > 0): 2
+  those sentences: old failure_mode x new category
+  old_failure_mode \ new_category    none    reid    init   drift    prop   total
+  grounding_failure                0       0       2       0       0       2
+  total                            0       0       2       0       0       2
+  of those, with another object at IoU >= 0.5 at the onset of the first failure run (similar_flag): 0

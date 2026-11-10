@@ -1,0 +1,34 @@
+MeViS valid_u subset (12 videos, single-target sentences) - not the full benchmark
+A3 N=10: sentences 213 (audit 213), target visible at frame 0: 191, pool contains the target: 158; self-check: stored A3 choice differs from the highest mean in 19 sentences
+
+outcome of the pick (visible sentences)       A0    A1    A3
+hit                                           72    74    83
+similar_object                                54    64    48
+other                                         32    20    27
+target_not_in_pool                            33    33    33
+mask_quality (A3 only; A0 and A1 not defined)                 0
+A3 wrong picks with the target in the pool: 75; similar-object flag 48, mask-quality flag 0, both flags 0
+
+A3 hit versus A0 hit (visible sentences) and the J&F change A3 - A0
+  A3 gained the hit    n  25   mean J&F change  +72.19
+  A3 lost the hit      n  14   mean J&F change  -61.32
+  both hit             n  58   mean J&F change   +2.22
+  both miss            n  94   mean J&F change   -1.18
+
+biggest J&F gains of A3 over A0 (picked after seeing the results):
+  945c47a50243 exp  30  dJ&F  +86.09  A0 hit  0 A3 hit  1  A3 reason hit                the bear playing something with its neck
+  ee6855dcefee exp   1  dJ&F  +79.64  A0 hit  0 A3 hit  1  A3 reason hit                Rabbit moving around and eating leaves
+  ee6855dcefee exp   2  dJ&F  +79.64  A0 hit  0 A3 hit  1  A3 reason hit                rabbit eating and walking
+  ee6855dcefee exp   5  dJ&F  +79.64  A0 hit  0 A3 hit  1  A3 reason hit                jump to the left then jump back
+  ee6855dcefee exp   3  dJ&F  +79.63  A0 hit  0 A3 hit  1  A3 reason hit                moving white rabbit
+  ee6855dcefee exp   6  dJ&F  +79.63  A0 hit  0 A3 hit  1  A3 reason hit                The rabbit that changed its location.
+
+biggest J&F losses of A3 against A0 (picked after seeing the results):
+  ee6855dcefee exp  17  dJ&F  -79.80  A0 hit  1 A3 hit  0  A3 reason similar_object     The white rabbit staying in place without moving.
+  ee6855dcefee exp  19  dJ&F  -79.79  A0 hit  1 A3 hit  0  A3 reason similar_object     The unmoving white rabbit.
+  ee6855dcefee exp  16  dJ&F  -79.79  A0 hit  1 A3 hit  0  A3 reason similar_object     The white rabbit that hasn't moved from its position.
+  410dae675d9a exp  14  dJ&F  -76.88  A0 hit  1 A3 hit  0  A3 reason similar_object     The cyclist.
+  d56a6ec78cfa exp   8  dJ&F  -74.85  A0 hit  1 A3 hit  0  A3 reason similar_object     The elephant which was initially facing us but turned and moved away.
+  d56a6ec78cfa exp  10  dJ&F  -74.84  A0 hit  1 A3 hit  0  A3 reason similar_object     The big elephant that first faced us, then turned around and walked backward.
+
+Single run on a subset; descriptive. Reasons are assigned by the fixed rules above from the saved files, not by looking at the pictures.

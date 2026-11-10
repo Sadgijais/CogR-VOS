@@ -1,0 +1,34 @@
+Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark
+A3 N=10: sentences 33 (audit 33), target visible at frame 0: 29, pool contains the target: 25; self-check: stored A3 choice differs from the highest mean in 0 sentences
+
+outcome of the pick (visible sentences)       A0    A1    A3
+hit                                            8    13     9
+similar_object                                 2     2     1
+other                                         15    10    15
+target_not_in_pool                             4     4     4
+mask_quality (A3 only; A0 and A1 not defined)                 0
+A3 wrong picks with the target in the pool: 16; similar-object flag 1, mask-quality flag 0, both flags 0
+
+A3 hit versus A0 hit (visible sentences) and the J&F change A3 - A0
+  A3 gained the hit    n   3   mean J&F change  +54.61
+  A3 lost the hit      n   2   mean J&F change  -76.99
+  both hit             n   6   mean J&F change  +11.73
+  both miss            n  18   mean J&F change   +4.76
+
+biggest J&F gains of A3 over A0 (picked after seeing the results):
+  8b0e20e373 exp   0  dJ&F  +75.13  A0 hit  0 A3 hit  1  A3 reason hit                A man in black clothes, with a child and a dog
+  f6f82de62a exp   0  dJ&F  +70.41  A0 hit  1 A3 hit  1  A3 reason hit                A large hippopotamus, in the water, with a small hippopotamus in front of it.
+  1a5dead3e3 exp   4  dJ&F  +66.81  A0 hit  0 A3 hit  0  A3 reason other              A baby in a blue bib sits in a stroller, eating and playing with a string.
+  1a5dead3e3 exp   1  dJ&F  +66.62  A0 hit  0 A3 hit  1  A3 reason hit                The baby is eating and playing with a string in its hand, occasionally opens his
+  2683deffcb exp   6  dJ&F  +58.23  A0 hit  0 A3 hit  0  A3 reason other              A woman in pink plays with a child using a ball.
+  bd4aefda10 exp   3  dJ&F  +22.08  A0 hit  0 A3 hit  1  A3 reason hit                A woman played the accordion the whole time.
+
+biggest J&F losses of A3 against A0 (picked after seeing the results):
+  8b0e20e373 exp   1  dJ&F  -88.10  A0 hit  1 A3 hit  0  A3 reason other              A man sits on the ground, looking at a girl. He then hands the little girl somet
+  1a5dead3e3 exp   2  dJ&F  -65.88  A0 hit  1 A3 hit  0  A3 reason other              A man wearing blue clothes, sitting in front of a baby.
+  e6f1a061ea exp  28  dJ&F  -53.76  A0 hit    A3 hit     A3 reason absent_f0          A black-and-white penguin toy with a black lid is held by a girl in pink.
+  bd4aefda10 exp   2  dJ&F  -33.79  A0 hit  0 A3 hit  0  A3 reason other              A woman wearing black clothes and floral pants, to the left of another woman wea
+  24b7b95ca4 exp  22  dJ&F  -29.78  A0 hit  0 A3 hit  0  A3 reason target_not_in_pool A man in black, left of a blonde woman, raises and lowers his right hand while t
+  39db436191 exp  11  dJ&F   -8.53  A0 hit    A3 hit     A3 reason absent_f0          A black and white Border Collie runs across the grass near another, crouches by 
+
+Single run on a subset; descriptive. Reasons are assigned by the fixed rules above from the saved files, not by looking at the pictures.

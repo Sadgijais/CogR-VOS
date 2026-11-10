@@ -1,0 +1,47 @@
+MeViS valid_u subset (12 videos) - not the full benchmark: results_v4_vlm vs results_v4_memory
+A = results_v4_memory   B = results_v4_vlm   sentences 213
+mean J&F  A 25.96   B 25.89   B - A -0.07
+sentences: B better 31, same (|diff| < 1) 153, B worse 29
+B - A over all sentences: -0.07   95% interval [-0.14, +0.00] from 10000 resamples of the 12 videos (seed 0)
+
+group (cached top-1 box at frame 0)         n       A       B     B-A
+top-1 correct                              72   63.88   64.13   +0.24
+top-1 partial overlap                      26   21.32   21.47   +0.15
+top-1 on another annotated object          80    4.06    3.54   -0.52
+top-1 elsewhere                            13    1.18    1.18   +0.00
+target absent at frame 0                   22    1.63    1.89   +0.26
+
+per video (mean over its sentences):  video            n       A       B     B-A
+                                      3ab5432a1927     7   23.64   23.83   +0.19
+                                      4fddcf8823f0    10   10.86   11.02   +0.16
+                                      e339e02b5b3c     7   11.85   11.85   +0.00
+                                      d56a6ec78cfa    15   48.69   48.69   +0.00
+                                      b4d6cf8c922c    12    2.00    2.00   +0.00
+                                      945c47a50243    22    7.99    7.99   +0.00
+                                      3dde46eaaf53    20    3.21    3.21   +0.00
+                                      329909730c21    25   29.32   29.32   +0.00
+                                      410dae675d9a    36   44.61   44.51   -0.09
+                                      ee6855dcefee    20   24.73   24.51   -0.22
+                                      16ae95660b3a    18   44.98   44.76   -0.22
+                                      7ca2e40c5af3    21   25.48   25.20   -0.27
+
+the 3 sentences with the largest gain add up to 10.8 of the total -14.5 J&F points (sum over sentences)
+
+videos (mean per-video difference; |diff| < 1 counts as unchanged): B better 0, unchanged 12, B worse 0, of 12
+
+leave-one-video-out (Amendment 8 item 7): B - A over all sentences with each single video dropped in turn
+  video dropped      n  B-A without it
+  4fddcf8823f0      10           -0.08
+  329909730c21      25           -0.08
+  3ab5432a1927       7           -0.08
+  945c47a50243      22           -0.08
+  3dde46eaaf53      20           -0.08
+  d56a6ec78cfa      15           -0.07
+  b4d6cf8c922c      12           -0.07
+  e339e02b5b3c       7           -0.07
+  410dae675d9a      36           -0.06
+  16ae95660b3a      18           -0.05
+  ee6855dcefee      20           -0.05
+  7ca2e40c5af3      21           -0.05
+  range -0.08 (without 4fddcf8823f0) to -0.05 (without 7ca2e40c5af3); the sign of B - A (-0.07) holds in 12 of 12 recomputations
+Single run. Interval covers video sampling only; sentences of one video are resampled together.

@@ -1,0 +1,11 @@
+variant,videos,live_videos,inference_s,search_s,vlm_wait_s,overhead_all_pct,overhead_live_pct,interpreted,peak_alloc_mb,selection_s,searches,vlm_calls
+results,12,,4430.2,n/a,n/a,n/a,n/a,ref,781,n/a,,
+results_a1_clip,12,,4371.4,n/a,n/a,-1.3,n/a,no,781,68.7,,
+results_a3_n5,12,,4631.9,n/a,n/a,+4.6,n/a,no,781,4046.0,,
+results_a3_n10,12,,4420.3,n/a,n/a,-0.2,n/a,no,781,4046.0,,
+results_largest,12,,4462.3,n/a,n/a,+0.7,n/a,no,781,n/a,,
+results_v1_final,12,,5347.8,n/a,n/a,+20.7,n/a,yes,865,n/a,,
+results_v2_passive,12,,5415.3,n/a,n/a,+22.2,n/a,yes,1442,n/a,,
+results_v3_gemini_events_abstain,,,,,,,,,,n/a,,40
+results_v4_memory,12,12,5782.6,29.0,0.0,+30.5,n/a,yes,1750,n/a,493,0
+results_v4_vlm,1,1,1193.7,55.8,438.8,+130.2,n/a,yes,1537,n/a,60,60

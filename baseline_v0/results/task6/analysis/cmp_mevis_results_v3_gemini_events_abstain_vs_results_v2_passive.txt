@@ -1,0 +1,47 @@
+MeViS valid_u subset (12 videos) - not the full benchmark: results_v3_gemini_events_abstain vs results_v2_passive
+A = results_v2_passive   B = results_v3_gemini_events_abstain   sentences 213
+mean J&F  A 25.93   B 25.94   B - A +0.01
+sentences: B better 2, same (|diff| < 1) 211, B worse 0
+B - A over all sentences: +0.01   95% interval [+0.00, +0.04] from 10000 resamples of the 12 videos (seed 0)
+
+group (cached top-1 box at frame 0)         n       A       B     B-A
+top-1 correct                              72   64.33   64.33   +0.00
+top-1 partial overlap                      26   21.47   21.47   +0.00
+top-1 on another annotated object          80    3.51    3.55   +0.03
+top-1 elsewhere                            13    1.18    1.18   +0.00
+target absent at frame 0                   22    1.63    1.63   +0.00
+
+per video (mean over its sentences):  video            n       A       B     B-A
+                                      7ca2e40c5af3    21   25.56   25.69   +0.13
+                                      ee6855dcefee    20   24.51   24.51   +0.00
+                                      e339e02b5b3c     7   11.85   11.85   +0.00
+                                      d56a6ec78cfa    15   48.69   48.69   +0.00
+                                      b4d6cf8c922c    12    2.00    2.00   +0.00
+                                      945c47a50243    22    7.99    7.99   +0.00
+                                      4fddcf8823f0    10   11.02   11.02   +0.00
+                                      410dae675d9a    36   44.51   44.51   +0.00
+                                      3dde46eaaf53    20    3.21    3.21   +0.00
+                                      3ab5432a1927     7   23.83   23.83   +0.00
+                                      329909730c21    25   29.32   29.32   +0.00
+                                      16ae95660b3a    18   44.76   44.76   +0.00
+
+the 3 sentences with the largest gain add up to 2.7 of the total 2.7 J&F points (sum over sentences)
+
+videos (mean per-video difference; |diff| < 1 counts as unchanged): B better 0, unchanged 12, B worse 0, of 12
+
+leave-one-video-out (Amendment 8 item 7): B - A over all sentences with each single video dropped in turn
+  video dropped      n  B-A without it
+  7ca2e40c5af3      21           +0.00
+  3ab5432a1927       7           +0.01
+  e339e02b5b3c       7           +0.01
+  4fddcf8823f0      10           +0.01
+  b4d6cf8c922c      12           +0.01
+  d56a6ec78cfa      15           +0.01
+  16ae95660b3a      18           +0.01
+  3dde46eaaf53      20           +0.01
+  ee6855dcefee      20           +0.01
+  945c47a50243      22           +0.01
+  329909730c21      25           +0.01
+  410dae675d9a      36           +0.02
+  range +0.00 (without 7ca2e40c5af3) to +0.02 (without 410dae675d9a); the sign of B - A (+0.01) holds in 11 of 12 recomputations
+Single run. Interval covers video sampling only; sentences of one video are resampled together.

@@ -1,0 +1,13 @@
+command: tools/wrong_pick_pairs.py --root /home/sadgi/data/MeViS-subset --run /home/sadgi/cogrvos/task6_mevis/baseline_v0 --audit /home/sadgi/cogrvos/audit/audit_grounding_mevis.csv --out /home/sadgi/cogrvos/analysis/wrong_pick_pairs_mevis.csv --label MeViS valid_u subset (12 videos, single-target sentences) - not the full benchmark
+MeViS valid_u subset (12 videos, single-target sentences) - not the full benchmark
+sentences visible at frame 0: 191; A0 top-1 not correct (box IoU < 0.5): 119. Single run on a subset; descriptive.
+   ('elsewhere', 'no annotated object >= hit'): 13
+   ('other_obj', 'no annotated object >= hit'): 20
+   ('other_obj', 'picked object found'): 60
+   ('partial', 'no annotated object >= hit'): 15
+   ('partial', 'picked object found'): 11
+wrong picks that land on another annotated object: 71
+   with at least one shared content word between the target sentence and the picked object's sentences: 68
+   fixed by (arm top-1 box becomes correct): A1 16, A3-5 20, A3-10 17, largest 6
+   target not in the pool at all (best_cand_rank empty or negative): 17
+The column 'code' is empty: coding is manual, from sentence text, after the coding rules are written down.

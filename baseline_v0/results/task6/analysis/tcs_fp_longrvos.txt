@@ -1,0 +1,30 @@
+Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark
+TCS = results_v2_passive (frozen thresholds from the log), predictions = predictions_v2_passive. Sentences used 29; excluded: target absent at frame 0 4; frames without a prediction file 0; sentences with fewer than 3 visible scored frames 0 (kept in the frame tables).
+
+=== ALL (target visible at frame 0): 29 sentences, 11 videos ===
+frames with the target visible: 8856; failed: 6995; of the failed, empty prediction: 874 (flagged LOW+MEDIUM: 874; excluded from the AUROC below)
+
+task                    frames positive   AUROC     95% interval  skipped  | LOW: recall / false alarm | LOW+MED: recall / false alarm
+detect (k=0)              7982     6121   0.552   [0.378, 0.705]        2  |               0.27 / 0.26 |               0.61 / 0.56
+   terms alone (point AUROC): mask 0.650, motion 0.657, appearance 0.478, semantic 0.351
+forecast (k=5)            1813       55   0.882   [0.663, 0.963]        0  |               0.85 / 0.24 |               0.96 / 0.54
+forecast (k=10)           1769      113   0.910   [0.764, 0.940]        0  |               0.89 / 0.22 |               0.99 / 0.52
+
+failure runs (>= 3 consecutive failed frames): 53 in 25 sentences; onset at the first scored frame (initial failure, cannot be forecast): 21; later onset: 32
+  later onsets with a LOW/MEDIUM flag in the 10 scored frames before: 32 of 32; lead (earliest flag to onset): median 10.0, max 10 frames
+  later onsets preceded only by HIGH frames: 0
+
+=== GROUNDING_OK (frame-0 mask IoU >= 0.10 with the target): 10 sentences, 7 videos ===
+frames with the target visible: 2901; failed: 1372; of the failed, empty prediction: 224 (flagged LOW+MEDIUM: 224; excluded from the AUROC below)
+
+task                    frames positive   AUROC     95% interval  skipped  | LOW: recall / false alarm | LOW+MED: recall / false alarm
+detect (k=0)              2677     1148   0.576   [0.232, 0.917]        4  |               0.32 / 0.23 |               0.55 / 0.55
+   terms alone (point AUROC): mask 0.594, motion 0.684, appearance 0.476, semantic 0.306
+forecast (k=5)            1495       24   0.825   [0.569, 0.985]        2  |               0.71 / 0.23 |               0.96 / 0.54
+forecast (k=10)           1463       53   0.853   [0.638, 0.930]        8  |               0.77 / 0.22 |               0.98 / 0.52
+
+failure runs (>= 3 consecutive failed frames): 11 in 6 sentences; onset at the first scored frame (initial failure, cannot be forecast): 3; later onset: 8
+  later onsets with a LOW/MEDIUM flag in the 10 scored frames before: 8 of 8; lead (earliest flag to onset): median 10.0, max 10 frames
+  later onsets preceded only by HIGH frames: 0
+
+Single run, subset. Sentences of one video are not independent; intervals cover video sampling only. TCS thresholds not re-tuned.

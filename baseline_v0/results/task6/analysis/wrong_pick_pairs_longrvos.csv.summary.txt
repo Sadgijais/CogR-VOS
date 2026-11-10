@@ -1,0 +1,12 @@
+command: tools/wrong_pick_pairs.py --root /home/sadgi/data/LongRVOS-subset --run /home/sadgi/cogrvos/task6_longrvos/baseline_v0 --audit /home/sadgi/cogrvos/audit/audit_grounding_longrvos.csv --out /home/sadgi/cogrvos/analysis/wrong_pick_pairs_longrvos.csv --label Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark
+Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark
+sentences visible at frame 0: 29; A0 top-1 not correct (box IoU < 0.5): 21. Single run on a subset; descriptive.
+   ('elsewhere', 'no annotated object >= hit'): 7
+   ('other_obj', 'no annotated object >= hit'): 4
+   ('other_obj', 'picked object found'): 2
+   ('partial', 'no annotated object >= hit'): 8
+wrong picks that land on another annotated object: 2
+   with at least one shared content word between the target sentence and the picked object's sentences: 1
+   fixed by (arm top-1 box becomes correct): A1 0, A3-5 0, A3-10 0, largest 1
+   target not in the pool at all (best_cand_rank empty or negative): 0
+The column 'code' is empty: coding is manual, from sentence text, after the coding rules are written down.

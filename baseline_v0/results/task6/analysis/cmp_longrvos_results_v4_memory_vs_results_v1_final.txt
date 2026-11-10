@@ -1,0 +1,45 @@
+Long-RVOS valid subset (11 videos, one sentence per type) - not the full benchmark: results_v4_memory vs results_v1_final
+A = results_v1_final   B = results_v4_memory   sentences 33
+mean J&F  A 29.94   B 28.91   B - A -1.03
+sentences: B better 2, same (|diff| < 1) 26, B worse 5
+B - A over all sentences: -1.03   95% interval [-3.39, +0.62] from 10000 resamples of the 11 videos (seed 0)
+
+group (cached top-1 box at frame 0)         n       A       B     B-A
+top-1 correct                               8   71.03   66.39   -4.64
+top-1 partial overlap                       8   13.44   13.51   +0.06
+top-1 on another annotated object           6    3.05    3.19   +0.14
+top-1 elsewhere                             7   27.47   28.06   +0.59
+target absent at frame 0                    4   25.40   24.80   -0.60
+
+per video (mean over its sentences):  video            n       A       B     B-A
+                                      24b7b95ca4       3   14.93   18.43   +3.50
+                                      2683deffcb       3    0.40    1.10   +0.70
+                                      bd4aefda10       3   13.04   13.04   +0.00
+                                      235ff86d37       3   40.87   40.87   +0.00
+                                      20eaede0fb       3   88.91   88.91   +0.00
+                                      39db436191       3    3.26    3.22   -0.04
+                                      092ba1d6df       3   16.00   15.71   -0.29
+                                      8b0e20e373       3   30.55   29.55   -1.00
+                                      1a5dead3e3       3   20.75   19.46   -1.29
+                                      e6f1a061ea       3   48.94   47.38   -1.57
+                                      f6f82de62a       3   51.69   40.32  -11.37
+
+the 3 sentences with the largest gain add up to 12.4 of the total -34.0 J&F points (sum over sentences)
+
+videos (mean per-video difference; |diff| < 1 counts as unchanged): B better 1, unchanged 7, B worse 3, of 11
+
+leave-one-video-out (Amendment 8 item 7): B - A over all sentences with each single video dropped in turn
+  video dropped      n  B-A without it
+  24b7b95ca4         3           -1.48
+  2683deffcb         3           -1.20
+  20eaede0fb         3           -1.13
+  235ff86d37         3           -1.13
+  bd4aefda10         3           -1.13
+  39db436191         3           -1.13
+  092ba1d6df         3           -1.10
+  8b0e20e373         3           -1.03
+  1a5dead3e3         3           -1.01
+  e6f1a061ea         3           -0.98
+  f6f82de62a         3           +0.00
+  range -1.48 (without 24b7b95ca4) to +0.00 (without f6f82de62a); the sign of B - A (-1.03) holds in 10 of 11 recomputations
+Single run. Interval covers video sampling only; sentences of one video are resampled together.

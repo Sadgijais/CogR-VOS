@@ -1,0 +1,11 @@
+variant,mean_JF,diff_vs_ref,ci_lo,ci_hi,videos_better,videos_same,videos_worse,sent_better,sent_same,sent_worse,videos_differing,videos_total
+results,26.88,,,,,,,,,,,12
+results_a1_clip,27.06,+0.19,-4.43,+6.10,5,1,6,56,112,45,12,12
+results_a3_n5,32.16,+5.28,-0.74,+12.21,5,3,4,62,121,30,11,12
+results_a3_n10,31.51,+4.63,-2.49,+12.54,6,2,4,60,125,28,11,12
+results_largest,28.16,+1.28,-3.31,+8.12,3,4,5,43,134,36,11,12
+results_v1_final,25.93,-0.95,-2.51,+0.11,1,10,1,18,172,23,12,12
+results_v2_passive,25.93,-0.95,-2.51,+0.11,1,10,1,18,172,23,12,12
+results_v3_gemini_events_abstain,25.94,-0.94,-2.50,+0.12,1,10,1,20,170,23,12,12
+results_v4_memory,25.96,-0.92,-2.45,+0.13,1,10,1,31,146,36,12,12
+results_v4_vlm,25.89,-0.99,-2.52,+0.09,1,10,1,23,160,30,12,12

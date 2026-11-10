@@ -1,0 +1,1066 @@
+video,exp_id,arm,expression,obj_id,group,n_frames,n_visible,first_visible,start_hit,JF,category,onset,onset_frac,run_len,recovers,frac_failed_after,similar_flag,other_at_onset,n_failed,n_lost,absent_runs,reappear_events,false_presence,missed_presence
+16ae95660b3a,1,A0,elephant walking behind and putting its trunk on others ,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,2,A0,elephant walking ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6924,30,11,0,0,0,0
+16ae95660b3a,3,A0,Elephant putting its trunk on another elephant's back,1,visible_f0,30,30,0,1,66.58,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,4,A0,Elephant crushed by another elephant's trunk,2,visible_f0,30,30,0,1,22.89,initial_grounding_failure,0,0.0,30,0,1.0,1,0.692,30,11,0,0,0,0
+16ae95660b3a,5,A0,play with the other one using nose,1,visible_f0,30,30,0,1,66.6,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,7,A0,elephant moving behind and putting its trunk on others,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,8,A0,elephant moving ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,9,A0,The elephant using its nose to press against the back of the other elephant.,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,10,A0,The elephant with its trunk touching the back of the other elephant.,1,visible_f0,30,30,0,1,66.61,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,11,A0,The elephant pressing its nose against the other elephant's back.,1,visible_f0,30,30,0,1,66.6,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,12,A0,The elephant leaning forward and touching its trunk to the back of the other elephant.,1,visible_f0,30,30,0,1,66.61,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,13,A0,The elephant using its trunk to nudge the back of the other elephant.,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,14,A0,The elephant being pressed on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6922,30,11,0,0,0,0
+16ae95660b3a,15,A0,The elephant with its back pressed down by the other elephant's nose.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6924,30,11,0,0,0,0
+16ae95660b3a,16,A0,The elephant having its back held down by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,17,A0,The elephant being nudged on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.692,30,11,0,0,0,0
+16ae95660b3a,18,A0,The elephant being pressed against its back by the other elephant's nose.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,19,A0,the elephant that goes in front,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,1,A1,elephant walking behind and putting its trunk on others ,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,2,A1,elephant walking ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6924,30,11,0,0,0,0
+16ae95660b3a,3,A1,Elephant putting its trunk on another elephant's back,1,visible_f0,30,30,0,1,66.58,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,4,A1,Elephant crushed by another elephant's trunk,2,visible_f0,30,30,0,1,22.89,initial_grounding_failure,0,0.0,30,0,1.0,1,0.692,30,11,0,0,0,0
+16ae95660b3a,5,A1,play with the other one using nose,1,visible_f0,30,30,0,1,66.6,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,7,A1,elephant moving behind and putting its trunk on others,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,8,A1,elephant moving ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,9,A1,The elephant using its nose to press against the back of the other elephant.,1,visible_f0,30,30,0,1,66.62,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,10,A1,The elephant with its trunk touching the back of the other elephant.,1,visible_f0,30,30,0,1,66.62,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,11,A1,The elephant pressing its nose against the other elephant's back.,1,visible_f0,30,30,0,1,73.44,no_failure,,,,,,,,0,0,0,0,0,0
+16ae95660b3a,12,A1,The elephant leaning forward and touching its trunk to the back of the other elephant.,1,visible_f0,30,30,0,1,73.43,no_failure,,,,,,,,0,0,0,0,0,0
+16ae95660b3a,13,A1,The elephant using its trunk to nudge the back of the other elephant.,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,14,A1,The elephant being pressed on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6922,30,11,0,0,0,0
+16ae95660b3a,15,A1,The elephant with its back pressed down by the other elephant's nose.,2,visible_f0,30,30,0,1,22.86,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6929,30,11,0,0,0,0
+16ae95660b3a,16,A1,The elephant having its back held down by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6928,30,11,0,0,0,0
+16ae95660b3a,17,A1,The elephant being nudged on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.86,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6926,30,11,0,0,0,0
+16ae95660b3a,18,A1,The elephant being pressed against its back by the other elephant's nose.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,19,A1,the elephant that goes in front,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,1,A3-5,elephant walking behind and putting its trunk on others ,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,2,A3-5,elephant walking ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6924,30,11,0,0,0,0
+16ae95660b3a,3,A3-5,Elephant putting its trunk on another elephant's back,1,visible_f0,30,30,0,1,66.58,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,4,A3-5,Elephant crushed by another elephant's trunk,2,visible_f0,30,30,0,1,22.89,initial_grounding_failure,0,0.0,30,0,1.0,1,0.692,30,11,0,0,0,0
+16ae95660b3a,5,A3-5,play with the other one using nose,1,visible_f0,30,30,0,1,66.6,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,7,A3-5,elephant moving behind and putting its trunk on others,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,8,A3-5,elephant moving ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,9,A3-5,The elephant using its nose to press against the back of the other elephant.,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,10,A3-5,The elephant with its trunk touching the back of the other elephant.,1,visible_f0,30,30,0,1,66.61,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,11,A3-5,The elephant pressing its nose against the other elephant's back.,1,visible_f0,30,30,0,1,66.6,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,12,A3-5,The elephant leaning forward and touching its trunk to the back of the other elephant.,1,visible_f0,30,30,0,1,66.61,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,13,A3-5,The elephant using its trunk to nudge the back of the other elephant.,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,14,A3-5,The elephant being pressed on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6922,30,11,0,0,0,0
+16ae95660b3a,15,A3-5,The elephant with its back pressed down by the other elephant's nose.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6924,30,11,0,0,0,0
+16ae95660b3a,16,A3-5,The elephant having its back held down by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6928,30,11,0,0,0,0
+16ae95660b3a,17,A3-5,The elephant being nudged on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.692,30,11,0,0,0,0
+16ae95660b3a,18,A3-5,The elephant being pressed against its back by the other elephant's nose.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,19,A3-5,the elephant that goes in front,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,1,A3-10,elephant walking behind and putting its trunk on others ,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,2,A3-10,elephant walking ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6924,30,11,0,0,0,0
+16ae95660b3a,3,A3-10,Elephant putting its trunk on another elephant's back,1,visible_f0,30,30,0,1,66.58,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,4,A3-10,Elephant crushed by another elephant's trunk,2,visible_f0,30,30,0,1,22.89,initial_grounding_failure,0,0.0,30,0,1.0,1,0.692,30,11,0,0,0,0
+16ae95660b3a,5,A3-10,play with the other one using nose,1,visible_f0,30,30,0,1,66.6,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,7,A3-10,elephant moving behind and putting its trunk on others,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,8,A3-10,elephant moving ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,9,A3-10,The elephant using its nose to press against the back of the other elephant.,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,10,A3-10,The elephant with its trunk touching the back of the other elephant.,1,visible_f0,30,30,0,1,66.61,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,11,A3-10,The elephant pressing its nose against the other elephant's back.,1,visible_f0,30,30,0,1,66.6,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,12,A3-10,The elephant leaning forward and touching its trunk to the back of the other elephant.,1,visible_f0,30,30,0,1,66.61,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,13,A3-10,The elephant using its trunk to nudge the back of the other elephant.,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,14,A3-10,The elephant being pressed on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6922,30,11,0,0,0,0
+16ae95660b3a,15,A3-10,The elephant with its back pressed down by the other elephant's nose.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6924,30,11,0,0,0,0
+16ae95660b3a,16,A3-10,The elephant having its back held down by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,17,A3-10,The elephant being nudged on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.692,30,11,0,0,0,0
+16ae95660b3a,18,A3-10,The elephant being pressed against its back by the other elephant's nose.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,19,A3-10,the elephant that goes in front,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,1,largest,elephant walking behind and putting its trunk on others ,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,2,largest,elephant walking ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6924,30,11,0,0,0,0
+16ae95660b3a,3,largest,Elephant putting its trunk on another elephant's back,1,visible_f0,30,30,0,1,66.58,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,4,largest,Elephant crushed by another elephant's trunk,2,visible_f0,30,30,0,1,22.89,initial_grounding_failure,0,0.0,30,0,1.0,1,0.692,30,11,0,0,0,0
+16ae95660b3a,5,largest,play with the other one using nose,1,visible_f0,30,30,0,1,66.6,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,7,largest,elephant moving behind and putting its trunk on others,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,8,largest,elephant moving ahead,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,9,largest,The elephant using its nose to press against the back of the other elephant.,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,10,largest,The elephant with its trunk touching the back of the other elephant.,1,visible_f0,30,30,0,1,66.61,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,11,largest,The elephant pressing its nose against the other elephant's back.,1,visible_f0,30,30,0,1,66.6,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,12,largest,The elephant leaning forward and touching its trunk to the back of the other elephant.,1,visible_f0,30,30,0,1,66.61,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,13,largest,The elephant using its trunk to nudge the back of the other elephant.,1,visible_f0,30,30,0,1,66.59,no_failure,,,,,,,,1,0,0,0,0,0
+16ae95660b3a,14,largest,The elephant being pressed on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6922,30,11,0,0,0,0
+16ae95660b3a,15,largest,The elephant with its back pressed down by the other elephant's nose.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6924,30,11,0,0,0,0
+16ae95660b3a,16,largest,The elephant having its back held down by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,17,largest,The elephant being nudged on its back by the other elephant's trunk.,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.692,30,11,0,0,0,0
+16ae95660b3a,18,largest,The elephant being pressed against its back by the other elephant's nose.,2,visible_f0,30,30,0,1,22.87,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+16ae95660b3a,19,largest,the elephant that goes in front,2,visible_f0,30,30,0,1,22.88,initial_grounding_failure,0,0.0,30,0,1.0,1,0.6923,30,11,0,0,0,0
+329909730c21,0,A0,Airplane moving forward,1,visible_f0,70,70,0,1,50.14,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,1,A0,Airplane moving from right to left,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,2,A0,Airplane moving from left to right,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,3,A0,aircraft moving leftward,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,4,A0,Aircraft moving rightward,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,5,A0,airplane moving to left,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,6,A0,airplane moving to right in front,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,7,A0,move forward towards us,1,visible_f0,70,70,0,1,50.16,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,8,A0,move to the left,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,9,A0,move to the right,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,10,A0,The aircraft moving towards us.,1,visible_f0,70,70,0,1,50.15,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,11,A0,The plane coming towards us.,1,visible_f0,70,70,0,1,50.15,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4702,50,0,0,0,0,0
+329909730c21,12,A0,The airplane advancing in our direction.,1,visible_f0,70,70,0,1,50.14,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,13,A0,The aircraft approaching us.,1,visible_f0,70,70,0,1,50.14,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,14,A0,The plane facing our direction and moving.,1,visible_f0,70,70,0,1,50.15,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4702,50,0,0,0,0,0
+329909730c21,15,A0,The aircraft moving to the left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,16,A0,The plane going left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,17,A0,The airplane in motion to the left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,18,A0,The aircraft heading left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,19,A0,The plane in the process of moving left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6087,36,2,2,1,4,0
+329909730c21,20,A0,The aircraft moving to the right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,21,A0,The plane going right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,22,A0,The airplane in motion to the right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,23,A0,The aircraft heading right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,24,A0,The plane in the process of moving right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,0,A1,Airplane moving forward,1,visible_f0,70,70,0,0,7.93,initial_grounding_failure,0,0.0,70,0,1.0,1,0.9164,70,70,0,0,0,4
+329909730c21,1,A1,Airplane moving from right to left,2,visible_f0,70,66,0,0,5.78,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8137,66,66,2,1,4,0
+329909730c21,2,A1,Airplane moving from left to right,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,3,A1,aircraft moving leftward,2,visible_f0,70,66,0,0,5.77,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8134,66,66,2,1,4,0
+329909730c21,4,A1,Aircraft moving rightward,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8269,45,45,1,0,25,0
+329909730c21,5,A1,airplane moving to left,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,6,A1,airplane moving to right in front,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8265,45,45,1,0,25,0
+329909730c21,7,A1,move forward towards us,1,visible_f0,70,70,0,1,50.16,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,8,A1,move to the left,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,9,A1,move to the right,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,10,A1,The aircraft moving towards us.,1,visible_f0,70,70,0,0,7.93,initial_grounding_failure,0,0.0,70,0,1.0,1,0.9163,70,70,0,0,0,4
+329909730c21,11,A1,The plane coming towards us.,1,visible_f0,70,70,0,0,7.93,initial_grounding_failure,0,0.0,70,0,1.0,1,0.9163,70,70,0,0,0,4
+329909730c21,12,A1,The airplane advancing in our direction.,1,visible_f0,70,70,0,1,50.14,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,13,A1,The aircraft approaching us.,1,visible_f0,70,70,0,1,50.14,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,14,A1,The plane facing our direction and moving.,1,visible_f0,70,70,0,0,7.93,initial_grounding_failure,0,0.0,70,0,1.0,1,0.9164,70,70,0,0,0,4
+329909730c21,15,A1,The aircraft moving to the left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,16,A1,The plane going left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,17,A1,The airplane in motion to the left.,2,visible_f0,70,66,0,1,82.6,no_failure,,,,,,,,0,0,2,1,0,0
+329909730c21,18,A1,The aircraft heading left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,19,A1,The plane in the process of moving left.,2,visible_f0,70,66,0,0,5.78,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8136,66,66,2,1,4,0
+329909730c21,20,A1,The aircraft moving to the right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,21,A1,The plane going right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,22,A1,The airplane in motion to the right.,3,absent_f0,70,45,25,,0.76,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.9276,45,45,1,0,25,4
+329909730c21,23,A1,The aircraft heading right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,24,A1,The plane in the process of moving right.,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8265,45,45,1,0,25,0
+329909730c21,0,A3-5,Airplane moving forward,1,visible_f0,70,70,0,1,72.03,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,1,A3-5,Airplane moving from right to left,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,2,A3-5,Airplane moving from left to right,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,3,A3-5,aircraft moving leftward,2,visible_f0,70,66,0,0,40.54,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6074,36,2,2,1,4,0
+329909730c21,4,A3-5,Aircraft moving rightward,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8269,45,45,1,0,25,0
+329909730c21,5,A3-5,airplane moving to left,2,visible_f0,70,66,0,0,5.79,initial_grounding_failure,0,0.0,54,0,1.0,1,0.814,66,66,2,1,4,0
+329909730c21,6,A3-5,airplane moving to right in front,3,absent_f0,70,45,25,,2.03,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4871,45,45,1,0,25,0
+329909730c21,7,A3-5,move forward towards us,1,visible_f0,70,70,0,1,72.01,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,8,A3-5,move to the left,2,visible_f0,70,66,0,0,5.72,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8128,66,66,2,1,4,0
+329909730c21,9,A3-5,move to the right,3,absent_f0,70,45,25,,1.93,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8264,45,45,1,0,25,0
+329909730c21,10,A3-5,The aircraft moving towards us.,1,visible_f0,70,70,0,1,72.01,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,11,A3-5,The plane coming towards us.,1,visible_f0,70,70,0,1,72.03,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,12,A3-5,The airplane advancing in our direction.,1,visible_f0,70,70,0,1,71.52,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,13,A3-5,The aircraft approaching us.,1,visible_f0,70,70,0,1,72.03,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,14,A3-5,The plane facing our direction and moving.,1,visible_f0,70,70,0,1,72.04,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,15,A3-5,The aircraft moving to the left.,2,visible_f0,70,66,0,0,40.56,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6068,36,2,2,1,4,0
+329909730c21,16,A3-5,The plane going left.,2,visible_f0,70,66,0,0,4.52,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8145,66,66,2,1,4,0
+329909730c21,17,A3-5,The airplane in motion to the left.,2,visible_f0,70,66,0,0,5.79,initial_grounding_failure,0,0.0,54,0,1.0,1,0.814,66,66,2,1,4,0
+329909730c21,18,A3-5,The aircraft heading left.,2,visible_f0,70,66,0,0,5.78,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8135,66,66,2,1,4,0
+329909730c21,19,A3-5,The plane in the process of moving left.,2,visible_f0,70,66,0,0,5.78,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8136,66,66,2,1,4,0
+329909730c21,20,A3-5,The aircraft moving to the right.,3,absent_f0,70,45,25,,2.22,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4947,45,45,1,0,25,0
+329909730c21,21,A3-5,The plane going right.,3,absent_f0,70,45,25,,1.9,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8164,45,45,1,0,25,0
+329909730c21,22,A3-5,The airplane in motion to the right.,3,absent_f0,70,45,25,,1.91,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8266,45,45,1,0,25,0
+329909730c21,23,A3-5,The aircraft heading right.,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8265,45,45,1,0,25,0
+329909730c21,24,A3-5,The plane in the process of moving right.,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8265,45,45,1,0,25,0
+329909730c21,0,A3-10,Airplane moving forward,1,visible_f0,70,70,0,1,72.03,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,1,A3-10,Airplane moving from right to left,2,visible_f0,70,66,0,0,5.78,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8137,66,66,2,1,4,0
+329909730c21,2,A3-10,Airplane moving from left to right,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8265,45,45,1,0,25,0
+329909730c21,3,A3-10,aircraft moving leftward,2,visible_f0,70,66,0,0,40.54,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6074,36,2,2,1,4,0
+329909730c21,4,A3-10,Aircraft moving rightward,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8269,45,45,1,0,25,0
+329909730c21,5,A3-10,airplane moving to left,2,visible_f0,70,66,0,0,5.79,initial_grounding_failure,0,0.0,54,0,1.0,1,0.814,66,66,2,1,4,0
+329909730c21,6,A3-10,airplane moving to right in front,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8265,45,45,1,0,25,0
+329909730c21,7,A3-10,move forward towards us,1,visible_f0,70,70,0,1,72.01,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,8,A3-10,move to the left,2,visible_f0,70,66,0,0,5.72,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8128,66,66,2,1,4,0
+329909730c21,9,A3-10,move to the right,3,absent_f0,70,45,25,,1.93,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8264,45,45,1,0,25,0
+329909730c21,10,A3-10,The aircraft moving towards us.,1,visible_f0,70,70,0,1,72.01,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,11,A3-10,The plane coming towards us.,1,visible_f0,70,70,0,1,72.03,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,12,A3-10,The airplane advancing in our direction.,1,visible_f0,70,70,0,1,71.52,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,13,A3-10,The aircraft approaching us.,1,visible_f0,70,70,0,1,72.03,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,14,A3-10,The plane facing our direction and moving.,1,visible_f0,70,70,0,1,72.04,no_failure,,,,,,,,0,0,0,0,0,0
+329909730c21,15,A3-10,The aircraft moving to the left.,2,visible_f0,70,66,0,0,40.56,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6068,36,2,2,1,4,0
+329909730c21,16,A3-10,The plane going left.,2,visible_f0,70,66,0,0,4.52,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8145,66,66,2,1,4,0
+329909730c21,17,A3-10,The airplane in motion to the left.,2,visible_f0,70,66,0,0,5.79,initial_grounding_failure,0,0.0,54,0,1.0,1,0.814,66,66,2,1,4,0
+329909730c21,18,A3-10,The aircraft heading left.,2,visible_f0,70,66,0,0,5.78,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8135,66,66,2,1,4,0
+329909730c21,19,A3-10,The plane in the process of moving left.,2,visible_f0,70,66,0,0,5.78,initial_grounding_failure,0,0.0,54,0,1.0,1,0.8136,66,66,2,1,4,0
+329909730c21,20,A3-10,The aircraft moving to the right.,3,absent_f0,70,45,25,,2.22,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4947,45,45,1,0,25,0
+329909730c21,21,A3-10,The plane going right.,3,absent_f0,70,45,25,,1.9,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8164,45,45,1,0,25,0
+329909730c21,22,A3-10,The airplane in motion to the right.,3,absent_f0,70,45,25,,1.91,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8266,45,45,1,0,25,0
+329909730c21,23,A3-10,The aircraft heading right.,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8265,45,45,1,0,25,0
+329909730c21,24,A3-10,The plane in the process of moving right.,3,absent_f0,70,45,25,,1.94,initial_grounding_failure,25,0.3623,45,0,1.0,1,0.8265,45,45,1,0,25,0
+329909730c21,0,largest,Airplane moving forward,1,visible_f0,70,70,0,1,50.14,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,1,largest,Airplane moving from right to left,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,2,largest,Airplane moving from left to right,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,3,largest,aircraft moving leftward,2,visible_f0,70,66,0,0,40.54,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6074,36,2,2,1,4,0
+329909730c21,4,largest,Aircraft moving rightward,3,absent_f0,70,45,25,,2.19,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4947,45,45,1,0,25,0
+329909730c21,5,largest,airplane moving to left,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,6,largest,airplane moving to right in front,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,7,largest,move forward towards us,1,visible_f0,70,70,0,1,50.09,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.47,50,0,0,0,0,0
+329909730c21,8,largest,move to the left,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,9,largest,move to the right,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,10,largest,The aircraft moving towards us.,1,visible_f0,70,70,0,1,50.21,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4693,50,0,0,0,0,0
+329909730c21,11,largest,The plane coming towards us.,1,visible_f0,70,70,0,1,50.18,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4694,50,0,0,0,0,0
+329909730c21,12,largest,The airplane advancing in our direction.,1,visible_f0,70,70,0,1,50.14,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,13,largest,The aircraft approaching us.,1,visible_f0,70,70,0,1,50.14,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4703,50,0,0,0,0,0
+329909730c21,14,largest,The plane facing our direction and moving.,1,visible_f0,70,70,0,1,50.15,mask_propagation_failure,7,0.1014,23,1,0.7937,0,0.4702,50,0,0,0,0,0
+329909730c21,15,largest,The aircraft moving to the left.,2,visible_f0,70,66,0,0,40.56,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6068,36,2,2,1,4,0
+329909730c21,16,largest,The plane going left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,17,largest,The airplane in motion to the left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,18,largest,The aircraft heading left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6088,36,2,2,1,4,0
+329909730c21,19,largest,The plane in the process of moving left.,2,visible_f0,70,66,0,0,40.53,initial_grounding_failure,0,0.0,12,1,0.5455,1,0.6087,36,2,2,1,4,0
+329909730c21,20,largest,The aircraft moving to the right.,3,absent_f0,70,45,25,,2.22,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4947,45,45,1,0,25,0
+329909730c21,21,largest,The plane going right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,22,largest,The airplane in motion to the right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,23,largest,The aircraft heading right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+329909730c21,24,largest,The plane in the process of moving right.,3,absent_f0,70,45,25,,2.18,initial_grounding_failure,25,0.3623,45,0,1.0,0,0.4944,45,45,1,0,25,0
+3ab5432a1927,0,A0,Bear chasing another bear around by walking in circle,1,visible_f0,115,115,0,1,80.7,no_failure,,,,,,,,0,0,0,0,0,0
+3ab5432a1927,1,A0,Bear being chased and walking backward,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9517,115,115,0,0,0,0
+3ab5432a1927,3,A0,bear fight then sit,1,visible_f0,115,115,0,0,57.02,mask_propagation_failure,8,0.0702,5,1,0.215,0,0.3939,24,0,0,0,0,0
+3ab5432a1927,8,A0,The bear moving in reverse.,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9517,115,115,0,0,0,0
+3ab5432a1927,9,A0,The bear retreating while walking.,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9517,115,115,0,0,0,0
+3ab5432a1927,10,A0,The backward-walking bear.,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9516,115,115,0,0,0,0
+3ab5432a1927,11,A0,The bear backward-moving on foot.,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9517,115,115,0,0,0,0
+3ab5432a1927,0,A1,Bear chasing another bear around by walking in circle,1,visible_f0,115,115,0,0,27.25,mask_propagation_failure,47,0.4123,68,0,1.0,0,0.0001,69,63,0,0,0,0
+3ab5432a1927,1,A1,Bear being chased and walking backward,2,visible_f0,115,115,0,0,12.35,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4778,105,85,0,0,0,0
+3ab5432a1927,3,A1,bear fight then sit,1,visible_f0,115,115,0,0,57.02,mask_propagation_failure,8,0.0702,5,1,0.215,0,0.3939,24,0,0,0,0,0
+3ab5432a1927,8,A1,The bear moving in reverse.,2,visible_f0,115,115,0,0,12.32,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4762,105,85,0,0,0,0
+3ab5432a1927,9,A1,The bear retreating while walking.,2,visible_f0,115,115,0,0,12.42,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4755,105,85,0,0,0,0
+3ab5432a1927,10,A1,The backward-walking bear.,2,visible_f0,115,115,0,1,71.87,mask_propagation_failure,6,0.0526,12,1,0.1376,0,0.0,15,0,0,0,0,0
+3ab5432a1927,11,A1,The bear backward-moving on foot.,2,visible_f0,115,115,0,1,78.8,no_failure,,,,,,,,3,0,0,0,0,0
+3ab5432a1927,0,A3-5,Bear chasing another bear around by walking in circle,1,visible_f0,115,115,0,0,27.25,mask_propagation_failure,47,0.4123,68,0,1.0,0,0.0001,69,63,0,0,0,0
+3ab5432a1927,1,A3-5,Bear being chased and walking backward,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9517,115,115,0,0,0,0
+3ab5432a1927,3,A3-5,bear fight then sit,1,visible_f0,115,115,0,0,26.2,mask_propagation_failure,47,0.4123,68,0,1.0,0,0.0001,69,65,0,0,0,0
+3ab5432a1927,8,A3-5,The bear moving in reverse.,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9517,115,115,0,0,0,0
+3ab5432a1927,9,A3-5,The bear retreating while walking.,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9517,115,115,0,0,0,0
+3ab5432a1927,10,A3-5,The backward-walking bear.,2,visible_f0,115,115,0,1,71.87,mask_propagation_failure,6,0.0526,12,1,0.1376,0,0.0,15,0,0,0,0,0
+3ab5432a1927,11,A3-5,The bear backward-moving on foot.,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9517,115,115,0,0,0,0
+3ab5432a1927,0,A3-10,Bear chasing another bear around by walking in circle,1,visible_f0,115,115,0,0,57.1,mask_propagation_failure,8,0.0702,5,1,0.215,0,0.3938,24,0,0,0,0,0
+3ab5432a1927,1,A3-10,Bear being chased and walking backward,2,visible_f0,115,115,0,0,12.35,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4778,105,85,0,0,0,0
+3ab5432a1927,3,A3-10,bear fight then sit,1,visible_f0,115,115,0,0,57.02,mask_propagation_failure,8,0.0702,5,1,0.215,0,0.3939,24,0,0,0,0,0
+3ab5432a1927,8,A3-10,The bear moving in reverse.,2,visible_f0,115,115,0,0,12.32,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4762,105,85,0,0,0,0
+3ab5432a1927,9,A3-10,The bear retreating while walking.,2,visible_f0,115,115,0,0,3.59,initial_grounding_failure,0,0.0,115,0,1.0,1,0.9517,115,115,0,0,0,0
+3ab5432a1927,10,A3-10,The backward-walking bear.,2,visible_f0,115,115,0,0,12.35,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4781,105,85,0,0,0,0
+3ab5432a1927,11,A3-10,The bear backward-moving on foot.,2,visible_f0,115,115,0,0,12.43,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4749,105,85,0,0,0,0
+3ab5432a1927,0,largest,Bear chasing another bear around by walking in circle,1,visible_f0,115,115,0,0,27.25,mask_propagation_failure,47,0.4123,68,0,1.0,0,0.0001,69,63,0,0,0,0
+3ab5432a1927,1,largest,Bear being chased and walking backward,2,visible_f0,115,115,0,0,12.35,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4778,105,85,0,0,0,0
+3ab5432a1927,3,largest,bear fight then sit,1,visible_f0,115,115,0,0,25.63,mask_propagation_failure,47,0.4123,68,0,1.0,0,0.0001,69,65,0,0,0,0
+3ab5432a1927,8,largest,The bear moving in reverse.,2,visible_f0,115,115,0,0,12.32,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4762,105,85,0,0,0,0
+3ab5432a1927,9,largest,The bear retreating while walking.,2,visible_f0,115,115,0,0,12.42,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4755,105,85,0,0,0,0
+3ab5432a1927,10,largest,The backward-walking bear.,2,visible_f0,115,115,0,0,12.35,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4781,105,85,0,0,0,0
+3ab5432a1927,11,largest,The bear backward-moving on foot.,2,visible_f0,115,115,0,0,12.43,initial_grounding_failure,0,0.0,104,1,0.913,0,0.4749,105,85,0,0,0,0
+3dde46eaaf53,0,A0,The monkey sitting crouched at the center of the hole.,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,1,A0,Monkey running out of a hole to the left then right,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,3,A0,monkey walking in and out of the gate,2,visible_f0,41,41,0,0,3.89,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,4,A0,come out from one door walk to the left door and back,2,visible_f0,41,41,0,0,6.98,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0123,38,33,0,0,0,0
+3dde46eaaf53,6,A0,Monkey jogging out of a hole to the left-side then right-side,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,7,A0,monkey moving in and out of the gate,2,visible_f0,41,41,0,0,3.89,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,8,A0,come out from one door move to the left-side door and back,2,visible_f0,41,41,0,0,6.78,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0112,38,33,0,0,0,0
+3dde46eaaf53,9,A0,The monkey that comes out of the cave and then goes back in.,2,visible_f0,41,41,0,0,2.16,initial_grounding_failure,0,0.0,41,0,1.0,1,0.7281,41,40,0,0,0,0
+3dde46eaaf53,10,A0,The monkey going in and out of the hole.,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,11,A0,The monkey exiting and re-entering the cave.,2,visible_f0,41,41,0,0,3.89,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,12,A0,The monkey emerging from the hole and returning inside.,2,visible_f0,41,41,0,0,3.89,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,13,A0,The monkey coming out of the cave and then going back inside.,2,visible_f0,41,41,0,0,1.95,initial_grounding_failure,0,0.0,41,0,1.0,1,0.7295,41,40,0,0,0,0
+3dde46eaaf53,14,A0,The monkey that runs from the middle to the left and then runs back again.,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,15,A0,The monkey running to the left and then returning to the middle.,2,visible_f0,41,41,0,0,3.87,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,16,A0,The monkey squatting in the middle of the cave entrance.,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,17,A0,The monkey in a crouched position at the entrance of the cave.,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,18,A0,The monkey sitting down in the middle,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,19,A0,The monkey crouching near the center of the cave's entrance.,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,25,A0,"In the middle of the video, it stands alone at the entrance of a cave",1,visible_f0,41,41,0,0,11.34,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1438,41,41,0,0,0,0
+3dde46eaaf53,26,A0,who traveled the longest distance,2,visible_f0,41,41,0,0,1.09,initial_grounding_failure,0,0.0,41,0,1.0,0,0.004,41,41,0,0,0,0
+3dde46eaaf53,0,A1,The monkey sitting crouched at the center of the hole.,1,visible_f0,41,41,0,1,63.99,no_failure,,,,,,,,2,0,0,0,0,0
+3dde46eaaf53,1,A1,Monkey running out of a hole to the left then right,2,visible_f0,41,41,0,0,7.2,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0129,38,33,0,0,0,0
+3dde46eaaf53,3,A1,monkey walking in and out of the gate,2,visible_f0,41,41,0,0,1.91,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,4,A1,come out from one door walk to the left door and back,2,visible_f0,41,41,0,0,1.94,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,6,A1,Monkey jogging out of a hole to the left-side then right-side,2,visible_f0,41,41,0,0,6.8,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0127,38,33,0,0,0,0
+3dde46eaaf53,7,A1,monkey moving in and out of the gate,2,visible_f0,41,41,0,0,1.93,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,8,A1,come out from one door move to the left-side door and back,2,visible_f0,41,41,0,0,4.96,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0096,41,33,0,0,0,0
+3dde46eaaf53,9,A1,The monkey that comes out of the cave and then goes back in.,2,visible_f0,41,41,0,0,6.56,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0119,38,33,0,0,0,0
+3dde46eaaf53,10,A1,The monkey going in and out of the hole.,2,visible_f0,41,41,0,0,7.1,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0125,38,33,0,0,0,0
+3dde46eaaf53,11,A1,The monkey exiting and re-entering the cave.,2,visible_f0,41,41,0,0,0.81,initial_grounding_failure,0,0.0,41,0,1.0,0,0.004,41,41,0,0,0,0
+3dde46eaaf53,12,A1,The monkey emerging from the hole and returning inside.,2,visible_f0,41,41,0,0,6.81,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0141,38,33,0,0,0,0
+3dde46eaaf53,13,A1,The monkey coming out of the cave and then going back inside.,2,visible_f0,41,41,0,0,6.76,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0123,38,33,0,0,0,0
+3dde46eaaf53,14,A1,The monkey that runs from the middle to the left and then runs back again.,2,visible_f0,41,41,0,0,1.71,initial_grounding_failure,0,0.0,41,0,1.0,1,0.6617,41,41,0,0,0,0
+3dde46eaaf53,15,A1,The monkey running to the left and then returning to the middle.,2,visible_f0,41,41,0,0,7.65,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,28,0,0,0,0
+3dde46eaaf53,16,A1,The monkey squatting in the middle of the cave entrance.,1,visible_f0,41,41,0,0,11.24,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1482,41,41,0,0,0,0
+3dde46eaaf53,17,A1,The monkey in a crouched position at the entrance of the cave.,1,visible_f0,41,41,0,0,12.79,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1011,41,41,0,0,0,0
+3dde46eaaf53,18,A1,The monkey sitting down in the middle,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,19,A1,The monkey crouching near the center of the cave's entrance.,1,visible_f0,41,41,0,0,11.52,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1553,41,41,0,0,0,0
+3dde46eaaf53,25,A1,"In the middle of the video, it stands alone at the entrance of a cave",1,visible_f0,41,41,0,0,12.84,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1082,41,41,0,0,0,0
+3dde46eaaf53,26,A1,who traveled the longest distance,2,visible_f0,41,41,0,0,7.61,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,28,0,0,0,0
+3dde46eaaf53,0,A3-5,The monkey sitting crouched at the center of the hole.,1,visible_f0,41,41,0,1,67.55,no_failure,,,,,,,,0,0,0,0,0,0
+3dde46eaaf53,1,A3-5,Monkey running out of a hole to the left then right,2,visible_f0,41,41,0,0,7.2,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0129,38,33,0,0,0,0
+3dde46eaaf53,3,A3-5,monkey walking in and out of the gate,2,visible_f0,41,41,0,0,1.62,initial_grounding_failure,0,0.0,41,0,1.0,1,0.6559,41,41,0,0,0,0
+3dde46eaaf53,4,A3-5,come out from one door walk to the left door and back,2,visible_f0,41,41,0,0,7.31,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.012,38,33,0,0,0,0
+3dde46eaaf53,6,A3-5,Monkey jogging out of a hole to the left-side then right-side,2,visible_f0,41,41,0,0,6.8,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0127,38,33,0,0,0,0
+3dde46eaaf53,7,A3-5,monkey moving in and out of the gate,2,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,8,A3-5,come out from one door move to the left-side door and back,2,visible_f0,41,41,0,0,4.96,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0096,41,33,0,0,0,0
+3dde46eaaf53,9,A3-5,The monkey that comes out of the cave and then goes back in.,2,visible_f0,41,41,0,0,6.56,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0119,38,33,0,0,0,0
+3dde46eaaf53,10,A3-5,The monkey going in and out of the hole.,2,visible_f0,41,41,0,0,7.1,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0125,38,33,0,0,0,0
+3dde46eaaf53,11,A3-5,The monkey exiting and re-entering the cave.,2,visible_f0,41,41,0,0,0.81,initial_grounding_failure,0,0.0,41,0,1.0,0,0.004,41,41,0,0,0,0
+3dde46eaaf53,12,A3-5,The monkey emerging from the hole and returning inside.,2,visible_f0,41,41,0,0,6.81,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0141,38,33,0,0,0,0
+3dde46eaaf53,13,A3-5,The monkey coming out of the cave and then going back inside.,2,visible_f0,41,41,0,0,6.76,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0123,38,33,0,0,0,0
+3dde46eaaf53,14,A3-5,The monkey that runs from the middle to the left and then runs back again.,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,15,A3-5,The monkey running to the left and then returning to the middle.,2,visible_f0,41,41,0,0,7.65,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,28,0,0,0,0
+3dde46eaaf53,16,A3-5,The monkey squatting in the middle of the cave entrance.,1,visible_f0,41,41,0,0,11.24,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1482,41,41,0,0,0,0
+3dde46eaaf53,17,A3-5,The monkey in a crouched position at the entrance of the cave.,1,visible_f0,41,41,0,0,12.79,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1011,41,41,0,0,0,0
+3dde46eaaf53,18,A3-5,The monkey sitting down in the middle,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,19,A3-5,The monkey crouching near the center of the cave's entrance.,1,visible_f0,41,41,0,0,11.52,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1553,41,41,0,0,0,0
+3dde46eaaf53,25,A3-5,"In the middle of the video, it stands alone at the entrance of a cave",1,visible_f0,41,41,0,0,8.99,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0655,41,41,0,0,0,0
+3dde46eaaf53,26,A3-5,who traveled the longest distance,2,visible_f0,41,41,0,0,7.61,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,28,0,0,0,0
+3dde46eaaf53,0,A3-10,The monkey sitting crouched at the center of the hole.,1,visible_f0,41,41,0,1,67.55,no_failure,,,,,,,,0,0,0,0,0,0
+3dde46eaaf53,1,A3-10,Monkey running out of a hole to the left then right,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,3,A3-10,monkey walking in and out of the gate,2,visible_f0,41,41,0,0,3.89,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,4,A3-10,come out from one door walk to the left door and back,2,visible_f0,41,41,0,0,7.31,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.012,38,33,0,0,0,0
+3dde46eaaf53,6,A3-10,Monkey jogging out of a hole to the left-side then right-side,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,7,A3-10,monkey moving in and out of the gate,2,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,8,A3-10,come out from one door move to the left-side door and back,2,visible_f0,41,41,0,0,4.96,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0096,41,33,0,0,0,0
+3dde46eaaf53,9,A3-10,The monkey that comes out of the cave and then goes back in.,2,visible_f0,41,41,0,0,19.62,initial_grounding_failure,0,0.0,13,1,0.7073,0,0.0,29,24,0,0,0,0
+3dde46eaaf53,10,A3-10,The monkey going in and out of the hole.,2,visible_f0,41,41,0,0,7.1,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0125,38,33,0,0,0,0
+3dde46eaaf53,11,A3-10,The monkey exiting and re-entering the cave.,2,visible_f0,41,41,0,0,0.81,initial_grounding_failure,0,0.0,41,0,1.0,0,0.004,41,41,0,0,0,0
+3dde46eaaf53,12,A3-10,The monkey emerging from the hole and returning inside.,2,visible_f0,41,41,0,0,6.81,initial_grounding_failure,0,0.0,3,1,0.9268,0,0.0141,38,33,0,0,0,0
+3dde46eaaf53,13,A3-10,The monkey coming out of the cave and then going back inside.,2,visible_f0,41,41,0,0,3.89,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,14,A3-10,The monkey that runs from the middle to the left and then runs back again.,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,15,A3-10,The monkey running to the left and then returning to the middle.,2,visible_f0,41,41,0,0,7.65,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,28,0,0,0,0
+3dde46eaaf53,16,A3-10,The monkey squatting in the middle of the cave entrance.,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,17,A3-10,The monkey in a crouched position at the entrance of the cave.,1,visible_f0,41,41,0,0,12.79,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1011,41,41,0,0,0,0
+3dde46eaaf53,18,A3-10,The monkey sitting down in the middle,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,19,A3-10,The monkey crouching near the center of the cave's entrance.,1,visible_f0,41,41,0,0,11.52,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1553,41,41,0,0,0,0
+3dde46eaaf53,25,A3-10,"In the middle of the video, it stands alone at the entrance of a cave",1,visible_f0,41,41,0,0,8.99,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0655,41,41,0,0,0,0
+3dde46eaaf53,26,A3-10,who traveled the longest distance,2,visible_f0,41,41,0,0,7.61,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,28,0,0,0,0
+3dde46eaaf53,0,largest,The monkey sitting crouched at the center of the hole.,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,1,largest,Monkey running out of a hole to the left then right,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,3,largest,monkey walking in and out of the gate,2,visible_f0,41,41,0,0,1.91,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,4,largest,come out from one door walk to the left door and back,2,visible_f0,41,41,0,0,1.94,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,6,largest,Monkey jogging out of a hole to the left-side then right-side,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,7,largest,monkey moving in and out of the gate,2,visible_f0,41,41,0,0,1.93,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,8,largest,come out from one door move to the left-side door and back,2,visible_f0,41,41,0,0,1.96,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,9,largest,The monkey that comes out of the cave and then goes back in.,2,visible_f0,41,41,0,0,3.89,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,10,largest,The monkey going in and out of the hole.,2,visible_f0,41,41,0,0,3.88,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,11,largest,The monkey exiting and re-entering the cave.,2,visible_f0,41,41,0,0,0.81,initial_grounding_failure,0,0.0,41,0,1.0,0,0.004,41,41,0,0,0,0
+3dde46eaaf53,12,largest,The monkey emerging from the hole and returning inside.,2,visible_f0,41,41,0,0,3.89,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,13,largest,The monkey coming out of the cave and then going back inside.,2,visible_f0,41,41,0,0,3.89,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,14,largest,The monkey that runs from the middle to the left and then runs back again.,2,visible_f0,41,41,0,0,0.99,initial_grounding_failure,0,0.0,41,0,1.0,0,0.17,41,41,0,0,0,0
+3dde46eaaf53,15,largest,The monkey running to the left and then returning to the middle.,2,visible_f0,41,41,0,0,7.65,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,28,0,0,0,0
+3dde46eaaf53,16,largest,The monkey squatting in the middle of the cave entrance.,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,17,largest,The monkey in a crouched position at the entrance of the cave.,1,visible_f0,41,41,0,0,12.79,initial_grounding_failure,0,0.0,41,0,1.0,0,0.1011,41,41,0,0,0,0
+3dde46eaaf53,18,largest,The monkey sitting down in the middle,1,visible_f0,41,41,0,0,22.95,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,2,0,0,0,0
+3dde46eaaf53,19,largest,The monkey crouching near the center of the cave's entrance.,1,visible_f0,41,41,0,0,0.0,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0,41,41,0,0,0,0
+3dde46eaaf53,25,largest,"In the middle of the video, it stands alone at the entrance of a cave",1,visible_f0,41,41,0,0,8.99,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0655,41,41,0,0,0,0
+3dde46eaaf53,26,largest,who traveled the longest distance,2,visible_f0,41,41,0,0,1.09,initial_grounding_failure,0,0.0,41,0,1.0,0,0.004,41,41,0,0,0,0
+410dae675d9a,0,A0,Girl riding bicycle in a circle,1,visible_f0,53,45,0,0,22.16,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7252,45,45,1,1,0,0
+410dae675d9a,2,A0,Stationary bicycle,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7278,53,53,0,0,0,8
+410dae675d9a,3,A0,Bicycle moving in a circle,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7723,46,44,1,1,7,0
+410dae675d9a,4,A0,parking black car,2,visible_f0,53,53,0,0,0.0,initial_grounding_failure,0,0.0,53,0,1.0,1,0.9532,53,53,0,0,0,0
+410dae675d9a,5,A0,parking white car,2,visible_f0,53,53,0,1,90.11,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,6,A0,still bike,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7279,53,53,0,0,0,8
+410dae675d9a,7,A0,moving bike,5,visible_f0,53,46,0,1,68.35,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,8,A0,moving bicycle,5,visible_f0,53,46,0,1,68.34,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,9,A0,little girl riding a bicycle,1,visible_f0,53,45,0,0,22.16,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7271,45,45,1,1,0,0
+410dae675d9a,10,A0,parked bicycle,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.728,53,53,0,0,0,8
+410dae675d9a,11,A0,Bicycle shifting in a circle,5,visible_f0,53,46,0,1,68.31,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,12,A0,The individual who is cycling.,1,visible_f0,53,45,0,1,78.85,no_failure,,,,,,,,0,0,1,1,1,0
+410dae675d9a,13,A0,The person on a bike.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.416,12,0,1,1,1,0
+410dae675d9a,14,A0,The cyclist.,1,visible_f0,53,45,0,1,78.87,no_failure,,,,,,,,0,0,1,1,1,0
+410dae675d9a,15,A0,The one riding a bicycle.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4158,12,0,1,1,1,0
+410dae675d9a,16,A0,The white car parked without moving.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,17,A0,The motionless white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,18,A0,The white car that is stationary.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,19,A0,The unmoving white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,20,A0,The white automobile not in motion.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,21,A0,The black car parked without moving.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,22,A0,The motionless black car parked.,3,visible_f0,53,53,0,1,92.31,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,23,A0,The black car that is stationary.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,24,A0,The unmoving black car parked.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,25,A0,The black automobile not in motion.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,26,A0,The stationary bicycle parked without moving.,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7282,53,53,0,0,0,8
+410dae675d9a,27,A0,The unmoving bicycle parked.,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7286,53,53,0,0,0,8
+410dae675d9a,28,A0,The bike that is not in motion.,4,visible_f0,53,53,0,0,1.15,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7279,53,53,0,0,0,8
+410dae675d9a,29,A0,The bicycle at rest and not moving.,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7279,53,53,0,0,0,8
+410dae675d9a,30,A0,The parked bicycle that has not been ridden.,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7283,53,53,0,0,0,8
+410dae675d9a,31,A0,The bicycle in motion.,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7721,46,44,1,1,7,0
+410dae675d9a,32,A0,The moving bicycle.,5,visible_f0,53,46,0,1,68.36,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,33,A0,The bike that is currently moving.,5,visible_f0,53,46,0,1,68.31,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,34,A0,The bicycle that is on the move.,5,visible_f0,53,46,0,1,68.36,no_failure,,,,,,,,2,1,1,1,0,1
+410dae675d9a,35,A0,The mobile bicycle.,5,visible_f0,53,46,0,1,68.36,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,36,A0,The girl is circling around what?,4,visible_f0,53,53,0,0,1.35,initial_grounding_failure,0,0.0,53,0,1.0,1,0.8894,53,53,0,0,0,7
+410dae675d9a,0,A1,Girl riding bicycle in a circle,1,visible_f0,53,45,0,0,22.16,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7252,45,45,1,1,0,0
+410dae675d9a,2,A1,Stationary bicycle,4,visible_f0,53,53,0,1,66.82,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,3,A1,Bicycle moving in a circle,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7723,46,44,1,1,7,0
+410dae675d9a,4,A1,parking black car,2,visible_f0,53,53,0,0,0.0,initial_grounding_failure,0,0.0,53,0,1.0,1,0.9532,53,53,0,0,0,0
+410dae675d9a,5,A1,parking white car,2,visible_f0,53,53,0,1,90.11,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,6,A1,still bike,4,visible_f0,53,53,0,1,66.75,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,7,A1,moving bike,5,visible_f0,53,46,0,0,2.36,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7729,46,44,1,1,7,0
+410dae675d9a,8,A1,moving bicycle,5,visible_f0,53,46,0,0,2.36,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7728,46,44,1,1,7,0
+410dae675d9a,9,A1,little girl riding a bicycle,1,visible_f0,53,45,0,0,22.16,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7271,45,45,1,1,0,0
+410dae675d9a,10,A1,parked bicycle,4,visible_f0,53,53,0,1,66.76,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,11,A1,Bicycle shifting in a circle,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7723,46,44,1,1,7,0
+410dae675d9a,12,A1,The individual who is cycling.,1,visible_f0,53,45,0,1,78.85,no_failure,,,,,,,,0,0,1,1,1,0
+410dae675d9a,13,A1,The person on a bike.,1,visible_f0,53,45,0,0,1.99,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7726,45,43,1,1,8,0
+410dae675d9a,14,A1,The cyclist.,1,visible_f0,53,45,0,0,1.99,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7729,45,43,1,1,8,0
+410dae675d9a,15,A1,The one riding a bicycle.,1,visible_f0,53,45,0,0,1.99,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7729,45,43,1,1,8,0
+410dae675d9a,16,A1,The white car parked without moving.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,17,A1,The motionless white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,18,A1,The white car that is stationary.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,19,A1,The unmoving white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,20,A1,The white automobile not in motion.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,21,A1,The black car parked without moving.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,22,A1,The motionless black car parked.,3,visible_f0,53,53,0,1,92.31,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,23,A1,The black car that is stationary.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,24,A1,The unmoving black car parked.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,25,A1,The black automobile not in motion.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,26,A1,The stationary bicycle parked without moving.,4,visible_f0,53,53,0,1,66.85,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,27,A1,The unmoving bicycle parked.,4,visible_f0,53,53,0,1,66.85,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,28,A1,The bike that is not in motion.,4,visible_f0,53,53,0,1,66.53,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,29,A1,The bicycle at rest and not moving.,4,visible_f0,53,53,0,1,66.65,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,30,A1,The parked bicycle that has not been ridden.,4,visible_f0,53,53,0,1,66.8,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,31,A1,The bicycle in motion.,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7721,46,44,1,1,7,0
+410dae675d9a,32,A1,The moving bicycle.,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7732,46,44,1,1,7,0
+410dae675d9a,33,A1,The bike that is currently moving.,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7721,46,44,1,1,7,0
+410dae675d9a,34,A1,The bicycle that is on the move.,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7724,46,44,1,1,7,0
+410dae675d9a,35,A1,The mobile bicycle.,5,visible_f0,53,46,0,0,2.36,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7728,46,44,1,1,7,0
+410dae675d9a,36,A1,The girl is circling around what?,4,visible_f0,53,53,0,0,1.35,initial_grounding_failure,0,0.0,53,0,1.0,1,0.8894,53,53,0,0,0,7
+410dae675d9a,0,A3-5,Girl riding bicycle in a circle,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4159,12,0,1,1,1,0
+410dae675d9a,2,A3-5,Stationary bicycle,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7278,53,53,0,0,0,8
+410dae675d9a,3,A3-5,Bicycle moving in a circle,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7723,46,44,1,1,7,0
+410dae675d9a,4,A3-5,parking black car,2,visible_f0,53,53,0,0,0.0,initial_grounding_failure,0,0.0,53,0,1.0,1,0.9532,53,53,0,0,0,0
+410dae675d9a,5,A3-5,parking white car,2,visible_f0,53,53,0,1,90.11,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,6,A3-5,still bike,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7279,53,53,0,0,0,8
+410dae675d9a,7,A3-5,moving bike,5,visible_f0,53,46,0,1,68.35,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,8,A3-5,moving bicycle,5,visible_f0,53,46,0,1,68.34,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,9,A3-5,little girl riding a bicycle,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4159,12,0,1,1,1,0
+410dae675d9a,10,A3-5,parked bicycle,4,visible_f0,53,53,0,1,66.76,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,11,A3-5,Bicycle shifting in a circle,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7723,46,44,1,1,7,0
+410dae675d9a,12,A3-5,The individual who is cycling.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4158,12,0,1,1,1,0
+410dae675d9a,13,A3-5,The person on a bike.,1,visible_f0,53,45,0,0,22.17,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7276,45,45,1,1,0,0
+410dae675d9a,14,A3-5,The cyclist.,1,visible_f0,53,45,0,0,1.99,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7729,45,43,1,1,8,0
+410dae675d9a,15,A3-5,The one riding a bicycle.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4158,12,0,1,1,1,0
+410dae675d9a,16,A3-5,The white car parked without moving.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,17,A3-5,The motionless white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,18,A3-5,The white car that is stationary.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,19,A3-5,The unmoving white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,20,A3-5,The white automobile not in motion.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,21,A3-5,The black car parked without moving.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,22,A3-5,The motionless black car parked.,3,visible_f0,53,53,0,1,92.31,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,23,A3-5,The black car that is stationary.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,24,A3-5,The unmoving black car parked.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,25,A3-5,The black automobile not in motion.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,26,A3-5,The stationary bicycle parked without moving.,4,visible_f0,53,53,0,1,66.85,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,27,A3-5,The unmoving bicycle parked.,4,visible_f0,53,53,0,1,66.85,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,28,A3-5,The bike that is not in motion.,4,visible_f0,53,53,0,0,1.15,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7279,53,53,0,0,0,8
+410dae675d9a,29,A3-5,The bicycle at rest and not moving.,4,visible_f0,53,53,0,1,66.65,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,30,A3-5,The parked bicycle that has not been ridden.,4,visible_f0,53,53,0,1,66.8,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,31,A3-5,The bicycle in motion.,5,visible_f0,53,46,0,1,68.35,no_failure,,,,,,,,2,1,1,1,0,1
+410dae675d9a,32,A3-5,The moving bicycle.,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7732,46,44,1,1,7,0
+410dae675d9a,33,A3-5,The bike that is currently moving.,5,visible_f0,53,46,0,1,68.31,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,34,A3-5,The bicycle that is on the move.,5,visible_f0,53,46,0,1,68.36,no_failure,,,,,,,,2,1,1,1,0,1
+410dae675d9a,35,A3-5,The mobile bicycle.,5,visible_f0,53,46,0,0,2.36,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7728,46,44,1,1,7,0
+410dae675d9a,36,A3-5,The girl is circling around what?,4,visible_f0,53,53,0,0,2.7,initial_grounding_failure,0,0.0,53,0,1.0,0,0.0,53,53,0,0,0,0
+410dae675d9a,0,A3-10,Girl riding bicycle in a circle,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4159,12,0,1,1,1,0
+410dae675d9a,2,A3-10,Stationary bicycle,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7278,53,53,0,0,0,8
+410dae675d9a,3,A3-10,Bicycle moving in a circle,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7723,46,44,1,1,7,0
+410dae675d9a,4,A3-10,parking black car,2,visible_f0,53,53,0,0,0.0,initial_grounding_failure,0,0.0,53,0,1.0,1,0.9532,53,53,0,0,0,0
+410dae675d9a,5,A3-10,parking white car,2,visible_f0,53,53,0,1,90.11,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,6,A3-10,still bike,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7279,53,53,0,0,0,8
+410dae675d9a,7,A3-10,moving bike,5,visible_f0,53,46,0,1,68.35,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,8,A3-10,moving bicycle,5,visible_f0,53,46,0,1,68.34,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,9,A3-10,little girl riding a bicycle,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4159,12,0,1,1,1,0
+410dae675d9a,10,A3-10,parked bicycle,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.728,53,53,0,0,0,8
+410dae675d9a,11,A3-10,Bicycle shifting in a circle,5,visible_f0,53,46,0,0,2.35,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7723,46,44,1,1,7,0
+410dae675d9a,12,A3-10,The individual who is cycling.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4158,12,0,1,1,1,0
+410dae675d9a,13,A3-10,The person on a bike.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.416,12,0,1,1,1,0
+410dae675d9a,14,A3-10,The cyclist.,1,visible_f0,53,45,0,0,1.99,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7729,45,43,1,1,8,0
+410dae675d9a,15,A3-10,The one riding a bicycle.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4158,12,0,1,1,1,0
+410dae675d9a,16,A3-10,The white car parked without moving.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,17,A3-10,The motionless white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,18,A3-10,The white car that is stationary.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,19,A3-10,The unmoving white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,20,A3-10,The white automobile not in motion.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,21,A3-10,The black car parked without moving.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,22,A3-10,The motionless black car parked.,3,visible_f0,53,53,0,1,92.31,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,23,A3-10,The black car that is stationary.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,24,A3-10,The unmoving black car parked.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,25,A3-10,The black automobile not in motion.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,26,A3-10,The stationary bicycle parked without moving.,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7282,53,53,0,0,0,8
+410dae675d9a,27,A3-10,The unmoving bicycle parked.,4,visible_f0,53,53,0,1,66.85,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,28,A3-10,The bike that is not in motion.,4,visible_f0,53,53,0,0,50.17,initial_grounding_failure,0,0.0,12,1,0.5849,0,0.3169,31,5,0,0,0,0
+410dae675d9a,29,A3-10,The bicycle at rest and not moving.,4,visible_f0,53,53,0,1,66.65,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,30,A3-10,The parked bicycle that has not been ridden.,4,visible_f0,53,53,0,1,66.8,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,31,A3-10,The bicycle in motion.,5,visible_f0,53,46,0,1,68.35,no_failure,,,,,,,,2,1,1,1,0,1
+410dae675d9a,32,A3-10,The moving bicycle.,5,visible_f0,53,46,0,1,68.36,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,33,A3-10,The bike that is currently moving.,5,visible_f0,53,46,0,1,68.31,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,34,A3-10,The bicycle that is on the move.,5,visible_f0,53,46,0,1,68.36,no_failure,,,,,,,,2,1,1,1,0,1
+410dae675d9a,35,A3-10,The mobile bicycle.,5,visible_f0,53,46,0,0,2.36,initial_grounding_failure,0,0.0,12,0,1.0,1,0.7728,46,44,1,1,7,0
+410dae675d9a,36,A3-10,The girl is circling around what?,4,visible_f0,53,53,0,0,1.35,initial_grounding_failure,0,0.0,53,0,1.0,1,0.8894,53,53,0,0,0,7
+410dae675d9a,0,largest,Girl riding bicycle in a circle,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4159,12,0,1,1,1,0
+410dae675d9a,2,largest,Stationary bicycle,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7278,53,53,0,0,0,8
+410dae675d9a,3,largest,Bicycle moving in a circle,5,visible_f0,53,46,0,1,68.31,no_failure,,,,,,,,2,1,1,1,0,1
+410dae675d9a,4,largest,parking black car,2,visible_f0,53,53,0,0,0.0,initial_grounding_failure,0,0.0,53,0,1.0,1,0.9532,53,53,0,0,0,0
+410dae675d9a,5,largest,parking white car,2,visible_f0,53,53,0,0,0.0,initial_grounding_failure,0,0.0,53,0,1.0,1,0.9528,53,53,0,0,0,0
+410dae675d9a,6,largest,still bike,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7279,53,53,0,0,0,8
+410dae675d9a,7,largest,moving bike,5,visible_f0,53,46,0,1,68.35,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,8,largest,moving bicycle,5,visible_f0,53,46,0,1,68.34,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,9,largest,little girl riding a bicycle,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4159,12,0,1,1,1,0
+410dae675d9a,10,largest,parked bicycle,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.728,53,53,0,0,0,8
+410dae675d9a,11,largest,Bicycle shifting in a circle,5,visible_f0,53,46,0,0,18.44,initial_grounding_failure,0,0.0,12,0,1.0,0,0.2852,46,12,1,1,7,0
+410dae675d9a,12,largest,The individual who is cycling.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4158,12,0,1,1,1,0
+410dae675d9a,13,largest,The person on a bike.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.416,12,0,1,1,1,0
+410dae675d9a,14,largest,The cyclist.,1,visible_f0,53,45,0,1,52.56,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4161,12,0,1,1,1,0
+410dae675d9a,15,largest,The one riding a bicycle.,1,visible_f0,53,45,0,1,52.55,mask_propagation_failure,26,0.5,3,1,0.3333,0,0.4158,12,0,1,1,1,0
+410dae675d9a,16,largest,The white car parked without moving.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,17,largest,The motionless white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,18,largest,The white car that is stationary.,2,visible_f0,53,53,0,1,90.03,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,19,largest,The unmoving white car parked.,2,visible_f0,53,53,0,1,90.04,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,20,largest,The white automobile not in motion.,2,visible_f0,53,53,0,0,0.0,initial_grounding_failure,0,0.0,53,0,1.0,1,0.9532,53,53,0,0,0,0
+410dae675d9a,21,largest,The black car parked without moving.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,22,largest,The motionless black car parked.,3,visible_f0,53,53,0,1,92.31,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,23,largest,The black car that is stationary.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,24,largest,The unmoving black car parked.,3,visible_f0,53,53,0,1,92.3,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,25,largest,The black automobile not in motion.,3,visible_f0,53,53,0,1,92.36,no_failure,,,,,,,,0,0,0,0,0,0
+410dae675d9a,26,largest,The stationary bicycle parked without moving.,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7282,53,53,0,0,0,8
+410dae675d9a,27,largest,The unmoving bicycle parked.,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7286,53,53,0,0,0,8
+410dae675d9a,28,largest,The bike that is not in motion.,4,visible_f0,53,53,0,0,50.17,initial_grounding_failure,0,0.0,12,1,0.5849,0,0.3169,31,5,0,0,0,0
+410dae675d9a,29,largest,The bicycle at rest and not moving.,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7279,53,53,0,0,0,8
+410dae675d9a,30,largest,The parked bicycle that has not been ridden.,4,visible_f0,53,53,0,0,1.14,initial_grounding_failure,0,0.0,53,0,1.0,1,0.7283,53,53,0,0,0,8
+410dae675d9a,31,largest,The bicycle in motion.,5,visible_f0,53,46,0,1,68.35,no_failure,,,,,,,,2,1,1,1,0,1
+410dae675d9a,32,largest,The moving bicycle.,5,visible_f0,53,46,0,1,68.36,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,33,largest,The bike that is currently moving.,5,visible_f0,53,46,0,1,68.31,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,34,largest,The bicycle that is on the move.,5,visible_f0,53,46,0,1,68.36,no_failure,,,,,,,,2,1,1,1,0,1
+410dae675d9a,35,largest,The mobile bicycle.,5,visible_f0,53,46,0,1,68.36,no_failure,,,,,,,,3,1,1,1,0,1
+410dae675d9a,36,largest,The girl is circling around what?,4,visible_f0,53,53,0,0,2.7,initial_grounding_failure,0,0.0,53,0,1.0,0,0.0,53,53,0,0,0,0
+4fddcf8823f0,5,A0,The bird that arrived at the bottom of the cage first.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,6,A0,The bird that reached the cage bottom before others.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,7,A0,The bird that got to the bottom of the cage earliest.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,8,A0,The bird that was the first to reach the cage floor.,1,visible_f0,36,36,0,1,18.6,mask_propagation_failure,5,0.1429,28,1,0.9032,0,0.4756,28,18,0,0,0,0
+4fddcf8823f0,9,A0,The bird that reached the bottom of the cage initially.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,10,A0,The bird that has not reached the bottom of the cage yet.,2,visible_f0,36,36,0,0,3.66,initial_grounding_failure,0,0.0,36,0,1.0,1,0.689,36,35,0,0,0,0
+4fddcf8823f0,11,A0,The bird that hasn't touched the cage floor so far.,2,visible_f0,36,36,0,0,3.62,initial_grounding_failure,0,0.0,36,0,1.0,1,0.6892,36,35,0,0,0,0
+4fddcf8823f0,12,A0,The second bird to reach the bottom of the cage.,3,visible_f0,36,36,0,0,1.23,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,13,A0,The bird that arrived at the cage bottom in second place.,3,visible_f0,36,36,0,0,37.22,initial_grounding_failure,0,0.0,7,1,0.5,1,0.6887,18,6,0,0,0,0
+4fddcf8823f0,14,A0,The second bird that touched the cage floor.,3,visible_f0,36,36,0,0,37.05,initial_grounding_failure,0,0.0,7,1,0.5,1,0.6889,18,7,0,0,0,0
+4fddcf8823f0,5,A1,The bird that arrived at the bottom of the cage first.,1,visible_f0,36,36,0,1,13.23,mask_propagation_failure,3,0.0857,33,0,1.0,0,0.4772,33,21,0,0,0,6
+4fddcf8823f0,6,A1,The bird that reached the cage bottom before others.,1,visible_f0,36,36,0,1,13.21,mask_propagation_failure,3,0.0857,33,0,1.0,0,0.4771,33,21,0,0,0,6
+4fddcf8823f0,7,A1,The bird that got to the bottom of the cage earliest.,1,visible_f0,36,36,0,0,19.53,initial_grounding_failure,0,0.0,20,1,0.7778,1,0.7147,28,20,0,0,0,0
+4fddcf8823f0,8,A1,The bird that was the first to reach the cage floor.,1,visible_f0,36,36,0,1,13.3,mask_propagation_failure,3,0.0857,33,0,1.0,0,0.4766,33,21,0,0,0,6
+4fddcf8823f0,9,A1,The bird that reached the bottom of the cage initially.,1,visible_f0,36,36,0,1,13.25,mask_propagation_failure,3,0.0857,33,0,1.0,0,0.4771,33,21,0,0,0,6
+4fddcf8823f0,10,A1,The bird that has not reached the bottom of the cage yet.,2,visible_f0,36,36,0,0,1.2,initial_grounding_failure,0,0.0,36,0,1.0,1,0.715,36,36,0,0,0,0
+4fddcf8823f0,11,A1,The bird that hasn't touched the cage floor so far.,2,visible_f0,36,36,0,0,0.97,initial_grounding_failure,0,0.0,36,0,1.0,1,0.6308,36,36,0,0,0,0
+4fddcf8823f0,12,A1,The second bird to reach the bottom of the cage.,3,visible_f0,36,36,0,1,35.61,mask_propagation_failure,19,0.5429,9,1,0.8824,0,0.454,16,10,0,0,0,0
+4fddcf8823f0,13,A1,The bird that arrived at the cage bottom in second place.,3,visible_f0,36,36,0,0,37.22,initial_grounding_failure,0,0.0,7,1,0.5,1,0.6887,18,6,0,0,0,0
+4fddcf8823f0,14,A1,The second bird that touched the cage floor.,3,visible_f0,36,36,0,1,25.4,mask_propagation_failure,12,0.3429,3,1,0.9167,0,0.2774,22,16,0,0,0,0
+4fddcf8823f0,5,A3-5,The bird that arrived at the bottom of the cage first.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,6,A3-5,The bird that reached the cage bottom before others.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,7,A3-5,The bird that got to the bottom of the cage earliest.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,8,A3-5,The bird that was the first to reach the cage floor.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,9,A3-5,The bird that reached the bottom of the cage initially.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,10,A3-5,The bird that has not reached the bottom of the cage yet.,2,visible_f0,36,36,0,0,0.79,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,11,A3-5,The bird that hasn't touched the cage floor so far.,2,visible_f0,36,36,0,0,6.34,initial_grounding_failure,0,0.0,29,1,0.9722,1,0.663,35,34,0,0,0,6
+4fddcf8823f0,12,A3-5,The second bird to reach the bottom of the cage.,3,visible_f0,36,36,0,0,1.23,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,13,A3-5,The bird that arrived at the cage bottom in second place.,3,visible_f0,36,36,0,0,1.23,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,14,A3-5,The second bird that touched the cage floor.,3,visible_f0,36,36,0,0,31.29,initial_grounding_failure,0,0.0,11,1,0.6111,1,0.6632,22,11,0,0,0,6
+4fddcf8823f0,5,A3-10,The bird that arrived at the bottom of the cage first.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,6,A3-10,The bird that reached the cage bottom before others.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,7,A3-10,The bird that got to the bottom of the cage earliest.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,8,A3-10,The bird that was the first to reach the cage floor.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,9,A3-10,The bird that reached the bottom of the cage initially.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,10,A3-10,The bird that has not reached the bottom of the cage yet.,2,visible_f0,36,36,0,0,0.79,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,11,A3-10,The bird that hasn't touched the cage floor so far.,2,visible_f0,36,36,0,0,6.34,initial_grounding_failure,0,0.0,29,1,0.9722,1,0.663,35,34,0,0,0,6
+4fddcf8823f0,12,A3-10,The second bird to reach the bottom of the cage.,3,visible_f0,36,36,0,0,1.23,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,13,A3-10,The bird that arrived at the cage bottom in second place.,3,visible_f0,36,36,0,0,1.23,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,14,A3-10,The second bird that touched the cage floor.,3,visible_f0,36,36,0,0,37.05,initial_grounding_failure,0,0.0,7,1,0.5,1,0.6889,18,7,0,0,0,0
+4fddcf8823f0,5,largest,The bird that arrived at the bottom of the cage first.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,6,largest,The bird that reached the cage bottom before others.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,7,largest,The bird that got to the bottom of the cage earliest.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,8,largest,The bird that was the first to reach the cage floor.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,9,largest,The bird that reached the bottom of the cage initially.,1,visible_f0,36,36,0,0,1.24,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0232,36,36,0,0,0,0
+4fddcf8823f0,10,largest,The bird that has not reached the bottom of the cage yet.,2,visible_f0,36,36,0,0,0.79,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,11,largest,The bird that hasn't touched the cage floor so far.,2,visible_f0,36,36,0,0,6.34,initial_grounding_failure,0,0.0,29,1,0.9722,1,0.663,35,34,0,0,0,6
+4fddcf8823f0,12,largest,The second bird to reach the bottom of the cage.,3,visible_f0,36,36,0,0,1.23,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,13,largest,The bird that arrived at the cage bottom in second place.,3,visible_f0,36,36,0,0,1.23,initial_grounding_failure,0,0.0,36,0,1.0,0,0.0258,36,36,0,0,0,0
+4fddcf8823f0,14,largest,The second bird that touched the cage floor.,3,visible_f0,36,36,0,0,31.29,initial_grounding_failure,0,0.0,11,1,0.6111,1,0.6632,22,11,0,0,0,6
+7ca2e40c5af3,0,A0,Monkey moving around and jumping to the left,1,visible_f0,60,54,0,1,73.58,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,1,A0,Turtle being pushed around,2,visible_f0,60,58,0,0,2.4,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9523,58,57,1,1,2,6
+7ca2e40c5af3,2,A0,Monkey jumping to the right,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.839,49,49,1,0,11,6
+7ca2e40c5af3,3,A0,turtle is moved by monkeys on stone,2,visible_f0,60,58,0,0,2.41,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9519,58,57,1,1,2,6
+7ca2e40c5af3,4,A0,monkey crawling around on rocks then jumping to the left,1,visible_f0,60,54,0,1,73.57,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,5,A0,monkey jumping right to the rock then crawling around,3,absent_f0,60,49,11,,0.93,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.839,49,49,1,0,11,6
+7ca2e40c5af3,6,A0,the monkey who was the first to move the turtle,1,visible_f0,60,54,0,1,73.53,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,7,A0,monkey jumping from left,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.8388,49,49,1,0,11,6
+7ca2e40c5af3,8,A0,monkey jumping to left,1,visible_f0,60,54,0,1,73.53,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,9,A0,turtle played by monkey,2,visible_f0,60,58,0,0,2.45,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9505,58,57,1,1,2,6
+7ca2e40c5af3,10,A0,monkey holding the turtle then jump away,1,visible_f0,60,54,0,1,73.53,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,11,A0,turtle turned upside down,2,visible_f0,60,58,0,0,2.46,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9496,58,57,1,1,2,6
+7ca2e40c5af3,12,A0,The monkey that left first.,1,visible_f0,60,54,0,1,73.52,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,13,A0,The first monkey to leave.,1,visible_f0,60,54,0,1,73.57,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,14,A0, The turtle played with by the monkeys.,2,visible_f0,60,58,0,0,2.42,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9519,58,57,1,1,2,6
+7ca2e40c5af3,15,A0,The monkey-handled turtle.,2,visible_f0,60,58,0,0,2.5,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9483,58,57,1,1,2,6
+7ca2e40c5af3,16,A0,The monkey that jumped onto the rock from the left side.,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.8389,49,49,1,0,11,6
+7ca2e40c5af3,17,A0,The monkey leaping onto the rock from the left.,3,absent_f0,60,49,11,,0.93,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.839,49,49,1,0,11,6
+7ca2e40c5af3,18,A0,The monkey that made a jump to the rock from the left.,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.839,49,49,1,0,11,6
+7ca2e40c5af3,19,A0,The monkey jumping onto the rock on the left.,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.8389,49,49,1,0,11,6
+7ca2e40c5af3,20,A0,The object being teased by the monkeys.,2,visible_f0,60,58,0,0,3.67,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0216,58,58,1,1,2,0
+7ca2e40c5af3,0,A1,Monkey moving around and jumping to the left,1,visible_f0,60,54,0,1,73.58,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,1,A1,Turtle being pushed around,2,visible_f0,60,58,0,0,2.4,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9523,58,57,1,1,2,6
+7ca2e40c5af3,2,A1,Monkey jumping to the right,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.839,49,49,1,0,11,6
+7ca2e40c5af3,3,A1,turtle is moved by monkeys on stone,2,visible_f0,60,58,0,0,3.19,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0084,58,58,1,1,2,0
+7ca2e40c5af3,4,A1,monkey crawling around on rocks then jumping to the left,1,visible_f0,60,54,0,0,6.91,initial_grounding_failure,0,0.0,54,0,1.0,0,0.0002,54,54,1,0,6,0
+7ca2e40c5af3,5,A1,monkey jumping right to the rock then crawling around,3,absent_f0,60,49,11,,5.55,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0135,49,49,1,0,11,0
+7ca2e40c5af3,6,A1,the monkey who was the first to move the turtle,1,visible_f0,60,54,0,1,73.53,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,7,A1,monkey jumping from left,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.8388,49,49,1,0,11,6
+7ca2e40c5af3,8,A1,monkey jumping to left,1,visible_f0,60,54,0,1,73.53,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,9,A1,turtle played by monkey,2,visible_f0,60,58,0,0,3.44,initial_grounding_failure,0,0.0,41,0,1.0,1,0.8788,58,56,1,1,2,6
+7ca2e40c5af3,10,A1,monkey holding the turtle then jump away,1,visible_f0,60,54,0,0,13.85,initial_grounding_failure,0,0.0,54,0,1.0,0,0.0013,54,12,1,0,6,0
+7ca2e40c5af3,11,A1,turtle turned upside down,2,visible_f0,60,58,0,0,2.46,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9496,58,57,1,1,2,6
+7ca2e40c5af3,12,A1,The monkey that left first.,1,visible_f0,60,54,0,1,73.52,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,13,A1,The first monkey to leave.,1,visible_f0,60,54,0,1,73.57,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,14,A1, The turtle played with by the monkeys.,2,visible_f0,60,58,0,0,2.35,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9527,58,58,1,1,2,6
+7ca2e40c5af3,15,A1,The monkey-handled turtle.,2,visible_f0,60,58,0,0,2.5,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9483,58,57,1,1,2,6
+7ca2e40c5af3,16,A1,The monkey that jumped onto the rock from the left side.,3,absent_f0,60,49,11,,5.54,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,17,A1,The monkey leaping onto the rock from the left.,3,absent_f0,60,49,11,,5.4,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,18,A1,The monkey that made a jump to the rock from the left.,3,absent_f0,60,49,11,,6.7,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0432,49,49,1,0,11,0
+7ca2e40c5af3,19,A1,The monkey jumping onto the rock on the left.,3,absent_f0,60,49,11,,5.45,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,20,A1,The object being teased by the monkeys.,2,visible_f0,60,58,0,0,3.67,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0216,58,58,1,1,2,0
+7ca2e40c5af3,0,A3-5,Monkey moving around and jumping to the left,1,visible_f0,60,54,0,1,73.58,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,1,A3-5,Turtle being pushed around,2,visible_f0,60,58,0,0,2.4,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9523,58,57,1,1,2,6
+7ca2e40c5af3,2,A3-5,Monkey jumping to the right,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.839,49,49,1,0,11,6
+7ca2e40c5af3,3,A3-5,turtle is moved by monkeys on stone,2,visible_f0,60,58,0,0,3.19,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0084,58,58,1,1,2,0
+7ca2e40c5af3,4,A3-5,monkey crawling around on rocks then jumping to the left,1,visible_f0,60,54,0,0,6.91,initial_grounding_failure,0,0.0,54,0,1.0,0,0.0002,54,54,1,0,6,0
+7ca2e40c5af3,5,A3-5,monkey jumping right to the rock then crawling around,3,absent_f0,60,49,11,,5.55,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0135,49,49,1,0,11,0
+7ca2e40c5af3,6,A3-5,the monkey who was the first to move the turtle,1,visible_f0,60,54,0,1,73.62,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,7,A3-5,monkey jumping from left,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.8388,49,49,1,0,11,6
+7ca2e40c5af3,8,A3-5,monkey jumping to left,1,visible_f0,60,54,0,1,73.53,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,9,A3-5,turtle played by monkey,2,visible_f0,60,58,0,0,3.44,initial_grounding_failure,0,0.0,41,0,1.0,1,0.8788,58,56,1,1,2,6
+7ca2e40c5af3,10,A3-5,monkey holding the turtle then jump away,1,visible_f0,60,54,0,0,13.85,initial_grounding_failure,0,0.0,54,0,1.0,0,0.0013,54,12,1,0,6,0
+7ca2e40c5af3,11,A3-5,turtle turned upside down,2,visible_f0,60,58,0,0,2.46,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9496,58,57,1,1,2,6
+7ca2e40c5af3,12,A3-5,The monkey that left first.,1,visible_f0,60,54,0,1,73.52,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,13,A3-5,The first monkey to leave.,1,visible_f0,60,54,0,1,73.57,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,14,A3-5, The turtle played with by the monkeys.,2,visible_f0,60,58,0,0,2.42,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9519,58,57,1,1,2,6
+7ca2e40c5af3,15,A3-5,The monkey-handled turtle.,2,visible_f0,60,58,0,0,2.5,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9483,58,57,1,1,2,6
+7ca2e40c5af3,16,A3-5,The monkey that jumped onto the rock from the left side.,3,absent_f0,60,49,11,,5.54,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,17,A3-5,The monkey leaping onto the rock from the left.,3,absent_f0,60,49,11,,5.4,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,18,A3-5,The monkey that made a jump to the rock from the left.,3,absent_f0,60,49,11,,6.7,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0432,49,49,1,0,11,0
+7ca2e40c5af3,19,A3-5,The monkey jumping onto the rock on the left.,3,absent_f0,60,49,11,,5.45,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,20,A3-5,The object being teased by the monkeys.,2,visible_f0,60,58,0,0,3.67,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0216,58,58,1,1,2,0
+7ca2e40c5af3,0,A3-10,Monkey moving around and jumping to the left,1,visible_f0,60,54,0,1,73.58,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,1,A3-10,Turtle being pushed around,2,visible_f0,60,58,0,0,2.4,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9523,58,57,1,1,2,6
+7ca2e40c5af3,2,A3-10,Monkey jumping to the right,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.839,49,49,1,0,11,6
+7ca2e40c5af3,3,A3-10,turtle is moved by monkeys on stone,2,visible_f0,60,58,0,0,3.19,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0084,58,58,1,1,2,0
+7ca2e40c5af3,4,A3-10,monkey crawling around on rocks then jumping to the left,1,visible_f0,60,54,0,0,6.91,initial_grounding_failure,0,0.0,54,0,1.0,0,0.0002,54,54,1,0,6,0
+7ca2e40c5af3,5,A3-10,monkey jumping right to the rock then crawling around,3,absent_f0,60,49,11,,5.55,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0135,49,49,1,0,11,0
+7ca2e40c5af3,6,A3-10,the monkey who was the first to move the turtle,1,visible_f0,60,54,0,1,73.62,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,7,A3-10,monkey jumping from left,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.8388,49,49,1,0,11,6
+7ca2e40c5af3,8,A3-10,monkey jumping to left,1,visible_f0,60,54,0,1,73.53,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,9,A3-10,turtle played by monkey,2,visible_f0,60,58,0,0,3.44,initial_grounding_failure,0,0.0,41,0,1.0,1,0.8788,58,56,1,1,2,6
+7ca2e40c5af3,10,A3-10,monkey holding the turtle then jump away,1,visible_f0,60,54,0,0,13.85,initial_grounding_failure,0,0.0,54,0,1.0,0,0.0013,54,12,1,0,6,0
+7ca2e40c5af3,11,A3-10,turtle turned upside down,2,visible_f0,60,58,0,0,2.46,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9496,58,57,1,1,2,6
+7ca2e40c5af3,12,A3-10,The monkey that left first.,1,visible_f0,60,54,0,1,73.52,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,13,A3-10,The first monkey to leave.,1,visible_f0,60,54,0,1,73.57,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,14,A3-10, The turtle played with by the monkeys.,2,visible_f0,60,58,0,0,2.35,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9527,58,58,1,1,2,6
+7ca2e40c5af3,15,A3-10,The monkey-handled turtle.,2,visible_f0,60,58,0,0,2.5,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9483,58,57,1,1,2,6
+7ca2e40c5af3,16,A3-10,The monkey that jumped onto the rock from the left side.,3,absent_f0,60,49,11,,5.54,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,17,A3-10,The monkey leaping onto the rock from the left.,3,absent_f0,60,49,11,,5.4,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,18,A3-10,The monkey that made a jump to the rock from the left.,3,absent_f0,60,49,11,,6.7,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0432,49,49,1,0,11,0
+7ca2e40c5af3,19,A3-10,The monkey jumping onto the rock on the left.,3,absent_f0,60,49,11,,5.45,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,20,A3-10,The object being teased by the monkeys.,2,visible_f0,60,58,0,0,3.67,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0216,58,58,1,1,2,0
+7ca2e40c5af3,0,largest,Monkey moving around and jumping to the left,1,visible_f0,60,54,0,1,73.58,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,1,largest,Turtle being pushed around,2,visible_f0,60,58,0,0,2.4,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9523,58,57,1,1,2,6
+7ca2e40c5af3,2,largest,Monkey jumping to the right,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.839,49,49,1,0,11,6
+7ca2e40c5af3,3,largest,turtle is moved by monkeys on stone,2,visible_f0,60,58,0,0,3.19,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0084,58,58,1,1,2,0
+7ca2e40c5af3,4,largest,monkey crawling around on rocks then jumping to the left,1,visible_f0,60,54,0,0,6.91,initial_grounding_failure,0,0.0,54,0,1.0,0,0.0002,54,54,1,0,6,0
+7ca2e40c5af3,5,largest,monkey jumping right to the rock then crawling around,3,absent_f0,60,49,11,,5.55,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0135,49,49,1,0,11,0
+7ca2e40c5af3,6,largest,the monkey who was the first to move the turtle,1,visible_f0,60,54,0,1,73.62,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,7,largest,monkey jumping from left,3,absent_f0,60,49,11,,0.92,initial_grounding_failure,11,0.1864,49,0,1.0,1,0.8388,49,49,1,0,11,6
+7ca2e40c5af3,8,largest,monkey jumping to left,1,visible_f0,60,54,0,1,73.53,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,9,largest,turtle played by monkey,2,visible_f0,60,58,0,0,3.44,initial_grounding_failure,0,0.0,41,0,1.0,1,0.8788,58,56,1,1,2,6
+7ca2e40c5af3,10,largest,monkey holding the turtle then jump away,1,visible_f0,60,54,0,0,13.85,initial_grounding_failure,0,0.0,54,0,1.0,0,0.0013,54,12,1,0,6,0
+7ca2e40c5af3,11,largest,turtle turned upside down,2,visible_f0,60,58,0,0,2.46,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9496,58,57,1,1,2,6
+7ca2e40c5af3,12,largest,The monkey that left first.,1,visible_f0,60,54,0,1,73.52,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,13,largest,The first monkey to leave.,1,visible_f0,60,54,0,1,73.57,no_failure,,,,,,,,0,0,1,0,0,0
+7ca2e40c5af3,14,largest, The turtle played with by the monkeys.,2,visible_f0,60,58,0,0,2.42,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9519,58,57,1,1,2,6
+7ca2e40c5af3,15,largest,The monkey-handled turtle.,2,visible_f0,60,58,0,0,2.5,initial_grounding_failure,0,0.0,41,0,1.0,1,0.9483,58,57,1,1,2,6
+7ca2e40c5af3,16,largest,The monkey that jumped onto the rock from the left side.,3,absent_f0,60,49,11,,5.54,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,17,largest,The monkey leaping onto the rock from the left.,3,absent_f0,60,49,11,,5.4,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,18,largest,The monkey that made a jump to the rock from the left.,3,absent_f0,60,49,11,,6.7,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0432,49,49,1,0,11,0
+7ca2e40c5af3,19,largest,The monkey jumping onto the rock on the left.,3,absent_f0,60,49,11,,5.45,initial_grounding_failure,11,0.1864,49,0,1.0,0,0.0134,49,49,1,0,11,0
+7ca2e40c5af3,20,largest,The object being teased by the monkeys.,2,visible_f0,60,58,0,0,3.67,initial_grounding_failure,0,0.0,41,0,1.0,0,0.0216,58,58,1,1,2,0
+945c47a50243,0,A0,Man walking backwards and taking a hoop from a bear,1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0202,31,31,0,0,0,0
+945c47a50243,2,A0,Man clapping his hands,4,visible_f0,31,31,0,0,5.12,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9288,31,31,0,0,0,0
+945c47a50243,3,A0,The bear on the left turning the hula hoop with its head,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0196,31,31,0,0,0,0
+945c47a50243,4,A0,The bear on the right hula hooping with its neck,3,visible_f0,31,31,0,1,86.06,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,5,A0,"A bear standing upright, twirling a hula hoop with its neck.",3,visible_f0,31,31,0,0,10.09,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0,31,31,0,0,0,0
+945c47a50243,6,A0,An upright bear skillfully rotating a hula hoop around its neck,3,visible_f0,31,31,0,0,10.09,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0,31,31,0,0,0,0
+945c47a50243,7,A0,A standing bear effortlessly spinning a hula hoop using its neck.,3,visible_f0,31,31,0,0,10.09,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0,31,31,0,0,0,0
+945c47a50243,8,A0,"A bear on its hind legs, gracefully maneuvering a hula hoop with its neck",3,visible_f0,31,31,0,0,10.09,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0,31,31,0,0,0,0
+945c47a50243,9,A0,A bear standing tall and amusingly swinging a hula hoop with its neck,3,visible_f0,31,31,0,0,10.09,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0,31,31,0,0,0,0
+945c47a50243,10,A0,A towering bear showcasing its agility by spinning a hula hoop with its neck,3,visible_f0,31,31,0,0,10.08,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0,31,31,0,0,0,0
+945c47a50243,11,A0,"A bear in an upright position, skillfully manipulating a hula hoop with its neck.",3,visible_f0,31,31,0,0,10.09,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0,31,31,0,0,0,0
+945c47a50243,12,A0,A man clapping and stepping back while next to the hula-hooping bear.,4,visible_f0,31,31,0,0,3.11,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0202,31,31,0,0,0,0
+945c47a50243,13,A0,A man applauding and moving backwards alongside the bear twirling the hula hoop.,4,visible_f0,31,31,0,0,3.11,initial_grounding_failure,0,0.0,31,0,1.0,0,0.02,31,31,0,0,0,0
+945c47a50243,14,A0,A man clapping his hands and gracefully stepping away from the hula-hooping bear,4,visible_f0,31,31,0,0,3.11,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0199,31,31,0,0,0,0
+945c47a50243,15,A0,A man applauding and gracefully retreating while standing next to the hula-hooping bear,4,visible_f0,31,31,0,0,5.18,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9249,31,31,0,0,0,0
+945c47a50243,16,A0,A bear using its mouth to spin a small hula hoop.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0202,31,31,0,0,0,0
+945c47a50243,17,A0,The bear twirling a small hula hoop with its mouth.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,0,0.02,31,31,0,0,0,0
+945c47a50243,18,A0,The bear skillfully rotating a tiny hula hoop using only its mouth.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,0,0.0202,31,31,0,0,0,0
+945c47a50243,19,A0,"With its mouth, the bear effortlessly spinning a miniature hula hoop.",2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,0,0.02,31,31,0,0,0,0
+945c47a50243,20,A0,"The trainer on the left, guiding the bear to perform the hula hoop trick using its mouth.",1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9176,31,31,0,0,0,0
+945c47a50243,21,A0,"The trainer on the left, directing the bear's hula hoop performance with its mouth.",1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9179,31,31,0,0,0,0
+945c47a50243,30,A0,the bear playing something with its neck,3,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9013,31,31,0,0,0,0
+945c47a50243,0,A1,Man walking backwards and taking a hoop from a bear,1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9258,31,31,0,0,0,0
+945c47a50243,2,A1,Man clapping his hands,4,visible_f0,31,31,0,0,5.12,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9288,31,31,0,0,0,0
+945c47a50243,3,A1,The bear on the left turning the hula hoop with its head,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9279,31,31,0,0,0,0
+945c47a50243,4,A1,The bear on the right hula hooping with its neck,3,visible_f0,31,31,0,0,67.67,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,5,A1,"A bear standing upright, twirling a hula hoop with its neck.",3,visible_f0,31,31,0,1,85.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,6,A1,An upright bear skillfully rotating a hula hoop around its neck,3,visible_f0,31,31,0,1,85.97,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,7,A1,A standing bear effortlessly spinning a hula hoop using its neck.,3,visible_f0,31,31,0,1,85.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,8,A1,"A bear on its hind legs, gracefully maneuvering a hula hoop with its neck",3,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,0,0.1978,31,31,0,0,0,0
+945c47a50243,9,A1,A bear standing tall and amusingly swinging a hula hoop with its neck,3,visible_f0,31,31,0,1,85.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,10,A1,A towering bear showcasing its agility by spinning a hula hoop with its neck,3,visible_f0,31,31,0,1,85.98,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,11,A1,"A bear in an upright position, skillfully manipulating a hula hoop with its neck.",3,visible_f0,31,31,0,1,85.98,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,12,A1,A man clapping and stepping back while next to the hula-hooping bear.,4,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9011,31,31,0,0,0,0
+945c47a50243,13,A1,A man applauding and moving backwards alongside the bear twirling the hula hoop.,4,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9009,31,31,0,0,0,0
+945c47a50243,14,A1,A man clapping his hands and gracefully stepping away from the hula-hooping bear,4,visible_f0,31,31,0,0,5.13,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9258,31,31,0,0,0,0
+945c47a50243,15,A1,A man applauding and gracefully retreating while standing next to the hula-hooping bear,4,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9011,31,31,0,0,0,0
+945c47a50243,16,A1,A bear using its mouth to spin a small hula hoop.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9258,31,31,0,0,0,0
+945c47a50243,17,A1,The bear twirling a small hula hoop with its mouth.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.7696,31,31,0,0,0,0
+945c47a50243,18,A1,The bear skillfully rotating a tiny hula hoop using only its mouth.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9262,31,31,0,0,0,0
+945c47a50243,19,A1,"With its mouth, the bear effortlessly spinning a miniature hula hoop.",2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9249,31,31,0,0,0,0
+945c47a50243,20,A1,"The trainer on the left, guiding the bear to perform the hula hoop trick using its mouth.",1,visible_f0,31,31,0,0,11.38,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9018,31,31,0,0,0,0
+945c47a50243,21,A1,"The trainer on the left, directing the bear's hula hoop performance with its mouth.",1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9275,31,31,0,0,0,0
+945c47a50243,30,A1,the bear playing something with its neck,3,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9013,31,31,0,0,0,0
+945c47a50243,0,A3-5,Man walking backwards and taking a hoop from a bear,1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9258,31,31,0,0,0,0
+945c47a50243,2,A3-5,Man clapping his hands,4,visible_f0,31,31,0,0,5.12,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9288,31,31,0,0,0,0
+945c47a50243,3,A3-5,The bear on the left turning the hula hoop with its head,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9279,31,31,0,0,0,0
+945c47a50243,4,A3-5,The bear on the right hula hooping with its neck,3,visible_f0,31,31,0,0,67.67,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,5,A3-5,"A bear standing upright, twirling a hula hoop with its neck.",3,visible_f0,31,31,0,1,85.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,6,A3-5,An upright bear skillfully rotating a hula hoop around its neck,3,visible_f0,31,31,0,1,85.97,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,7,A3-5,A standing bear effortlessly spinning a hula hoop using its neck.,3,visible_f0,31,31,0,1,85.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,8,A3-5,"A bear on its hind legs, gracefully maneuvering a hula hoop with its neck",3,visible_f0,31,31,0,1,85.99,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,9,A3-5,A bear standing tall and amusingly swinging a hula hoop with its neck,3,visible_f0,31,31,0,1,85.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,10,A3-5,A towering bear showcasing its agility by spinning a hula hoop with its neck,3,visible_f0,31,31,0,1,85.98,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,11,A3-5,"A bear in an upright position, skillfully manipulating a hula hoop with its neck.",3,visible_f0,31,31,0,1,85.98,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,12,A3-5,A man clapping and stepping back while next to the hula-hooping bear.,4,visible_f0,31,31,0,0,5.11,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9251,31,31,0,0,0,0
+945c47a50243,13,A3-5,A man applauding and moving backwards alongside the bear twirling the hula hoop.,4,visible_f0,31,31,0,0,5.18,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9251,31,31,0,0,0,0
+945c47a50243,14,A3-5,A man clapping his hands and gracefully stepping away from the hula-hooping bear,4,visible_f0,31,31,0,0,5.13,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9258,31,31,0,0,0,0
+945c47a50243,15,A3-5,A man applauding and gracefully retreating while standing next to the hula-hooping bear,4,visible_f0,31,31,0,0,5.18,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9249,31,31,0,0,0,0
+945c47a50243,16,A3-5,A bear using its mouth to spin a small hula hoop.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9258,31,31,0,0,0,0
+945c47a50243,17,A3-5,The bear twirling a small hula hoop with its mouth.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.7696,31,31,0,0,0,0
+945c47a50243,18,A3-5,The bear skillfully rotating a tiny hula hoop using only its mouth.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9262,31,31,0,0,0,0
+945c47a50243,19,A3-5,"With its mouth, the bear effortlessly spinning a miniature hula hoop.",2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9249,31,31,0,0,0,0
+945c47a50243,20,A3-5,"The trainer on the left, guiding the bear to perform the hula hoop trick using its mouth.",1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9273,31,31,0,0,0,0
+945c47a50243,21,A3-5,"The trainer on the left, directing the bear's hula hoop performance with its mouth.",1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9275,31,31,0,0,0,0
+945c47a50243,30,A3-5,the bear playing something with its neck,3,visible_f0,31,31,0,1,86.09,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,0,A3-10,Man walking backwards and taking a hoop from a bear,1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9258,31,31,0,0,0,0
+945c47a50243,2,A3-10,Man clapping his hands,4,visible_f0,31,31,0,0,5.12,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9288,31,31,0,0,0,0
+945c47a50243,3,A3-10,The bear on the left turning the hula hoop with its head,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9279,31,31,0,0,0,0
+945c47a50243,4,A3-10,The bear on the right hula hooping with its neck,3,visible_f0,31,31,0,0,67.67,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,5,A3-10,"A bear standing upright, twirling a hula hoop with its neck.",3,visible_f0,31,31,0,1,85.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,6,A3-10,An upright bear skillfully rotating a hula hoop around its neck,3,visible_f0,31,31,0,1,85.97,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,7,A3-10,A standing bear effortlessly spinning a hula hoop using its neck.,3,visible_f0,31,31,0,1,85.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,8,A3-10,"A bear on its hind legs, gracefully maneuvering a hula hoop with its neck",3,visible_f0,31,31,0,1,85.99,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,9,A3-10,A bear standing tall and amusingly swinging a hula hoop with its neck,3,visible_f0,31,31,0,1,85.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,10,A3-10,A towering bear showcasing its agility by spinning a hula hoop with its neck,3,visible_f0,31,31,0,1,85.98,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,11,A3-10,"A bear in an upright position, skillfully manipulating a hula hoop with its neck.",3,visible_f0,31,31,0,1,85.98,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,12,A3-10,A man clapping and stepping back while next to the hula-hooping bear.,4,visible_f0,31,31,0,0,5.11,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9251,31,31,0,0,0,0
+945c47a50243,13,A3-10,A man applauding and moving backwards alongside the bear twirling the hula hoop.,4,visible_f0,31,31,0,0,5.18,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9251,31,31,0,0,0,0
+945c47a50243,14,A3-10,A man clapping his hands and gracefully stepping away from the hula-hooping bear,4,visible_f0,31,31,0,0,5.13,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9258,31,31,0,0,0,0
+945c47a50243,15,A3-10,A man applauding and gracefully retreating while standing next to the hula-hooping bear,4,visible_f0,31,31,0,0,5.18,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9249,31,31,0,0,0,0
+945c47a50243,16,A3-10,A bear using its mouth to spin a small hula hoop.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9258,31,31,0,0,0,0
+945c47a50243,17,A3-10,The bear twirling a small hula hoop with its mouth.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.7696,31,31,0,0,0,0
+945c47a50243,18,A3-10,The bear skillfully rotating a tiny hula hoop using only its mouth.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9262,31,31,0,0,0,0
+945c47a50243,19,A3-10,"With its mouth, the bear effortlessly spinning a miniature hula hoop.",2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9249,31,31,0,0,0,0
+945c47a50243,20,A3-10,"The trainer on the left, guiding the bear to perform the hula hoop trick using its mouth.",1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9273,31,31,0,0,0,0
+945c47a50243,21,A3-10,"The trainer on the left, directing the bear's hula hoop performance with its mouth.",1,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9275,31,31,0,0,0,0
+945c47a50243,30,A3-10,the bear playing something with its neck,3,visible_f0,31,31,0,1,86.09,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,0,largest,Man walking backwards and taking a hoop from a bear,1,visible_f0,31,31,0,1,77.08,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,2,largest,Man clapping his hands,4,visible_f0,31,31,0,0,6.39,initial_grounding_failure,0,0.0,31,0,1.0,1,0.7678,31,31,0,0,0,0
+945c47a50243,3,largest,The bear on the left turning the hula hoop with its head,2,visible_f0,31,31,0,1,80.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,4,largest,The bear on the right hula hooping with its neck,3,visible_f0,31,31,0,0,67.67,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,5,largest,"A bear standing upright, twirling a hula hoop with its neck.",3,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9011,31,31,0,0,0,0
+945c47a50243,6,largest,An upright bear skillfully rotating a hula hoop around its neck,3,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9007,31,31,0,0,0,0
+945c47a50243,7,largest,A standing bear effortlessly spinning a hula hoop using its neck.,3,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.8942,31,31,0,0,0,0
+945c47a50243,8,largest,"A bear on its hind legs, gracefully maneuvering a hula hoop with its neck",3,visible_f0,31,31,0,1,85.99,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,9,largest,A bear standing tall and amusingly swinging a hula hoop with its neck,3,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9008,31,31,0,0,0,0
+945c47a50243,10,largest,A towering bear showcasing its agility by spinning a hula hoop with its neck,3,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9013,31,31,0,0,0,0
+945c47a50243,11,largest,"A bear in an upright position, skillfully manipulating a hula hoop with its neck.",3,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.9009,31,31,0,0,0,0
+945c47a50243,12,largest,A man clapping and stepping back while next to the hula-hooping bear.,4,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.8939,31,31,0,0,0,0
+945c47a50243,13,largest,A man applauding and moving backwards alongside the bear twirling the hula hoop.,4,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.8944,31,31,0,0,0,0
+945c47a50243,14,largest,A man clapping his hands and gracefully stepping away from the hula-hooping bear,4,visible_f0,31,31,0,1,83.14,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,15,largest,A man applauding and gracefully retreating while standing next to the hula-hooping bear,4,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.8939,31,31,0,0,0,0
+945c47a50243,16,largest,A bear using its mouth to spin a small hula hoop.,2,visible_f0,31,31,0,1,80.86,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,17,largest,The bear twirling a small hula hoop with its mouth.,2,visible_f0,31,31,0,0,0.0,initial_grounding_failure,0,0.0,31,0,1.0,1,0.7696,31,31,0,0,0,0
+945c47a50243,18,largest,The bear skillfully rotating a tiny hula hoop using only its mouth.,2,visible_f0,31,31,0,1,80.91,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,19,largest,"With its mouth, the bear effortlessly spinning a miniature hula hoop.",2,visible_f0,31,31,0,0,12.85,initial_grounding_failure,0,0.0,31,0,1.0,1,0.8942,31,31,0,0,0,0
+945c47a50243,20,largest,"The trainer on the left, guiding the bear to perform the hula hoop trick using its mouth.",1,visible_f0,31,31,0,1,77.1,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,21,largest,"The trainer on the left, directing the bear's hula hoop performance with its mouth.",1,visible_f0,31,31,0,1,76.97,no_failure,,,,,,,,0,0,0,0,0,0
+945c47a50243,30,largest,the bear playing something with its neck,3,visible_f0,31,31,0,0,67.59,no_failure,,,,,,,,0,0,0,0,0,0
+b4d6cf8c922c,0,A0,Tiger walking from right to left,1,visible_f0,73,73,0,0,2.5,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,73,0,0,0,0
+b4d6cf8c922c,1,A0,tiger walking from distance and lying down on the ground to drink water,4,absent_f0,73,51,22,,2.28,initial_grounding_failure,22,0.3056,49,1,0.9608,0,0.0,49,48,1,0,22,0
+b4d6cf8c922c,2,A0,The tiger that moved from the right to the left.,1,visible_f0,73,73,0,0,2.49,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,73,0,0,0,0
+b4d6cf8c922c,3,A0,The tiger that shifted positions from the right to the left.,1,visible_f0,73,73,0,0,2.5,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,73,0,0,0,0
+b4d6cf8c922c,4,A0,The tiger that transitioned from the right to the left.,1,visible_f0,73,73,0,0,2.5,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,73,0,0,0,0
+b4d6cf8c922c,5,A0,The tiger that traveled from the right to the left.,1,visible_f0,73,73,0,0,2.49,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,73,0,0,0,0
+b4d6cf8c922c,6,A0,The tiger that crossed from the right to the left.,1,visible_f0,73,73,0,0,2.49,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,73,0,0,0,0
+b4d6cf8c922c,12,A0,The tiger that came to drink water last.,4,absent_f0,73,51,22,,2.27,initial_grounding_failure,22,0.3056,49,1,0.9608,0,0.0,49,48,1,0,22,0
+b4d6cf8c922c,13,A0,The last tiger that approached for drinking water.,4,absent_f0,73,51,22,,2.27,initial_grounding_failure,22,0.3056,49,1,0.9608,0,0.0,49,48,1,0,22,0
+b4d6cf8c922c,14,A0,The final tiger to walk over and start drinking water.,4,absent_f0,73,51,22,,2.28,initial_grounding_failure,22,0.3056,49,1,0.9608,0,0.0,49,48,1,0,22,0
+b4d6cf8c922c,15,A0,The tiger that arrived last to drink water.,4,absent_f0,73,51,22,,2.28,initial_grounding_failure,22,0.3056,49,1,0.9608,0,0.0,49,48,1,0,22,0
+b4d6cf8c922c,16,A0,The latest tiger to come and drink water.,4,absent_f0,73,51,22,,2.29,initial_grounding_failure,22,0.3056,49,1,0.9608,0,0.0,49,48,1,0,22,0
+b4d6cf8c922c,0,A1,Tiger walking from right to left,1,visible_f0,73,73,0,1,64.14,no_failure,,,,,,,,0,0,0,0,0,0
+b4d6cf8c922c,1,A1,tiger walking from distance and lying down on the ground to drink water,4,absent_f0,73,51,22,,2.49,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0234,51,45,1,0,22,0
+b4d6cf8c922c,2,A1,The tiger that moved from the right to the left.,1,visible_f0,73,73,0,0,7.52,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,3,A1,The tiger that shifted positions from the right to the left.,1,visible_f0,73,73,0,0,2.5,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,73,0,0,0,0
+b4d6cf8c922c,4,A1,The tiger that transitioned from the right to the left.,1,visible_f0,73,73,0,0,7.52,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,5,A1,The tiger that traveled from the right to the left.,1,visible_f0,73,73,0,0,7.54,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,6,A1,The tiger that crossed from the right to the left.,1,visible_f0,73,73,0,0,7.5,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,12,A1,The tiger that came to drink water last.,4,absent_f0,73,51,22,,1.61,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0086,51,51,1,0,22,0
+b4d6cf8c922c,13,A1,The last tiger that approached for drinking water.,4,absent_f0,73,51,22,,1.62,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0086,51,51,1,0,22,0
+b4d6cf8c922c,14,A1,The final tiger to walk over and start drinking water.,4,absent_f0,73,51,22,,1.6,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0085,51,51,1,0,22,0
+b4d6cf8c922c,15,A1,The tiger that arrived last to drink water.,4,absent_f0,73,51,22,,1.61,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0086,51,51,1,0,22,0
+b4d6cf8c922c,16,A1,The latest tiger to come and drink water.,4,absent_f0,73,51,22,,1.61,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0086,51,51,1,0,22,0
+b4d6cf8c922c,0,A3-5,Tiger walking from right to left,1,visible_f0,73,73,0,0,7.56,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,1,A3-5,tiger walking from distance and lying down on the ground to drink water,4,absent_f0,73,51,22,,2.49,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0234,51,45,1,0,22,0
+b4d6cf8c922c,2,A3-5,The tiger that moved from the right to the left.,1,visible_f0,73,73,0,0,7.52,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,3,A3-5,The tiger that shifted positions from the right to the left.,1,visible_f0,73,73,0,0,7.56,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,4,A3-5,The tiger that transitioned from the right to the left.,1,visible_f0,73,73,0,0,7.52,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,5,A3-5,The tiger that traveled from the right to the left.,1,visible_f0,73,73,0,0,7.54,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,6,A3-5,The tiger that crossed from the right to the left.,1,visible_f0,73,73,0,0,7.5,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,12,A3-5,The tiger that came to drink water last.,4,absent_f0,73,51,22,,2.51,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0238,51,45,1,0,22,0
+b4d6cf8c922c,13,A3-5,The last tiger that approached for drinking water.,4,absent_f0,73,51,22,,1.62,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0086,51,51,1,0,22,0
+b4d6cf8c922c,14,A3-5,The final tiger to walk over and start drinking water.,4,absent_f0,73,51,22,,1.6,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0085,51,51,1,0,22,0
+b4d6cf8c922c,15,A3-5,The tiger that arrived last to drink water.,4,absent_f0,73,51,22,,2.5,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0236,51,45,1,0,22,0
+b4d6cf8c922c,16,A3-5,The latest tiger to come and drink water.,4,absent_f0,73,51,22,,2.5,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0238,51,45,1,0,22,0
+b4d6cf8c922c,0,A3-10,Tiger walking from right to left,1,visible_f0,73,73,0,0,7.56,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,1,A3-10,tiger walking from distance and lying down on the ground to drink water,4,absent_f0,73,51,22,,2.49,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0234,51,45,1,0,22,0
+b4d6cf8c922c,2,A3-10,The tiger that moved from the right to the left.,1,visible_f0,73,73,0,0,7.52,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,3,A3-10,The tiger that shifted positions from the right to the left.,1,visible_f0,73,73,0,0,7.56,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,4,A3-10,The tiger that transitioned from the right to the left.,1,visible_f0,73,73,0,0,7.52,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,5,A3-10,The tiger that traveled from the right to the left.,1,visible_f0,73,73,0,0,7.54,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,6,A3-10,The tiger that crossed from the right to the left.,1,visible_f0,73,73,0,0,7.5,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,12,A3-10,The tiger that came to drink water last.,4,absent_f0,73,51,22,,2.51,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0238,51,45,1,0,22,0
+b4d6cf8c922c,13,A3-10,The last tiger that approached for drinking water.,4,absent_f0,73,51,22,,2.27,initial_grounding_failure,22,0.3056,49,1,0.9608,0,0.0,49,48,1,0,22,0
+b4d6cf8c922c,14,A3-10,The final tiger to walk over and start drinking water.,4,absent_f0,73,51,22,,1.6,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0085,51,51,1,0,22,0
+b4d6cf8c922c,15,A3-10,The tiger that arrived last to drink water.,4,absent_f0,73,51,22,,2.5,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0236,51,45,1,0,22,0
+b4d6cf8c922c,16,A3-10,The latest tiger to come and drink water.,4,absent_f0,73,51,22,,2.5,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0238,51,45,1,0,22,0
+b4d6cf8c922c,0,largest,Tiger walking from right to left,1,visible_f0,73,73,0,0,7.56,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,1,largest,tiger walking from distance and lying down on the ground to drink water,4,absent_f0,73,51,22,,2.49,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0234,51,45,1,0,22,0
+b4d6cf8c922c,2,largest,The tiger that moved from the right to the left.,1,visible_f0,73,73,0,0,7.52,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,3,largest,The tiger that shifted positions from the right to the left.,1,visible_f0,73,73,0,0,7.56,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,4,largest,The tiger that transitioned from the right to the left.,1,visible_f0,73,73,0,0,7.52,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,5,largest,The tiger that traveled from the right to the left.,1,visible_f0,73,73,0,0,7.54,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,6,largest,The tiger that crossed from the right to the left.,1,visible_f0,73,73,0,0,7.5,initial_grounding_failure,0,0.0,73,0,1.0,0,0.0,73,59,0,0,0,0
+b4d6cf8c922c,12,largest,The tiger that came to drink water last.,4,absent_f0,73,51,22,,2.51,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0238,51,45,1,0,22,0
+b4d6cf8c922c,13,largest,The last tiger that approached for drinking water.,4,absent_f0,73,51,22,,0.0,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0,51,51,1,0,22,0
+b4d6cf8c922c,14,largest,The final tiger to walk over and start drinking water.,4,absent_f0,73,51,22,,0.0,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0,51,51,1,0,22,0
+b4d6cf8c922c,15,largest,The tiger that arrived last to drink water.,4,absent_f0,73,51,22,,2.5,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0236,51,45,1,0,22,0
+b4d6cf8c922c,16,largest,The latest tiger to come and drink water.,4,absent_f0,73,51,22,,2.5,initial_grounding_failure,22,0.3056,51,0,1.0,0,0.0238,51,45,1,0,22,0
+d56a6ec78cfa,1,A0,front elephant walking to backwards,1,visible_f0,48,48,0,1,78.33,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,2,A0,elephant in the distance moving to left,2,visible_f0,48,48,0,0,4.81,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9526,48,47,0,0,0,0
+d56a6ec78cfa,3,A0,turn and walk away from us,1,visible_f0,48,48,0,1,78.32,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,4,A0,front elephant moving to backwards,1,visible_f0,48,48,0,1,78.33,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,5,A0,turn and move away from us,1,visible_f0,48,48,0,1,78.34,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,6,A0,The elephant facing us and then turning around to walk away.,1,visible_f0,48,48,0,1,78.36,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,7,A0,The large elephant that initially faced us but then walked backward.,1,visible_f0,48,48,0,1,78.32,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,8,A0,The elephant which was initially facing us but turned and moved away.,1,visible_f0,48,48,0,1,78.33,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,9,A0,The elephant that turned its back to us and walked away.,1,visible_f0,48,48,0,1,78.35,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,10,A0,"The big elephant that first faced us, then turned around and walked backward.",1,visible_f0,48,48,0,1,78.36,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,11,A0,The elephant walking to the left.,2,visible_f0,48,48,0,0,4.81,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9523,48,47,0,0,0,0
+d56a6ec78cfa,12,A0,The elephant moving towards the left.,2,visible_f0,48,48,0,0,4.8,initial_grounding_failure,0,0.0,48,0,1.0,1,0.952,48,47,0,0,0,0
+d56a6ec78cfa,13,A0,The big elephant going to the left.,2,visible_f0,48,48,0,0,4.81,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9522,48,47,0,0,0,0
+d56a6ec78cfa,14,A0,The elephant walking in the leftward direction.,2,visible_f0,48,48,0,0,4.81,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9523,48,47,0,0,0,0
+d56a6ec78cfa,15,A0,The elephant heading left.,2,visible_f0,48,48,0,0,4.8,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9521,48,47,0,0,0,0
+d56a6ec78cfa,1,A1,front elephant walking to backwards,1,visible_f0,48,48,0,1,78.33,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,2,A1,elephant in the distance moving to left,2,visible_f0,48,48,0,1,74.08,no_failure,,,,,,,,3,0,0,0,0,0
+d56a6ec78cfa,3,A1,turn and walk away from us,1,visible_f0,48,48,0,1,78.32,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,4,A1,front elephant moving to backwards,1,visible_f0,48,48,0,0,3.48,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9072,48,48,0,0,0,0
+d56a6ec78cfa,5,A1,turn and move away from us,1,visible_f0,48,48,0,1,78.34,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,6,A1,The elephant facing us and then turning around to walk away.,1,visible_f0,48,48,0,1,78.36,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,7,A1,The large elephant that initially faced us but then walked backward.,1,visible_f0,48,48,0,0,3.48,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9074,48,48,0,0,0,0
+d56a6ec78cfa,8,A1,The elephant which was initially facing us but turned and moved away.,1,visible_f0,48,48,0,0,3.48,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9074,48,48,0,0,0,0
+d56a6ec78cfa,9,A1,The elephant that turned its back to us and walked away.,1,visible_f0,48,48,0,1,78.35,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,10,A1,"The big elephant that first faced us, then turned around and walked backward.",1,visible_f0,48,48,0,0,3.52,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9077,48,48,0,0,0,0
+d56a6ec78cfa,11,A1,The elephant walking to the left.,2,visible_f0,48,48,0,0,4.81,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9523,48,47,0,0,0,0
+d56a6ec78cfa,12,A1,The elephant moving towards the left.,2,visible_f0,48,48,0,1,74.08,no_failure,,,,,,,,3,0,0,0,0,0
+d56a6ec78cfa,13,A1,The big elephant going to the left.,2,visible_f0,48,48,0,0,4.81,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9522,48,47,0,0,0,0
+d56a6ec78cfa,14,A1,The elephant walking in the leftward direction.,2,visible_f0,48,48,0,1,74.08,no_failure,,,,,,,,3,0,0,0,0,0
+d56a6ec78cfa,15,A1,The elephant heading left.,2,visible_f0,48,48,0,0,4.8,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9521,48,47,0,0,0,0
+d56a6ec78cfa,1,A3-5,front elephant walking to backwards,1,visible_f0,48,48,0,1,78.83,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,2,A3-5,elephant in the distance moving to left,2,visible_f0,48,48,0,0,4.64,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9466,48,47,0,0,0,0
+d56a6ec78cfa,3,A3-5,turn and walk away from us,1,visible_f0,48,48,0,1,78.32,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,4,A3-5,front elephant moving to backwards,1,visible_f0,48,48,0,1,78.87,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,5,A3-5,turn and move away from us,1,visible_f0,48,48,0,1,78.34,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,6,A3-5,The elephant facing us and then turning around to walk away.,1,visible_f0,48,48,0,1,78.36,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,7,A3-5,The large elephant that initially faced us but then walked backward.,1,visible_f0,48,48,0,1,78.32,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,8,A3-5,The elephant which was initially facing us but turned and moved away.,1,visible_f0,48,48,0,1,78.33,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,9,A3-5,The elephant that turned its back to us and walked away.,1,visible_f0,48,48,0,1,78.35,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,10,A3-5,"The big elephant that first faced us, then turned around and walked backward.",1,visible_f0,48,48,0,1,78.36,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,11,A3-5,The elephant walking to the left.,2,visible_f0,48,48,0,0,4.6,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9469,48,47,0,0,0,0
+d56a6ec78cfa,12,A3-5,The elephant moving towards the left.,2,visible_f0,48,48,0,0,4.8,initial_grounding_failure,0,0.0,48,0,1.0,1,0.952,48,47,0,0,0,0
+d56a6ec78cfa,13,A3-5,The big elephant going to the left.,2,visible_f0,48,48,0,0,4.81,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9522,48,47,0,0,0,0
+d56a6ec78cfa,14,A3-5,The elephant walking in the leftward direction.,2,visible_f0,48,48,0,0,4.81,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9523,48,47,0,0,0,0
+d56a6ec78cfa,15,A3-5,The elephant heading left.,2,visible_f0,48,48,0,0,4.8,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9521,48,47,0,0,0,0
+d56a6ec78cfa,1,A3-10,front elephant walking to backwards,1,visible_f0,48,48,0,1,78.83,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,2,A3-10,elephant in the distance moving to left,2,visible_f0,48,48,0,0,4.64,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9466,48,47,0,0,0,0
+d56a6ec78cfa,3,A3-10,turn and walk away from us,1,visible_f0,48,48,0,1,78.32,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,4,A3-10,front elephant moving to backwards,1,visible_f0,48,48,0,1,78.87,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,5,A3-10,turn and move away from us,1,visible_f0,48,48,0,1,78.34,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,6,A3-10,The elephant facing us and then turning around to walk away.,1,visible_f0,48,48,0,1,78.91,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,7,A3-10,The large elephant that initially faced us but then walked backward.,1,visible_f0,48,48,0,0,3.48,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9074,48,48,0,0,0,0
+d56a6ec78cfa,8,A3-10,The elephant which was initially facing us but turned and moved away.,1,visible_f0,48,48,0,0,3.48,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9074,48,48,0,0,0,0
+d56a6ec78cfa,9,A3-10,The elephant that turned its back to us and walked away.,1,visible_f0,48,48,0,1,79.02,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,10,A3-10,"The big elephant that first faced us, then turned around and walked backward.",1,visible_f0,48,48,0,0,3.52,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9077,48,48,0,0,0,0
+d56a6ec78cfa,11,A3-10,The elephant walking to the left.,2,visible_f0,48,48,0,0,4.6,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9469,48,47,0,0,0,0
+d56a6ec78cfa,12,A3-10,The elephant moving towards the left.,2,visible_f0,48,48,0,0,4.57,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9467,48,47,0,0,0,0
+d56a6ec78cfa,13,A3-10,The big elephant going to the left.,2,visible_f0,48,48,0,0,4.56,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9468,48,47,0,0,0,0
+d56a6ec78cfa,14,A3-10,The elephant walking in the leftward direction.,2,visible_f0,48,48,0,0,4.81,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9523,48,47,0,0,0,0
+d56a6ec78cfa,15,A3-10,The elephant heading left.,2,visible_f0,48,48,0,0,4.55,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9467,48,47,0,0,0,0
+d56a6ec78cfa,1,largest,front elephant walking to backwards,1,visible_f0,48,48,0,1,78.83,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,2,largest,elephant in the distance moving to left,2,visible_f0,48,48,0,0,4.64,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9466,48,47,0,0,0,0
+d56a6ec78cfa,3,largest,turn and walk away from us,1,visible_f0,48,48,0,0,1.09,initial_grounding_failure,0,0.0,48,0,1.0,0,0.0001,48,48,0,0,0,0
+d56a6ec78cfa,4,largest,front elephant moving to backwards,1,visible_f0,48,48,0,1,78.87,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,5,largest,turn and move away from us,1,visible_f0,48,48,0,0,2.12,initial_grounding_failure,0,0.0,48,0,1.0,0,0.0003,48,48,0,0,0,0
+d56a6ec78cfa,6,largest,The elephant facing us and then turning around to walk away.,1,visible_f0,48,48,0,1,78.91,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,7,largest,The large elephant that initially faced us but then walked backward.,1,visible_f0,48,48,0,1,78.32,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,8,largest,The elephant which was initially facing us but turned and moved away.,1,visible_f0,48,48,0,1,78.79,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,9,largest,The elephant that turned its back to us and walked away.,1,visible_f0,48,48,0,1,79.02,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,10,largest,"The big elephant that first faced us, then turned around and walked backward.",1,visible_f0,48,48,0,1,78.36,no_failure,,,,,,,,0,0,0,0,0,0
+d56a6ec78cfa,11,largest,The elephant walking to the left.,2,visible_f0,48,48,0,0,4.6,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9469,48,47,0,0,0,0
+d56a6ec78cfa,12,largest,The elephant moving towards the left.,2,visible_f0,48,48,0,0,4.57,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9467,48,47,0,0,0,0
+d56a6ec78cfa,13,largest,The big elephant going to the left.,2,visible_f0,48,48,0,0,4.56,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9468,48,47,0,0,0,0
+d56a6ec78cfa,14,largest,The elephant walking in the leftward direction.,2,visible_f0,48,48,0,0,4.6,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9467,48,47,0,0,0,0
+d56a6ec78cfa,15,largest,The elephant heading left.,2,visible_f0,48,48,0,0,4.55,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9467,48,47,0,0,0,0
+e339e02b5b3c,1,A0,cow shaking head and looking us,1,visible_f0,48,48,0,1,83.1,no_failure,,,,,,,,0,0,0,0,0,0
+e339e02b5b3c,2,A0,the cow eating without moving position,3,visible_f0,48,48,0,0,0.01,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,5,A0,standing still eating the grass without changing position,3,visible_f0,48,48,0,0,0.41,initial_grounding_failure,0,0.0,48,0,1.0,0,0.0024,48,48,0,0,0,0
+e339e02b5b3c,10,A0,The leading cow among the group.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,11,A0,The cow taking the lead in the herd.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,12,A0,who moved to the furthest,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,13,A0,the second cow from left at the end of the video,3,visible_f0,48,48,0,0,0.01,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9408,48,48,0,0,0,0
+e339e02b5b3c,1,A1,cow shaking head and looking us,1,visible_f0,48,48,0,0,6.63,initial_grounding_failure,0,0.0,48,0,1.0,0,0.0,48,40,0,0,0,2
+e339e02b5b3c,2,A1,the cow eating without moving position,3,visible_f0,48,48,0,0,0.01,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,5,A1,standing still eating the grass without changing position,3,visible_f0,48,48,0,0,0.04,initial_grounding_failure,0,0.0,48,0,1.0,0,0.0007,48,48,0,0,0,0
+e339e02b5b3c,10,A1,The leading cow among the group.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,11,A1,The cow taking the lead in the herd.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,12,A1,who moved to the furthest,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,13,A1,the second cow from left at the end of the video,3,visible_f0,48,48,0,0,0.01,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9408,48,48,0,0,0,0
+e339e02b5b3c,1,A3-5,cow shaking head and looking us,1,visible_f0,48,48,0,1,83.1,no_failure,,,,,,,,0,0,0,0,0,0
+e339e02b5b3c,2,A3-5,the cow eating without moving position,3,visible_f0,48,48,0,0,0.01,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,5,A3-5,standing still eating the grass without changing position,3,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,0,0.0,48,48,0,0,0,0
+e339e02b5b3c,10,A3-5,The leading cow among the group.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,11,A3-5,The cow taking the lead in the herd.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.8257,48,48,0,0,0,0
+e339e02b5b3c,12,A3-5,who moved to the furthest,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.8187,48,48,0,0,0,0
+e339e02b5b3c,13,A3-5,the second cow from left at the end of the video,3,visible_f0,48,48,0,0,0.01,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9408,48,48,0,0,0,0
+e339e02b5b3c,1,A3-10,cow shaking head and looking us,1,visible_f0,48,48,0,1,83.1,no_failure,,,,,,,,0,0,0,0,0,0
+e339e02b5b3c,2,A3-10,the cow eating without moving position,3,visible_f0,48,48,0,0,0.01,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,5,A3-10,standing still eating the grass without changing position,3,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,0,0.0,48,48,0,0,0,0
+e339e02b5b3c,10,A3-10,The leading cow among the group.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,11,A3-10,The cow taking the lead in the herd.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.8257,48,48,0,0,0,0
+e339e02b5b3c,12,A3-10,who moved to the furthest,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9174,48,48,0,0,0,0
+e339e02b5b3c,13,A3-10,the second cow from left at the end of the video,3,visible_f0,48,48,0,0,0.01,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9408,48,48,0,0,0,0
+e339e02b5b3c,1,largest,cow shaking head and looking us,1,visible_f0,48,48,0,1,83.1,no_failure,,,,,,,,0,0,0,0,0,0
+e339e02b5b3c,2,largest,the cow eating without moving position,3,visible_f0,48,48,0,0,0.01,initial_grounding_failure,0,0.0,48,0,1.0,1,0.9407,48,48,0,0,0,0
+e339e02b5b3c,5,largest,standing still eating the grass without changing position,3,visible_f0,48,48,0,0,0.41,initial_grounding_failure,0,0.0,48,0,1.0,0,0.0024,48,48,0,0,0,0
+e339e02b5b3c,10,largest,The leading cow among the group.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.8278,48,48,0,0,0,0
+e339e02b5b3c,11,largest,The cow taking the lead in the herd.,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.8257,48,48,0,0,0,0
+e339e02b5b3c,12,largest,who moved to the furthest,4,visible_f0,48,48,0,0,0.0,initial_grounding_failure,0,0.0,48,0,1.0,1,0.8187,48,48,0,0,0,0
+e339e02b5b3c,13,largest,the second cow from left at the end of the video,3,visible_f0,48,48,0,0,0.41,initial_grounding_failure,0,0.0,48,0,1.0,0,0.0024,48,48,0,0,0,0
+ee6855dcefee,1,A0,Rabbit moving around and eating leaves,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,2,A0,rabbit eating and walking,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,3,A0,moving white rabbit,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,4,A0,standing still and eating white rabbit,1,visible_f0,45,45,0,1,86.05,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,5,A0,jump to the left then jump back,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,6,A0,The rabbit that changed its location.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,7,A0,The rabbit that shifted its position.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,8,A0,The rabbit that relocated itself.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9723,45,45,0,0,0,0
+ee6855dcefee,9,A0,The rabbit that moved to a different spot.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,10,A0,The rabbit that altered its position.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,11,A0,The rabbit eating in the bottom-right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,12,A0,The rabbit that is having food in the lower right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,13,A0,The rabbit munching on food at the bottom-right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,14,A0,The rabbit eating its meal at the lower right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9723,45,45,0,0,0,0
+ee6855dcefee,15,A0,The rabbit enjoying its food in the right-bottom corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,16,A0,The white rabbit that hasn't moved from its position.,1,visible_f0,45,45,0,1,86.04,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,17,A0,The white rabbit staying in place without moving.,1,visible_f0,45,45,0,1,86.05,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,18,A0,The stationary white rabbit.,1,visible_f0,45,45,0,1,86.04,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,19,A0,The unmoving white rabbit.,1,visible_f0,45,45,0,1,86.04,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,20,A0,The rabbit with the most exercise.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,1,A1,Rabbit moving around and eating leaves,3,visible_f0,45,45,0,0,2.34,initial_grounding_failure,0,0.0,45,0,1.0,0,0.0004,45,45,0,0,0,0
+ee6855dcefee,2,A1,rabbit eating and walking,3,visible_f0,45,45,0,1,85.86,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,3,A1,moving white rabbit,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,4,A1,standing still and eating white rabbit,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9751,45,45,0,0,0,0
+ee6855dcefee,5,A1,jump to the left then jump back,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,6,A1,The rabbit that changed its location.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,7,A1,The rabbit that shifted its position.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,8,A1,The rabbit that relocated itself.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9723,45,45,0,0,0,0
+ee6855dcefee,9,A1,The rabbit that moved to a different spot.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,10,A1,The rabbit that altered its position.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,11,A1,The rabbit eating in the bottom-right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9751,45,45,0,0,0,0
+ee6855dcefee,12,A1,The rabbit that is having food in the lower right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.975,45,45,0,0,0,0
+ee6855dcefee,13,A1,The rabbit munching on food at the bottom-right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9752,45,45,0,0,0,0
+ee6855dcefee,14,A1,The rabbit eating its meal at the lower right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9752,45,45,0,0,0,0
+ee6855dcefee,15,A1,The rabbit enjoying its food in the right-bottom corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9752,45,45,0,0,0,0
+ee6855dcefee,16,A1,The white rabbit that hasn't moved from its position.,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9751,45,45,0,0,0,0
+ee6855dcefee,17,A1,The white rabbit staying in place without moving.,1,visible_f0,45,45,0,1,86.05,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,18,A1,The stationary white rabbit.,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9751,45,45,0,0,0,0
+ee6855dcefee,19,A1,The unmoving white rabbit.,1,visible_f0,45,45,0,1,86.04,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,20,A1,The rabbit with the most exercise.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,1,A3-5,Rabbit moving around and eating leaves,3,visible_f0,45,45,0,1,85.86,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,2,A3-5,rabbit eating and walking,3,visible_f0,45,45,0,1,85.86,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,3,A3-5,moving white rabbit,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,4,A3-5,standing still and eating white rabbit,1,visible_f0,45,45,0,1,86.05,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,5,A3-5,jump to the left then jump back,3,visible_f0,45,45,0,1,85.86,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,6,A3-5,The rabbit that changed its location.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,7,A3-5,The rabbit that shifted its position.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,8,A3-5,The rabbit that relocated itself.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,9,A3-5,The rabbit that moved to a different spot.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,10,A3-5,The rabbit that altered its position.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,11,A3-5,The rabbit eating in the bottom-right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9751,45,45,0,0,0,0
+ee6855dcefee,12,A3-5,The rabbit that is having food in the lower right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,13,A3-5,The rabbit munching on food at the bottom-right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,14,A3-5,The rabbit eating its meal at the lower right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9752,45,45,0,0,0,0
+ee6855dcefee,15,A3-5,The rabbit enjoying its food in the right-bottom corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,16,A3-5,The white rabbit that hasn't moved from its position.,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9751,45,45,0,0,0,0
+ee6855dcefee,17,A3-5,The white rabbit staying in place without moving.,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.975,45,45,0,0,0,0
+ee6855dcefee,18,A3-5,The stationary white rabbit.,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9751,45,45,0,0,0,0
+ee6855dcefee,19,A3-5,The unmoving white rabbit.,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.975,45,45,0,0,0,0
+ee6855dcefee,20,A3-5,The rabbit with the most exercise.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,1,A3-10,Rabbit moving around and eating leaves,3,visible_f0,45,45,0,1,85.86,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,2,A3-10,rabbit eating and walking,3,visible_f0,45,45,0,1,85.86,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,3,A3-10,moving white rabbit,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,4,A3-10,standing still and eating white rabbit,1,visible_f0,45,45,0,1,86.05,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,5,A3-10,jump to the left then jump back,3,visible_f0,45,45,0,1,85.86,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,6,A3-10,The rabbit that changed its location.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,7,A3-10,The rabbit that shifted its position.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,8,A3-10,The rabbit that relocated itself.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,9,A3-10,The rabbit that moved to a different spot.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,10,A3-10,The rabbit that altered its position.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,11,A3-10,The rabbit eating in the bottom-right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9751,45,45,0,0,0,0
+ee6855dcefee,12,A3-10,The rabbit that is having food in the lower right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.975,45,45,0,0,0,0
+ee6855dcefee,13,A3-10,The rabbit munching on food at the bottom-right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,14,A3-10,The rabbit eating its meal at the lower right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9752,45,45,0,0,0,0
+ee6855dcefee,15,A3-10,The rabbit enjoying its food in the right-bottom corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9752,45,45,0,0,0,0
+ee6855dcefee,16,A3-10,The white rabbit that hasn't moved from its position.,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9751,45,45,0,0,0,0
+ee6855dcefee,17,A3-10,The white rabbit staying in place without moving.,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.975,45,45,0,0,0,0
+ee6855dcefee,18,A3-10,The stationary white rabbit.,1,visible_f0,45,45,0,1,86.04,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,19,A3-10,The unmoving white rabbit.,1,visible_f0,45,45,0,0,6.25,initial_grounding_failure,0,0.0,45,0,1.0,1,0.975,45,45,0,0,0,0
+ee6855dcefee,20,A3-10,The rabbit with the most exercise.,3,visible_f0,45,45,0,1,85.85,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,1,largest,Rabbit moving around and eating leaves,3,visible_f0,45,45,0,0,3.06,initial_grounding_failure,0,0.0,45,0,1.0,0,0.0005,45,45,0,0,0,0
+ee6855dcefee,2,largest,rabbit eating and walking,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,3,largest,moving white rabbit,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,4,largest,standing still and eating white rabbit,1,visible_f0,45,45,0,1,86.05,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,5,largest,jump to the left then jump back,3,visible_f0,45,45,0,0,0.01,initial_grounding_failure,0,0.0,45,0,1.0,0,0.0001,45,45,0,0,0,0
+ee6855dcefee,6,largest,The rabbit that changed its location.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,7,largest,The rabbit that shifted its position.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,8,largest,The rabbit that relocated itself.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9723,45,45,0,0,0,0
+ee6855dcefee,9,largest,The rabbit that moved to a different spot.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,10,largest,The rabbit that altered its position.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,11,largest,The rabbit eating in the bottom-right corner.,2,visible_f0,45,45,0,0,0.0,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
+ee6855dcefee,12,largest,The rabbit that is having food in the lower right corner.,2,visible_f0,45,45,0,0,1.32,initial_grounding_failure,0,0.0,45,0,1.0,0,0.0,45,41,0,0,0,0
+ee6855dcefee,13,largest,The rabbit munching on food at the bottom-right corner.,2,visible_f0,45,45,0,0,1.14,initial_grounding_failure,0,0.0,45,0,1.0,0,0.0,45,44,0,0,0,0
+ee6855dcefee,14,largest,The rabbit eating its meal at the lower right corner.,2,visible_f0,45,45,0,0,1.14,initial_grounding_failure,0,0.0,45,0,1.0,0,0.0,45,43,0,0,0,0
+ee6855dcefee,15,largest,The rabbit enjoying its food in the right-bottom corner.,2,visible_f0,45,45,0,0,1.37,initial_grounding_failure,0,0.0,45,0,1.0,0,0.0,45,43,0,0,0,31
+ee6855dcefee,16,largest,The white rabbit that hasn't moved from its position.,1,visible_f0,45,45,0,1,86.04,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,17,largest,The white rabbit staying in place without moving.,1,visible_f0,45,45,0,1,86.05,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,18,largest,The stationary white rabbit.,1,visible_f0,45,45,0,1,86.04,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,19,largest,The unmoving white rabbit.,1,visible_f0,45,45,0,1,86.04,no_failure,,,,,,,,0,0,0,0,0,0
+ee6855dcefee,20,largest,The rabbit with the most exercise.,3,visible_f0,45,45,0,0,6.22,initial_grounding_failure,0,0.0,45,0,1.0,1,0.9724,45,45,0,0,0,0
