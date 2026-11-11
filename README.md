@@ -4,7 +4,7 @@
 
 A training-free system that keeps track of *who the target is* across a video, notices when tracking stops being trustworthy, and calls an expensive reasoning model only at those moments.
 
-> Status: V0 baseline complete (J&F 50.48). V1 (Semantic-Temporal Target Memory) complete (J&F 50.97, a no-regression result). V2 (Tracklet Coherence Score) complete (passive 50.97, gated 50.40 is a negative result). V3 (event-driven VLM) built and run once with a real VLM (J&F 50.58): no accuracy gain on Ref-DAVIS17, about 52x fewer VLM calls than every-frame. V4 (memory-grounded re-identification) is complete and was run on all 30 videos: V4-memory 50.87 and V4-vlm 50.86 J&F, no gain over V2 on Ref-DAVIS17 (it has only 4 vanishing targets); a post-hoc margin gate gave 50.90. See the V4 section below.
+> Status: V0 baseline complete (J&F 50.48). V1 (Semantic-Temporal Target Memory) complete (J&F 50.97, a no-regression result). V2 (Tracklet Coherence Score) complete (passive 50.97, gated 50.40 is a negative result). V3 (event-driven VLM) built and run once with a real VLM (J&F 50.58): no accuracy gain on Ref-DAVIS17, about 52x fewer VLM calls than every-frame. V4 (memory-grounded re-identification) is complete and was run on all 30 videos: V4-memory 50.87 and V4-vlm 50.86 J&F, no gain over V2 on Ref-DAVIS17 (it has only 4 vanishing targets); a post-hoc margin gate gave 50.90. See the V4 section below. Task 6 (MeViS and Long-RVOS subsets, candidate-selection arms, failure and cost analysis) is run and analysed; the main finding is that most failures start at frame-0 grounding, and memory, TCS and re-ID gave no J&F gain on those subsets. See the Task 6 section below.
 
 ---
 
@@ -153,6 +153,31 @@ What each search did (labelled afterwards against the human masks; restarts are 
 
 **Honest reading.** **No improvement over V2** (50.87 and 50.86 against 50.97; single runs, within noise). The restarts that go wrong cancel the ones that go right. In each of V4-memory and V4-vlm, 7 restarts replaced a mask that was already good: for memory 2 ended better, 2 mildly worse and 3 were destroyed; for the VLM 5 were destroyed (for example gold-fish 0.91 to 0). The VLM reported confidence 0.9 to 1.0 on every answer, including the wrong ones, so its confidence does not say when it is wrong, and it restarted more often (27 against 15) and was wrong more often (16 against 7). The post-hoc margin gate (restart only if the pick beats the tracker's mask score by 0.10 or more, or the tracker mask is empty; added after seeing the results, so a diagnosis and not a result) blocked 3 destroyed restarts and also one good one, and gave 50.90. Its 4 remaining wrong restarts all happen with an empty tracker mask and in 3 of them the target is absent, so V4 needs an **abstain option** ("the target is not here, do nothing"); a VLM version of the margin gate was not run. Ref-DAVIS17 has only 4 of 61 targets that vanish (3 of them reappear), so it barely tests re-identification: H4 is undecided and must be tested on Long-RVOS or MeViS. Details: `results/v4_reid/`, `baseline_v0/V4_PLAN.md`, `baseline_v0/tools/run_v4.sh`.
 
+## Task 6: MeViS and Long-RVOS subsets, and what the analysis shows
+
+All numbers in this section are on **selected subsets, single runs** (no seeds to average), scored offline. They are not leaderboard results and are not comparable to published MeViS or Long-RVOS numbers. Oracle runs (ground-truth start box, best cached candidate) are diagnostic ceilings, never results.
+
+| Subset | Videos | Sentences | Tracked frames |
+|---|---|---|---|
+| MeViS valid_u (official split with public masks), single-target sentences only | 12 | 213 | 10,744 |
+| Long-RVOS valid (official split), one sentence per type (static, dynamic, hybrid) per video | 11 | 33 | 12,474 |
+
+Subsets, budgets and hash seeds were fixed in `baseline_v0/TASK6_PLAN.md` (Amendments 2 to 5) before any model ran on them. Real Gemini calls (V3, V4-vlm) ran on **one video per dataset** (Amendment 5, at most 40 planned calls), so VLM findings are examples, not rates.
+
+**Main findings (details and per-video tables in `baseline_v0/results/task6/`)**
+
+1. **The loss is mostly at initial grounding.** The frame-0 top-1 Grounding-DINO box is the right object for 37.7% (MeViS) and 27.6% (Long-RVOS) of sentences; the right box is in the top-5 pool for 82.7% and 86.2%. Starting from the ground-truth box lifts J&F from 26.88 to 64.29 (MeViS) and 30.38 to 61.15 (Long-RVOS) (diagnostic ceiling).
+2. **Candidate selection is inconclusive.** J&F for A0 (top-1), A1 (CLIP re-score), A3-5 and A3-10 (offline look-ahead), largest box: MeViS 26.88 / 27.06 / 32.16 / 31.51 / 28.16; Long-RVOS 30.38 / 37.77 / 35.12 / 33.58 / 26.85. The best arm changes with the dataset, no paired interval excludes zero, and no arm meets the claim rule of Amendment 6 item 10. A3 needs an extra offline SAM 2 pass (about 4,046 s on MeViS, 868 s on Long-RVOS).
+3. **Failure type depends on the dataset.** Failure runs from the A0 start: MeViS 127 of 190 are initial grounding failures; Long-RVOS later failures are mostly re-identification (24 of 54 runs) and identity drift is 0. 62% of the later MeViS runs come from one video.
+4. **Memory, passive TCS and memory re-ID gave no J&F gain** on these subsets (V1 minus V0: MeViS -0.95, Long-RVOS -0.44, intervals include zero) and cost about +21 to +54% inference time (peak memory about 0.7 to 0.8 GB for V0, about 1.4 GB for V2, about 1.7 GB for V4).
+5. **Passive TCS is not a failure detector here:** detection AUROC 0.458 (MeViS) and 0.552 (Long-RVOS), not separable from chance.
+
+**Known limits.** One run per setting; subsets chosen by a fixed hash rule; the wrong-pick coding (71 MeViS rows) was done manually by one coder and its independent blind re-code is not finished, so it is not reported as validated; MeViS 125 vs 127 failure-run count and leave-one-video-out recounts are open; the V3 and V4-vlm rows are one-video examples. A first run of the TCS failure-prediction tool on Long-RVOS had a frame-name bug; its output is kept as `tcs_fp_longrvos_INVALID_wrong_frame_names.*` and must not be cited.
+
+**Reproducibility.** Every analysis tool is in `baseline_v0/tools/`. The rule was to commit each tool before its numbers; there are exceptions: the A3 selection tool (commit `a56072f`) came after its outputs, and for a few analysis tools the output and the commit fall in the same minute or the output is about a minute earlier (listed in the evidence register, kept outside the repo). MD5 of 30 configs, 65 tools and the pipeline files: `baseline_v0/results/task6/analysis/md5_manifest_20261107.txt` and `md5_pipeline_20261107.txt` (they show the current file content, not content at run time). One tool copy differs between the repo and the run folders: `render_cases.py` (case pictures only, no scores). Plan and rule changes: Amendments 1 to 9 in `baseline_v0/TASK6_PLAN.md`.
+
+Figures and their data: `baseline_v0/results/task6/figures/` (`make_figs.py` holds the typed-in values; captions in `FIGURE_CAPTIONS_AND_SOURCES.md`).
+
 ## Repository layout
 
 ```
@@ -160,6 +185,7 @@ CogR-VOS/
 ├── README.md
 ├── baseline_v0/        V0 to V4 code (V1 to V4 are layers added on top of the V0 pipeline; folder name kept for history)
 ├── results/            V0 to V4 result folders (small files only; large per-frame logs and predicted masks are not stored in git)
+│                       (Task 6 results, analysis outputs and figures: baseline_v0/results/task6/)
 ├── literature/
 │   └── README.md       57 papers by theme (titles, venues, takeaways); the PDFs are not stored in git
 ```
